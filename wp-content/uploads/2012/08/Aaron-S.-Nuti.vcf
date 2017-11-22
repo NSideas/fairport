@@ -1,0 +1,15 @@
+begin:vcard
+version:3.0
+prodid:Microsoft-MacOutlook/14.2.2.120421
+UID:91343C06-8DD4-472C-B8A6-6D8AB19F6443
+fn;charset=utf-8:Aaron S. Nuti
+n;charset=utf-8:Nuti;Aaron S.;;;
+title;charset=utf-8:Consultant
+org;charset=utf-8:Fairport Assest Management;
+url;charset=utf-8;type=work:www.FairportAsset.com
+adr;charset=utf-8;type=work;type=pref:;;3636 Euclid Avenue;Cleveland;Ohio;44115;United States
+label;charset=utf-8;type=work;type=pref:3636 Euclid Avenue\nCleveland\, Ohio 44115\nUnited States
+tel;charset=utf-8;type=work:216.431.2755
+tel;charset=utf-8;type=work;type=fax:216.431.4070
+email;charset=utf-8;type=internet;type=pref;type=work:Aaron.Nuti@FairportAsset.com
+end:vcard

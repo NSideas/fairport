@@ -1,0 +1,15 @@
+begin:vcard
+version:3.0
+prodid:Microsoft-MacOutlook/14.2.2.120421
+UID:B33CF861-0136-4008-BAC2-EED65C42C23E
+fn;charset=utf-8:Paul R. Abbey
+n;charset=utf-8:Abbey;Paul R.;;;
+title;charset=utf-8:Chairman & Founding Partner
+org;charset=utf-8:Fairport Asset Management;
+url;charset=utf-8;type=work:www.FairportAsset.com
+adr;charset=utf-8;type=work;type=pref:;;3636 Euclid Avenue;Cleveland;Ohio;44115;United States
+label;charset=utf-8;type=work;type=pref:3636 Euclid Avenue\nCleveland\, Ohio 44115\nUnited States
+tel;charset=utf-8;type=work:216.431.2731
+tel;charset=utf-8;type=work;type=fax:216.431.4055
+email;charset=utf-8;type=internet;type=pref;type=work:Paul.Abbey@FairportAsset.com
+end:vcard

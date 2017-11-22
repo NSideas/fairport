@@ -1,0 +1,15 @@
+begin:vcard
+version:3.0
+prodid:Microsoft-MacOutlook/14.2.2.120421
+UID:855B3B0A-34F1-48DE-B4A0-D75DD22AFC81
+fn;charset=utf-8:Heather R. Ettinger
+n;charset=utf-8:Ettinger;Heather R.;;;
+title;charset=utf-8:Managing Partner
+org;charset=utf-8:Fairport Asset Management;
+url;charset=utf-8;type=work:www.FairportAsset.com
+adr;charset=utf-8;type=work;type=pref:;;3636 Euclid Avenue;Cleveland;OH;44115;United States
+label;charset=utf-8;type=work;type=pref:3636 Euclid Avenue\nCleveland\, OH 44115\nUnited States
+tel;charset=utf-8;type=work:216.431.3836
+tel;charset=utf-8;type=work;type=fax:216.431.4060
+email;charset=utf-8;type=internet;type=pref;type=work:Heather.Ettinger@FairportAsset.com
+end:vcard

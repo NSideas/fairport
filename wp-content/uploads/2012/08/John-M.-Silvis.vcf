@@ -1,0 +1,15 @@
+begin:vcard
+version:3.0
+prodid:Microsoft-MacOutlook/14.2.2.120421
+UID:9025EA1D-F788-4979-A74B-FB541C11962C
+fn;charset=utf-8:John M. Silvis
+n;charset=utf-8:Silvis;John M.;;;
+title;charset=utf-8:Director of Investments
+org;charset=utf-8:Fairport Asset Management;
+url;charset=utf-8;type=work:www.FairportAsset.com
+adr;charset=utf-8;type=work;type=pref:;;3636 Euclid Avenue;Cleveland;Ohio;44115;United States
+label;charset=utf-8;type=work;type=pref:3636 Euclid Avenue\nCleveland\, Ohio 44115\nUnited States
+tel;charset=utf-8;type=work:216.431.2978
+tel;charset=utf-8;type=work;type=fax:216.431.4084
+email;charset=utf-8;type=internet;type=pref;type=work:John.Silvis@FairportAsset.com
+end:vcard

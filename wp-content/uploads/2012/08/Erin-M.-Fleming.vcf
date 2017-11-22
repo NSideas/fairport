@@ -1,0 +1,15 @@
+begin:vcard
+version:3.0
+prodid:Microsoft-MacOutlook/14.2.2.120421
+UID:BAA55807-0EED-4B5A-BC1E-8FCCABA6B8EC
+fn;charset=utf-8:Erin M. Fleming
+n;charset=utf-8:Fleming;Erin M.;;;
+title;charset=utf-8:Client Service Coordinator
+org;charset=utf-8:Fairport Asset Management;
+url;charset=utf-8;type=work:www.FairportAsset.com
+adr;charset=utf-8;type=work;type=pref:;;3636 Euclid Avenue;Cleveland;OH;44115;United States
+label;charset=utf-8;type=work;type=pref:3636 Euclid Avenue\nCleveland\, OH 44115\nUnited States
+tel;charset=utf-8;type=work:216.431.3136
+tel;charset=utf-8;type=work;type=fax:216.431.4071
+email;charset=utf-8;type=internet;type=pref;type=work:Erin.Fleming@FairportAsset.com
+end:vcard

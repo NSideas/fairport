@@ -1,0 +1,15 @@
+begin:vcard
+version:3.0
+prodid:Microsoft-MacOutlook/14.2.2.120421
+UID:57CB2906-E787-49FE-BD41-FADF2944B935
+fn;charset=utf-8:J.T. Mullen
+n;charset=utf-8:Mullen;J.T.;;;
+title;charset=utf-8:Chief Investment Strategist
+org;charset=utf-8:Fairport Asset Management;
+url;charset=utf-8;type=work:www.FairportAsset.com
+adr;charset=utf-8;type=work;type=pref:;;3636 Euclid Avenue;Cleveland;Ohio;44115;United States
+label;charset=utf-8;type=work;type=pref:3636 Euclid Avenue\nCleveland\, Ohio 44115\nUnited States
+tel;charset=utf-8;type=work:216.431.3449
+tel;charset=utf-8;type=work;type=fax:216.431.4062
+email;charset=utf-8;type=internet;type=pref;type=work:JT.Mullen@FairportAsset.com
+end:vcard

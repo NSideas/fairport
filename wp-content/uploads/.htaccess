@@ -1,0 +1,9 @@
+AddType text/x-vcard .vcf
+<FilesMatch "\.(?i:mp3)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
+<FilesMatch "\.(?i:pdf)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
