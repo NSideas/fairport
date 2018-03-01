@@ -18,6 +18,7 @@
 
 })(jQuery, this);
 
+var $mqLarge = window.matchMedia('(min-width: 960px)');
 
 // Throttle scroll events
 var direction, lastKownDirection, lastKnownPosition = 0;
@@ -64,4 +65,6 @@ function throttle(wait) {
 	}
 }
 
-window.addEventListener('scroll', throttle(100));
+if (!$mqLarge.matches) {
+	window.addEventListener('scroll', throttle(100));
+}

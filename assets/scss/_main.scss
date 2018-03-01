@@ -146,29 +146,22 @@ body {
 	}
 }
 
-@media (min-width: $m) {
-	.header.stuck {
-		border: solid 1px black;
-	}
+@media (min-width: $l) {
 	.header-container {
-		display: flex;
-		flex-flow: row wrap;
+		height: auto;
 	}
-	.brand {
-		border-right: solid 1px black;
-	}
-	.site-title {
-		width: 180px;
-		text-align: center;
+	.nav-button {
+		display: none;
 	}
 	.header-nav {
 		display: block;
 		position: static;
 		height: auto;
+		width: auto;
 		top: auto;
 		background: transparent;
 		.nav-list {
-			padding: 0 1em;
+			padding: 0;
 			height: 100%;
 			display: flex;
 			align-items: center;
@@ -176,9 +169,12 @@ body {
 		.top-level-nav {
 			display: inline-block;
 			padding: 0 .75em;
+			&:last-child {
+				padding-bottom: 0;
+			}
 		}
 		.top-level-nav a {
-			font-size: 1em;
+			font-size: .875em;
 			margin-bottom: 0;
 		}
 		.sub-nav {
