@@ -23,25 +23,22 @@
 		"oAP": "\/404.html",
 		"oF": 0
 		},
-	"\/css\/main.css": {
+	"\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
-		"oAP": "\/css\/main-min.css",
+		"oAP": "\/css\/styles.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 0
 		},
-	"\/css\/normalize.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"\/css\/styles.css.map": {
+		"cB": 0,
+		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/css\/normalize-min.css",
-		"oF": 0,
-		"oS": 3
+		"oAP": "\/css\/styles.css.map",
+		"oF": 0
 		},
 	"\/favicon.ico": {
 		"cB": 0,
@@ -143,6 +140,45 @@
 		"oAP": "\/robots.txt",
 		"oF": 0
 		},
+	"\/scss\/_main.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_main.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_normalize.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/styles.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/css\/styles.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/tile-wide.png": {
 		"ft": 32768,
 		"iS": 1854,
@@ -179,7 +215,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -1937,13 +1973,13 @@
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.css",
-		"autoOutputPathRelativePath": "",
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "css",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
-		"createSourceMap": 0,
-		"outputStyle": 3,
+		"autoOutputPathStyle": 1,
+		"createSourceMap": 1,
+		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
 		},
