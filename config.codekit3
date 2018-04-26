@@ -78,6 +78,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/zig-zag-pattern.png": {
+		"ft": 32768,
+		"iS": 21012,
+		"oA": 0,
+		"oAP": "\/img\/zig-zag-pattern.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -159,6 +170,19 @@
 		"oA": 0,
 		"oAP": "\/robots.txt",
 		"oF": 0
+		},
+	"\/scss\/_colors.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/scss\/_helpers.scss": {
 		"aP": 1,
