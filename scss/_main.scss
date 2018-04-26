@@ -305,7 +305,30 @@ a {
   text-transform: uppercase;
 }
 
+
+// Footer
 #footer {
   height: 200px;
   background-color: $gray-1;
+}
+
+.footer-section-top {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-home-link {
+  width: 40%;
+  img {
+    max-width: 100%;
+  }
+}
+
+.sm-link-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+  }
 }

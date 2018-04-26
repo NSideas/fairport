@@ -644,6 +644,26 @@ a {
   height: 200px;
   background-color: #777777; }
 
+.footer-section-top {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.footer-home-link {
+  width: 40%; }
+  .footer-home-link img {
+    max-width: 100%; }
+
+.sm-link-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .sm-link-list li {
+    display: inline-block; }
+
 .color-purple .page-intro {
   background-color: #83769C; }
 
