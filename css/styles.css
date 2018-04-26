@@ -470,6 +470,12 @@ h3 {
   font-size: 1.25em;
   font-weight: 400; }
 
+h5 {
+  font-size: .8em;
+  font-weight: 400;
+  letter-spacing: .075em;
+  text-transform: uppercase; }
+
 a {
   color: #C67676;
   text-decoration: none; }
@@ -576,13 +582,6 @@ a {
   padding-left: 0;
   padding-top: .75em; }
 
-.block-list--ordered {
-  counter-reset: block-list-counter; }
-
-.block-list--ordered li:before {
-  content: counter(block-list-counter);
-  counter-increment: block-list-counter; }
-
 .block-list-item {
   border-top: solid 1px #C9C9C9;
   padding-top: .5em;
@@ -593,6 +592,57 @@ a {
 
 .block-list-item p:last-child {
   margin-bottom: 0; }
+
+.block-list--ordered {
+  counter-reset: block-list-counter; }
+
+.block-list--ordered li {
+  position: relative;
+  padding-left: 70px; }
+  .block-list--ordered li:before {
+    content: counter(block-list-counter);
+    counter-increment: block-list-counter;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.25;
+    background: #D4C098;
+    color: white; }
+
+.quick-links-section {
+  background-color: #F0F0F0;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+.quick-links-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: .5em; }
+
+.quick-link {
+  margin-bottom: 1em; }
+  .quick-link p {
+    font-family: "EB Garamond", Georgia, serif;
+    margin-bottom: .5em; }
+
+.quick-link-title {
+  display: block;
+  font-size: 1.125em;
+  margin-bottom: .5em; }
+
+.more-link {
+  font-size: .8em;
+  letter-spacing: .075em;
+  text-transform: uppercase; }
+
+#footer {
+  height: 200px;
+  background-color: #777777; }
 
 .color-purple .page-intro {
   background-color: #83769C; }
