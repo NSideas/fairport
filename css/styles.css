@@ -474,6 +474,7 @@ h5 {
   font-size: 1em;
   letter-spacing: .075em;
   text-transform: uppercase;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-weight: 400; }
   @media (min-width: 720px) {
     h5 {
@@ -487,11 +488,17 @@ a {
 .main-content li {
   font-family: "EB Garamond", Georgia, serif;
   font-size: 18px; }
+  .main-content p strong,
+  .main-content li strong {
+    font-weight: 500; }
 
 .content-area ul {
   padding-left: 1.5em; }
 
 .content-area li {
+  margin-bottom: .5em; }
+
+.page-title {
   margin-bottom: .5em; }
 
 .section-title {
@@ -500,6 +507,10 @@ a {
 .intro-paragraph {
   font-family: "EB Garamond", Georgia, serif;
   font-size: 1.25em; }
+
+hr {
+  border: none;
+  background-color: #C9C9C9; }
 
 #header {
   position: relative;
@@ -548,11 +559,9 @@ a {
   padding-top: 1em;
   padding-bottom: 1em; }
 
-.page-intro {
-  background-color: #ADADAD;
-  color: white;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+.page-intro, .page-intro--default {
+  padding-top: 10px;
+  padding-bottom: 30px; }
 
 .breadcrumbs {
   padding-top: .5em;
@@ -563,6 +572,7 @@ a {
   font-size: 1em;
   letter-spacing: .075em;
   text-transform: uppercase;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: .8em; }
   @media (min-width: 720px) {
     .breadcrumb-item {
@@ -592,13 +602,22 @@ a {
   padding-left: 0;
   padding-top: .75em; }
 
-.block-list-item {
+li.block-list-item {
   border-top: solid 1px #C9C9C9;
-  padding-top: .5em;
-  padding-bottom: 1.5em; }
+  padding-top: .6em;
+  padding-bottom: 1.75em;
+  font-size: 1em; }
 
 .block-list-item h3 {
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  font-size: 1.35em;
+  line-height: 1.25; }
+
+.block-list-item h5 {
+  font-size: 14px;
+  margin-top: .5em;
+  margin-bottom: 0;
+  color: #929292; }
 
 .block-list-item p:last-child {
   margin-bottom: 0; }
@@ -606,10 +625,10 @@ a {
 .block-list--ordered {
   counter-reset: block-list-counter; }
 
-.block-list--ordered li {
+.block-list--ordered > li {
   position: relative;
   padding-left: 70px; }
-  .block-list--ordered li:before {
+  .block-list--ordered > li:before {
     content: counter(block-list-counter);
     counter-increment: block-list-counter;
     position: absolute;
@@ -619,10 +638,33 @@ a {
     height: 52px;
     border-radius: 50%;
     text-align: center;
-    font-size: 2em;
-    line-height: 1.25;
+    font-size: 2.25em;
+    line-height: 1.35;
     background: #D4C098;
     color: white; }
+
+.block-list-item ul {
+  list-style-type: disc;
+  padding-left: 1.4em; }
+
+.block-list-item li {
+  margin: .25em 0; }
+
+.block-list-item hr {
+  margin-top: .75em;
+  margin-bottom: .5em; }
+
+.page-intro--default {
+  background-color: #ADADAD;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white; }
+
+.hero-img {
+  height: 50vw; }
+
+.page-client-experience .hero-img {
+  background-image: url(../uploads/stock-1.jpg); }
 
 .quick-links-section {
   background-color: #F0F0F0;
@@ -633,6 +675,9 @@ a {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: .5em; }
+
+.quick-links-header {
+  font-size: 14px; }
 
 .quick-link {
   margin-bottom: 1em; }
@@ -648,7 +693,9 @@ a {
 .more-link {
   font-size: 1em;
   letter-spacing: .075em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: .8em; }
   @media (min-width: 720px) {
     .more-link {
       font-size: .8em; } }
@@ -723,6 +770,7 @@ a {
     font-size: 1em;
     letter-spacing: .075em;
     text-transform: uppercase;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
     margin-bottom: 3px; }
     @media (min-width: 720px) {
       .footer-nav-item > a {
@@ -737,13 +785,35 @@ a {
     font-weight: 300;
     margin-bottom: 2px; }
 
+.btn {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  border: solid 1px;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  height: 46px;
+  border-radius: 23px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: inline-block;
+  color: inherit; }
+  .btn:focus {
+    outline: none; }
+  .btn.input-white {
+    border-color: white;
+    background-color: white;
+    color: #4A4A4A; }
+
+.btn--large {
+  color: #B89654;
+  margin-top: .5em; }
+
 input[type="email"] {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
   border: solid 1px;
   padding-top: .75em;
   padding-bottom: .75em;
-  height: 2.75em;
-  border-radius: 22px;
+  height: 46px;
+  border-radius: 23px;
   display: block;
   width: 100%;
   padding-left: 1em;
@@ -772,8 +842,8 @@ input[type="submit"] {
   border: solid 1px;
   padding-top: .75em;
   padding-bottom: .75em;
-  height: 2.75em;
-  border-radius: 22px;
+  height: 46px;
+  border-radius: 23px;
   padding-left: 1.5em;
   padding-right: 1.5em;
   -webkit-appearance: none; }
@@ -784,7 +854,7 @@ input[type="submit"] {
     background-color: white;
     color: #4A4A4A; }
 
-.color-purple .page-intro {
+.color-purple .page-intro--default {
   background-color: #83769C; }
 
 .color-purple input[type="submit"].input-white {
@@ -793,7 +863,7 @@ input[type="submit"] {
 .color-purple #footer {
   background-color: #655484; }
 
-.color-blue .page-intro {
+.color-blue .page-intro--default {
   background-color: #658194; }
 
 .color-blue input[type="submit"].input-white {
@@ -802,7 +872,7 @@ input[type="submit"] {
 .color-blue #footer {
   background-color: #3F627A; }
 
-.color-teal .page-intro {
+.color-teal .page-intro--default {
   background-color: #6BAEB7; }
 
 .color-teal input[type="submit"].input-white {
@@ -811,7 +881,7 @@ input[type="submit"] {
 .color-teal #footer {
   background-color: #479AA6; }
 
-.color-green .page-intro {
+.color-green .page-intro--default {
   background-color: #6BA394; }
 
 .color-green input[type="submit"].input-white {
@@ -820,7 +890,7 @@ input[type="submit"] {
 .color-green #footer {
   background-color: #478D7A; }
 
-.color-red .page-intro {
+.color-red .page-intro--default {
   background-color: #C67676; }
 
 .color-red input[type="submit"].input-white {
@@ -829,7 +899,7 @@ input[type="submit"] {
 .color-red #footer {
   background-color: #B85454; }
 
-.color-gold .page-intro {
+.color-gold .page-intro--default {
   background-color: #C6AB76; }
 
 .color-gold input[type="submit"].input-white {

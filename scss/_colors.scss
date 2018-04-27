@@ -34,7 +34,7 @@ $colors: (
   $c2: map-get($colors, $color-name#{-2});
   $c3: map-get($colors, $color-name#{-3});
 
-  .page-intro {
+  .page-intro--default {
     background-color: $c2;
   }
   input[type="submit"].input-white {

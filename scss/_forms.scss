@@ -1,12 +1,13 @@
 
 
+
 @mixin ui-input {
   font-family: $sans;
   border: solid 1px;
   padding-top: .75em;
   padding-bottom: .75em;
-  height: 2.75em;
-  border-radius: 22px;
+  height: 46px;
+  border-radius: 23px;
   &:focus {
     outline: none;
   }
@@ -39,6 +40,18 @@
     background-color: white;
     color: $default;
   }
+}
+
+.btn {
+  @include ui-input;
+  @include ui-button;
+  display: inline-block;
+  color: inherit;
+}
+
+.btn--large {
+  color: $gold-1;
+  margin-top: .5em;
 }
 
 input[type="email"] {

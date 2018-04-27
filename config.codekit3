@@ -23,6 +23,13 @@
 		"oAP": "\/404.html",
 		"oF": 0
 		},
+	"\/client-experience.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/client-experience.html",
+		"oF": 0
+		},
 	"\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -396,6 +403,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/stock-1.jpg": {
+		"ft": 16384,
+		"iS": 102421,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/stock-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		}
 	},

@@ -11,6 +11,10 @@
   margin-bottom: .5em;
 }
 
+.quick-links-header {
+  font-size: 14px;
+}
+
 .quick-link {
   margin-bottom: 1em;
   p {
@@ -27,4 +31,5 @@
 
 .more-link {
   @include header-5;
+  font-size: .8em;
 }
