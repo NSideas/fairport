@@ -1,5 +1,6 @@
 
 // Colors
+$default: #4A4A4A;
 
 $gray-1: #777777;
 $gray-2: #929292;
@@ -34,3 +35,8 @@ $gold-3: #D4C098;
 
 $sans: 'Roboto Condensed', Helvetica, sans-serif;
 $serif: 'EB Garamond', Georgia, serif;
+
+// Media Queries
+$s: 480px;
+$m: 720px;
+$l: 960px;
