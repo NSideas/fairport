@@ -200,6 +200,13 @@
 		"oAP": "\/_header.html",
 		"oF": 0
 		},
+	"\/kit\/client-experience.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/client-experience.html",
+		"oF": 0
+		},
 	"\/kit\/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -237,6 +244,32 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/css\/_colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_footer.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_forms.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -289,6 +322,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/css\/_print.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_quick-links.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_quick-links.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

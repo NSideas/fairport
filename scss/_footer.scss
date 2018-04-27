@@ -1,0 +1,100 @@
+
+
+// Footer
+#footer {
+  min-height: 200px;
+  background-color: $default;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.footer-section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: .5em;
+  .grid-item {
+    margin: 1em 0;
+  }
+  p {
+    margin-bottom: .5em;
+  }
+  a {
+    color: white;
+  }
+  .content-area a {
+    text-decoration: underline;
+  }
+}
+
+$footer-border: solid 2px rgba(black, .25);
+
+.footer-section--top {
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: $footer-border;
+}
+
+.footer-home-link {
+  width: 50%;
+  margin-bottom: 1em;
+  img {
+    max-width: 100%;
+  }
+}
+
+.sm-link-list {
+  margin: 0;
+  padding: .5em 0;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 .25em;
+  }
+}
+
+.form-title {
+  margin-bottom: 0;
+}
+
+.newsletter-signup label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+#footer-nav {
+  ul {
+    margin: 0;
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    display: inline-block;
+    padding: 3px 0;
+  }
+}
+
+.footer-nav-list {
+  padding: 0;
+}
+
+.footer-nav-item {
+  margin-bottom: 1em;
+  & > a {
+    @include header-5;
+    margin-bottom: 3px;
+  }
+}
+
+.footer-sub-nav {
+  padding: .5em 0;
+  border-top: $footer-border;
+  a {
+    opacity: .6;
+    font-size: 1.05em;
+    font-weight: 300;
+    margin-bottom: 2px;
+  }
+}

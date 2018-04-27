@@ -793,6 +793,51 @@ input[type="submit"] {
 .color-purple #footer {
   background-color: #655484; }
 
+.color-blue .page-intro {
+  background-color: #658194; }
+
+.color-blue input[type="submit"].input-white {
+  color: #3F627A; }
+
+.color-blue #footer {
+  background-color: #3F627A; }
+
+.color-teal .page-intro {
+  background-color: #6BAEB7; }
+
+.color-teal input[type="submit"].input-white {
+  color: #479AA6; }
+
+.color-teal #footer {
+  background-color: #479AA6; }
+
+.color-green .page-intro {
+  background-color: #6BA394; }
+
+.color-green input[type="submit"].input-white {
+  color: #478D7A; }
+
+.color-green #footer {
+  background-color: #478D7A; }
+
+.color-red .page-intro {
+  background-color: #C67676; }
+
+.color-red input[type="submit"].input-white {
+  color: #B85454; }
+
+.color-red #footer {
+  background-color: #B85454; }
+
+.color-gold .page-intro {
+  background-color: #C6AB76; }
+
+.color-gold input[type="submit"].input-white {
+  color: #B89654; }
+
+.color-gold #footer {
+  background-color: #B89654; }
+
 .hidden {
   display: none !important; }
 

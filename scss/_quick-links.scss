@@ -1,0 +1,30 @@
+// Quick Links
+.quick-links-section {
+  background-color: $gray-5;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.quick-links-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: .5em;
+}
+
+.quick-link {
+  margin-bottom: 1em;
+  p {
+    font-family: $serif;
+    margin-bottom: .5em;
+  }
+}
+
+.quick-link-title {
+  display: block;
+  font-size: 1.125em;
+  margin-bottom: .5em;
+}
+
+.more-link {
+  @include header-5;
+}

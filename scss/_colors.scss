@@ -1,11 +1,56 @@
-.color-purple {
+
+// Colors
+
+$colors: (
+  purple-1: $purple-1,
+  purple-2: $purple-2,
+  purple-3: $purple-3,
+
+  blue-1: $blue-1,
+  blue-2: $blue-2,
+  blue-3: $blue-3,
+
+  teal-1: $teal-1,
+  teal-2: $teal-2,
+  teal-3: $teal-3,
+
+  green-1: $green-1,
+  green-2: $green-2,
+  green-3: $green-3,
+
+  red-1: $red-1,
+  red-2: $red-2,
+  red-3: $red-3,
+
+  gold-1: $gold-1,
+  gold-2: $gold-2,
+  gold-3: $gold-3
+);
+
+
+@mixin theme-color($color-name) {
+
+  $c1: map-get($colors, $color-name#{-1});
+  $c2: map-get($colors, $color-name#{-2});
+  $c3: map-get($colors, $color-name#{-3});
+
   .page-intro {
-    background-color: $purple-2;
+    background-color: $c2;
   }
   input[type="submit"].input-white {
-    color: $purple-1;
+    color: $c1;
   }
   #footer {
-    background-color: $purple-1;
+    background-color: $c1;
+  }
+
+}
+
+
+$color-list: purple blue teal green red gold;
+
+@each $theme in $color-list {
+  .color-#{$theme} {
+    @include theme-color(#{$theme});
   }
 }

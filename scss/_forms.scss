@@ -1,0 +1,54 @@
+
+
+@mixin ui-input {
+  font-family: $sans;
+  border: solid 1px;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  height: 2.75em;
+  border-radius: 22px;
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin ui-input--text {
+  display: block;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: inherit;
+  &.input-white {
+    background: rgba(white, .15);
+    border-color: rgba(white, .5);
+    &::placeholder {
+      color: rgba(white, .66);
+    }
+    &:focus {
+      border-color: rgba(white, .75);
+      background: rgba(white, .12);
+    }
+  }
+}
+
+@mixin ui-button {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  &.input-white {
+    border-color: white;
+    background-color: white;
+    color: $default;
+  }
+}
+
+input[type="email"] {
+  @include ui-input;
+  @include ui-input--text;
+  margin-bottom: 1em;
+}
+
+input[type="submit"] {
+  @include ui-input;
+  @include ui-button;
+  -webkit-appearance: none;
+}
