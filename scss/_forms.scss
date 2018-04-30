@@ -3,11 +3,13 @@
 
 @mixin ui-input {
   font-family: $sans;
+  font-size: inherit;
   border: solid 1px;
   padding-top: .75em;
   padding-bottom: .75em;
   height: 46px;
   border-radius: 23px;
+  line-height: inherit;
   &:focus {
     outline: none;
   }
@@ -20,13 +22,13 @@
   padding-right: 1em;
   color: inherit;
   &.input-white {
-    background: rgba(white, .15);
+    background: rgba(white, .12);
     border-color: rgba(white, .5);
     &::placeholder {
       color: rgba(white, .66);
     }
     &:focus {
-      border-color: rgba(white, .75);
+      border-color: rgba(white, .85);
       background: rgba(white, .12);
     }
   }
@@ -39,25 +41,14 @@
     border-color: white;
     background-color: white;
     color: $default;
+    opacity: .8;
+    &:focus {
+      opacity: .9;
+    }
   }
 }
 
-.btn {
-  @include ui-input;
-  @include ui-button;
-  display: inline-block;
-  color: inherit;
-  &.gold {
-    color: $gold-1;
-  }
-}
-
-.btn--large {
-  color: $gold-1;
-  margin-top: .5em;
-}
-
-.btn--small {
+@mixin ui-button--small {
   font-size: .9em;
   height: 28px;
   border-radius: 14px;
@@ -66,14 +57,59 @@
   line-height: 1.9;
 }
 
+.btn {
+  @include ui-input;
+  @include ui-button;
+  display: inline-block;
+  color: inherit;
+  transition: all .2s ease;
+  &.gold {
+    color: $gold-1;
+  }
+}
+
+.btn--small {
+  @include ui-button--small;
+}
+
+.btn--large {
+  color: $gold-1;
+  margin-top: .5em;
+}
+
+.btn.gold,
+.btn--large {
+  &:hover {
+    background: $gold-2;
+    color: white;
+  }
+}
+
 input[type="email"] {
   @include ui-input;
   @include ui-input--text;
-  margin-bottom: 1em;
+  margin-bottom: .75em;
 }
 
-input[type="submit"] {
+.btn-submit {
   @include ui-input;
   @include ui-button;
+  display: block;
+  width: 100%;
+  cursor: pointer;
   -webkit-appearance: none;
+  @media (min-width: $m) {
+    @include ui-button--small;
+    width: auto;
+  }
+}
+
+
+input.invalid + input[type="submit"],
+input.invalid + input[type="submit"].input-white {
+  opacity: .5;
+  cursor: default;
+  &:focus {
+    box-shadow: none;
+  }
 }

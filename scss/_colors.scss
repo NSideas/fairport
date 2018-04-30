@@ -39,6 +39,9 @@ $colors: (
   }
   input[type="submit"].input-white {
     color: $c1;
+    &:focus {
+      box-shadow: 0 0 0 2px $c1, 0 0 0 3px white;
+    }
   }
   #footer {
     background-color: $c1;

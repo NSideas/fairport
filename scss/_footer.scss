@@ -2,11 +2,14 @@
 
 // Footer
 #footer {
-  min-height: 200px;
   background-color: $default;
   color: white;
   padding-top: 1em;
   padding-bottom: 1em;
+  @media (min-width: $m) {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
 }
 
 .footer-section {
@@ -33,14 +36,24 @@ $footer-border: solid 2px rgba(black, .25);
   justify-content: center;
   align-items: flex-start;
   border-bottom: $footer-border;
+  @media (min-width: $m) {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer-home-link {
   width: 50%;
   margin-bottom: 1em;
-  img {
-    max-width: 100%;
+  text-align: center;
+  @media (min-width: $m) {
+    width: 160px;
+    margin-bottom: 0;
   }
+}
+
+.footer-home-link img {
+  max-width: 100%;
 }
 
 .sm-link-list {
@@ -49,10 +62,21 @@ $footer-border: solid 2px rgba(black, .25);
   list-style-type: none;
   width: 100%;
   text-align: center;
-  li {
-    display: inline-block;
-    margin: 0 .25em;
+  @media (min-width: $m) {
+    width: 160px;
   }
+}
+
+.sm-link-list li {
+  display: inline-block;
+  margin: 0 .25em;
+  @media (min-width: $m) {
+    margin: 0 .1em;
+  }
+}
+
+.sm-link img {
+  opacity: .35;
 }
 
 .form-title {
