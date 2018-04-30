@@ -617,9 +617,39 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  opacity: 0; }
   #main-nav.open {
-    display: block; }
+    display: block;
+    -webkit-animation: nav-in .2s forwards;
+            animation: nav-in .2s forwards; }
+    #main-nav.open.nav-out {
+      -webkit-animation: nav-out .2s forwards;
+              animation: nav-out .2s forwards; }
+
+@-webkit-keyframes nav-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes nav-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes nav-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes nav-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 #main-nav:after {
   content: '';
@@ -820,8 +850,9 @@ li.block-list-item {
     top: 0;
     left: 0;
     z-index: 0;
+    opacity: .12;
     background-image: url(../img/zig-zag-pattern.png);
-    opacity: .12; }
+    background-size: 25%; }
 
 .hero-img {
   height: 60vw;

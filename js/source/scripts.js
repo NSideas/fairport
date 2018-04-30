@@ -7,21 +7,24 @@ var nav_is_open = false;
 
 function open_nav() {
   main_nav.classList.add('open');
-  document.body.classList.add('nav-open');
+  nav_is_open = true;
 }
 
 function close_nav() {
-  main_nav.classList.remove('open');
-  document.body.classList.remove('nav-open');
+  main_nav.classList.add('nav-out');
+  setTimeout(function(){
+    main_nav.classList.remove('open');
+    main_nav.classList.remove('nav-out');
+  }, 250);
+  nav_is_open = false;
 }
 
 function handle_nav_button_click() {
+  document.body.classList.toggle('nav-open');
   if (!nav_is_open) {
-    open_nav();
-    nav_is_open = true;
+    open_nav();  
   } else {
     close_nav();
-    nav_is_open = false;
   }
 }
 
