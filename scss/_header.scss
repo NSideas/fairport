@@ -2,7 +2,18 @@
 
 // Header
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58px;
+  background: white;
+  z-index: 10;
+}
+
+.header-container-top {
   position: relative;
+  z-index: 10;
   padding-top: .75em;
   padding-bottom: .75em;
   border-bottom: solid 2px $gray-4;
@@ -35,4 +46,19 @@
 
 #main-nav {
   display: none;
+  position: fixed;
+  background: white;
+  height: 100vh;
+  padding-top: 58px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  &.open {
+    display: block;
+  }
+}
+
+body.nav-open {
+  overflow: hidden;
 }

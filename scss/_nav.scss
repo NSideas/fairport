@@ -1,0 +1,80 @@
+
+// Global nav styles
+nav {
+  ul {
+    margin: 0;
+    list-style-type: none;
+  }
+  a {
+    padding: 3px 0;
+  }
+}
+
+.main-nav-item,
+.footer-nav-item {
+  margin-bottom: 1em;
+  & > a {
+    @include header-5;
+    margin-bottom: 3px;
+  }
+}
+
+.sub-nav,
+.footer-sub-nav {
+  a {
+    opacity: .6;
+    font-size: 1.05em;
+    font-weight: 300;
+    margin-bottom: 2px;
+  }
+}
+
+// Header nav styles
+#main-nav a {
+  color: $gray-1;
+}
+
+.main-nav-list {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.main-nav-item a {
+  display: block;
+}
+
+.main-nav-item > a {
+  margin-bottom: 6px;
+  // pointer-events: none;
+}
+
+.sub-nav {
+  border-top: solid 2px rgba(black, .15);
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  li{
+    margin-top: .5em;
+  }
+}
+
+.main-nav-item.expanded {
+  .sub-nav {
+    max-height: none;
+  }
+}
+
+
+// Footer nav styles
+#footer-nav a {
+  color: white;
+  display: inline-block;
+}
+
+.footer-nav-list {
+  padding: 0;
+}
+
+.footer-sub-nav {
+  padding: .5em 0;
+}
