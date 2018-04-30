@@ -1,0 +1,87 @@
+
+// Typography
+
+body {
+  font-family: $sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-family: $serif;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: $serif;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+@mixin header-5 {
+  font-size: 1em;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  font-family: $sans;
+  @media (min-width: $m) {
+    font-size: .8em;
+  }
+}
+
+h5 {
+  @include header-5;
+  font-weight: 400;
+}
+
+a {
+  color: $red-2;
+  text-decoration: none;
+}
+
+.main-content p,
+.main-content li {
+  font-family: $serif;
+  font-size: 18px;
+  strong {
+    font-weight: 500;
+  }
+}
+
+.content-area ul {
+  padding-left: 1.5em;
+}
+.content-area li {
+  margin-bottom: .5em;
+}
+
+.page-title {
+  margin-bottom: .5em;
+}
+
+.section-title {
+  margin-bottom: .5em;
+}
+
+.intro-paragraph {
+  font-family: $serif;
+  font-size: 1.25em;
+}
+
+hr {
+  border: none;
+  background-color: $gray-4;
+}

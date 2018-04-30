@@ -1,0 +1,38 @@
+
+
+// Header
+#header {
+  position: relative;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  border-bottom: solid 2px $gray-4;
+}
+
+.logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/fairport-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#menu-toggle {
+  width: 32px;
+  height: 32px;
+  padding: 8px 4px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  align-content: space-between;
+}
+
+#menu-toggle div {
+  height: 2px;
+  width: 100%;
+  background: $gray-2;
+}
+
+#main-nav {
+  display: none;
+}

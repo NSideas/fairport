@@ -1,0 +1,151 @@
+
+// Page Layout
+.container {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.container-wide {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-content-wrapper {
+  padding-top: 1em;
+}
+
+.main-section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.page-intro {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.breadcrumbs {
+  padding-top: .5em;
+  padding-bottom: .75em;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  @include header-5;
+  font-size: .8em;
+  &:not(.current) a {
+    color: $gray-2;
+  }
+}
+
+.breadcrumb-item:before {
+  content: '/ ';
+}
+
+.full-width-img {
+  height: 50vw;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.full-width-img.image-1 {
+  background-image: url(../uploads/fairport-asset-management-1.jpg);
+}
+
+.grid-item {
+  width: 100%;
+}
+
+
+// Block List
+.block-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  padding-top: .75em;
+}
+
+li.block-list-item {
+  border-top: solid 1px $gray-4;
+  padding-top: .6em;
+  padding-bottom: 1.75em;
+  font-size: 1em;
+}
+
+.block-list-item h3 {
+  margin-bottom: .5em;
+  font-size: 1.35em;
+  line-height: 1.25;
+}
+
+.block-list-item h5 {
+  font-size: 14px;
+  margin-top: .25em;
+  margin-bottom: 0;
+  color: $gray-2;
+}
+
+.block-list-item p:last-child {
+  margin-bottom: 0;
+}
+
+.block-list--ordered {
+  counter-reset: block-list-counter;
+}
+
+.block-list--ordered > li {
+  position: relative;
+  padding-left: 70px;
+  padding-top: 1em;
+  &:before {
+    content: counter(block-list-counter);
+    counter-increment: block-list-counter;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.25em;
+    line-height: 1.35;
+    background: $gold-3;
+    color: white;
+  }
+}
+
+.block-list-item ul {
+  list-style-type: disc;
+  padding-left: 1.4em;
+}
+
+.block-list-item li {
+  margin: .25em 0;
+}
+
+.block-list-item hr {
+  margin-top: .75em;
+  margin-bottom: .5em;
+}
+
+
+// Default Template
+.page-intro--default {
+  @extend .page-intro;
+  background-color: $gray-3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+// About You Template
+.hero-img {
+  height: 60vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-client-experience .hero-img {
+  background-image: url(../uploads/stock-1.jpg);
+}
