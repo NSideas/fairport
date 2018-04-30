@@ -228,6 +228,13 @@
 		"oAP": "\/kit\/_footer.html",
 		"oF": 0
 		},
+	"\/kit\/modules\/_main-nav.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kit\/_main-nav.html",
+		"oF": 0
+		},
 	"\/kit\/modules\/_quick-links.kit": {
 		"cB": 0,
 		"ft": 2048,
