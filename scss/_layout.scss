@@ -137,6 +137,24 @@ li.block-list-item {
   padding-top: 50px;
   padding-bottom: 50px;
   color: white;
+  position: relative;
+  & > .container {
+    position: relative;
+    z-index: 1;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url(../img/zig-zag-pattern.png);
+    opacity: .12;
+  }
+
 }
 
 // About You Template

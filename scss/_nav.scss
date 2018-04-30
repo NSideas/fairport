@@ -24,32 +24,27 @@ nav {
   a {
     opacity: .6;
     font-size: 1.05em;
-    font-weight: 300;
     margin-bottom: 2px;
   }
 }
 
 // Header nav styles
-#main-nav a {
-  color: $gray-1;
-}
-
 .main-nav-list {
   padding-top: 2em;
   padding-bottom: 1em;
 }
 
 .main-nav-item a {
+  color: $gray-1;
   display: block;
 }
 
 .main-nav-item > a {
   margin-bottom: 6px;
-  // pointer-events: none;
 }
 
 .sub-nav {
-  border-top: solid 2px rgba(black, .15);
+  border-top: solid 2px $gray-4;
   max-height: 0;
   overflow: hidden;
   padding: 0;
@@ -77,4 +72,7 @@ nav {
 
 .footer-sub-nav {
   padding: .5em 0;
+  a {
+    font-weight: 300;
+  }
 }

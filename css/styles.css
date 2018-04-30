@@ -572,15 +572,18 @@ hr {
   left: 0;
   width: 100%;
   height: 58px;
-  background: white;
   z-index: 10; }
+
+body {
+  padding-top: 58px; }
 
 .header-container-top {
   position: relative;
   z-index: 10;
   padding-top: .75em;
   padding-bottom: .75em;
-  border-bottom: solid 2px #C9C9C9; }
+  border-bottom: solid 2px #e3e2e2;
+  background: white; }
 
 .logo {
   display: block;
@@ -618,6 +621,11 @@ hr {
   #main-nav.open {
     display: block; }
 
+#main-nav:after {
+  content: '';
+  display: block;
+  height: 100px; }
+
 body.nav-open {
   overflow: hidden; }
 
@@ -647,24 +655,21 @@ nav a {
 .footer-sub-nav a {
   opacity: .6;
   font-size: 1.05em;
-  font-weight: 300;
   margin-bottom: 2px; }
-
-#main-nav a {
-  color: #777777; }
 
 .main-nav-list {
   padding-top: 2em;
   padding-bottom: 1em; }
 
 .main-nav-item a {
+  color: #777777;
   display: block; }
 
 .main-nav-item > a {
   margin-bottom: 6px; }
 
 .sub-nav {
-  border-top: solid 2px rgba(0, 0, 0, 0.15);
+  border-top: solid 2px #C9C9C9;
   max-height: 0;
   overflow: hidden;
   padding: 0; }
@@ -683,6 +688,8 @@ nav a {
 
 .footer-sub-nav {
   padding: .5em 0; }
+  .footer-sub-nav a {
+    font-weight: 300; }
 
 .container {
   padding-left: 1.5em;
@@ -799,7 +806,22 @@ li.block-list-item {
   background-color: #ADADAD;
   padding-top: 50px;
   padding-bottom: 50px;
-  color: white; }
+  color: white;
+  position: relative; }
+  .page-intro--default > .container {
+    position: relative;
+    z-index: 1; }
+  .page-intro--default:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url(../img/zig-zag-pattern.png);
+    opacity: .12; }
 
 .hero-img {
   height: 60vw;
@@ -915,10 +937,20 @@ li.block-list-item {
     border-color: white;
     background-color: white;
     color: #4A4A4A; }
+  .btn.gold {
+    color: #B89654; }
 
 .btn--large {
   color: #B89654;
   margin-top: .5em; }
+
+.btn--small {
+  font-size: .9em;
+  height: 28px;
+  border-radius: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.9; }
 
 input[type="email"] {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
