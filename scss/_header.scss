@@ -8,19 +8,41 @@
   width: 100%;
   height: 58px;
   z-index: 10;
+  @media (min-width: $m) {
+    position: static;
+    height: auto;
+    padding-top: 14px;
+  }
 }
 
 body {
   padding-top: 58px;
+  @media (min-width: $m) {
+    padding-top: 0;
+  }
+}
+
+.header-outer-wrap {
+  @media (min-width: $m) {
+    margin: 0 auto;
+    max-width: 720px;
+  }
 }
 
 .header-container-top {
   position: relative;
   z-index: 10;
-  padding-top: .75em;
-  padding-bottom: .75em;
+  padding: .75em 1em;
   border-bottom: solid 2px lighten($gray-4, 10%);
   background: white;
+  @media (min-width: $m) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 28px;
+    padding-bottom: .5em;
+    max-width: 720px;
+    background: transparent;
+  }
 }
 
 .logo {
@@ -30,6 +52,11 @@ body {
   background-image: url(../img/fairport-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  @media (min-width: $m) {
+    background-image: url(../img/fairport-logo.svg);
+    width: 215px;
+    height: 48px;
+  }
 }
 
 #menu-toggle {
@@ -46,6 +73,9 @@ body {
   height: 2px;
   width: 100%;
   background: $gray-2;
+  @media (min-width: $m) {
+    display: none;
+  }
 }
 
 #main-nav {
@@ -65,6 +95,14 @@ body {
     &.nav-out {
       animation: nav-out .2s forwards;
     }
+  }
+  @media (min-width: $m) {
+    display: block;
+    position: static;
+    opacity: 1;
+    height: auto;
+    overflow-y: hidden;
+    padding-top: 0;
   }
 }
 
@@ -90,8 +128,21 @@ body {
   content: '';
   display: block;
   height: 100px;
+
 }
 
 body.nav-open {
   overflow: hidden;
+}
+
+@media (min-width: $m) {
+  .subscribe-link-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #main-nav:after {
+    display: none;
+    content: none;
+  }
 }

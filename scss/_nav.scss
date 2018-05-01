@@ -31,18 +31,48 @@ nav {
 // Header nav styles
 .nav-container {
   padding-top: 2em;
+  @media (min-width: $m) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
+
 .main-nav-list {
   padding: 2em 0;
+  @media (min-width: $m) {
+    padding: .75em 0;
+  }
+}
+
+.main-nav-item {
+  @media (min-width: $m) {
+    display: inline-block;
+    margin-right: .75em;
+    margin-bottom: 0;
+  }
 }
 
 .main-nav-item a {
   color: $gray-1;
   display: block;
+  @media (min-width: $m) {
+    font-size: .9em;
+    color: $gray-2;
+    letter-spacing: .5px;
+    &:hover {
+      color: $default;
+    }
+  }
 }
 
 .main-nav-item > a {
   margin-bottom: 6px;
+  @media (min-width: $m) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .sub-nav {
@@ -52,6 +82,10 @@ nav {
   padding: 0;
   li{
     margin-top: .5em;
+  }
+  @media (min-width: $m) {
+    border-top: none;
+    position: absolute;
   }
 }
 

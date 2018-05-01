@@ -141,5 +141,37 @@ input:invalid + input[type="submit"].input-white {
     right: 10px;
     top: 7px;
     background-color: $gray-5;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media (min-width: $m) {
+  .search-site {
+    margin-bottom: 0;
+    width: 200px;
+  }
+  .search-site .search-input {
+    margin-bottom: 0;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 3px $gray-1;
+    border-radius: 0;
+    opacity: 0;
+    &:focus {
+      opacity: 1;
+    }
+  }
+  .search-site .search-submit {
+    pointer-events: none;
+    background-color: white;
+  }
+  .search-site {
+    .search-input:focus + .search-submit {
+      // background-color: $gray-5;
+    }
   }
 }

@@ -1,23 +1,6 @@
 
 // Page Layout
-.container {
-  padding-left: 6%;
-  padding-right: 6%;
-  margin-left: auto;
-  margin-right: auto;
-  @media (min-width: $s) {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    max-width: 620px;
-  }
-  @media (min-width: $m) {
-    max-width: 800px;
-  }
-}
-.container-wide {
-  padding-left: 1em;
-  padding-right: 1em;
-}
+
 
 .main-content-wrapper {
   padding-top: 1em;
