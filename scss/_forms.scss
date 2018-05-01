@@ -72,6 +72,20 @@
   @include ui-button--small;
 }
 
+.btn--default {
+  @include ui-button--small;
+  color: $gray-1;
+  border-color: $gray-2;
+  @media (min-width: $m) {
+    font-size: 1em;
+    height: 36px;
+    border-radius: 18px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    line-height: 1.2;
+  }
+}
+
 .btn--large {
   color: $gold-1;
   margin-top: .5em;
@@ -83,6 +97,12 @@
     background: $gold-2;
     color: white;
   }
+}
+
+.btn--default:hover {
+  // background: $gray-1;
+  border-color: $gray-1;
+  color: $default;
 }
 
 input[type="text"],

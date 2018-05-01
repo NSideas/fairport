@@ -339,6 +339,13 @@
 		"oAP": "\/kit\/_quick-links.html",
 		"oF": 0
 		},
+	"\/kit\/news-and-insights.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/news-and-insights.html",
+		"oF": 0
+		},
 	"\/LICENSE.txt": {
 		"cB": 0,
 		"ft": 8192,
