@@ -697,9 +697,11 @@ nav a {
   font-size: 1.05em;
   margin-bottom: 2px; }
 
+.nav-container {
+  padding-top: 2em; }
+
 .main-nav-list {
-  padding-top: 2em;
-  padding-bottom: 1em; }
+  padding: 2em 0; }
 
 .main-nav-item a {
   color: #777777;
@@ -717,9 +719,6 @@ nav a {
     margin-top: .5em; }
 
 .main-nav-item.expanded .sub-nav {
-  max-height: none; }
-
-.main-nav-item > a:focus + .sub-nav {
   max-height: none; }
 
 #footer-nav a {
@@ -1158,7 +1157,9 @@ li.block-list-item {
   background: #C6AB76;
   color: white; }
 
-input[type="email"] {
+input[type="text"],
+input[type="email"],
+input[type="search"] {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: inherit;
   border: solid 1px;
@@ -1173,20 +1174,34 @@ input[type="email"] {
   padding-right: 1em;
   color: inherit;
   margin-bottom: .75em; }
-  input[type="email"]:focus {
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="search"]:focus {
     outline: none; }
-  input[type="email"].input-white {
+  input[type="text"].input-white,
+  input[type="email"].input-white,
+  input[type="search"].input-white {
     background: rgba(255, 255, 255, 0.12);
     border-color: rgba(255, 255, 255, 0.5); }
-    input[type="email"].input-white::-webkit-input-placeholder {
+    input[type="text"].input-white::-webkit-input-placeholder,
+    input[type="email"].input-white::-webkit-input-placeholder,
+    input[type="search"].input-white::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.66); }
-    input[type="email"].input-white:-ms-input-placeholder {
+    input[type="text"].input-white:-ms-input-placeholder,
+    input[type="email"].input-white:-ms-input-placeholder,
+    input[type="search"].input-white:-ms-input-placeholder {
       color: rgba(255, 255, 255, 0.66); }
-    input[type="email"].input-white::-ms-input-placeholder {
+    input[type="text"].input-white::-ms-input-placeholder,
+    input[type="email"].input-white::-ms-input-placeholder,
+    input[type="search"].input-white::-ms-input-placeholder {
       color: rgba(255, 255, 255, 0.66); }
-    input[type="email"].input-white::placeholder {
+    input[type="text"].input-white::placeholder,
+    input[type="email"].input-white::placeholder,
+    input[type="search"].input-white::placeholder {
       color: rgba(255, 255, 255, 0.66); }
-    input[type="email"].input-white:focus {
+    input[type="text"].input-white:focus,
+    input[type="email"].input-white:focus,
+    input[type="search"].input-white:focus {
       border-color: rgba(255, 255, 255, 0.85);
       background: rgba(255, 255, 255, 0.12); }
 
@@ -1224,14 +1239,38 @@ input[type="email"] {
       line-height: 1.9;
       width: auto; } }
 
-input.invalid + input[type="submit"],
-input.invalid + input[type="submit"].input-white {
+input:invalid + input[type="submit"],
+input:invalid + input[type="submit"].input-white {
   opacity: .5;
   cursor: default; }
-  input.invalid + input[type="submit"]:focus,
-  input.invalid + input[type="submit"].input-white:focus {
+  input:invalid + input[type="submit"]:focus,
+  input:invalid + input[type="submit"].input-white:focus {
     -webkit-box-shadow: none;
             box-shadow: none; }
+
+.search-site {
+  position: relative;
+  margin-bottom: 2em; }
+  .search-site .search-input {
+    background: #F0F0F0;
+    border-color: #C9C9C9; }
+    .search-site .search-input:focus {
+      border-color: #ADADAD; }
+  .search-site .search-submit {
+    text-indent: -1000px;
+    -webkit-appearance: none;
+    border: none;
+    padding: 0;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    background-color: #F0F0F0; }
 
 .color-purple .page-intro--default {
   background-color: #83769C; }

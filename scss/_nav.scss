@@ -29,9 +29,11 @@ nav {
 }
 
 // Header nav styles
-.main-nav-list {
+.nav-container {
   padding-top: 2em;
-  padding-bottom: 1em;
+}
+.main-nav-list {
+  padding: 2em 0;
 }
 
 .main-nav-item a {
@@ -59,9 +61,6 @@ nav {
   }
 }
 
-.main-nav-item > a:focus + .sub-nav {
-  max-height: none;
-}
 
 // Footer nav styles
 #footer-nav a {

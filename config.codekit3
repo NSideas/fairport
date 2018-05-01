@@ -95,6 +95,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/fairport-logotype.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/fairport-logotype.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/icn-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -130,6 +140,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/icn-youtube.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/search-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/search-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
