@@ -40,3 +40,8 @@ $serif: 'EB Garamond', Georgia, serif;
 $s: 480px;
 $m: 768px;
 $l: 960px;
+
+// Mixins
+@mixin icon($name) {
+  background-image: url(../img/icons/icn-#{$name}.svg);
+}

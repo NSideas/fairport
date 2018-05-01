@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="80px" viewBox="0 0 82 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="40" cy="40" r="40"></circle>
+    </defs>
+    <g id="Artboard-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="img" transform="translate(2.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="mask" fill="#D4C098" xlink:href="#path-1"></use>
+            <path d="M39.614307,15.2835147 C39.7322362,14.9054951 40.2677638,14.9054951 40.385693,15.2835147 L47.9266981,39.4153772 C48.024434,39.7295858 48.024434,40.0656032 47.9266981,40.379004 L40.385693,64.5108665 C40.2677638,64.8888861 39.7322362,64.8888861 39.614307,64.5108665 L32.0733019,40.379004 C31.975566,40.0656032 31.975566,39.7295858 32.0733019,39.4153772 L39.614307,15.2835147 Z M43.2309362,39.8973521 C43.2309362,38.1130676 41.7842845,36.6664159 40,36.6664159 C38.2157155,36.6664159 36.7690638,38.1130676 36.7690638,39.8973521 C36.7690638,41.6816367 38.2157155,43.1282884 40,43.1282884 C41.7842845,43.1282884 43.2309362,41.6816367 43.2309362,39.8973521 Z" id="Combined-Shape" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(40.000000, 39.897191) rotate(30.000000) translate(-40.000000, -39.897191) "></path>
+        </g>
+    </g>
+</svg>

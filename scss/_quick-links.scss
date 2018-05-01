@@ -3,12 +3,19 @@
   background-color: $gray-5;
   padding-top: 2em;
   padding-bottom: 2em;
+  @media (min-width: $m) {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+  }
 }
 
 .quick-links-list {
   list-style-type: none;
   padding-left: 0;
-  margin-bottom: .5em;
+  padding-top: .5em;
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-content: space-between;
 }
 
 .quick-links-header {
@@ -16,10 +23,24 @@
 }
 
 .quick-link {
-  margin-bottom: 1.5em;
-  p {
-    font-family: $serif;
-    margin-bottom: .5em;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 38px;
+  margin-bottom: 2em;
+  @include icon('star');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 0 0;
+  @media (min-width: $m) {
+    width: 31%;
+  }
+}
+
+.quick-link p {
+  font-family: $serif;
+  margin-bottom: .5em;
+  @media (min-width: $m) {
+    margin-bottom: .75em;
   }
 }
 
@@ -27,9 +48,25 @@
   display: block;
   font-size: 1.125em;
   margin-bottom: .5em;
+  @media (min-width: $m) {
+    margin-bottom: .65em;
+  }
 }
 
 .more-link {
   @include header-5;
   font-size: .8em;
+  font-size: 14px;
+}
+
+.quick-link--announcement {
+  @include icon('bell');
+}
+
+.quick-link--compass {
+  @include icon('compass');
+}
+
+.quick-link--download {
+  @include icon('fifteen');
 }

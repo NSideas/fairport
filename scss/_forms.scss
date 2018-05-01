@@ -154,20 +154,20 @@ input:invalid + input[type="submit"].input-white {
   }
   .search-site .search-input {
     margin-bottom: 0;
-    background: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid 3px $gray-1;
+    background: $gray-5;
+    border: none;
     border-radius: 0;
     opacity: 0;
+    transition: all .2s ease-in-out;
+    // transform: translateX(200px);
     &:focus {
       opacity: 1;
+      transform: translateX(0);
     }
   }
   .search-site .search-submit {
     pointer-events: none;
-    background-color: white;
+    background-color: transparent;
   }
   .search-site {
     .search-input:focus + .search-submit {

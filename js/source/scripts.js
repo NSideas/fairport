@@ -5,6 +5,8 @@ var main_nav = document.getElementById('main-nav');
 var nav_button = document.getElementById('menu-toggle');
 var nav_is_open = false;
 
+var mq_small = window.matchMedia('(min-width: 480px)');
+
 function open_nav() {
   main_nav.classList.add('open');
   nav_is_open = true;
@@ -32,7 +34,9 @@ nav_button.addEventListener('click', handle_nav_button_click);
 
 
 // Sub Nav
-$('.main-nav-item > a').click(function(e) {
-  e.preventDefault();
-  $(this).parent().toggleClass('expanded');
-});
+if (!mq_small.matches) {
+  $('.main-nav-item > a').click(function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('expanded');
+  });
+}

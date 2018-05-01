@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>News/Announcements</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="40" cy="40" r="40"></circle>
+    </defs>
+    <g id="News/Announcements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="mask" fill="#D49898" xlink:href="#path-1"></use>
+        <g id="Bell" mask="url(#mask-2)" fill="#FFFFFF">
+            <g transform="translate(18.000000, 18.000000)">
+                <path d="M22,37 L1.17824324,37 C1.00415311,37 0.834814353,36.9432119 0.695922458,36.8382528 C0.343425156,36.5718744 0.273612001,36.0701765 0.539990412,35.7176792 L3.96718119,31.1824937 C6.19907402,28.2290404 7.64960016,24.760141 8.18442421,21.0970555 L9.19774421,14.1566837 C9.51701075,7.38915736 15.1266582,2 22,2 L22,37 Z" id="Combined-Shape"></path>
+                <path d="M35.0920438,13.9810312 L36.1988409,21.4208705 C36.7130846,24.8775931 38.0434342,28.162073 40.0797171,31.0023071 L43.4719706,35.7338666 C43.5694031,35.8697668 43.6218016,36.0327817 43.6218016,36.2 C43.6218016,36.6418278 43.2636294,37 42.8218016,37 L1.47752228,37 C1.30343216,37 1.1340934,36.9432119 0.995201506,36.8382528 C0.642704205,36.5718744 0.57289105,36.0701765 0.83926946,35.7176792 L4.26646024,31.1824937 C6.49835307,28.2290404 7.94887921,24.760141 8.48370326,21.0970555 L9.49702326,14.1566837 C9.8162898,7.38915736 15.4259372,2 22.299279,2 C29.1130485,2 34.6849339,7.29614479 35.0920438,13.9810312 Z" id="Combined-Shape" transform="translate(22.149640, 19.500000) scale(-1, 1) translate(-22.149640, -19.500000) "></path>
+                <circle id="Oval-4" cx="22" cy="3" r="3"></circle>
+                <circle id="Oval-4" cx="22" cy="36" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
