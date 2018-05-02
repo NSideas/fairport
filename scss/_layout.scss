@@ -407,6 +407,15 @@ li.block-list-item {
       font-size: 1.25em;
     }
   }
+  @media (min-width: $m) {
+    margin-bottom: 2em;
+    .article-title {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.375em;
+    }
+  }
 }
 
 .news-item--featured {
@@ -424,6 +433,7 @@ li.block-list-item {
     }
   }
   @media (min-width: $m) {
+    padding-bottom: 2em;
     .article-title {
       font-size: 2.25em;
     }
@@ -436,6 +446,9 @@ li.block-list-item {
 
 #news-feed {
   padding-top: 2em;
+  @media (min-width: $m) {
+    padding-top: 4em;
+  }
 }
 
 .category-compass {
@@ -452,4 +465,8 @@ li.block-list-item {
 
 .category-perspectives {
   @include icon('perspectives');
+}
+
+.category-other {
+  @include icon('star');
 }
