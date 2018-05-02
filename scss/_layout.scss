@@ -327,7 +327,6 @@ li.block-list-item {
 
 .news-feed-template {
   background-color: $gray-5;
-
   .main-content-wrapper {
     padding: 0;
   }
@@ -350,11 +349,12 @@ li.block-list-item {
     height: 100%;
     background-image: url(../img/zig-zag-pattern.png);
     background-size: 80px;
+    opacity: .5;
   }
 }
 
 #featured-article {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .article-title {
@@ -370,6 +370,15 @@ li.block-list-item {
   background-repeat: no-repeat;
   background-size: 50px;
   padding-top: 58px;
+  background-position: 0 0;
+  @media (min-width: $s) {
+    background-size: 65px;
+    padding-top: 75px;
+  }
+  @media (min-width: $m) {
+    background-size: 80px;
+    padding-top: 95px;
+  }
 }
 
 .news-item p {
@@ -388,6 +397,16 @@ li.block-list-item {
   p {
     font-size: 1em;
   }
+  @media (min-width: $s) {
+    padding-bottom: 2em;
+    .article-title {
+      font-size: 1.25em;
+      margin-top: .25em;
+    }
+    p {
+      font-size: 1.25em;
+    }
+  }
 }
 
 .news-item--featured {
@@ -395,8 +414,42 @@ li.block-list-item {
   p {
     margin-bottom: 1.5em;
   }
+  @media (min-width: $s) {
+    margin: 1em 0;
+    .article-title {
+      font-size: 1.75em;
+    }
+    p {
+      font-size: 1.25em;
+    }
+  }
+  @media (min-width: $m) {
+    .article-title {
+      font-size: 2.25em;
+    }
+    p {
+      font-size: 1.5em;
+      margin-bottom: 2em;
+    }
+  }
 }
 
 #news-feed {
   padding-top: 2em;
+}
+
+.category-compass {
+  @include icon('compass');
+}
+
+.category-fairport-in-15 {
+  @include icon('fifteen');
+}
+
+.category-announcement {
+  @include icon('bell');
+}
+
+.category-perspectives {
+  @include icon('perspectives');
 }

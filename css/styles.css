@@ -535,6 +535,9 @@ h1 {
   font-family: "EB Garamond", Georgia, serif;
   font-size: 2em;
   font-weight: 400; }
+  @media (min-width: 480px) {
+    h1 {
+      font-size: 2.5em; } }
   @media (min-width: 768px) {
     h1 {
       font-size: 3em; } }
@@ -561,6 +564,8 @@ h5 {
 a {
   color: #C67676;
   text-decoration: none; }
+  a:hover {
+    color: #B85454; }
 
 .main-content p,
 .main-content li {
@@ -593,6 +598,9 @@ a {
   font-family: "EB Garamond", Georgia, serif;
   font-size: 1.25em;
   line-height: 1.45; }
+  @media (min-width: 480px) {
+    .intro-paragraph {
+      font-size: 1.33em; } }
   @media (min-width: 768px) {
     .intro-paragraph {
       font-size: 1.5em; } }
@@ -1116,10 +1124,11 @@ li.block-list-item {
     width: 100%;
     height: 100%;
     background-image: url(../img/zig-zag-pattern.png);
-    background-size: 80px; }
+    background-size: 80px;
+    opacity: .5; }
 
 #featured-article {
-  margin-bottom: 50px; }
+  margin-bottom: 80px; }
 
 .article-title {
   font-family: "EB Garamond", Georgia, serif;
@@ -1131,7 +1140,16 @@ li.block-list-item {
   background-image: url(../img/icons/icn-compass.svg);
   background-repeat: no-repeat;
   background-size: 50px;
-  padding-top: 58px; }
+  padding-top: 58px;
+  background-position: 0 0; }
+  @media (min-width: 480px) {
+    .news-item {
+      background-size: 65px;
+      padding-top: 75px; } }
+  @media (min-width: 768px) {
+    .news-item {
+      background-size: 80px;
+      padding-top: 95px; } }
 
 .news-item p {
   color: #929292;
@@ -1146,14 +1164,47 @@ li.block-list-item {
     font-weight: 500; }
   .news-item--default p {
     font-size: 1em; }
+  @media (min-width: 480px) {
+    .news-item--default {
+      padding-bottom: 2em; }
+      .news-item--default .article-title {
+        font-size: 1.25em;
+        margin-top: .25em; }
+      .news-item--default p {
+        font-size: 1.25em; } }
 
 .news-item--featured {
   padding-bottom: .5em; }
   .news-item--featured p {
     margin-bottom: 1.5em; }
+  @media (min-width: 480px) {
+    .news-item--featured {
+      margin: 1em 0; }
+      .news-item--featured .article-title {
+        font-size: 1.75em; }
+      .news-item--featured p {
+        font-size: 1.25em; } }
+  @media (min-width: 768px) {
+    .news-item--featured .article-title {
+      font-size: 2.25em; }
+    .news-item--featured p {
+      font-size: 1.5em;
+      margin-bottom: 2em; } }
 
 #news-feed {
   padding-top: 2em; }
+
+.category-compass {
+  background-image: url(../img/icons/icn-compass.svg); }
+
+.category-fairport-in-15 {
+  background-image: url(../img/icons/icn-fifteen.svg); }
+
+.category-announcement {
+  background-image: url(../img/icons/icn-bell.svg); }
+
+.category-perspectives {
+  background-image: url(../img/icons/icn-perspectives.svg); }
 
 .quick-links-section {
   background-color: #F0F0F0;
