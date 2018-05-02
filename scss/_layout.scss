@@ -8,7 +8,7 @@
 .main-content {
   padding-bottom: 1em;
   @media (min-width: $m) {
-    padding-bottom: 2em;
+    padding-bottom: 2.5em;
   }
 }
 
@@ -26,6 +26,19 @@
 .main-section li {
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.secondary-content-area {
+  background-color: $gray-5;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  h5 {
+    font-size: 14px;
+  }
+  @media (min-width: $m) {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
   }
 }
 
@@ -73,10 +86,6 @@
 
 .grid-item {
   width: 100%;
-  @media (min-width: $m) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
 @media (min-width: $m) {

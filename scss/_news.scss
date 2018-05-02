@@ -58,6 +58,7 @@
 }
 
 .news-item p {
+  font-family: $serif;
   color: $gray-2;
   margin-bottom: 1em;
 }
@@ -145,4 +146,15 @@
 
 .category-other {
   @include icon('star');
+}
+
+.related-news-section {
+  padding-bottom: 0;
+}
+
+.related-news-list {
+  border-bottom: solid 1px $gray-4;
+  .news-item:last-child {
+    // margin-bottom: 0;
+  }
 }

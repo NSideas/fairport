@@ -1,13 +1,4 @@
 // Quick Links
-.quick-links-section {
-  background-color: $gray-5;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  @media (min-width: $m) {
-    padding-top: 3.5em;
-    padding-bottom: 3.5em;
-  }
-}
 
 .quick-links-list {
   list-style-type: none;
@@ -16,10 +7,6 @@
   margin-bottom: 0;
   margin-top: 0;
   justify-content: space-between;
-}
-
-.quick-links-header {
-  font-size: 14px;
 }
 
 .quick-link {

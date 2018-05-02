@@ -5,6 +5,14 @@ body {
   font-family: $sans;
 }
 
+%body-copy {
+  font-family: $serif;
+  font-size: 18px;
+  @media (min-width: $m) {
+    font-size: 21px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -41,6 +49,12 @@ h3 {
   font-weight: 400;
 }
 
+h4 {
+  @extend %body-copy;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
 @mixin header-5 {
   font-size: 1em;
   letter-spacing: .075em;
@@ -63,13 +77,9 @@ a {
 
 .main-content p,
 .main-content li {
-  font-family: $serif;
-  font-size: 18px;
+  @extend %body-copy;
   strong {
     font-weight: 500;
-  }
-  @media (min-width: $m) {
-    font-size: 21px;
   }
 }
 
@@ -78,6 +88,16 @@ a {
 }
 .content-area li {
   margin-bottom: .5em;
+}
+
+.content-area p,
+.content-area ul,
+.content-area ol {
+  & + h2,
+  & + h3,
+  & + h4 {
+    padding-top: 10px;
+  }
 }
 
 .page-title {
