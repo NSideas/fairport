@@ -1,0 +1,148 @@
+
+// News
+
+.news-feed-template {
+  background-color: $gray-5;
+  .main-content-wrapper {
+    padding: 0;
+  }
+  .main-content {
+    padding-bottom: 0;
+  }
+  .breadcrumbs {
+    background: white;
+    padding-top: 1.5em;
+  }
+  .main-section {
+    background-color: white;
+  }
+  .background-pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/zig-zag-pattern.png);
+    background-size: 80px;
+    opacity: .5;
+  }
+}
+
+#featured-article {
+  margin-bottom: 80px;
+}
+
+.article-title {
+  font-family: $serif;
+  margin-bottom: .25em;
+  a {
+    color: inherit;
+  }
+}
+
+.news-item {
+  @include icon('compass');
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-top: 58px;
+  background-position: 0 0;
+  @media (min-width: $s) {
+    background-size: 65px;
+    padding-top: 75px;
+  }
+  @media (min-width: $m) {
+    background-size: 80px;
+    padding-top: 95px;
+  }
+}
+
+.news-item p {
+  color: $gray-2;
+  margin-bottom: 1em;
+}
+
+.news-item--default {
+  padding-bottom: 1em;
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+  .article-title {
+    font-size: 1.125em;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1em;
+  }
+  @media (min-width: $s) {
+    padding-bottom: 2em;
+    .article-title {
+      font-size: 1.25em;
+      margin-top: .25em;
+    }
+    p {
+      font-size: 1.25em;
+    }
+  }
+  @media (min-width: $m) {
+    margin-bottom: 2em;
+    .article-title {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.375em;
+    }
+  }
+}
+
+.news-item--featured {
+  padding-bottom: .5em;
+  p {
+    margin-bottom: 1.5em;
+  }
+  @media (min-width: $s) {
+    margin: 1em 0;
+    .article-title {
+      font-size: 1.75em;
+    }
+    p {
+      font-size: 1.25em;
+    }
+  }
+  @media (min-width: $m) {
+    padding-bottom: 2em;
+    .article-title {
+      font-size: 2.25em;
+    }
+    p {
+      font-size: 1.5em;
+      margin-bottom: 2em;
+    }
+  }
+}
+
+#news-feed {
+  padding-top: 2em;
+  @media (min-width: $m) {
+    padding-top: 4em;
+  }
+}
+
+.category-compass {
+  @include icon('compass');
+}
+
+.category-fairport-in-15 {
+  @include icon('fifteen');
+}
+
+.category-announcement {
+  @include icon('bell');
+}
+
+.category-perspectives {
+  @include icon('perspectives');
+}
+
+.category-other {
+  @include icon('star');
+}
