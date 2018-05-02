@@ -15,6 +15,11 @@
   background-size: 50px;
   padding-top: 58px;
   background-position: 0 0;
+  p {
+    font-family: $serif;
+    color: $gray-2;
+    margin-bottom: 1em;
+  }
   @media (min-width: $s) {
     background-size: 65px;
     padding-top: 75px;
@@ -23,12 +28,6 @@
     background-size: 80px;
     padding-top: 95px;
   }
-}
-
-.news-item p {
-  font-family: $serif;
-  color: $gray-2;
-  margin-bottom: 1em;
 }
 
 .news-item--default {

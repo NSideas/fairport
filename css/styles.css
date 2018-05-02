@@ -1011,6 +1011,98 @@ nav a {
     background-image: url(../img/patterns/zig-zag.png);
     background-size: 80px; }
 
+ul.staff-list {
+  padding: 2em 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+li.team-member {
+  width: 100%;
+  display: block; }
+
+.team-member-link,
+.team-member-link:hover {
+  color: inherit; }
+
+.team-member-photo {
+  display: block;
+  height: auto;
+  border-radius: 50%; }
+
+.job-title {
+  margin-bottom: 0;
+  color: #929292; }
+
+ul.staff-list li.team-member {
+  padding-bottom: 1em;
+  border-bottom: solid 1px #dddddd;
+  margin-bottom: 1em; }
+
+ul.staff-list .team-member-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+ul.staff-list .team-member-photo {
+  width: 80px; }
+
+ul.staff-list .team-member-info {
+  width: calc(100% - 100px);
+  padding-left: 12px; }
+
+ul.staff-list .job-title {
+  font-size: .8em; }
+
+ul.staff-list .team-member-name {
+  margin-bottom: 0;
+  font-size: 1.35em;
+  line-height: 1.2; }
+
+@media (min-width: 480px) {
+  ul.staff-list li.team-member {
+    text-align: center;
+    margin-bottom: 3em;
+    border-bottom: none;
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  ul.staff-list .team-member-link {
+    display: block; }
+  ul.staff-list .team-member-photo {
+    margin: auto;
+    width: 150px; }
+  ul.staff-list .team-member-info {
+    width: auto;
+    padding-left: 0;
+    margin-top: 1.5em; }
+  ul.staff-list .job-title {
+    max-width: 180px;
+    margin: auto; } }
+
+@media (min-width: 768px) {
+  ul.staff-list li.team-member {
+    width: 31%; }
+  ul.staff-list .team-member-photo {
+    width: 200px; }
+  ul.staff-list .job-title {
+    font-size: 14px; }
+  ul.staff-list .team-member-name {
+    font-size: 1.5em; } }
+
 .block-list {
   list-style-type: none;
   margin: 0;
@@ -1155,6 +1247,10 @@ li.block-list-item {
   background-size: 50px;
   padding-top: 58px;
   background-position: 0 0; }
+  .news-item p {
+    font-family: "EB Garamond", Georgia, serif;
+    color: #929292;
+    margin-bottom: 1em; }
   @media (min-width: 480px) {
     .news-item {
       background-size: 65px;
@@ -1163,11 +1259,6 @@ li.block-list-item {
     .news-item {
       background-size: 80px;
       padding-top: 95px; } }
-
-.news-item p {
-  font-family: "EB Garamond", Georgia, serif;
-  color: #929292;
-  margin-bottom: 1em; }
 
 .news-item--default {
   padding-bottom: 1em;
@@ -1599,7 +1690,7 @@ input:invalid + input[type="submit"].input-white {
 .color-purple #footer {
   background-color: #655484; }
 
-.color-purple .pattern-separator {
+.color-purple .pattern-separator.theme-color {
   background-color: #A298B5; }
 
 .color-purple input[type="submit"].input-white {
@@ -1614,7 +1705,7 @@ input:invalid + input[type="submit"].input-white {
 .color-blue #footer {
   background-color: #3F627A; }
 
-.color-blue .pattern-separator {
+.color-blue .pattern-separator.theme-color {
   background-color: #8BA0AF; }
 
 .color-blue input[type="submit"].input-white {
@@ -1629,7 +1720,7 @@ input:invalid + input[type="submit"].input-white {
 .color-teal #footer {
   background-color: #479AA6; }
 
-.color-teal .pattern-separator {
+.color-teal .pattern-separator.theme-color {
   background-color: #90C2C9; }
 
 .color-teal input[type="submit"].input-white {
@@ -1644,7 +1735,7 @@ input:invalid + input[type="submit"].input-white {
 .color-green #footer {
   background-color: #478D7A; }
 
-.color-green .pattern-separator {
+.color-green .pattern-separator.theme-color {
   background-color: #90BAAF; }
 
 .color-green input[type="submit"].input-white {
@@ -1659,7 +1750,7 @@ input:invalid + input[type="submit"].input-white {
 .color-red #footer {
   background-color: #B85454; }
 
-.color-red .pattern-separator {
+.color-red .pattern-separator.theme-color {
   background-color: #D49898; }
 
 .color-red input[type="submit"].input-white {
@@ -1674,7 +1765,7 @@ input:invalid + input[type="submit"].input-white {
 .color-gold #footer {
   background-color: #B89654; }
 
-.color-gold .pattern-separator {
+.color-gold .pattern-separator.theme-color {
   background-color: #D4C098; }
 
 .color-gold input[type="submit"].input-white {

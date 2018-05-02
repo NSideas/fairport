@@ -409,6 +409,13 @@
 		"oAP": "\/news-article.html",
 		"oF": 0
 		},
+	"\/kit\/team.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/team.html",
+		"oF": 0
+		},
 	"\/LICENSE.txt": {
 		"cB": 0,
 		"ft": 8192,
@@ -658,6 +665,13 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/team.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/team.html",
+		"oF": 0
+		},
 	"\/tile-wide.png": {
 		"ft": 32768,
 		"iS": 1854,
@@ -686,6 +700,72 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/uploads\/fairport-asset-management-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/headshot-1.jpg": {
+		"ft": 16384,
+		"iS": 14002,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/headshot-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/headshot-2.jpg": {
+		"ft": 16384,
+		"iS": 14103,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/headshot-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/headshot-3.jpg": {
+		"ft": 16384,
+		"iS": 12411,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/headshot-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/headshot-4.jpg": {
+		"ft": 16384,
+		"iS": 16192,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/headshot-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/headshot-5.jpg": {
+		"ft": 16384,
+		"iS": 15351,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/headshot-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/headshot-6.jpg": {
+		"ft": 16384,
+		"iS": 13871,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/headshot-6.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

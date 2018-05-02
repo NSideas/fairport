@@ -166,3 +166,116 @@
     background-size: 80px;
   }
 }
+
+
+// Our Team
+
+ul.staff-list {
+  padding: 2em 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+li.team-member {
+  width: 100%;
+  display: block;
+}
+
+.team-member-link,
+.team-member-link:hover {
+  color: inherit;
+}
+
+.team-member-photo {
+  display: block;
+  height: auto;
+  border-radius: 50%;
+}
+
+.job-title {
+  margin-bottom: 0;
+  color: $gray-2;
+}
+
+
+@mixin staff-list--small {
+  li.team-member {
+    padding-bottom: 1em;
+    border-bottom: solid 1px #dddddd;
+    margin-bottom: 1em;
+  }
+  .team-member-link {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .team-member-photo {
+    width: 80px;
+  }
+  .team-member-info {
+    width: calc(100% - 100px);
+    padding-left: 12px;
+  }
+  .job-title {
+    font-size: .8em;
+  }
+  .team-member-name {
+    margin-bottom: 0;
+    font-size: 1.35em;
+    line-height: 1.2;
+  }
+}
+
+@mixin staff-list--medium {
+  li.team-member {
+    text-align: center;
+    margin-bottom: 3em;
+    border-bottom: none;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+  }
+  .team-member-link {
+    display: block;
+  }
+  .team-member-photo {
+    margin: auto;
+    width: 150px;
+  }
+  .team-member-info {
+    width: auto;
+    padding-left: 0;
+    margin-top: 1.5em;
+  }
+  .job-title {
+    max-width: 180px;
+    margin: auto;
+  }
+
+}
+
+@mixin staff-list--large {
+  li.team-member {
+    width: 31%;
+  }
+  .team-member-photo {
+    width: 200px;
+  }
+  .job-title {
+    font-size: 14px;
+  }
+  .team-member-name {
+    font-size: 1.5em;
+  }
+}
+
+ul.staff-list {
+  @include staff-list--small;
+  @media (min-width: $s) {
+    @include staff-list--medium;
+  }
+  @media (min-width: $m) {
+    @include staff-list--large;
+  }
+}
