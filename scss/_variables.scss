@@ -45,3 +45,7 @@ $l: 960px;
 @mixin icon($name) {
   background-image: url(../img/icons/icn-#{$name}.svg);
 }
+
+@mixin pattern($name: 'zig-zag') {
+  background-image: url(../img/patterns/#{$name}.png);
+}

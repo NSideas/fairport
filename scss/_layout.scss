@@ -84,6 +84,26 @@
   background-image: url(../uploads/fairport-asset-management-1.jpg);
 }
 
+%pattern-fill {
+  content: '';
+  display: block;
+  height: inherit;
+  @include pattern();
+  background-size: 80px;
+}
+
+.pattern-separator {
+  height: 75px;
+  background-color: $gray-5;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  &:before {
+    @extend %pattern-fill;
+  }
+}
+
+
+// Grid
 .grid-item {
   width: 100%;
 }
@@ -142,7 +162,7 @@
     left: 0;
     z-index: 0;
     opacity: .12;
-    background-image: url(../img/zig-zag-pattern.png);
+    @include pattern();
     background-size: 80px;
   }
 }

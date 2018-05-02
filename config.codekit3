@@ -205,6 +205,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/patterns\/zig-zag.png": {
+		"ft": 32768,
+		"iS": 21012,
+		"oA": 0,
+		"oAP": "\/img\/patterns\/zig-zag.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/search-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -214,17 +225,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/img\/zig-zag-pattern.png": {
-		"ft": 32768,
-		"iS": 21012,
-		"oA": 0,
-		"oAP": "\/img\/zig-zag-pattern.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/index.html": {
 		"cB": 0,
