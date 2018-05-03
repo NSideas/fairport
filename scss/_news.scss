@@ -119,11 +119,13 @@
   @include icon('star');
 }
 
-.related-news-section {
+.related-news-section,
+.recent-news-section {
   padding-bottom: 1em;
 }
 
-.related-news-list {
+.related-news-list,
+.recent-news-list {
   padding-top: 1em;
   border-bottom: solid 1px $gray-4;
   .news-item {
@@ -132,4 +134,8 @@
   @media (min-width: $m) {
     padding-top: 2em;
   }
+}
+
+.recent-news-header {
+  font-size: 14px;
 }

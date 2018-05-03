@@ -61,6 +61,13 @@
 		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
+	"\/history.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/history.html",
+		"oF": 0
+		},
 	"\/icon.png": {
 		"ft": 32768,
 		"iS": 4029,
@@ -335,6 +342,13 @@
 		"oAP": "\/executives.html",
 		"oF": 0
 		},
+	"\/kit\/history.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/history.html",
+		"oF": 0
+		},
 	"\/kit\/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -361,6 +375,13 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/kit\/_quick-links-section.html",
+		"oF": 0
+		},
+	"\/kit\/modules\/_recent-news.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kit\/_recent-news.html",
 		"oF": 0
 		},
 	"\/kit\/modules\/_related-news.kit": {

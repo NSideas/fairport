@@ -809,6 +809,9 @@ hr {
     background-image: url(../img/patterns/zig-zag.png);
     background-size: 80px; }
 
+.home-template .main-content-wrapper {
+  background-color: #F0F0F0; }
+
 #header {
   position: fixed;
   top: 0;
@@ -1519,17 +1522,24 @@ li.team-member {
 .category-other {
   background-image: url(../img/icons/icn-star.svg); }
 
-.related-news-section {
+.related-news-section,
+.recent-news-section {
   padding-bottom: 1em; }
 
-.related-news-list {
+.related-news-list,
+.recent-news-list {
   padding-top: 1em;
   border-bottom: solid 1px #C9C9C9; }
-  .related-news-list .news-item {
+  .related-news-list .news-item,
+  .recent-news-list .news-item {
     margin-top: 0; }
   @media (min-width: 720px) {
-    .related-news-list {
+    .related-news-list,
+    .recent-news-list {
       padding-top: 2em; } }
+
+.recent-news-header {
+  font-size: 14px; }
 
 .quick-links-list {
   list-style-type: none;
