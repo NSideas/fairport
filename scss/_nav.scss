@@ -31,7 +31,7 @@ nav {
 // Header nav styles
 .nav-container {
   padding-top: 2em;
-  @media (min-width: $m) {
+  @media (min-width: $l) {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -41,13 +41,13 @@ nav {
 
 .main-nav-list {
   padding: 2em 0;
-  @media (min-width: $m) {
+  @media (min-width: $l) {
     padding: .75em 0;
   }
 }
 
 .main-nav-item {
-  @media (min-width: $m) {
+  @media (min-width: $l) {
     display: inline-block;
     margin-right: .75em;
     margin-bottom: 0;
@@ -57,7 +57,7 @@ nav {
 .main-nav-item a {
   color: $gray-1;
   display: block;
-  @media (min-width: $m) {
+  @media (min-width: $l) {
     font-size: .9em;
     color: $gray-2;
     letter-spacing: .5px;
@@ -69,7 +69,7 @@ nav {
 
 .main-nav-item > a {
   margin-bottom: 6px;
-  @media (min-width: $m) {
+  @media (min-width: $l) {
     padding: 0;
     margin: 0;
   }
@@ -83,7 +83,7 @@ nav {
   li{
     margin-top: .5em;
   }
-  @media (min-width: $m) {
+  @media (min-width: $l) {
     border-top: none;
     position: absolute;
   }
@@ -110,7 +110,7 @@ nav {
 
 .footer-nav-item {
   @extend .grid-item;
-  @media (min-width: $m) {
+  @media (min-width: $l) {
     font-size: .9em;
   }
 }

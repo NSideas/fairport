@@ -167,7 +167,7 @@ input:invalid + input[type="submit"].input-white {
   }
 }
 
-@media (min-width: $m) {
+@media (min-width: $l) {
   .search-site {
     margin-bottom: 0;
     width: 200px;

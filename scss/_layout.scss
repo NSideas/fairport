@@ -1,6 +1,33 @@
 
 // Page Layout
 
+.container,
+.container-wide {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding-left: 6%;
+  padding-right: 6%;
+  @media (min-width: $s) {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    max-width: 620px;
+  }
+  @media (min-width: $m) {
+    max-width: 700px;
+  }
+  @media (min-width: $l) {
+    max-width: 800px;
+  }
+}
+
+.container-wide {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .main-content-wrapper {
   padding-top: 1em;
 }
@@ -104,35 +131,58 @@
 
 
 // Grid
+
+$gutter: 10px;
+
 .grid-item {
   width: 100%;
 }
 
-@media (min-width: $m) {
-  .grid-item {
-    padding-left: 10px;
-    padding-right: 10px;
+.grid-container {
+  justify-content: space-between;
+}
+
+@mixin grid-2 {
+  & > .grid-item {
+    width: calc(50% - #{$gutter});
   }
-  .grid-item:first-child {
-    padding-left: 0;
-  }
-  .grid-item:last-child {
-    padding-right: 0;
-  }
-  .two-column > .grid-item {
-    width: 50%;
-  }
-  .three-column > .grid-item {
+}
+
+@mixin grid-3 {
+  & > .grid-item {
     width: 33%;
   }
-  .four-column > .grid-item {
-    width: 25%;
+}
+
+@mixin grid-4 {
+  & > .grid-item {
+    width: calc(25% - #{$gutter}*1.5);
   }
-  .four-column > .grid-item:nth-child(4n) {
-    padding-right: 0;
+}
+
+@media (min-width: $m) {
+  .two-column {
+    @include grid-2;
   }
-  .four-column > .grid-item:nth-child(4n + 1) {
-    padding-left: 0;
+  .three-column {
+    @include grid-3;
+  }
+  .four-column {
+    @include grid-4;
+  }
+}
+
+@media (min-width: 600px) {
+  .two-column--medium {
+
+    @include grid-2;
+  }
+}
+
+@media (min-width: $l) {
+  .four-column--large {
+    @include grid-4;
+
   }
 }
 
