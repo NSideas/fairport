@@ -37,11 +37,6 @@ li.block-list-item {
   margin-bottom: 0;
 }
 
-.block-list .left-column,
-.block-list .right-column {
-  @extend .grid-item;
-}
-
 .block-list--ordered {
   counter-reset: block-list-counter;
 }

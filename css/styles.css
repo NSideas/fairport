@@ -447,6 +447,9 @@ template {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
 
+.no-scroll {
+  overflow: hidden; }
+
 *,
 *:before,
 *:after {
@@ -502,12 +505,12 @@ body {
   font-family: "Roboto Condensed", Helvetica, sans-serif; }
 
 h4, .main-content p,
-.main-content li {
+.main-content li, .team-bio-content p {
   font-family: "EB Garamond", Georgia, serif;
   font-size: 18px; }
   @media (min-width: 720px) {
     h4, .main-content p,
-    .main-content li {
+    .main-content li, .team-bio-content p {
       font-size: 21px; } }
 
 h1,
@@ -712,8 +715,14 @@ hr {
   margin-top: 1em;
   margin-bottom: 2em; }
 
-.grid-item, .footer-nav-item, .block-list .left-column,
-.block-list .right-column {
+.x-button {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/x-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.grid-item, .footer-nav-item {
   width: 100%; }
 
 .grid-container {
@@ -722,24 +731,19 @@ hr {
           justify-content: space-between; }
 
 @media (min-width: 720px) {
-  .two-column > .grid-item, .two-column > .footer-nav-item, .block-list .two-column > .left-column,
-  .block-list .two-column > .right-column {
+  .two-column > .grid-item, .two-column > .footer-nav-item {
     width: calc(50% - 10px); }
-  .three-column > .grid-item, .three-column > .footer-nav-item, .block-list .three-column > .left-column,
-  .block-list .three-column > .right-column {
+  .three-column > .grid-item, .three-column > .footer-nav-item {
     width: 33%; }
-  .four-column > .grid-item, .four-column > .footer-nav-item, .block-list .four-column > .left-column,
-  .block-list .four-column > .right-column {
+  .four-column > .grid-item, .four-column > .footer-nav-item {
     width: calc(25% - 10px*1.5); } }
 
 @media (min-width: 600px) {
-  .two-column--medium > .grid-item, .two-column--medium > .footer-nav-item, .block-list .two-column--medium > .left-column,
-  .block-list .two-column--medium > .right-column {
+  .two-column--medium > .grid-item, .two-column--medium > .footer-nav-item {
     width: calc(50% - 10px); } }
 
 @media (min-width: 840px) {
-  .four-column--large > .grid-item, .four-column--large > .footer-nav-item, .block-list .four-column--large > .left-column,
-  .block-list .four-column--large > .right-column {
+  .four-column--large > .grid-item, .four-column--large > .footer-nav-item {
     width: calc(25% - 10px*1.5); } }
 
 .page-intro--default {
@@ -784,7 +788,8 @@ li.team-member {
 .team-member-link:hover {
   color: inherit; }
 
-.team-member-photo {
+.team-member-photo,
+.team-bio-photo {
   display: block;
   height: auto;
   border-radius: 50%; }
@@ -793,12 +798,12 @@ li.team-member {
   margin-bottom: 0;
   color: #929292; }
 
-ul.staff-list li.team-member {
+li.team-member {
   padding-bottom: 1em;
   border-bottom: solid 1px #dddddd;
   margin-bottom: 1em; }
 
-ul.staff-list .team-member-link {
+.team-member-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,23 +815,23 @@ ul.staff-list .team-member-link {
       -ms-flex-align: center;
           align-items: center; }
 
-ul.staff-list .team-member-photo {
+.team-member-photo {
   width: 80px; }
 
-ul.staff-list .team-member-info {
+.team-member-info {
   width: calc(100% - 100px);
   padding-left: 12px; }
 
-ul.staff-list .job-title {
+.job-title {
   font-size: .8em; }
 
-ul.staff-list .team-member-name {
+.team-member-name {
   margin-bottom: 0;
   font-size: 1.35em;
   line-height: 1.2; }
 
 @media (min-width: 480px) {
-  ul.staff-list li.team-member {
+  li.team-member {
     text-align: center;
     margin-bottom: 3em;
     border-bottom: none;
@@ -837,28 +842,73 @@ ul.staff-list .team-member-name {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  ul.staff-list .team-member-link {
+    li.team-member .job-title {
+      max-width: 180px;
+      margin: auto; }
+  .team-member-link {
     display: block; }
-  ul.staff-list .team-member-photo {
+  .team-member-photo {
     margin: auto;
     width: 150px; }
-  ul.staff-list .team-member-info {
+  .team-member-info {
     width: auto;
     padding-left: 0;
-    margin-top: 1.5em; }
-  ul.staff-list .job-title {
-    max-width: 180px;
-    margin: auto; } }
+    margin-top: 1.5em; } }
 
-@media (min-width: 720px) {
-  ul.staff-list li.team-member {
+@media (min-width: 840px) {
+  li.team-member {
     width: 31%; }
-  ul.staff-list .team-member-photo {
+  .team-member-photo {
     width: 200px; }
-  ul.staff-list .job-title {
+  .job-title {
     font-size: 14px; }
-  ul.staff-list .team-member-name {
+  .team-member-name {
     font-size: 1.5em; } }
+
+.team-bio-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 58px;
+  overflow-y: scroll;
+  display: none; }
+  .team-bio-container.active {
+    display: block; }
+
+.team-bio-module {
+  background-color: #F0F0F0;
+  padding: 1em 6%;
+  podition: relative; }
+  .team-bio-module header {
+    padding-bottom: 1em;
+    text-align: center; }
+  .team-bio-module .x-button {
+    position: absolute;
+    right: 1.33em;
+    opacity: .5; }
+
+.team-bio-inner-wrap {
+  padding-bottom: 80px; }
+
+.team-bio-photo {
+  width: 150px;
+  margin: 1.25em auto; }
+
+.team-bio-name {
+  font-size: 1.75em;
+  margin-top: .1em;
+  margin-bottom: .25em; }
+
+.team-bio-contact {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #929292; }
+
+.close-link-container {
+  text-align: center;
+  padding-top: 2em; }
 
 #header {
   position: fixed;
@@ -988,9 +1038,6 @@ body {
   content: '';
   display: block;
   height: 100px; }
-
-body.nav-open {
-  overflow: hidden; }
 
 @media (min-width: 840px) {
   .subscribe-link-container {
@@ -1414,8 +1461,7 @@ li.block-list-item {
   padding-top: 1em;
   padding-bottom: 1em;
   margin-bottom: .5em; }
-  .footer-section .grid-item, .footer-section .footer-nav-item, .footer-section .block-list .left-column, .block-list .footer-section .left-column,
-  .footer-section .block-list .right-column, .block-list .footer-section .right-column {
+  .footer-section .grid-item, .footer-section .footer-nav-item {
     margin: 1em 0; }
   .footer-section p {
     margin-bottom: .5em; }

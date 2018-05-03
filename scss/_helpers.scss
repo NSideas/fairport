@@ -60,3 +60,7 @@
   display: flex;
   flex-flow: row wrap;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

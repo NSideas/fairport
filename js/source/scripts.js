@@ -22,7 +22,7 @@ function close_nav() {
 }
 
 function handle_nav_button_click() {
-  document.body.classList.toggle('nav-open');
+  document.body.classList.toggle('no-scroll');
   if (!nav_is_open) {
     open_nav();
   } else {
@@ -40,3 +40,22 @@ if (!mq_small.matches) {
     $(this).parent().toggleClass('expanded');
   });
 }
+
+
+// Team Bio
+$('.team-member-link').click(function(e) {
+  e.preventDefault();
+  var team_member = $(this).attr('href');
+  $(team_member).addClass('active');
+  $('body').addClass('no-scroll');
+});
+
+function close_active_team_bio() {
+  $('.team-bio-container.active').removeClass('active');
+  $('body').removeClass('no-scroll');
+}
+
+
+$('.close-bio').click(function() {
+  close_active_team_bio();
+});

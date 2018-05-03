@@ -129,6 +129,14 @@
   }
 }
 
+.x-button {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/x-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 // Grid
 
@@ -237,7 +245,8 @@ li.team-member {
   color: inherit;
 }
 
-.team-member-photo {
+.team-member-photo,
+.team-bio-photo  {
   display: block;
   height: auto;
   border-radius: 50%;
@@ -249,35 +258,34 @@ li.team-member {
 }
 
 
-@mixin staff-list--small {
-  li.team-member {
-    padding-bottom: 1em;
-    border-bottom: solid 1px #dddddd;
-    margin-bottom: 1em;
-  }
-  .team-member-link {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
-  .team-member-photo {
-    width: 80px;
-  }
-  .team-member-info {
-    width: calc(100% - 100px);
-    padding-left: 12px;
-  }
-  .job-title {
-    font-size: .8em;
-  }
-  .team-member-name {
-    margin-bottom: 0;
-    font-size: 1.35em;
-    line-height: 1.2;
-  }
+li.team-member {
+  padding-bottom: 1em;
+  border-bottom: solid 1px #dddddd;
+  margin-bottom: 1em;
+}
+.team-member-link {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.team-member-photo {
+  width: 80px;
+}
+.team-member-info {
+  width: calc(100% - 100px);
+  padding-left: 12px;
+}
+.job-title {
+  font-size: .8em;
+}
+.team-member-name {
+  margin-bottom: 0;
+  font-size: 1.35em;
+  line-height: 1.2;
 }
 
-@mixin staff-list--medium {
+
+@media (min-width: $s) {
   li.team-member {
     text-align: center;
     margin-bottom: 3em;
@@ -285,6 +293,10 @@ li.team-member {
     width: 48%;
     display: flex;
     justify-content: center;
+    .job-title {
+      max-width: 180px;
+      margin: auto;
+    }
   }
   .team-member-link {
     display: block;
@@ -298,14 +310,10 @@ li.team-member {
     padding-left: 0;
     margin-top: 1.5em;
   }
-  .job-title {
-    max-width: 180px;
-    margin: auto;
-  }
 
 }
 
-@mixin staff-list--large {
+@media (min-width: $l) {
   li.team-member {
     width: 31%;
   }
@@ -320,12 +328,67 @@ li.team-member {
   }
 }
 
-ul.staff-list {
-  @include staff-list--small;
-  @media (min-width: $s) {
-    @include staff-list--medium;
+
+.team-bio-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 58px;
+  overflow-y: scroll;
+  display: none;
+  &.active {
+    display: block;
   }
-  @media (min-width: $m) {
-    @include staff-list--large;
+}
+
+.team-bio-module {
+  background-color: $gray-5;
+  padding: 1em 6%;
+  podition: relative;
+  header {
+    padding-bottom: 1em;
+    text-align: center;
   }
+  .x-button {
+    position: absolute;
+    right: 1.33em;
+    opacity: .5;
+  }
+}
+
+.team-bio-inner-wrap {
+  // padding-left: .5em;
+  // padding-right: .5em;
+  padding-bottom: 80px;
+}
+
+.team-bio-photo {
+  width: 150px;
+  margin: 1.25em auto;
+}
+
+.team-bio-name {
+  font-size: 1.75em;
+  margin-top: .1em;
+  margin-bottom: .25em;
+}
+
+.team-bio-contact {
+  // text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $gray-2;
+  // margin-bottom: 0;
+}
+
+
+.team-bio-content p {
+  @extend %body-copy;
+}
+
+.close-link-container {
+  text-align: center;
+  padding-top: 2em;
 }
