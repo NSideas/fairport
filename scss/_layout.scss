@@ -333,20 +333,28 @@ li.team-member {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
   width: 100%;
   height: 100vh;
   padding-top: 58px;
   overflow-y: scroll;
   display: none;
-  &.active {
+  opacity: 0;
+  &.active{
     display: block;
+    animation: fade-in .2s forwards;
+    &.fade-out {
+      animation: fade-out .2s forwards;
+    }
   }
 }
 
 .team-bio-module {
   background-color: $gray-5;
+  // background-color: rgba($gray-5, .95);
   padding: 1em 6%;
-  podition: relative;
+  position: relative;
+  transition: transform .2s ease-in-out;
   header {
     padding-bottom: 1em;
     text-align: center;
@@ -358,9 +366,15 @@ li.team-member {
   }
 }
 
+.team-bio-module,
+.active.fade-out .team-bio-module {
+  // transform: translateX(60px);
+}
+.active .team-bio-module {
+  // transform: translateX(0);
+}
+
 .team-bio-inner-wrap {
-  // padding-left: .5em;
-  // padding-right: .5em;
   padding-bottom: 80px;
 }
 
@@ -391,4 +405,8 @@ li.team-member {
 .close-link-container {
   text-align: center;
   padding-top: 2em;
+}
+
+.close-bio {
+  cursor: pointer;
 }

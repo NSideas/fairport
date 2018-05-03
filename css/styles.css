@@ -869,18 +869,29 @@ li.team-member {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
   width: 100%;
   height: 100vh;
   padding-top: 58px;
   overflow-y: scroll;
-  display: none; }
+  display: none;
+  opacity: 0; }
   .team-bio-container.active {
-    display: block; }
+    display: block;
+    -webkit-animation: fade-in .2s forwards;
+            animation: fade-in .2s forwards; }
+    .team-bio-container.active.fade-out {
+      -webkit-animation: fade-out .2s forwards;
+              animation: fade-out .2s forwards; }
 
 .team-bio-module {
   background-color: #F0F0F0;
   padding: 1em 6%;
-  podition: relative; }
+  position: relative;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
   .team-bio-module header {
     padding-bottom: 1em;
     text-align: center; }
@@ -909,6 +920,9 @@ li.team-member {
 .close-link-container {
   text-align: center;
   padding-top: 2em; }
+
+.close-bio {
+  cursor: pointer; }
 
 #header {
   position: fixed;
@@ -996,11 +1010,11 @@ body {
   opacity: 0; }
   #main-nav.open {
     display: block;
-    -webkit-animation: nav-in .2s forwards;
-            animation: nav-in .2s forwards; }
+    -webkit-animation: fade-in .2s forwards;
+            animation: fade-in .2s forwards; }
     #main-nav.open.nav-out {
-      -webkit-animation: nav-out .2s forwards;
-              animation: nav-out .2s forwards; }
+      -webkit-animation: fade-out .2s forwards;
+              animation: fade-out .2s forwards; }
   @media (min-width: 840px) {
     #main-nav {
       display: block;
@@ -1010,25 +1024,25 @@ body {
       overflow-y: hidden;
       padding-top: 0; } }
 
-@-webkit-keyframes nav-in {
+@-webkit-keyframes fade-in {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
 
-@keyframes nav-in {
+@keyframes fade-in {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
 
-@-webkit-keyframes nav-out {
+@-webkit-keyframes fade-out {
   from {
     opacity: 1; }
   to {
     opacity: 0; } }
 
-@keyframes nav-out {
+@keyframes fade-out {
   from {
     opacity: 1; }
   to {

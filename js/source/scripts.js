@@ -50,12 +50,16 @@ $('.team-member-link').click(function(e) {
   $('body').addClass('no-scroll');
 });
 
-function close_active_team_bio() {
-  $('.team-bio-container.active').removeClass('active');
+function close_active_team_bio(active_team_bio) {
   $('body').removeClass('no-scroll');
+  active_team_bio.addClass('fade-out');
+  setTimeout(function(){
+    active_team_bio.removeClass('active');
+    active_team_bio.removeClass('fade-out');
+  }, 250);
 }
 
 
 $('.close-bio').click(function() {
-  close_active_team_bio();
+  close_active_team_bio($(this).closest('.team-bio-container'));
 });

@@ -94,9 +94,9 @@ body {
   opacity: 0;
   &.open {
     display: block;
-    animation: nav-in .2s forwards;
+    animation: fade-in .2s forwards;
     &.nav-out {
-      animation: nav-out .2s forwards;
+      animation: fade-out .2s forwards;
     }
   }
   @media (min-width: $l) {
@@ -109,7 +109,7 @@ body {
   }
 }
 
-@keyframes nav-in {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -118,7 +118,7 @@ body {
   }
 }
 
-@keyframes nav-out {
+@keyframes fade-out {
   from {
     opacity: 1;
   }
