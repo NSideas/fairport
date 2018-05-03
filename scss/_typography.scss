@@ -120,6 +120,12 @@ a {
   margin-bottom: .5em;
 }
 
+.page-subtitle {
+  font-size: 14px;
+  color: $gray-2;
+  margin-bottom: 0;
+}
+
 .section-title {
   margin-bottom: .5em;
   @media (min-width: $m) {

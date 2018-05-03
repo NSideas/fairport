@@ -247,5 +247,13 @@ $gutter: 10px;
 .home-template {
   .main-content-wrapper {
     background-color: $gray-5;
+    padding-top: 0;
   }
+  .page-title {
+    line-height: 1.1;
+  }
+}
+
+.inspiring-families {
+  background-color: white;
 }

@@ -600,6 +600,11 @@ a {
 .page-title {
   margin-bottom: .5em; }
 
+.page-subtitle {
+  font-size: 14px;
+  color: #929292;
+  margin-bottom: 0; }
+
 .section-title {
   margin-bottom: .5em; }
   @media (min-width: 720px) {
@@ -810,7 +815,14 @@ hr {
     background-size: 80px; }
 
 .home-template .main-content-wrapper {
-  background-color: #F0F0F0; }
+  background-color: #F0F0F0;
+  padding-top: 0; }
+
+.home-template .page-title {
+  line-height: 1.1; }
+
+.inspiring-families {
+  background-color: white; }
 
 #header {
   position: fixed;
