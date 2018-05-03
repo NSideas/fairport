@@ -45,8 +45,13 @@ h2 {
 
 h3 {
   font-family: $serif;
-  font-size: 1.25em;
+  font-size: 1.35em;
+  line-height: 1.25;
   font-weight: 400;
+  margin-bottom: .25em;
+  @media (min-width: $m) {
+    font-size: 1.6em;
+  }
 }
 
 h4 {
@@ -90,6 +95,11 @@ a {
   margin-bottom: .5em;
 }
 
+.content-area .grid-item li {
+  font-size: 18px;
+  line-height: 1.55;
+}
+
 .content-area p,
 .content-area ul,
 .content-area ol {
@@ -98,6 +108,12 @@ a {
   & + h4 {
     padding-top: 10px;
   }
+}
+
+.content-area h5 {
+  font-size: 14px;
+  color: $gray-2;
+  margin-bottom: .5em;
 }
 
 .page-title {
@@ -109,6 +125,12 @@ a {
   @media (min-width: $m) {
     margin-bottom: .75em;
   }
+}
+
+.section-title.underlined {
+  padding-bottom: .1em;
+  border-bottom: solid 1px $gray-4;
+  margin-bottom: 1em;
 }
 
 .intro-paragraph {
@@ -126,4 +148,12 @@ a {
 hr {
   border: none;
   background-color: $gray-4;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
 }

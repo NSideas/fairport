@@ -426,6 +426,13 @@
 		"oAP": "\/news-article.html",
 		"oF": 0
 		},
+	"\/kit\/our-approach.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/our-approach.html",
+		"oF": 0
+		},
 	"\/kit\/team.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -613,6 +620,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/css\/_normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_our-team.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_our-team.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

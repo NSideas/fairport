@@ -1,0 +1,244 @@
+
+
+// Our Team
+
+ul.staff-list {
+  padding: 2em 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+li.team-member {
+  width: 100%;
+  display: block;
+}
+
+.team-member-link,
+.team-member-link:hover {
+  color: inherit;
+}
+
+.team-member-photo,
+.team-bio-photo  {
+  display: block;
+  height: auto;
+  border-radius: 50%;
+}
+
+.job-title {
+  margin-bottom: 0;
+  color: $gray-2;
+}
+
+
+li.team-member {
+  padding-bottom: 1em;
+  border-bottom: solid 1px #dddddd;
+  margin-bottom: 1em;
+}
+.team-member-link {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.team-member-photo {
+  width: 80px;
+}
+.team-member-info {
+  width: calc(100% - 100px);
+  padding-left: 12px;
+}
+.job-title {
+  font-size: .8em;
+}
+.team-member-name {
+  margin-bottom: 0;
+  font-size: 1.35em;
+  line-height: 1.2;
+}
+
+
+@media (min-width: $s) {
+  li.team-member {
+    text-align: center;
+    margin-bottom: 3em;
+    border-bottom: none;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    .job-title {
+      max-width: 180px;
+      margin: auto;
+    }
+  }
+  .team-member-link {
+    display: block;
+  }
+  .team-member-photo {
+    margin: auto;
+    width: 150px;
+  }
+  .team-member-info {
+    width: auto;
+    padding-left: 0;
+    margin-top: 1.5em;
+  }
+
+}
+
+@media (min-width: $l) {
+  li.team-member {
+    width: 31%;
+  }
+  .team-member-photo {
+    width: 200px;
+  }
+  .job-title {
+    font-size: 14px;
+  }
+  .team-member-name {
+    font-size: 1.5em;
+  }
+}
+
+
+// Team Member Single
+
+.team-bio-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(black, .5);
+  padding-top: 58px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  opacity: 0;
+  @media (min-width: $s) {
+    padding: 2em;
+  }
+  @media (min-width: $l) {
+    z-index: 20;
+  }
+}
+
+.team-bio-module {
+  background-color: $gray-5;
+  padding: 1em 6%;
+  max-width: 560px;
+  position: relative;
+  opacity: 0;
+  transition: all .3s .1s ease-in-out;
+  @media (min-width: $s) {
+    margin-top: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 6px rgba(black, .15);
+  }
+  @media (min-width: $m) {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+  }
+  @media (min-width: $l) {
+    margin-bottom: 2vh;
+  }
+}
+
+.team-bio-container.active {
+  display: block;
+  animation: fade-in .25s forwards;
+  &.fade-out {
+    animation: fade-out .25s forwards;
+  }
+}
+
+.active .team-bio-module {
+  opacity: 1;
+}
+
+@media (min-width: $l) {
+  .team-bio-module {
+    transform: translateY(20px);
+  }
+  .active .team-bio-module {
+    transform: translateY(0);
+  }
+}
+
+.team-bio-inner-wrap {
+  padding-bottom: 80px;
+  @media (min-width: $s) {
+    padding-bottom: 40px;
+  }
+}
+
+.team-bio-module header {
+  padding: 1em 0;
+  text-align: center;
+}
+
+.team-bio-module .x-button {
+  position: absolute;
+  top: 1.33em;
+  right: 1.33em;
+  opacity: .5;
+}
+
+.team-bio-photo {
+  width: 150px;
+  margin: 1.25em auto;
+}
+
+.team-bio-name {
+  font-size: 1.75em;
+  margin-top: .1em;
+  margin-bottom: .25em;
+  @media (min-width: $s) {
+    font-size: 2em;
+  }
+}
+
+.team-bio-contact {
+  font-size: 14px;
+  line-height: 1.6;
+  color: $gray-2;
+}
+
+.team-bio-content p {
+  @extend %body-copy;
+}
+
+.close-link-container {
+  text-align: center;
+  padding-top: 2em;
+  @media (min-width: $l) {
+    display: none;
+  }
+}
+
+.close-bio {
+  cursor: pointer;
+}
+
+@media (min-width: $m) {
+  .team-bio-module {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+  }
+  .team-bio-module header {
+    text-align: left;
+  }
+  .team-bio-photo {
+    margin-left: 0;
+    width: 82px;
+  }
+  .team-bio-name {
+    font-size: 2.25em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
