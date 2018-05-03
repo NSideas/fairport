@@ -821,17 +821,17 @@ hr {
   z-index: 10; }
   @media (min-width: 840px) {
     #header {
-      position: relative;
       background: white;
-      height: auto;
+      height: 145px;
       padding-top: 14px;
-      border-bottom: solid 2px #C9C9C9; } }
+      -webkit-box-shadow: 0 2px 0 rgba(173, 173, 173, 0.6);
+              box-shadow: 0 2px 0 rgba(173, 173, 173, 0.6); } }
 
 body {
   padding-top: 58px; }
   @media (min-width: 840px) {
     body {
-      padding-top: 0; } }
+      padding-top: 145px; } }
 
 @media (min-width: 840px) {
   .header-outer-wrap {

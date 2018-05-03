@@ -9,18 +9,17 @@
   height: 58px;
   z-index: 10;
   @media (min-width: $l) {
-    position: relative;
     background: white;
-    height: auto;
+    height: 145px;
     padding-top: 14px;
-    border-bottom: solid 2px $gray-4;
+    box-shadow: 0 2px 0 rgba($gray-3, .6);
   }
 }
 
 body {
   padding-top: 58px;
   @media (min-width: $l) {
-    padding-top: 0;
+    padding-top: 145px;
   }
 }
 
