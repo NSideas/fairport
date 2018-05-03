@@ -329,6 +329,8 @@ li.team-member {
 }
 
 
+// Team Member Single
+
 .team-bio-container {
   position: fixed;
   top: 0;
@@ -336,46 +338,80 @@ li.team-member {
   z-index: 5;
   width: 100%;
   height: 100vh;
+  background-color: rgba(black, .5);
   padding-top: 58px;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   display: none;
   opacity: 0;
-  &.active{
-    display: block;
-    animation: fade-in .2s forwards;
-    &.fade-out {
-      animation: fade-out .2s forwards;
-    }
+  @media (min-width: $s) {
+    padding: 2em;
+  }
+  @media (min-width: $l) {
+    z-index: 20;
   }
 }
 
 .team-bio-module {
   background-color: $gray-5;
-  // background-color: rgba($gray-5, .95);
   padding: 1em 6%;
+  max-width: 560px;
   position: relative;
-  transition: transform .2s ease-in-out;
-  header {
-    padding-bottom: 1em;
-    text-align: center;
+  opacity: 0;
+  transition: all .3s .1s ease-in-out;
+  @media (min-width: $s) {
+    margin-top: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(black, .16);
   }
-  .x-button {
-    position: absolute;
-    right: 1.33em;
-    opacity: .5;
+  @media (min-width: $m) {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+  }
+  @media (min-width: $l) {
+    margin-bottom: 2vh;
   }
 }
 
-.team-bio-module,
-.active.fade-out .team-bio-module {
-  // transform: translateX(60px);
+.team-bio-container.active {
+  display: block;
+  animation: fade-in .25s forwards;
+  &.fade-out {
+    animation: fade-out .25s forwards;
+  }
 }
+
 .active .team-bio-module {
-  // transform: translateX(0);
+  opacity: 1;
+}
+
+@media (min-width: $l) {
+  .team-bio-module {
+    transform: translateY(20px);
+  }
+  .active .team-bio-module {
+    transform: translateY(0);
+  }
 }
 
 .team-bio-inner-wrap {
   padding-bottom: 80px;
+  @media (min-width: $s) {
+    padding-bottom: 40px;
+  }
+}
+
+.team-bio-module header {
+  padding: 1em 0;
+  text-align: center;
+}
+
+.team-bio-module .x-button {
+  position: absolute;
+  top: 1.33em;
+  right: 1.33em;
+  opacity: .5;
 }
 
 .team-bio-photo {
@@ -387,16 +423,16 @@ li.team-member {
   font-size: 1.75em;
   margin-top: .1em;
   margin-bottom: .25em;
+  @media (min-width: $s) {
+    font-size: 2em;
+  }
 }
 
 .team-bio-contact {
-  // text-align: left;
   font-size: 14px;
   line-height: 1.6;
   color: $gray-2;
-  // margin-bottom: 0;
 }
-
 
 .team-bio-content p {
   @extend %body-copy;
@@ -405,8 +441,30 @@ li.team-member {
 .close-link-container {
   text-align: center;
   padding-top: 2em;
+  @media (min-width: $l) {
+    display: none;
+  }
 }
 
 .close-bio {
   cursor: pointer;
+}
+
+@media (min-width: $m) {
+  .team-bio-module {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+  }
+  .team-bio-module header {
+    text-align: left;
+  }
+  .team-bio-photo {
+    margin-left: 0;
+    width: 82px;
+  }
+  .team-bio-name {
+    font-size: 2.25em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }

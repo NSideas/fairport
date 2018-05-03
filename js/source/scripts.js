@@ -63,3 +63,15 @@ function close_active_team_bio(active_team_bio) {
 $('.close-bio').click(function() {
   close_active_team_bio($(this).closest('.team-bio-container'));
 });
+
+$(document).keyup(function(e) {
+  if (e.keyCode == 27) { // escape key maps to keycode `27`
+    close_active_team_bio($('.team-bio-container.active'));
+  }
+});
+
+$('.team-bio-container').click(function(e) {
+  if (!$(e.target).parents('.team-bio-container').length) {
+    close_active_team_bio($(this));
+  }
+});
