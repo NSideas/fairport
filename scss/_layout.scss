@@ -130,9 +130,6 @@
   height: inherit;
   @include pattern();
   background-size: 80px;
-  .theme-color & {
-    opacity: .3;
-  }
 }
 
 
@@ -144,6 +141,9 @@
   margin-bottom: 2em;
   &:before {
     @extend %pattern-fill;
+  }
+  &.theme-color:before {
+    opacity: .3;
   }
 }
 

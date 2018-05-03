@@ -10,6 +10,15 @@
   background-image: url(../uploads/stock-1.jpg);
 }
 
+.page-executives .hero-img {
+  background-image: url(../uploads/stock-2.jpg);
+}
+
+.about-you-template .page-intro {
+  @media (min-width: $m) {
+    padding-top: 30px;
+  }
+}
 
 
 @media (min-width: $l) {
@@ -42,6 +51,7 @@
     margin-bottom: 300px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 2em;
     max-width: 905px;
     box-shadow: 0 0 4px rgba($gray-1, .2);
   }
@@ -51,4 +61,32 @@
   }
 
 
+}
+
+
+// Story Teaser
+.mini-portrait {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  @media (min-width: $m) {
+    margin-bottom: 1.75em;
+  }
+}
+
+.story-teaser-title {
+  font-weight: 500;
+  @media (min-width: $m) {
+    margin-bottom: .5em;
+  }
+}
+
+p.story-teaser-body {
+  color: $gray-2;
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+  @media (min-width: $m) {
+    font-size: 1.45em;
+  }
 }

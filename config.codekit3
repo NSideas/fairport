@@ -47,6 +47,13 @@
 		"oAP": "\/css\/styles.css.map",
 		"oF": 0
 		},
+	"\/executives.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/executives.html",
+		"oF": 0
+		},
 	"\/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
@@ -321,6 +328,13 @@
 		"oAP": "\/client-experience.html",
 		"oF": 0
 		},
+	"\/kit\/executives.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/executives.html",
+		"oF": 0
+		},
 	"\/kit\/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -354,6 +368,13 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/kit\/_related-news.html",
+		"oF": 0
+		},
+	"\/kit\/modules\/_story-teaser.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kit\/_story-teaser.html",
 		"oF": 0
 		},
 	"\/kit\/modules\/news-items\/_news-item-1.kit": {
@@ -459,6 +480,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/news-article.html",
+		"oF": 0
+		},
+	"\/our-approach.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/our-approach.html",
 		"oF": 0
 		},
 	"\/robots.txt": {
@@ -808,12 +836,34 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/uploads\/mini-portrait-1.jpg": {
+		"ft": 16384,
+		"iS": 2933,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/mini-portrait-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/uploads\/stock-1.jpg": {
 		"ft": 16384,
 		"iS": 102421,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/uploads\/stock-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/uploads\/stock-2.jpg": {
+		"ft": 16384,
+		"iS": 86170,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/stock-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
