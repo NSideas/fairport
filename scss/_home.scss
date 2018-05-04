@@ -42,31 +42,124 @@
   border-radius: 5px;
 }
 
+@mixin fam-circle-shadow($color, $tint: .8) {
+  background-color: rgba($color, $tint);
+  @media (min-width: $m) {
+    .active .swiper-slide-active & {
+      box-shadow: 0 0 0 15px rgba($color, .25);
+    }
+  }
+}
+
 .fam-circle--blue {
-  background-color: rgba($blue-2, .8);
+  @include fam-circle-shadow($blue-2);
 }
 .fam-circle--gold {
-  background-color: rgba($gold-1, .8);
+  @include fam-circle-shadow($gold-1);
 }
 .fam-circle--purple {
-  background-color: rgba($purple-2, .8);
+  @include fam-circle-shadow($purple-2);
 }
 .fam-circle--red {
-  background-color: rgba($red-2, .8);
+  @include fam-circle-shadow($red-2);
 }
 .fam-circle--green {
-  background-color: rgba($green-2, .9);
+  @include fam-circle-shadow($green-2, .9);
 }
 
 .fam-circle-title {
   font-family: $sans;
   font-size: 1.25em;
-  margin-bottom: .5em;
-
 }
 
 .fam-circle-text {
   height: 175px;
+  margin-top: .75em;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+// Show grid for testing
+@mixin show-grid {
+  .main-content:after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: calc(50%);
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 1px;
+    height: 100%;
+    background: cyan;
+  }
+
+  .swiper-slide-active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5%;
+    left: calc(50%);
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 1px;
+    height: 110%;
+    background: magenta;
+  }
+}
+
+@include show-grid;
+
+
+@media (min-width: $m) {
+  .fam-circle-swiper {
+    opacity: 0;
+    transition: opacity .2s .25s;
+    width: 100%;
+    &.initialized {
+      opacity: 1;
+    }
+    .swiper-slide {
+      width: 180px;
+      height: 180px;
+      padding: 10px;
+      margin: 0 5px;
+      transition: all .3s ease;
+      transform: scale(1);
+    }
+    .swiper-wrapper {
+      height: 624px;
+      transition: transform .3s ease;
+    }
+  }
+  .fam-circle-title {
+    font-size: 1.5em;
+  }
+  .fam-circle-text {
+    display: none;
+  }
+  .fam-circle {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 20px transparent;
+    transition: all .3s ease;
+    .btn {
+      display: none;
+    }
+  }
+  .fam-circle-swiper.active {
+    .swiper-slide-active .fam-circle {
+      width: 480px;
+      height: 480px;
+    }
+    .swiper-slide-active {
+      width: 500px;
+      height: 500px;
+    }
+  }
 }
