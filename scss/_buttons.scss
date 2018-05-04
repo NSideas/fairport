@@ -1,0 +1,79 @@
+
+@mixin button {
+  display: inline-block;
+  font-family: $sans;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: .5em 1.5em;
+  height: 36px;
+  border-radius: 18px;
+  border: solid 1px;
+  transition: all .2s ease;
+  &.btn--white {
+    border-color: white;
+    background-color: white;
+    color: $default;
+    opacity: .8;
+    &:focus {
+      opacity: .9;
+    }
+  }
+}
+
+@mixin button--small {
+  font-size: 15px;
+  height: 28px;
+  border-radius: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.75;
+}
+
+@mixin button--large {
+  font-size: 18px;
+  line-height: 1.4;
+  height: 46px;
+  border-radius: 23px;
+}
+
+.btn,
+.btn-submit {
+  @include button;
+  color: $gray-1;
+  border-color: $gray-2;
+  &:hover {
+    border-color: $gray-1;
+    color: $default;
+  }
+}
+
+.btn--white {
+  &:hover {
+    border-color: white;
+  }
+}
+
+.btn--gold {
+  color: $gold-1;
+  border-color: $gold-1;
+}
+
+.btn--small {
+  @include button--small;
+}
+
+.btn--large {
+  @include button--large;
+  color: $gold-1;
+  border-color: $gold-1;
+  margin-top: .5em;
+}
+
+.btn--gold,
+.btn--large {
+  &:hover {
+    background: $gold-2;
+    border-color: $gold-2;
+    color: white;
+  }
+}

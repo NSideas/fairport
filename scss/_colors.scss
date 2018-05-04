@@ -46,8 +46,9 @@ $colors: (
     background-color: $c3;
   }
 
-  input[type="submit"].input-white {
+  input[type="submit"].btn--white {
     color: $c1;
+    box-shadow: 0 0 0 2px $c1, 0 0 0 3px $c1;
     &:focus {
       box-shadow: 0 0 0 2px $c1, 0 0 0 3px white;
     }

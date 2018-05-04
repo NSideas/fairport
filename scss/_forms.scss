@@ -1,6 +1,4 @@
 
-
-
 @mixin ui-input {
   font-family: $sans;
   font-size: inherit;
@@ -34,79 +32,6 @@
   }
 }
 
-@mixin ui-button {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  &.input-white {
-    border-color: white;
-    background-color: white;
-    color: $default;
-    opacity: .8;
-    &:focus {
-      opacity: .9;
-    }
-  }
-}
-
-@mixin ui-button--small {
-  font-size: 15px;
-  height: 28px;
-  border-radius: 14px;
-  padding-top: 0;
-  padding-bottom: 0;
-  line-height: 1.75;
-}
-
-.btn {
-  @include ui-input;
-  @include ui-button;
-  display: inline-block;
-  color: inherit;
-  transition: all .2s ease;
-  &.gold {
-    color: $gold-1;
-    border-color: $gold-1;
-  }
-}
-
-.btn--small {
-  @include ui-button--small;
-}
-
-.btn--default {
-  @include ui-button--small;
-  color: $gray-1;
-  border-color: $gray-2;
-  @media (min-width: $m) {
-    font-size: 16px;
-    height: 36px;
-    border-radius: 18px;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    line-height: 1.2;
-  }
-}
-
-.btn--large {
-  color: $gold-1;
-  margin-top: .5em;
-}
-
-.btn--default:hover {
-  // background: $gray-1;
-  border-color: $gray-1;
-  color: $default;
-}
-
-.btn.gold,
-.btn--large {
-  &:hover {
-    background: $gold-2;
-    border-color: $gold-2;
-    color: white;
-  }
-}
-
 input[type="text"],
 input[type="email"],
 input[type="search"] {
@@ -116,21 +41,22 @@ input[type="search"] {
 }
 
 .btn-submit {
-  @include ui-input;
-  @include ui-button;
+  @include button--large;
   display: block;
   width: 100%;
   cursor: pointer;
   -webkit-appearance: none;
+  &:focus {
+    outline: none;
+  }
   @media (min-width: $m) {
-    @include ui-button--small;
+    @include button--small;
     width: auto;
   }
 }
 
-
 input:invalid + input[type="submit"],
-input:invalid + input[type="submit"].input-white {
+input:invalid + input[type="submit"].btn--white {
   opacity: .5;
   cursor: default;
   &:focus {
