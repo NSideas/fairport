@@ -42,6 +42,22 @@ if (!mq_small.matches) {
 }
 
 
+// Home Page
+var swiper = new Swiper('.fam-circle-swiper', {
+  slidesPerView: 'auto',
+  freeMode: false,
+  breakpoints: {
+    // when window width is <= 480px
+    480: {
+      freeMode: true
+    }
+  }
+});
+
+
+
+
+
 // Team Bio
 $('.team-member-link').click(function(e) {
   e.preventDefault();

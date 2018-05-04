@@ -22,3 +22,5 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+
+// @codekit-append quiet '../vendor/swiper.js';

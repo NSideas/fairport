@@ -1,0 +1,72 @@
+
+// Home Page
+.home-template {
+  .main-content-wrapper {
+    background-color: $gray-5;
+    padding-top: 0;
+  }
+  .page-title {
+    line-height: 1.1;
+  }
+  .title-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+// Fam Circles
+
+.inspiring-families {
+  background-color: white;
+}
+
+.fam-circle-swiper {
+  .swiper-slide {
+    width: 90%;
+    padding: 0 1em;
+  }
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.fam-circle {
+  background: $gray-2;
+  color: white;
+  padding-top: 1.5em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.fam-circle--blue {
+  background-color: rgba($blue-2, .8);
+}
+.fam-circle--gold {
+  background-color: rgba($gold-1, .8);
+}
+.fam-circle--purple {
+  background-color: rgba($purple-2, .8);
+}
+.fam-circle--red {
+  background-color: rgba($red-2, .8);
+}
+.fam-circle--green {
+  background-color: rgba($green-2, .9);
+}
+
+.fam-circle-title {
+  font-family: $sans;
+  font-size: 1.25em;
+  margin-bottom: .5em;
+
+}
+
+.fam-circle-text {
+  height: 175px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

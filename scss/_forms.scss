@@ -56,7 +56,7 @@ input[type="search"] {
 }
 
 input:invalid + input[type="submit"],
-input:invalid + input[type="submit"].btn--white {
+input:invalid + input[type="submit"].btn--solid-white {
   opacity: .5;
   cursor: default;
   &:focus {
