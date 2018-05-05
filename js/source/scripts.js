@@ -63,53 +63,60 @@ var fam_circle_swiper = new Swiper('.fam-circle-swiper', {
   }
 });
 
+var fam_circles = document.getElementById('fam-circle-swiper');
+var slides = fam_circles.querySelectorAll('.swiper-slide');
 var start_position = 0;
 var current_position = 0;
 var small_circle = 180;
 var big_circle = 500;
 var margin = 10;
 var t = small_circle/2 + big_circle/2 + margin;
+var swiper_is_active = false;
+
+function slide_to(slide) {
+  var trans_value = slides[slide].getAttribute('data-translate');
+  translate_circles(trans_value);
+}
 
 function translate_circles(x) {
   $('.fam-circle-swiper .swiper-wrapper').css('transform', 'translate3d('+ x +'px, 0px, 0px)');
   current_position = x;
 }
 
-function get_translate_values() {
-  var slides = document.getElementById('fam-circle-swiper').querySelectorAll('.swiper-slide');
-  console.log(slides);
+function get_translate_values(start) {
+  var middle = Math.floor(slides.length/2);
+  var trans_value;
   for (var i = 0; i < slides.length; i++) {
-    // Do something here?
+    trans_value = (small_circle + margin) * (middle - i) + start;
+    slides[i].setAttribute('data-translate', trans_value);
   }
 }
 
 fam_circle_swiper.on('init', function(){
+
+  // Translate to initial slide
   var current_translate = fam_circle_swiper.getTranslate();
-  console.log(current_translate);
-  var translate_fix = current_translate;
   translate_circles(current_translate);
   $('.fam-circle-swiper').addClass('initialized');
+  start_position = current_position - big_circle/2 + small_circle/2;
+  get_translate_values(start_position);
+
+  // Wait one second and fade in circles
   setTimeout(function(){
     $('.fam-circle-swiper').addClass('active');
     fam_circle_swiper.setTransition(300);
-    get_translate_values();
-    start_position = current_position - big_circle/2 + small_circle/2;
     translate_circles(start_position);
+    swiper_is_active = true;
   }, 1000);
+
 });
 
 
 fam_circle_swiper.on('slideChangeTransitionStart', function() {
-  var current_translate = fam_circle_swiper.getTranslate();
-  console.log('Current postion: ' + current_position);
-  console.log('Current translate: ' + current_translate);
-
-  var next_slide = current_position - small_circle - margin;
-  translate_circles(next_slide);
-
+  if (swiper_is_active) {
+    slide_to(this.activeIndex);
+  }
 });
-
-
 
 
 
