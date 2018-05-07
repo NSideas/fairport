@@ -40,6 +40,10 @@
   padding-left: 1em;
   text-align: center;
   border-radius: 5px;
+  @media (min-width: $s) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 
 @mixin fam-circle-shadow($color, $tint: .8) {
@@ -70,6 +74,9 @@
 .fam-circle-title {
   font-family: $sans;
   font-size: 1.25em;
+  @media (min-width: $s) {
+    font-size: 1.5em;
+  }
 }
 
 .fam-circle-text {
@@ -108,7 +115,7 @@
   }
 }
 
-@include show-grid;
+// @include show-grid;
 
 
 @media (min-width: $m) {
@@ -154,12 +161,12 @@
   }
   .fam-circle-swiper.active {
     .swiper-slide-active .fam-circle {
-      width: 480px;
-      height: 480px;
+      width: 540px;
+      height: 540px;
     }
     .swiper-slide-active {
-      width: 500px;
-      height: 500px;
+      width: 560px;
+      height: 560px;
     }
   }
 }

@@ -1247,6 +1247,10 @@ li.block-list-item {
   padding-left: 1em;
   text-align: center;
   border-radius: 5px; }
+  @media (min-width: 480px) {
+    .fam-circle {
+      padding-left: 2em;
+      padding-right: 2em; } }
 
 .fam-circle--blue {
   background-color: rgba(101, 129, 148, 0.8); }
@@ -1286,38 +1290,15 @@ li.block-list-item {
 .fam-circle-title {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 1.25em; }
+  @media (min-width: 480px) {
+    .fam-circle-title {
+      font-size: 1.5em; } }
 
 .fam-circle-text {
   height: 175px;
   margin-top: .75em;
   text-overflow: ellipsis;
   overflow: hidden; }
-
-.main-content:after {
-  content: '';
-  display: block;
-  position: fixed;
-  top: 0;
-  left: calc(50%);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 1000;
-  width: 1px;
-  height: 100%;
-  background: cyan; }
-
-.swiper-slide-active:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -5%;
-  left: calc(50%);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 1000;
-  width: 1px;
-  height: 110%;
-  background: magenta; }
 
 @media (min-width: 720px) {
   .fam-circle-swiper {
@@ -1367,11 +1348,11 @@ li.block-list-item {
     .fam-circle .btn {
       display: none; }
   .fam-circle-swiper.active .swiper-slide-active .fam-circle {
-    width: 480px;
-    height: 480px; }
+    width: 540px;
+    height: 540px; }
   .fam-circle-swiper.active .swiper-slide-active {
-    width: 500px;
-    height: 500px; } }
+    width: 560px;
+    height: 560px; } }
 
 .hero-img {
   height: 60vw;
