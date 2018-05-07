@@ -14,10 +14,132 @@
   }
 }
 
+// Hero Swiper
+.hero-swiper {
+  background: $gray-2;
+  color: white;
+  .swiper-slide {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 15px;
+    height: 26px;
+    margin-top: -13px;
+    background-image: url(../img/pagination-arrow.svg);
+    background-size: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  .swiper-button-next {
+    transform: rotate(180deg);
+  }
+}
+
+.hero-swiper .slide-1 {
+  background-image: url(../uploads/hero-swiper-1.jpg);
+}
+.hero-swiper .slide-2 {
+  background-image: url(../uploads/hero-swiper-2.jpg);
+}
+.hero-swiper .slide-3 {
+  background-image: url(../uploads/hero-swiper-3.jpg);
+}
+.hero-swiper .slide-4 {
+  background-image: url(../uploads/hero-swiper-4.jpg);
+}
+.hero-swiper .slide-5 {
+  background-image: url(../uploads/hero-swiper-5.jpg);
+}
+
+@mixin hero-swiper-color($color) {
+  &:before {
+    background-color: $color;
+  }
+}
+
+.hero-swiper .swiper-slide {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+  }
+  &:nth-child(6n - 5) {
+    @include hero-swiper-color($purple-1);
+  }
+  &:nth-child(6n - 4) {
+    @include hero-swiper-color($teal-1);
+  }
+  &:nth-child(6n - 3) {
+    @include hero-swiper-color($green-1);
+  }
+  &:nth-child(6n - 2) {
+    @include hero-swiper-color($red-1);
+  }
+  &:nth-child(6n - 1) {
+    @include hero-swiper-color($gold-1);
+  }
+  &:nth-child(6n) {
+    @include hero-swiper-color($blue-1);
+  }
+}
+
+.hero-swiper-slide-content {
+  position: relative;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.swiper-slide .hero-swiper-slide-content {
+  display: none;
+}
+
+.hero-swiper h5 {
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: .5em;
+}
+
+.hero-swiper h1 {
+  font-size: 2.25em;
+  line-height: 1.12;
+}
+
+#active-slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity .2s;
+  &.transparent {
+    opacity: 0;
+  }
+}
+
+
+
+
 // Fam Circles
 
 .inspiring-families {
   background-color: white;
+  padding-top: 2em;
 }
 
 .fam-circle-swiper {

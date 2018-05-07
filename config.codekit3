@@ -229,6 +229,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/pagination-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/pagination-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/patterns\/zig-zag.png": {
 		"ft": 32768,
 		"iS": 21012,
@@ -410,11 +420,25 @@
 		"oAP": "\/kit\/_button-test.html",
 		"oF": 0
 		},
+	"\/kit\/modules\/_fam-circle-swiper.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kit\/_fam-circle-swiper.html",
+		"oF": 0
+		},
 	"\/kit\/modules\/_footer.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/kit\/_footer.html",
+		"oF": 0
+		},
+	"\/kit\/modules\/_inspiring-families.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kit\/_inspiring-families.html",
 		"oF": 0
 		},
 	"\/kit\/modules\/_main-nav.kit": {
@@ -932,6 +956,61 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/uploads\/headshot-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/hero-swiper-1.jpg": {
+		"ft": 16384,
+		"iS": 126224,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/hero-swiper-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/hero-swiper-2.jpg": {
+		"ft": 16384,
+		"iS": 204558,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/hero-swiper-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/hero-swiper-3.jpg": {
+		"ft": 16384,
+		"iS": 157336,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/hero-swiper-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/hero-swiper-4.jpg": {
+		"ft": 16384,
+		"iS": 164435,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/hero-swiper-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/hero-swiper-5.jpg": {
+		"ft": 16384,
+		"iS": 207281,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/hero-swiper-5.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
