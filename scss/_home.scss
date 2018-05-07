@@ -144,7 +144,7 @@
   padding: .25em 1em;
   border-radius: 13px;
 }
-
+$circumference: 81.7;
 #progress-circle {
   width: 26px;
   height: 26px;
@@ -158,11 +158,13 @@
   circle {
     stroke-width: 4;
     stroke: white;
-    stroke-dasharray: 20;
-
+  }
+  .progress {
+    stroke-dasharray: $circumference/5, $circumference - $circumference/5;
+    stroke-dashoffset: 20;
   }
   .total {
-    opacity: .3;
+    stroke-opacity: .3;
   }
 }
 

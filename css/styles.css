@@ -1359,10 +1359,12 @@ li.block-list-item {
   border-radius: 50%; }
   #progress-circle circle {
     stroke-width: 4;
-    stroke: white;
-    stroke-dasharray: 20; }
+    stroke: white; }
+  #progress-circle .progress {
+    stroke-dasharray: 16.34, 65.36;
+    stroke-dashoffset: 20; }
   #progress-circle .total {
-    opacity: .3; }
+    stroke-opacity: .3; }
 
 .inspiring-families {
   background-color: white;
