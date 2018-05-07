@@ -132,6 +132,40 @@
   }
 }
 
+.swiper-pagination-fraction {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 20px;
+  bottom: 20px;
+  width: auto;
+  background: white;
+  color: $gold-1;
+  font-size: 14px;
+  padding: .25em 1em;
+  border-radius: 13px;
+}
+
+#progress-circle {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -35px;
+  border-radius: 50%;
+  circle {
+    stroke-width: 4;
+    stroke: white;
+    stroke-dasharray: 20;
+
+  }
+  .total {
+    opacity: .3;
+  }
+}
+
 
 
 

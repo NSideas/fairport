@@ -1333,6 +1333,37 @@ li.block-list-item {
   #active-slide-content.transparent {
     opacity: 0; }
 
+.swiper-pagination-fraction {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: 20px;
+  bottom: 20px;
+  width: auto;
+  background: white;
+  color: #B89654;
+  font-size: 14px;
+  padding: .25em 1em;
+  border-radius: 13px; }
+
+#progress-circle {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: -35px;
+  border-radius: 50%; }
+  #progress-circle circle {
+    stroke-width: 4;
+    stroke: white;
+    stroke-dasharray: 20; }
+  #progress-circle .total {
+    opacity: .3; }
+
 .inspiring-families {
   background-color: white;
   padding-top: 2em; }

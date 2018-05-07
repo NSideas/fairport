@@ -49,11 +49,11 @@ var active_slide_content = document.getElementById('active-slide-content');
 
 var hero_swiper = new Swiper('.hero-swiper', {
   loop: true,
-
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction'
   },
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
@@ -65,6 +65,10 @@ var hero_swiper = new Swiper('.hero-swiper', {
   }
 });
 
+
+function render_progress_circle(el) {
+
+}
 
 
 function append_slide_content(el) {
@@ -86,9 +90,6 @@ hero_swiper.on('slideChange', function() {
 
   active_slide_content.classList.add('transparent');
 
-  var current = this.realIndex;
-  var current_slide = this.slides[current + 1];
-
   setTimeout(function() {
     append_slide_content(hero_swiper);
     active_slide_content.classList.remove('transparent');
@@ -97,9 +98,8 @@ hero_swiper.on('slideChange', function() {
 });
 
 function initialize_hero_swiper(swiper) {
-  // append_slide_content(0);
-  // console.log(swiper.slides[swiper.realIndex + 1]);
   append_slide_content(swiper);
+  render_progress_circle(swiper);
 }
 
 
