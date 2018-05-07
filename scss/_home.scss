@@ -46,29 +46,39 @@
   }
 }
 
-@mixin fam-circle-shadow($color, $tint: .8) {
+// $shadow-width: 40px;
+$shadow-width: 10px;
+$swiper-transition: transform .3s ease;
+
+@mixin fam-circle-color($color, $tint: .8) {
   background-color: rgba($color, $tint);
+  &:before {
+    background-color: rgba($color, $tint);
+  }
+  .btn:hover {
+    color: $color;
+  }
   @media (min-width: $m) {
-    .active .swiper-slide-active & {
-      box-shadow: 0 0 0 15px rgba($color, .25);
+    .active .swiper-slide-active &:before {
+      box-shadow: 0 0 0 $shadow-width rgba($color, .25);
     }
   }
 }
 
 .fam-circle--blue {
-  @include fam-circle-shadow($blue-2);
+  @include fam-circle-color($blue-2);
 }
 .fam-circle--gold {
-  @include fam-circle-shadow($gold-1);
+  @include fam-circle-color($gold-1);
 }
 .fam-circle--purple {
-  @include fam-circle-shadow($purple-2);
+  @include fam-circle-color($purple-2);
 }
 .fam-circle--red {
-  @include fam-circle-shadow($red-2);
+  @include fam-circle-color($red-2);
 }
 .fam-circle--green {
-  @include fam-circle-shadow($green-2, .9);
+  @include fam-circle-color($green-2, .9);
 }
 
 .fam-circle-title {
@@ -129,21 +139,35 @@
     .swiper-slide {
       width: 180px;
       height: 180px;
-      padding: 10px;
+      padding: 0;
       margin: 0 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translate3d(0,0,0);
       transition: all .3s ease;
-      transform: scale(1);
     }
     .swiper-wrapper {
       height: 624px;
-      transition: transform .3s ease;
+      transform: translate3d(0,0,0);
+      transition: $swiper-transition;
     }
   }
   .fam-circle-title {
     font-size: 1.5em;
+    position: absolute;
   }
-  .fam-circle-text {
+  .fam-circle-content {
     display: none;
+    opacity: 0;
+    backface-visibility: visible;
+  }
+  .main-content .fam-circle-text {
+    height: auto;
+    font-size: 1.4em;
+    padding-left: 1.75em;
+    padding-right: 1.75em;
+    margin-top: 1.5em;
   }
   .fam-circle {
     cursor: pointer;
@@ -151,22 +175,41 @@
     width: 160px;
     height: 160px;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 0 20px transparent;
-    transition: all .3s ease;
-    .btn {
-      display: none;
+    flex-direction: column;
+    background: transparent;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 $shadow-width transparent;
+      transform: scale(1);
+      transition: $swiper-transition;
     }
   }
   .fam-circle-swiper.active {
-    .swiper-slide-active .fam-circle {
+    .swiper-slide-active .fam-circle{
       width: 540px;
       height: 540px;
+      &:before {
+        transform: scale(3.375);
+      }
     }
     .swiper-slide-active {
-      width: 560px;
-      height: 560px;
+      width: 620px;
+      height: 620px;
+      .fam-circle-content {
+        display: block;
+        animation: fade-in .2s ease .3s forwards;
+      }
+      .fam-circle-title {
+        opacity: 0;
+      }
     }
   }
 }

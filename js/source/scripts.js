@@ -46,7 +46,6 @@ if (!mq_small.matches) {
 // Home Page
 var fam_circle_swiper = new Swiper('.fam-circle-swiper', {
   slidesPerView: 'auto',
-  freeMode: false,
   roundLengths: true,
   centeredSlides: true,
   initialSlide: 2,
@@ -64,6 +63,7 @@ var fam_circle_swiper = new Swiper('.fam-circle-swiper', {
     // when window width is <= 720px
     720: {
       freeMode: true,
+      allowTouchMove: true,
       centeredSlides: false,
       initialSlide: 0,
       virtualTranslate: false,
@@ -81,7 +81,7 @@ var slides;
 var start_position = 0;
 var current_position = 0;
 var small_circle = 180;
-var big_circle = 540;
+var big_circle = 620;
 var margin = 10;
 var t = small_circle/2 + big_circle/2 + margin;
 var swiper_is_active = false;
@@ -111,22 +111,28 @@ function get_translate_values(start) {
   }
 }
 
-fam_circle_swiper.on('init', function(){
-
+function initialize_swiper_manually() {
   // Translate to initial slide
   var current_translate = fam_circle_swiper.getTranslate();
   translate_circles(current_translate);
   $('.fam-circle-swiper').addClass('initialized');
   start_position = current_position - big_circle/2 + small_circle/2;
   get_translate_values(start_position);
+  fam_circle_swiper.setTransition(300);
 
   // Wait one second and fade in circles
   setTimeout(function(){
     $('.fam-circle-swiper').addClass('active');
-    fam_circle_swiper.setTransition(300);
     translate_circles(start_position);
     swiper_is_active = true;
   }, 1000);
+}
+
+fam_circle_swiper.on('init', function(){
+
+  if (mq_medium.matches) {
+    initialize_swiper_manually();
+  }
 
 });
 
@@ -144,10 +150,9 @@ $('.fam-circle-swiper .swiper-slide').click(function(){
 });
 
 $(window).on('load', function() {
-  if (mq_medium.matches) {
-    fam_circle_swiper.init();
-  }
+  fam_circle_swiper.init();
 });
+
 
 
 // Team Bio
