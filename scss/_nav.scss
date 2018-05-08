@@ -42,7 +42,7 @@ nav {
 .main-nav-list {
   padding: 2em 0;
   @media (min-width: $l) {
-    padding: .75em 0;
+    padding: 0;
   }
 }
 
@@ -51,6 +51,11 @@ nav {
     display: inline-block;
     margin-right: .75em;
     margin-bottom: 0;
+    padding: .75em 0;
+    height: 46px;
+    &:hover .sub-nav {
+      max-height: none;
+    }
   }
 }
 
@@ -86,6 +91,12 @@ nav {
   @media (min-width: $l) {
     border-top: none;
     position: absolute;
+    background-color: $gray-5;
+    margin-top: 14px;
+    a {
+      letter-spacing: normal;
+      color: $default;
+    }
   }
 }
 

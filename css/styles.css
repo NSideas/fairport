@@ -997,13 +997,17 @@ nav a {
   padding: 2em 0; }
   @media (min-width: 840px) {
     .main-nav-list {
-      padding: .75em 0; } }
+      padding: 0; } }
 
 @media (min-width: 840px) {
   .main-nav-item {
     display: inline-block;
     margin-right: .75em;
-    margin-bottom: 0; } }
+    margin-bottom: 0;
+    padding: .75em 0;
+    height: 46px; }
+    .main-nav-item:hover .sub-nav {
+      max-height: none; } }
 
 .main-nav-item a {
   color: #777777;
@@ -1033,7 +1037,12 @@ nav a {
   @media (min-width: 840px) {
     .sub-nav {
       border-top: none;
-      position: absolute; } }
+      position: absolute;
+      background-color: #F0F0F0;
+      margin-top: 14px; }
+      .sub-nav a {
+        letter-spacing: normal;
+        color: #4A4A4A; } }
 
 .main-nav-item.expanded .sub-nav {
   max-height: none; }
