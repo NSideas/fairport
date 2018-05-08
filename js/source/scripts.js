@@ -46,6 +46,10 @@ if (!mq_small.matches) {
 // Home Page
 
 var active_slide_content = document.getElementById('active-slide-content');
+var fraction;
+var progress;
+var total;
+
 
 var hero_swiper = new Swiper('.hero-swiper', {
   loop: true,
@@ -53,7 +57,6 @@ var hero_swiper = new Swiper('.hero-swiper', {
     el: '.swiper-pagination',
     type: 'fraction'
   },
-
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
@@ -65,8 +68,30 @@ var hero_swiper = new Swiper('.hero-swiper', {
   }
 });
 
+function circumference(r) {
+  return 2 * Math.PI * r;
+}
 
 function render_progress_circle(el) {
+
+  var swiper_container = el.$el[0];
+  var progress_circle = swiper_container.querySelector('.progress-circle');
+  progress = progress_circle.querySelector('.progress');
+  total = progress_circle.querySelector('.total');
+
+  // Get circumference of circle
+  var radius = progress.getAttribute('r');
+  var circ = circumference(radius);
+
+  // Get actual number of slides
+  var dupe_slides = swiper_container.querySelectorAll('.swiper-slide-duplicate');
+  var total_slides = el.slides.length - dupe_slides.length;
+
+  fraction = circ/total_slides;
+  var dasharray = fraction + ', ' + (circ - fraction);
+
+  progress.setAttribute('stroke-dasharray', dasharray);
+  progress.setAttribute('stroke-dashoffset', 0);
 
 }
 
@@ -74,10 +99,8 @@ function render_progress_circle(el) {
 function append_slide_content(el) {
 
   var current_slide = el.slides[el.realIndex + 1];
-
   var h5_src = current_slide.querySelectorAll('h5')[0];
   var h1_src = current_slide.querySelectorAll('h1')[0];
-
   var h5_output = active_slide_content.querySelectorAll('h5')[0];
   var h1_output = active_slide_content.querySelectorAll('h1')[0];
 
@@ -89,12 +112,28 @@ function append_slide_content(el) {
 hero_swiper.on('slideChange', function() {
 
   active_slide_content.classList.add('transparent');
-
   setTimeout(function() {
     append_slide_content(hero_swiper);
     active_slide_content.classList.remove('transparent');
   }, 250);
 
+});
+
+function rotate_progress_circle(direction) {
+  var dashoffset = parseFloat(progress.getAttribute('stroke-dashoffset'));
+  if (direction === 'prev') {
+    progress.setAttribute('stroke-dashoffset', dashoffset + fraction);
+  } else {
+    progress.setAttribute('stroke-dashoffset', dashoffset - fraction);
+  }
+}
+
+hero_swiper.on('slideNextTransitionStart', function() {
+  rotate_progress_circle('next');
+});
+
+hero_swiper.on('slidePrevTransitionStart', function() {
+  rotate_progress_circle('prev');
 });
 
 function initialize_hero_swiper(swiper) {

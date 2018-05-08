@@ -1346,25 +1346,25 @@ li.block-list-item {
   padding: .25em 1em;
   border-radius: 13px; }
 
-#progress-circle {
-  width: 26px;
-  height: 26px;
+.progress-circle {
+  width: 30px;
+  height: 30px;
   position: absolute;
-  bottom: 20px;
+  bottom: 19px;
   z-index: 1;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+          transform: translateX(-50%) rotate(-90deg);
   margin-left: -35px;
   border-radius: 50%; }
-  #progress-circle circle {
+  .progress-circle circle {
     stroke-width: 4;
     stroke: white; }
-  #progress-circle .progress {
-    stroke-dasharray: 16.34, 65.36;
-    stroke-dashoffset: 20; }
-  #progress-circle .total {
-    stroke-opacity: .3; }
+  .progress-circle .progress {
+    -webkit-transition: stroke-dashoffset .2s ease;
+    transition: stroke-dashoffset .2s ease; }
+  .progress-circle .total {
+    stroke-opacity: .4; }
 
 .inspiring-families {
   background-color: white;
