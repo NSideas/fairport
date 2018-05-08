@@ -18,13 +18,6 @@
 .hero-swiper {
   background: $gray-2;
   color: white;
-  .swiper-slide {
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-  }
   .swiper-button-next,
   .swiper-button-prev {
     width: 15px;
@@ -38,6 +31,17 @@
   }
   .swiper-button-next {
     transform: rotate(180deg);
+  }
+}
+
+.hero-swiper .swiper-slide {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  @media (min-width: $l) {
+    height: 580px;
   }
 }
 
@@ -63,42 +67,30 @@
   }
 }
 
-.hero-swiper .swiper-slide {
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .7;
-    background-color: $purple-1;
-  }
-  &.color-purple {
-    @include hero-swiper-color($purple-1);
-  }
-  &.color-teal {
-    @include hero-swiper-color($teal-1);
-  }
-  &.color-green {
-    @include hero-swiper-color($green-1);
-  }
-  &.color-red {
-    @include hero-swiper-color($red-1);
-  }
-  &.color-gold {
-    @include hero-swiper-color($gold-1);
-  }
-  &.color-blue {
-    @include hero-swiper-color($blue-1);
-  }
+.hero-swiper .swiper-slide:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  background-color: $purple-1;
 }
 
 .hero-swiper-slide-content {
   position: relative;
   padding: 1em 2em;
   text-align: center;
+  @media (min-width: $m) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  @media (min-width: $l) {
+    text-align: left;
+    padding-left: 0;
+  }
 }
 
 .swiper-slide .hero-swiper-slide-content {
@@ -114,6 +106,15 @@
 .hero-swiper h1 {
   font-size: 2.25em;
   line-height: 1.12;
+  @media (min-width: $s) {
+    font-size: 2.5em;
+  }
+  @media (min-width: $m) {
+    font-size: 3em;
+  }
+  @media (min-width: $l) {
+    font-size: 3.25em;
+  }
 }
 
 #active-slide-content {

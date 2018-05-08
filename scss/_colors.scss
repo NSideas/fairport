@@ -56,11 +56,20 @@ $colors: (
 
 }
 
+@mixin hero-swiper-color($color-name) {
+  &:before {
+    background-color: map-get($colors, $color-name#{-1});
+  }
+}
+
 
 $color-list: purple blue teal green red gold;
 
 @each $theme in $color-list {
   .color-#{$theme} {
     @include theme-color(#{$theme});
+    &.swiper-slide {
+      @include hero-swiper-color(#{$theme});
+    }
   }
 }

@@ -137,14 +137,6 @@ hero_swiper.on('slidePrevTransitionStart', function() {
 function initialize_hero_swiper(swiper) {
   append_slide_content(swiper);
   render_progress_circle(swiper);
-
-  // var colors = ['purple', 'teal', 'green', 'red', 'blue', 'gold'];
-  // for (var i = 0; i < swiper.slides.length; i++) {
-  //   if (!swiper.slides[i].classList.contains('swiper-slide-duplicate')) {
-  //     swiper.slides[i].classList.add('color-' + colors[i]);
-  //   }
-  // }
-
 }
 
 

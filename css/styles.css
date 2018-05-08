@@ -1229,16 +1229,6 @@ li.block-list-item {
 .hero-swiper {
   background: #929292;
   color: white; }
-  .hero-swiper .swiper-slide {
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
   .hero-swiper .swiper-button-next,
   .hero-swiper .swiper-button-prev {
     width: 15px;
@@ -1252,6 +1242,20 @@ li.block-list-item {
   .hero-swiper .swiper-button-next {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
+
+.hero-swiper .swiper-slide {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 840px) {
+    .hero-swiper .swiper-slide {
+      height: 580px; } }
 
 .hero-swiper .slide-1 {
   background-image: url(../uploads/hero-swiper-1.jpg); }
@@ -1279,28 +1283,18 @@ li.block-list-item {
   opacity: .7;
   background-color: #655484; }
 
-.hero-swiper .swiper-slide.color-purple:before {
-  background-color: #655484; }
-
-.hero-swiper .swiper-slide.color-teal:before {
-  background-color: #479AA6; }
-
-.hero-swiper .swiper-slide.color-green:before {
-  background-color: #478D7A; }
-
-.hero-swiper .swiper-slide.color-red:before {
-  background-color: #B85454; }
-
-.hero-swiper .swiper-slide.color-gold:before {
-  background-color: #B89654; }
-
-.hero-swiper .swiper-slide.color-blue:before {
-  background-color: #3F627A; }
-
 .hero-swiper-slide-content {
   position: relative;
   padding: 1em 2em;
   text-align: center; }
+  @media (min-width: 720px) {
+    .hero-swiper-slide-content {
+      padding-left: 3em;
+      padding-right: 3em; } }
+  @media (min-width: 840px) {
+    .hero-swiper-slide-content {
+      text-align: left;
+      padding-left: 0; } }
 
 .swiper-slide .hero-swiper-slide-content {
   display: none; }
@@ -1313,6 +1307,15 @@ li.block-list-item {
 .hero-swiper h1 {
   font-size: 2.25em;
   line-height: 1.12; }
+  @media (min-width: 480px) {
+    .hero-swiper h1 {
+      font-size: 2.5em; } }
+  @media (min-width: 720px) {
+    .hero-swiper h1 {
+      font-size: 3em; } }
+  @media (min-width: 840px) {
+    .hero-swiper h1 {
+      font-size: 3.25em; } }
 
 #active-slide-content {
   position: absolute;
@@ -2232,6 +2235,9 @@ input:invalid + input[type="submit"].btn--solid-white {
     -webkit-box-shadow: 0 0 0 2px #655484, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #655484, 0 0 0 3px white; }
 
+.color-purple.swiper-slide:before {
+  background-color: #655484; }
+
 .color-blue .page-intro--default {
   background-color: #658194; }
 
@@ -2248,6 +2254,9 @@ input:invalid + input[type="submit"].btn--solid-white {
   .color-blue input[type="submit"].btn--solid-white:focus {
     -webkit-box-shadow: 0 0 0 2px #3F627A, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #3F627A, 0 0 0 3px white; }
+
+.color-blue.swiper-slide:before {
+  background-color: #3F627A; }
 
 .color-teal .page-intro--default {
   background-color: #6BAEB7; }
@@ -2266,6 +2275,9 @@ input:invalid + input[type="submit"].btn--solid-white {
     -webkit-box-shadow: 0 0 0 2px #479AA6, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #479AA6, 0 0 0 3px white; }
 
+.color-teal.swiper-slide:before {
+  background-color: #479AA6; }
+
 .color-green .page-intro--default {
   background-color: #6BA394; }
 
@@ -2282,6 +2294,9 @@ input:invalid + input[type="submit"].btn--solid-white {
   .color-green input[type="submit"].btn--solid-white:focus {
     -webkit-box-shadow: 0 0 0 2px #478D7A, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #478D7A, 0 0 0 3px white; }
+
+.color-green.swiper-slide:before {
+  background-color: #478D7A; }
 
 .color-red .page-intro--default {
   background-color: #C67676; }
@@ -2300,6 +2315,9 @@ input:invalid + input[type="submit"].btn--solid-white {
     -webkit-box-shadow: 0 0 0 2px #B85454, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #B85454, 0 0 0 3px white; }
 
+.color-red.swiper-slide:before {
+  background-color: #B85454; }
+
 .color-gold .page-intro--default {
   background-color: #C6AB76; }
 
@@ -2316,6 +2334,9 @@ input:invalid + input[type="submit"].btn--solid-white {
   .color-gold input[type="submit"].btn--solid-white:focus {
     -webkit-box-shadow: 0 0 0 2px #B89654, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #B89654, 0 0 0 3px white; }
+
+.color-gold.swiper-slide:before {
+  background-color: #B89654; }
 
 @media print {
   *,
