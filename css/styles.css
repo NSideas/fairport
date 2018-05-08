@@ -1228,7 +1228,11 @@ li.block-list-item {
 
 .hero-swiper {
   background: #929292;
-  color: white; }
+  color: white;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s; }
+  .hero-swiper.initiated {
+    opacity: 1; }
   .hero-swiper .swiper-button-next,
   .hero-swiper .swiper-button-prev {
     width: 15px;
@@ -1278,7 +1282,7 @@ li.block-list-item {
 .hero-swiper .slide-5 {
   background-image: url(../uploads/hero-swiper-5.jpg); }
 
-.hero-swiper .swiper-slide:before {
+#active-slide-content:before {
   content: '';
   display: block;
   position: absolute;
@@ -1286,18 +1290,23 @@ li.block-list-item {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .7;
-  background-color: #655484; }
+  opacity: 1;
+  background-color: #655484;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease; }
+  .hero-swiper.initiated #active-slide-content:before {
+    opacity: .7; }
   @media (min-width: 840px) {
-    .hero-swiper .swiper-slide:before {
-      opacity: .4;
+    #active-slide-content:before {
       width: 100vw;
       height: 76vw;
       border-radius: 38vw;
       top: 50%;
       left: -40vw;
       -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); } }
+              transform: translateY(-50%); }
+      .hero-swiper.initiated #active-slide-content:before {
+        opacity: .4; } }
 
 .hero-swiper-slide-content {
   position: relative;
@@ -1350,12 +1359,20 @@ li.block-list-item {
   pointer-events: none; }
   #active-slide-content .container {
     width: 100%; }
-  #active-slide-content .hero-swiper-slide-content {
-    opacity: 1;
-    -webkit-transition: opacity .2s;
-    transition: opacity .2s; }
-  #active-slide-content.transparent .hero-swiper-slide-content {
+
+.hero-swiper-slide-content {
+  opacity: 1;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease; }
+  .hero-swiper-slide-content:not(.transparent) {
+    -webkit-transition-delay: .2s;
+            transition-delay: .2s; }
+  .hero-swiper-slide-content.transparent {
     opacity: 0; }
+  @media (min-width: 840px) {
+    .hero-swiper-slide-content:not(.transparent) {
+      -webkit-transition-duration: .7s;
+              transition-duration: .7s; } }
 
 .progress-info {
   -webkit-box-pack: center;
@@ -2268,7 +2285,7 @@ input:invalid + input[type="submit"].btn--solid-white {
     -webkit-box-shadow: 0 0 0 2px #655484, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #655484, 0 0 0 3px white; }
 
-.color-purple.swiper-slide:before {
+.color-purple.swiper-slide:before, .color-purple#active-slide-content:before {
   background-color: #655484; }
 
 .color-blue .page-intro--default {
@@ -2288,7 +2305,7 @@ input:invalid + input[type="submit"].btn--solid-white {
     -webkit-box-shadow: 0 0 0 2px #3F627A, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #3F627A, 0 0 0 3px white; }
 
-.color-blue.swiper-slide:before {
+.color-blue.swiper-slide:before, .color-blue#active-slide-content:before {
   background-color: #3F627A; }
 
 .color-teal .page-intro--default {
@@ -2308,7 +2325,7 @@ input:invalid + input[type="submit"].btn--solid-white {
     -webkit-box-shadow: 0 0 0 2px #479AA6, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #479AA6, 0 0 0 3px white; }
 
-.color-teal.swiper-slide:before {
+.color-teal.swiper-slide:before, .color-teal#active-slide-content:before {
   background-color: #479AA6; }
 
 .color-green .page-intro--default {
@@ -2328,7 +2345,7 @@ input:invalid + input[type="submit"].btn--solid-white {
     -webkit-box-shadow: 0 0 0 2px #478D7A, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #478D7A, 0 0 0 3px white; }
 
-.color-green.swiper-slide:before {
+.color-green.swiper-slide:before, .color-green#active-slide-content:before {
   background-color: #478D7A; }
 
 .color-red .page-intro--default {
@@ -2348,7 +2365,7 @@ input:invalid + input[type="submit"].btn--solid-white {
     -webkit-box-shadow: 0 0 0 2px #B85454, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #B85454, 0 0 0 3px white; }
 
-.color-red.swiper-slide:before {
+.color-red.swiper-slide:before, .color-red#active-slide-content:before {
   background-color: #B85454; }
 
 .color-gold .page-intro--default {
@@ -2368,7 +2385,7 @@ input:invalid + input[type="submit"].btn--solid-white {
     -webkit-box-shadow: 0 0 0 2px #B89654, 0 0 0 3px white;
             box-shadow: 0 0 0 2px #B89654, 0 0 0 3px white; }
 
-.color-gold.swiper-slide:before {
+.color-gold.swiper-slide:before, .color-gold#active-slide-content:before {
   background-color: #B89654; }
 
 @media print {
