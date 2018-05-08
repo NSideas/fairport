@@ -52,6 +52,11 @@ var total;
 
 var hero_swiper = new Swiper('.hero-swiper', {
   loop: true,
+  threshold: 5,
+  speed: 750,
+  // shortSwipes: false,
+  longSwipesRatio: .35,
+  // longSwipesMs: 50,
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction'

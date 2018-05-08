@@ -32,6 +32,14 @@
   .swiper-button-next {
     transform: rotate(180deg);
   }
+  @media (min-width: $l) {
+    .swiper-button-next {
+      right: 15px;
+    }
+    .swiper-button-prev {
+      left: 15px;
+    }
+  }
 }
 
 .hero-swiper .swiper-slide {
@@ -40,6 +48,7 @@
   background-position: center;
   display: flex;
   align-items: center;
+  overflow: hidden;
   @media (min-width: $l) {
     height: 580px;
   }
@@ -61,11 +70,6 @@
   background-image: url(../uploads/hero-swiper-5.jpg);
 }
 
-@mixin hero-swiper-color($color) {
-  &:before {
-    background-color: $color;
-  }
-}
 
 .hero-swiper .swiper-slide:before {
   content: '';
@@ -77,6 +81,15 @@
   height: 100%;
   opacity: .7;
   background-color: $purple-1;
+  @media (min-width: $l) {
+    opacity: .4;
+    width: 100vw;
+    height: 76vw;
+    border-radius: 38vw;
+    top: 50%;
+    left: -40vw;
+    transform: translateY(-50%);
+  }
 }
 
 .hero-swiper-slide-content {
@@ -89,7 +102,8 @@
   }
   @media (min-width: $l) {
     text-align: left;
-    padding-left: 0;
+    padding: 0;
+    width: 60%;
   }
 }
 
@@ -127,18 +141,40 @@
   display: flex;
   align-items: center;
   pointer-events: none;
-  opacity: 1;
-  transition: opacity .2s;
-  &.transparent {
+  .container {
+    width: 100%;
+  }
+  .hero-swiper-slide-content {
+    opacity: 1;
+    transition: opacity .2s;
+  }
+  &.transparent .hero-swiper-slide-content {
     opacity: 0;
   }
 }
 
-.swiper-pagination-fraction {
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: 20px;
+.progress-info {
+  justify-content: center;
+  position: absolute;
   bottom: 20px;
+  left: 0;
+  width: 100%;
+  @media (min-width: $l) {
+    position: static;
+    bottom: auto;
+    left: auto;
+    justify-content: flex-start;
+  }
+}
+
+.swiper-pagination-fraction,
+.progress-circle {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.swiper-pagination-fraction {
+  position: static;
   width: auto;
   background: white;
   color: $gold-1;
@@ -150,12 +186,7 @@
 .progress-circle {
   width: 26px;
   height: 26px;
-  position: absolute;
-  bottom: 20px;
-  z-index: 1;
-  left: 50%;
-  transform: translateX(-50%) rotate(-90deg);
-  margin-left: -35px;
+  transform: rotate(-90deg);
   border-radius: 50%;
   circle {
     stroke-width: 4;
