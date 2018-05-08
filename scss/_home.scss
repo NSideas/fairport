@@ -73,23 +73,24 @@
     width: 100%;
     height: 100%;
     opacity: .7;
+    background-color: $purple-1;
   }
-  &:nth-child(6n - 5) {
+  &.color-purple {
     @include hero-swiper-color($purple-1);
   }
-  &:nth-child(6n - 4) {
+  &.color-teal {
     @include hero-swiper-color($teal-1);
   }
-  &:nth-child(6n - 3) {
+  &.color-green {
     @include hero-swiper-color($green-1);
   }
-  &:nth-child(6n - 2) {
+  &.color-red {
     @include hero-swiper-color($red-1);
   }
-  &:nth-child(6n - 1) {
+  &.color-gold {
     @include hero-swiper-color($gold-1);
   }
-  &:nth-child(6n) {
+  &.color-blue {
     @include hero-swiper-color($blue-1);
   }
 }
@@ -144,12 +145,12 @@
   padding: .25em 1em;
   border-radius: 13px;
 }
-$circumference: 81.7;
+
 .progress-circle {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   position: absolute;
-  bottom: 19px;
+  bottom: 20px;
   z-index: 1;
   left: 50%;
   transform: translateX(-50%) rotate(-90deg);
@@ -166,8 +167,6 @@ $circumference: 81.7;
     stroke-opacity: .4;
   }
 }
-
-
 
 
 // Fam Circles

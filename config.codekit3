@@ -434,6 +434,13 @@
 		"oAP": "\/kit\/_footer.html",
 		"oF": 0
 		},
+	"\/kit\/modules\/_hero-swiper.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kit\/_hero-swiper.html",
+		"oF": 0
+		},
 	"\/kit\/modules\/_inspiring-families.kit": {
 		"cB": 0,
 		"ft": 2048,

@@ -50,7 +50,6 @@ var fraction;
 var progress;
 var total;
 
-
 var hero_swiper = new Swiper('.hero-swiper', {
   loop: true,
   pagination: {
@@ -95,7 +94,6 @@ function render_progress_circle(el) {
 
 }
 
-
 function append_slide_content(el) {
 
   var current_slide = el.slides[el.realIndex + 1];
@@ -139,6 +137,14 @@ hero_swiper.on('slidePrevTransitionStart', function() {
 function initialize_hero_swiper(swiper) {
   append_slide_content(swiper);
   render_progress_circle(swiper);
+
+  // var colors = ['purple', 'teal', 'green', 'red', 'blue', 'gold'];
+  // for (var i = 0; i < swiper.slides.length; i++) {
+  //   if (!swiper.slides[i].classList.contains('swiper-slide-duplicate')) {
+  //     swiper.slides[i].classList.add('color-' + colors[i]);
+  //   }
+  // }
+
 }
 
 
@@ -226,12 +232,10 @@ function initialize_swiper_manually() {
   }, 1000);
 }
 
-fam_circle_swiper.on('init', function(){
-
+fam_circle_swiper.on('init', function() {
   if (mq_medium.matches) {
     initialize_swiper_manually();
   }
-
 });
 
 function fam_circle_slide_change(swiper) {
@@ -240,7 +244,7 @@ function fam_circle_slide_change(swiper) {
   }
 }
 
-$('.fam-circle-swiper .swiper-slide').click(function(){
+$('.fam-circle-swiper .swiper-slide').click(function() {
   if (mq_medium.matches) {
     var clicked_index = $(this).index();
     fam_circle_swiper.slideTo(clicked_index, 300);

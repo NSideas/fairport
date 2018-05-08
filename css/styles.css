@@ -1276,24 +1276,25 @@ li.block-list-item {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .7; }
-
-.hero-swiper .swiper-slide:nth-child(6n - 5):before {
+  opacity: .7;
   background-color: #655484; }
 
-.hero-swiper .swiper-slide:nth-child(6n - 4):before {
+.hero-swiper .swiper-slide.color-purple:before {
+  background-color: #655484; }
+
+.hero-swiper .swiper-slide.color-teal:before {
   background-color: #479AA6; }
 
-.hero-swiper .swiper-slide:nth-child(6n - 3):before {
+.hero-swiper .swiper-slide.color-green:before {
   background-color: #478D7A; }
 
-.hero-swiper .swiper-slide:nth-child(6n - 2):before {
+.hero-swiper .swiper-slide.color-red:before {
   background-color: #B85454; }
 
-.hero-swiper .swiper-slide:nth-child(6n - 1):before {
+.hero-swiper .swiper-slide.color-gold:before {
   background-color: #B89654; }
 
-.hero-swiper .swiper-slide:nth-child(6n):before {
+.hero-swiper .swiper-slide.color-blue:before {
   background-color: #3F627A; }
 
 .hero-swiper-slide-content {
@@ -1347,10 +1348,10 @@ li.block-list-item {
   border-radius: 13px; }
 
 .progress-circle {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   position: absolute;
-  bottom: 19px;
+  bottom: 20px;
   z-index: 1;
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(-90deg);
