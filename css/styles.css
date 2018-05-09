@@ -838,6 +838,24 @@ hr {
     background-image: url(../img/patterns/zig-zag.png);
     background-size: 80px; }
 
+.staff-info-list {
+  list-style: none;
+  padding-left: 0; }
+
+li.staff-info-item {
+  font-size: 1em; }
+
+li.staff-info-item {
+  border-bottom: solid 1px #C9C9C9;
+  margin-bottom: 1.75em; }
+  li.staff-info-item h3 {
+    margin-bottom: .4em; }
+
+p.staff-info-contact {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: .9em;
+  color: #929292; }
+
 #header {
   position: fixed;
   top: 0;
@@ -983,7 +1001,7 @@ nav a {
 
 .sub-nav a,
 .footer-sub-nav a {
-  opacity: .6;
+  opacity: .75;
   font-size: 1.05em;
   margin-bottom: 2px; }
 
