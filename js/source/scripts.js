@@ -36,9 +36,9 @@ nav_button.addEventListener('click', handle_nav_button_click);
 
 var mouse_over_nav_item = false;
 var mouse_over_backdrop = false;
-var dropdown_engaged = false;
 
 function close_dropdown() {
+
   setTimeout(function(){
     if (!mouse_over_nav_item) {
       $('#backdrop').css('transform', 'translateY(0)');
@@ -46,6 +46,7 @@ function close_dropdown() {
       $('.main-nav-item.hover').removeClass('hover');
     }
   }, 100);
+
 }
 
 function nav_item_dropdown(item) {
@@ -59,6 +60,7 @@ function nav_item_dropdown(item) {
 }
 
 function handle_mouse_enter(nav_item) {
+
   mouse_over_nav_item = true;
   if ($('#header').hasClass('dropdown-engaged')) {
     nav_item_dropdown(nav_item);
@@ -68,7 +70,6 @@ function handle_mouse_enter(nav_item) {
         nav_item_dropdown(nav_item);
         $('#header').addClass('dropdown-engaged');
       }
-
     }, 200);
   }
 
