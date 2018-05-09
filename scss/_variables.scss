@@ -41,6 +41,8 @@ $s: 480px;
 $m: 720px;
 $l: 840px;
 
+$header-shadow: 0 2px 0 rgba($gray-3, .6);
+
 // Mixins
 @mixin icon($name) {
   background-image: url(../img/icons/icn-#{$name}.svg);
