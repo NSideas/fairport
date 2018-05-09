@@ -38,24 +38,37 @@ var mouse_over_nav_item = false;
 var mouse_over_backdrop = false;
 var dropdown_engaged = false;
 
+function close_dropdown() {
+  setTimeout(function(){
+    if (!mouse_over_nav_item) {
+      $('#backdrop').css('transform', 'translateY(0)');
+      $('#header').removeClass('dropdown-engaged');
+      $('.main-nav-item.hover').removeClass('hover');
+    }
+  }, 100);
+}
+
 function nav_item_dropdown(item) {
-  $(item).addClass('hover');
+
   $(item).siblings().removeClass('hover');
   var sub_nav_height = $(item).find('.sub-nav').height();
   var translate_value = sub_nav_height + 10;
   $('#backdrop').css('transform', 'translateY('+ translate_value +'px)');
+  $(item).addClass('hover');
+
 }
 
 function handle_mouse_enter(nav_item) {
-
   mouse_over_nav_item = true;
-
   if ($('#header').hasClass('dropdown-engaged')) {
     nav_item_dropdown(nav_item);
   } else {
     setTimeout(function() {
-      nav_item_dropdown(nav_item);
-      $('#header').addClass('dropdown-engaged');
+      if (mouse_over_nav_item) {
+        nav_item_dropdown(nav_item);
+        $('#header').addClass('dropdown-engaged');
+      }
+
     }, 200);
   }
 
@@ -64,46 +77,34 @@ function handle_mouse_enter(nav_item) {
 function handle_mouse_leave(nav_item) {
 
   mouse_over_nav_item = false;
-  mouse_over_backdrop = false;
 
   setTimeout(function() {
     if (!mouse_over_backdrop) {
       $(nav_item).removeClass('hover');
-      if (!mouse_over_nav_item) {
-        $('#backdrop').css('transform', 'translateY(0)');
-        $('#header').removeClass('dropdown-engaged');
-      }
+      close_dropdown();
     }
   }, 10);
 
 }
 
-// Sub Nav
-if (mq_small.matches) {
+function dropdown_menu_hover() {
 
   $('#backdrop').hover(function() {
-
     mouse_over_backdrop = true;
-
   }, function() {
-
     mouse_over_backdrop = false;
-    $('#backdrop').css('transform', 'translateY(0)');
-    $('.main-nav-item.hover').removeClass('hover');
-
+    close_dropdown();
   });
 
   $('.main-nav-item').hover(function(e) {
-
     handle_mouse_enter(this);
-
   }, function(e) {
-
     handle_mouse_leave(this);
-
   });
 
-} else {
+}
+
+function dropdown_menu_tap() {
 
   $('.main-nav-item > a').click(function(e) {
     e.preventDefault();
@@ -112,6 +113,12 @@ if (mq_small.matches) {
 
 }
 
+// Sub Nav
+if (mq_small.matches) {
+  dropdown_menu_hover();
+} else {
+  dropdown_menu_tap();
+}
 
 
 

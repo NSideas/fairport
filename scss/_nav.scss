@@ -118,8 +118,6 @@ nav {
   border-bottom: solid 2px $gray-4;
   transform: translateY(0);
   transition: all .3s ease;
-  &.active {
-  }
 }
 @media (min-width: $l) {
   .main-nav-item.hover {
