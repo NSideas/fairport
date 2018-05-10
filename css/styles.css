@@ -2373,29 +2373,44 @@ input:invalid + input[type="submit"].btn--solid-white {
     position: absolute;
     right: 10px;
     top: 7px;
-    background-color: #F0F0F0; }
+    background-color: #F0F0F0;
+    opacity: .4; }
     .search-site .search-submit:focus {
       outline: none; }
 
 @media (min-width: 840px) {
   .search-site {
     margin-bottom: 0;
-    width: 200px; }
+    width: 52px;
+    cursor: pointer; }
+    .search-site.active {
+      width: 200px;
+      cursor: inherit; }
   .search-site .search-input {
     margin-bottom: 0;
     background: #F0F0F0;
     border: none;
     border-radius: 0;
     opacity: 0;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out; }
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease; }
     .search-site .search-input:focus {
       opacity: 1;
       -webkit-transform: translateX(0);
               transform: translateX(0); }
+  .search-site.active .search-input {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
   .search-site .search-submit {
     pointer-events: none;
-    background-color: transparent; } }
+    background-color: transparent; }
+  .search-site .search-input:focus + .search-submit {
+    opacity: .6;
+    pointer-events: all;
+    cursor: pointer; } }
 
 .color-purple .page-intro--default {
   background-color: #83769C; }

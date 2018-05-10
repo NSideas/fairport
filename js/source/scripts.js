@@ -122,6 +122,13 @@ if (mq_small.matches) {
   dropdown_menu_tap();
 }
 
+$('#header-search').click(function() {
+  if (!$(this).hasClass('active')) {
+    $(this).addClass('active');
+    $('#search-site').focus();
+  }
+});
+
 
 
 // Home Page

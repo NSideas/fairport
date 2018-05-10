@@ -89,6 +89,7 @@ input:invalid + input[type="submit"].btn--solid-white {
     right: 10px;
     top: 7px;
     background-color: $gray-5;
+    opacity: .4;
     &:focus {
       outline: none;
     }
@@ -98,7 +99,12 @@ input:invalid + input[type="submit"].btn--solid-white {
 @media (min-width: $l) {
   .search-site {
     margin-bottom: 0;
-    width: 200px;
+    width: 52px;
+    cursor: pointer;
+    &.active {
+      width: 200px;
+      cursor: inherit;
+    }
   }
   .search-site .search-input {
     margin-bottom: 0;
@@ -106,9 +112,15 @@ input:invalid + input[type="submit"].btn--solid-white {
     border: none;
     border-radius: 0;
     opacity: 0;
-    transition: all .2s ease-in-out;
-    // transform: translateX(200px);
+    transform: translateX(200px);
+    transition: all .2s ease;
     &:focus {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .search-site.active {
+    .search-input {
       opacity: 1;
       transform: translateX(0);
     }
@@ -119,7 +131,9 @@ input:invalid + input[type="submit"].btn--solid-white {
   }
   .search-site {
     .search-input:focus + .search-submit {
-      // background-color: $gray-5;
+      opacity: .6;
+      pointer-events: all;
+      cursor: pointer;
     }
   }
 }
