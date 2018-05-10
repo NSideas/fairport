@@ -1771,6 +1771,7 @@ li.block-list-item {
 
 p.story-teaser-body {
   color: #929292;
+  font-family: "EB Garamond", Georgia, serif;
   font-size: 1.25em;
   margin-bottom: 1.5em; }
   @media (min-width: 720px) {

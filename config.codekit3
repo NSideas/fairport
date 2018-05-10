@@ -567,6 +567,13 @@
 		"oAP": "\/staff-info.html",
 		"oF": 0
 		},
+	"\/kit\/story-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/story-1.html",
+		"oF": 0
+		},
 	"\/kit\/team.kit": {
 		"cB": 0,
 		"ft": 2048,
