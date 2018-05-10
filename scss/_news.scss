@@ -126,13 +126,9 @@
 
 .related-news-list,
 .recent-news-list {
-  padding-top: 1em;
   border-bottom: solid 1px $gray-4;
   .news-item {
     margin-top: 0;
-  }
-  @media (min-width: $m) {
-    padding-top: 2em;
   }
 }
 

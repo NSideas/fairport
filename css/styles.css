@@ -785,6 +785,16 @@ hr {
   background-repeat: no-repeat;
   background-position: center; }
 
+.related-content-list,
+.related-news-list,
+.recent-news-list {
+  padding-top: 1em; }
+  @media (min-width: 720px) {
+    .related-content-list,
+    .related-news-list,
+    .recent-news-list {
+      padding-top: 2em; } }
+
 .grid-item, .footer-nav-item {
   width: 100%; }
 
@@ -2120,15 +2130,10 @@ li.team-member {
 
 .related-news-list,
 .recent-news-list {
-  padding-top: 1em;
   border-bottom: solid 1px #C9C9C9; }
   .related-news-list .news-item,
   .recent-news-list .news-item {
     margin-top: 0; }
-  @media (min-width: 720px) {
-    .related-news-list,
-    .recent-news-list {
-      padding-top: 2em; } }
 
 .recent-news-header {
   font-size: 14px; }

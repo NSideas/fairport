@@ -152,6 +152,15 @@
   background-position: center;
 }
 
+.related-content-list,
+.related-news-list,
+.recent-news-list {
+  padding-top: 1em;
+  @media (min-width: $m) {
+    padding-top: 2em;
+  }
+}
+
 
 // Grid
 
