@@ -12,11 +12,44 @@ ul.staff-list {
 li.team-member {
   width: 100%;
   display: block;
+  padding-bottom: 1em;
+  border-bottom: solid 1px #dddddd;
+  margin-bottom: 1em;
 }
 
 .team-member-link,
 .team-member-link:hover {
   color: inherit;
+}
+
+.team-member-link {
+  align-items: center;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(black, .3);
+    top: 0;
+    opacity: 0;
+    transition: all .2s;
+  }
+  &:after {
+    content: 'Read Bio';
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: rgba(white, .86);
+    top: 60px;
+    font-size: 1.25em;
+    opacity: 0;
+    transition: all .2s;
+  }
 }
 
 .team-member-photo,
@@ -26,32 +59,24 @@ li.team-member {
   border-radius: 50%;
 }
 
+.team-member-photo {
+  width: 80px;
+}
+
 .job-title {
   margin-bottom: 0;
   color: $gray-2;
 }
 
-
-li.team-member {
-  padding-bottom: 1em;
-  border-bottom: solid 1px #dddddd;
-  margin-bottom: 1em;
-}
-.team-member-link {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-.team-member-photo {
-  width: 80px;
-}
 .team-member-info {
   width: calc(100% - 100px);
   padding-left: 12px;
 }
+
 .job-title {
   font-size: .8em;
 }
+
 .team-member-name {
   margin-bottom: 0;
   font-size: 1.35em;
@@ -74,6 +99,15 @@ li.team-member {
   }
   .team-member-link {
     display: block;
+    &:before {
+      display: block;
+    }
+  }
+  .team-member-link:hover {
+    &:after,
+    &:before {
+      opacity: 1;
+    }
   }
   .team-member-photo {
     margin: auto;
@@ -90,6 +124,16 @@ li.team-member {
 @media (min-width: $l) {
   li.team-member {
     width: 31%;
+  }
+  .team-member-link {
+    &:before {
+      width: 200px;
+      height: 200px;
+    }
+    &:after {
+      font-size: 1.5em;
+      top: 83px;
+    }
   }
   .team-member-photo {
     width: 200px;

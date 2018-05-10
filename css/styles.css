@@ -1781,11 +1781,46 @@ ul.staff-list {
 
 li.team-member {
   width: 100%;
-  display: block; }
+  display: block;
+  padding-bottom: 1em;
+  border-bottom: solid 1px #dddddd;
+  margin-bottom: 1em; }
 
 .team-member-link,
 .team-member-link:hover {
   color: inherit; }
+
+.team-member-link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .team-member-link:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+  .team-member-link:after {
+    content: 'Read Bio';
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.86);
+    top: 60px;
+    font-size: 1.25em;
+    opacity: 0;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
 
 .team-member-photo,
 .team-bio-photo {
@@ -1793,29 +1828,12 @@ li.team-member {
   height: auto;
   border-radius: 50%; }
 
+.team-member-photo {
+  width: 80px; }
+
 .job-title {
   margin-bottom: 0;
   color: #929292; }
-
-li.team-member {
-  padding-bottom: 1em;
-  border-bottom: solid 1px #dddddd;
-  margin-bottom: 1em; }
-
-.team-member-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.team-member-photo {
-  width: 80px; }
 
 .team-member-info {
   width: calc(100% - 100px);
@@ -1846,6 +1864,10 @@ li.team-member {
       margin: auto; }
   .team-member-link {
     display: block; }
+    .team-member-link:before {
+      display: block; }
+  .team-member-link:hover:after, .team-member-link:hover:before {
+    opacity: 1; }
   .team-member-photo {
     margin: auto;
     width: 150px; }
@@ -1857,6 +1879,12 @@ li.team-member {
 @media (min-width: 840px) {
   li.team-member {
     width: 31%; }
+  .team-member-link:before {
+    width: 200px;
+    height: 200px; }
+  .team-member-link:after {
+    font-size: 1.5em;
+    top: 83px; }
   .team-member-photo {
     width: 200px; }
   .job-title {

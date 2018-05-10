@@ -1,12 +1,12 @@
 
+// Media Queries
+var mq_small = window.matchMedia('(min-width: 480px)');
+var mq_medium = window.matchMedia('(min-width: 720px)');
 
 // Main Nav
 var main_nav = document.getElementById('main-nav');
 var nav_button = document.getElementById('menu-toggle');
 var nav_is_open = false;
-
-var mq_small = window.matchMedia('(min-width: 480px)');
-var mq_medium = window.matchMedia('(min-width: 720px)');
 
 function open_nav() {
   main_nav.classList.add('open');
@@ -34,6 +34,8 @@ function handle_nav_button_click() {
 nav_button.addEventListener('click', handle_nav_button_click);
 
 
+
+// Sub Nav
 var mouse_over_nav_item = false;
 var mouse_over_backdrop = false;
 
@@ -114,7 +116,6 @@ function dropdown_menu_tap() {
 
 }
 
-// Sub Nav
 if (mq_small.matches) {
   dropdown_menu_hover();
 } else {
@@ -263,7 +264,6 @@ var fam_circle_swiper = new Swiper('.fam-circle-swiper', {
   init: false,
   slideToClickedSlide: true,
   allowTouchMove: false,
-  // onlyExternal: true,
   on: {
     slideChangeTransitionStart: function() {
       fam_circle_slide_change(this)
@@ -322,6 +322,7 @@ function get_translate_values(start) {
 }
 
 function initialize_swiper_manually() {
+
   // Translate to initial slide
   var current_translate = fam_circle_swiper.getTranslate();
   translate_circles(current_translate);
@@ -336,6 +337,7 @@ function initialize_swiper_manually() {
     translate_circles(start_position);
     swiper_is_active = true;
   }, 1000);
+
 }
 
 fam_circle_swiper.on('init', function() {
@@ -381,7 +383,6 @@ function close_active_team_bio(active_team_bio) {
     active_team_bio.removeClass('fade-out');
   }, 250);
 }
-
 
 $('.close-bio').click(function() {
   close_active_team_bio($(this).closest('.team-bio-container'));
