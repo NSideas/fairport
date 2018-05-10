@@ -99,7 +99,6 @@
 .breadcrumb-item {
   display: inline-block;
   @include header-5;
-  font-size: .8em;
   &:not(.current) a {
     color: $gray-2;
   }
@@ -131,8 +130,6 @@
   @include pattern();
   background-size: 80px;
 }
-
-
 
 .pattern-separator {
   height: 75px;
@@ -200,7 +197,6 @@ $gutter: 10px;
 
 @media (min-width: 600px) {
   .two-column--medium {
-
     @include grid-2;
   }
 }
@@ -208,7 +204,6 @@ $gutter: 10px;
 @media (min-width: $l) {
   .four-column--large {
     @include grid-4;
-
   }
 }
 

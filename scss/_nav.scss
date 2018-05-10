@@ -51,15 +51,12 @@ nav {
 .main-nav-item {
   @media (min-width: $l) {
     display: inline-block;
-    // margin-right: -4px;
     margin-bottom: 0;
     margin-top: 2px;
     padding: .75em .5em;
     height: 44px;
-    // background-color: $gray-5;
     &:first-child {
       padding-left: 0;
-      // margin-right: 0;
     }
     &:last-child {
       padding-right: 0;
@@ -81,8 +78,10 @@ nav {
 }
 
 .main-nav-item > a {
+  font-size: 1em;
   margin-bottom: 6px;
   @media (min-width: $l) {
+    font-size: .9em;
     padding: 0;
     margin: 0;
   }
@@ -180,6 +179,9 @@ nav {
 
 .footer-nav-item {
   @extend .grid-item;
+  & > a {
+    font-size: 1em;
+  }
   @media (min-width: $l) {
     font-size: .9em;
   }
@@ -187,7 +189,12 @@ nav {
 
 .footer-sub-nav {
   padding: .5em 0;
-  a {
-    font-weight: 300;
+}
+
+.footer-sub-nav a {
+  font-weight: 300;
+  @media (min-width: $l) {
+    font-size: 1.125em;
+    margin-bottom: 5px;
   }
 }

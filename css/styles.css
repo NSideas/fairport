@@ -579,7 +579,7 @@ h4 {
   margin-bottom: 0; }
 
 h5 {
-  font-size: 1em;
+  font-size: 14px;
   letter-spacing: .075em;
   text-transform: uppercase;
   font-family: "Roboto Condensed", Helvetica, sans-serif;
@@ -617,7 +617,6 @@ a {
   padding-top: 10px; }
 
 .content-area h5 {
-  font-size: 14px;
   color: #929292;
   margin-bottom: .5em; }
 
@@ -625,7 +624,6 @@ a {
   margin-bottom: .5em; }
 
 .page-subtitle {
-  font-size: 14px;
   color: #929292;
   margin-bottom: 0; }
 
@@ -742,11 +740,10 @@ hr {
 
 .breadcrumb-item {
   display: inline-block;
-  font-size: 1em;
+  font-size: 14px;
   letter-spacing: .075em;
   text-transform: uppercase;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-size: .8em; }
+  font-family: "Roboto Condensed", Helvetica, sans-serif; }
   .breadcrumb-item:not(.current) a {
     color: #929292; }
 
@@ -993,7 +990,7 @@ nav a {
   margin-bottom: 1em; }
   .main-nav-item > a,
   .footer-nav-item > a {
-    font-size: 1em;
+    font-size: 14px;
     letter-spacing: .075em;
     text-transform: uppercase;
     font-family: "Roboto Condensed", Helvetica, sans-serif;
@@ -1058,9 +1055,11 @@ nav a {
         color: #4A4A4A; } }
 
 .main-nav-item > a {
+  font-size: 1em;
   margin-bottom: 6px; }
   @media (min-width: 840px) {
     .main-nav-item > a {
+      font-size: .9em;
       padding: 0;
       margin: 0; } }
 
@@ -1138,14 +1137,22 @@ nav a {
 .footer-nav-list {
   padding: 0; }
 
+.footer-nav-item > a {
+  font-size: 1em; }
+
 @media (min-width: 840px) {
   .footer-nav-item {
     font-size: .9em; } }
 
 .footer-sub-nav {
   padding: .5em 0; }
-  .footer-sub-nav a {
-    font-weight: 300; }
+
+.footer-sub-nav a {
+  font-weight: 300; }
+  @media (min-width: 840px) {
+    .footer-sub-nav a {
+      font-size: 1.125em;
+      margin-bottom: 5px; } }
 
 .btn,
 .btn-submit {
@@ -1234,7 +1241,6 @@ li.block-list-item {
       margin-bottom: .75em; } }
 
 .block-list-item h5 {
-  font-size: 14px;
   margin-top: .25em;
   margin-bottom: 0;
   color: #929292; }
@@ -2165,12 +2171,10 @@ li.team-member {
       margin-bottom: .65em; } }
 
 .more-link {
-  font-size: 1em;
+  font-size: 14px;
   letter-spacing: .075em;
   text-transform: uppercase;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-size: .8em;
-  font-size: 14px; }
+  font-family: "Roboto Condensed", Helvetica, sans-serif; }
 
 .quick-link--announcement {
   background-image: url(../img/icons/icn-bell.svg); }
