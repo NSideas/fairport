@@ -2382,11 +2382,7 @@ input:invalid + input[type="submit"].btn--solid-white {
   .search-site {
     margin-bottom: 0;
     width: 52px;
-    cursor: pointer;
     position: relative; }
-    .search-site.active {
-      width: 200px;
-      cursor: inherit; }
   .search-site .search-input {
     position: absolute;
     right: 0;
