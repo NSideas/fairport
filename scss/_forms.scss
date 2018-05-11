@@ -101,23 +101,23 @@ input:invalid + input[type="submit"].btn--solid-white {
     margin-bottom: 0;
     width: 52px;
     cursor: pointer;
+    position: relative;
     &.active {
       width: 200px;
       cursor: inherit;
     }
   }
   .search-site .search-input {
+    position: absolute;
+    right: 0;
     margin-bottom: 0;
+    width: 200px;
     background: $gray-5;
     border: none;
     border-radius: 0;
     opacity: 0;
     transform: translateX(200px);
-    transition: all .2s ease;
-    &:focus {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    transition: all .3s ease;
   }
   .search-site.active {
     .search-input {
@@ -126,14 +126,13 @@ input:invalid + input[type="submit"].btn--solid-white {
     }
   }
   .search-site .search-submit {
-    pointer-events: none;
     background-color: transparent;
+    cursor: pointer;
   }
   .search-site {
-    .search-input:focus + .search-submit {
+    .search-input:focus + .search-submit,
+    .search-submit:focus {
       opacity: .6;
-      pointer-events: all;
-      cursor: pointer;
     }
   }
 }

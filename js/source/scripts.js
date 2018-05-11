@@ -125,7 +125,18 @@ if (mq_small.matches) {
 $('#header-search').click(function() {
   if (!$(this).hasClass('active')) {
     $(this).addClass('active');
-    $('#search-site').focus();
+    setTimeout(function(){
+      $('#search-site').focus();
+    }, 200);
+    document.addEventListener('click', function(e) {
+      var $this = $('#header-search');
+      if (!$(e.target).parents('#header-search').length && $(e.target)[0] !== $this) {
+        $('#search-site').blur();
+        setTimeout(function(){
+          $this.removeClass('active');
+        }, 200);
+      }
+    });
   }
 });
 
