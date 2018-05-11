@@ -659,6 +659,14 @@ hr {
 .align-center {
   text-align: center; }
 
+p.small {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: .9em;
+  color: #929292; }
+  @media (min-width: 720px) {
+    p.small {
+      color: #ADADAD; } }
+
 .container,
 .container-wide {
   margin-left: auto;
@@ -691,6 +699,9 @@ hr {
   @media (min-width: 720px) {
     .main-content {
       padding-bottom: 2.5em; } }
+
+.main-content img {
+  max-width: 100%; }
 
 .main-section {
   padding-top: 1em;
@@ -743,7 +754,8 @@ hr {
   font-size: 14px;
   letter-spacing: .075em;
   text-transform: uppercase;
-  font-family: "Roboto Condensed", Helvetica, sans-serif; }
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: .8em; }
   .breadcrumb-item:not(.current) a {
     color: #929292; }
 
@@ -862,6 +874,56 @@ p.staff-info-contact {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: .9em;
   color: #929292; }
+
+.story .page-title {
+  margin-bottom: .75em; }
+
+.story .featured-image {
+  margin-bottom: 1.5em; }
+  @media (min-width: 840px) {
+    .story .featured-image {
+      margin-bottom: 2.5em; } }
+
+.story .disclaimer {
+  padding-top: 40px; }
+  @media (min-width: 840px) {
+    .story .disclaimer {
+      padding-top: 70px; } }
+
+.mini-portrait {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em; }
+  @media (min-width: 720px) {
+    .mini-portrait {
+      margin-bottom: 1.75em; } }
+
+.story-teaser-title {
+  font-weight: 500; }
+  @media (min-width: 720px) {
+    .story-teaser-title {
+      margin-bottom: .25em; } }
+
+p.story-teaser-body {
+  color: #929292;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.25em;
+  margin-bottom: 1.5em; }
+  @media (min-width: 720px) {
+    p.story-teaser-body {
+      font-size: 1.45em; } }
+
+.secondary-content-area .story-teaser {
+  margin-bottom: 3em; }
+  .secondary-content-area .story-teaser:last-child {
+    margin-bottom: 2em; }
+  @media (min-width: 720px) {
+    .secondary-content-area .story-teaser {
+      margin-bottom: 3.5em; } }
+
+.secondary-content-area p.story-teaser-body {
+  margin-bottom: 1em; }
 
 #header {
   position: fixed;
@@ -1026,7 +1088,8 @@ nav a {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding: 0; } }
+      padding: 0;
+      overflow: hidden; } }
 
 .main-nav-list {
   padding: 2em 0; }
@@ -1763,30 +1826,6 @@ li.block-list-item {
             box-shadow: 0 0 4px rgba(119, 119, 119, 0.2); }
   .about-you-template .content-area {
     padding-bottom: 3.5em; } }
-
-.mini-portrait {
-  width: 80px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 1em; }
-  @media (min-width: 720px) {
-    .mini-portrait {
-      margin-bottom: 1.75em; } }
-
-.story-teaser-title {
-  font-weight: 500; }
-  @media (min-width: 720px) {
-    .story-teaser-title {
-      margin-bottom: .5em; } }
-
-p.story-teaser-body {
-  color: #929292;
-  font-family: "EB Garamond", Georgia, serif;
-  font-size: 1.25em;
-  margin-bottom: 1.5em; }
-  @media (min-width: 720px) {
-    p.story-teaser-body {
-      font-size: 1.45em; } }
 
 ul.staff-list {
   padding: 2em 0;

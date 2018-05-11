@@ -123,7 +123,6 @@ if (mq_small.matches) {
 }
 
 function hide_search_bar(e) {
-  console.log(e.target);
   var $this = $('#header-search');
   if (!$(e.target).parents('#header-search').length && $(e.target)[0] !== $this) {
     $('#search-site').blur();

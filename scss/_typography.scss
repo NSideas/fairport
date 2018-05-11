@@ -161,3 +161,12 @@ hr {
 .align-center {
   text-align: center;
 }
+
+p.small {
+  font-family: $sans;
+  font-size: .9em;
+  color: $gray-2;
+  @media (min-width: $m) {
+    color: $gray-3;
+  }
+}
