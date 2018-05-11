@@ -143,9 +143,36 @@
   margin-bottom: 2em;
   &:before {
     @extend %pattern-fill;
+    opacity: .4;
   }
-  &.theme-color:before {
-    opacity: .3;
+  &.gray:before {
+    @include pattern('zig-zag-black');
+    opacity: .15;
+  }
+}
+
+.brick-pattern {
+  &:before {
+    @include pattern('brick-white');
+  }
+  &.gray:before {
+    @include pattern('brick-black');
+  }
+}
+
+.linen-pattern {
+  &:before {
+    @include pattern('linen-white');
+  }
+  &.gray:before {
+    @include pattern('linen-black');
+  }
+}
+
+.brick-pattern,
+.linen-pattern {
+  &:before {
+    background-size: 100px;
   }
 }
 
@@ -355,4 +382,23 @@ p.story-teaser-body {
   p.story-teaser-body {
     margin-bottom: 1em;
   }
+}
+
+
+
+
+
+// Style Guide
+#style-guide .page-title {
+  margin-top: .5em;
+}
+
+.style-guide-header {
+  padding-bottom: .5em;
+  border-bottom: solid 1px $gray-4;
+  margin-bottom: .5em;
+}
+
+.style-guide-content {
+  padding-top: 1em;
 }

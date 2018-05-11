@@ -42,7 +42,7 @@ $colors: (
     background-color: $c1;
   }
 
-  .pattern-separator.theme-color{
+  .pattern-separator:not(.gray) {
     background-color: $c3;
   }
 

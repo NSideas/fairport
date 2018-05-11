@@ -239,6 +239,72 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/patterns\/brick-black.png": {
+		"ft": 32768,
+		"iS": 2838,
+		"oA": 0,
+		"oAP": "\/img\/patterns\/brick-black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/patterns\/brick-white.png": {
+		"ft": 32768,
+		"iS": 2836,
+		"oA": 0,
+		"oAP": "\/img\/patterns\/brick-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/patterns\/linen-black.png": {
+		"ft": 32768,
+		"iS": 3269,
+		"oA": 0,
+		"oAP": "\/img\/patterns\/linen-black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/patterns\/linen-white.png": {
+		"ft": 32768,
+		"iS": 3284,
+		"oA": 0,
+		"oAP": "\/img\/patterns\/linen-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/patterns\/zig-zag-black.png": {
+		"ft": 32768,
+		"iS": 3291,
+		"oA": 0,
+		"oAP": "\/img\/patterns\/zig-zag-black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/patterns\/zig-zag-white.png": {
+		"ft": 32768,
+		"iS": 3328,
+		"oA": 0,
+		"oAP": "\/img\/patterns\/zig-zag-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/patterns\/zig-zag.png": {
 		"ft": 32768,
 		"iS": 21012,
@@ -497,6 +563,27 @@
 		"oAP": "\/kit\/_story-teaser.html",
 		"oF": 0
 		},
+	"\/kit\/modules\/block-list\/_ordered-60_40.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kit\/modules\/_ordered-60_40.html",
+		"oF": 0
+		},
+	"\/kit\/modules\/block-list\/_ordered-single-column.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kit\/modules\/_ordered-single-column.html",
+		"oF": 0
+		},
+	"\/kit\/modules\/block-list\/_unordered-30_70.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kit\/modules\/_unordered-30_70.html",
+		"oF": 0
+		},
 	"\/kit\/modules\/news-items\/_news-item-1.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -588,6 +675,13 @@
 		"oAP": "\/story-1.html",
 		"oF": 0
 		},
+	"\/kit\/style-guide.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/style-guide.html",
+		"oF": 0
+		},
 	"\/kit\/team.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -640,7 +734,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_about-you-template.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_block-list.scss": {
@@ -653,7 +747,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_block-list.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_buttons.scss": {
@@ -666,7 +760,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_buttons.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_colors.scss": {
@@ -679,7 +773,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_colors.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_footer.scss": {
@@ -692,7 +786,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_footer.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_forms.scss": {
@@ -705,7 +799,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_forms.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_header.scss": {
@@ -718,7 +812,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_header.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_helpers.scss": {
@@ -731,7 +825,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_helpers.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_home.scss": {
@@ -744,7 +838,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_home.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_layout.scss": {
@@ -757,7 +851,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_layout.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_main.scss": {
@@ -770,7 +864,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_main.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_nav.scss": {
@@ -783,7 +877,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_nav.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_news.scss": {
@@ -796,7 +890,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_news.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_normalize.scss": {
@@ -809,7 +903,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_normalize.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_our-team.scss": {
@@ -822,7 +916,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_our-team.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_print.scss": {
@@ -835,7 +929,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_print.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_quick-links.scss": {
@@ -848,7 +942,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_quick-links.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_typography.scss": {
@@ -861,7 +955,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_typography.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/_variables.scss": {
@@ -874,7 +968,7 @@
 		"oA": 1,
 		"oAP": "\/css\/_variables.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/styles.scss": {
@@ -887,7 +981,7 @@
 		"oA": 0,
 		"oAP": "\/css\/styles.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/staff-info.html": {
@@ -902,6 +996,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/story-1.html",
+		"oF": 0
+		},
+	"\/style-guide.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/style-guide.html",
 		"oF": 0
 		},
 	"\/team.html": {
@@ -3046,7 +3147,7 @@
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1

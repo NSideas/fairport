@@ -48,7 +48,7 @@ $header-shadow: 0 2px 0 rgba($gray-3, .6);
   background-image: url(../img/icons/icn-#{$name}.svg);
 }
 
-@mixin pattern($name: 'zig-zag') {
+@mixin pattern($name: 'zig-zag-white') {
   background-image: url(../img/patterns/#{$name}.png);
 }
 

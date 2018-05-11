@@ -48,7 +48,7 @@ h3 {
   font-size: 1.35em;
   line-height: 1.25;
   font-weight: 400;
-  margin-bottom: .25em;
+  // margin-bottom: .25em;
   @media (min-width: $m) {
     font-size: 1.6em;
   }
@@ -57,7 +57,7 @@ h3 {
 h4 {
   @extend %body-copy;
   font-weight: 500;
-  margin-bottom: 0;
+  // margin-bottom: .25em;
 }
 
 @mixin header-5 {
@@ -105,6 +105,10 @@ a {
   & + h4 {
     padding-top: 10px;
   }
+}
+
+.content-area h4 {
+  margin-bottom: .25em;
 }
 
 .content-area h5 {
