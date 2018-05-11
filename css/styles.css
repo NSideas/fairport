@@ -595,9 +595,6 @@ a {
 .main-content li strong {
   font-weight: 500; }
 
-.content-area ul {
-  padding-left: 1.5em; }
-
 .content-area li {
   margin-bottom: .5em; }
 
@@ -619,6 +616,26 @@ a {
 .content-area h5 {
   color: #929292;
   margin-bottom: .5em; }
+
+.content-area ul, .block-list-item ul {
+  list-style: none;
+  padding: 0; }
+  .content-area ul li, .block-list-item ul li {
+    padding-left: 1.5em;
+    position: relative; }
+  .content-area ul li:before, .block-list-item ul li:before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #D4C098;
+    position: absolute;
+    left: .65em;
+    top: .55em; }
+
+.content-area ul {
+  margin-bottom: 21px; }
 
 .page-title {
   margin-bottom: .5em; }
@@ -1343,9 +1360,9 @@ li.block-list-item {
     background: #D4C098;
     color: white; }
 
-.block-list-item ul {
-  list-style-type: disc;
-  padding-left: 1.4em; }
+.block-list-item ul > li:before {
+  width: 5px;
+  height: 5px; }
 
 .block-list-item li {
   margin: .25em 0; }

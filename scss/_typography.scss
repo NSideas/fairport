@@ -88,9 +88,6 @@ a {
   }
 }
 
-.content-area ul {
-  padding-left: 1.5em;
-}
 .content-area li {
   margin-bottom: .5em;
 }
@@ -113,6 +110,31 @@ a {
 .content-area h5 {
   color: $gray-2;
   margin-bottom: .5em;
+}
+
+%bullet-list {
+  list-style: none;
+  padding: 0;
+  li {
+    padding-left: 1.5em;
+    position: relative;
+  }
+  li:before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $gold-3;
+    position: absolute;
+    left: .65em;
+    top: .55em;
+  }
+}
+
+.content-area ul {
+  @extend %bullet-list;
+  margin-bottom: 21px;
 }
 
 .page-title {

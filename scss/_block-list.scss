@@ -62,8 +62,11 @@ li.block-list-item {
 }
 
 .block-list-item ul {
-  list-style-type: disc;
-  padding-left: 1.4em;
+  @extend %bullet-list;
+  & > li:before {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 .block-list-item li {
