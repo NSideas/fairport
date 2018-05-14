@@ -36,14 +36,47 @@
   border-radius: 23px;
 }
 
+@mixin button--gold {
+  color: $gold-1;
+  border-color: $gold-1;
+  &:hover,
+  &:focus {
+    background: $gold-2;
+    border-color: $gold-2;
+    color: white;
+  }
+}
+
+button,
 .btn,
 .btn-submit {
   @include button;
   color: $gray-1;
   border-color: $gray-2;
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $gray-1;
     color: $default;
+  }
+}
+
+button[type="submit"],
+.btn-submit {
+  @include button--large;
+  @include button--gold;
+  margin-bottom: 1em;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background: white;
+  &:focus {
+    outline: none;
+  }
+
+}
+
+#footer .btn-submit {
+  @media (min-width: $m) {
+    @include button--small;
   }
 }
 
@@ -62,9 +95,9 @@
   }
 }
 
-.btn--gold {
-  color: $gold-1;
-  border-color: $gold-1;
+.btn--gold,
+.btn--large  {
+  @include button--gold;
 }
 
 .btn--small {
@@ -73,16 +106,5 @@
 
 .btn--large {
   @include button--large;
-  color: $gold-1;
-  border-color: $gold-1;
   margin-top: .5em;
-}
-
-.btn--gold,
-.btn--large {
-  &:hover {
-    background: $gold-2;
-    border-color: $gold-2;
-    color: white;
-  }
 }
