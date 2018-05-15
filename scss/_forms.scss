@@ -81,21 +81,61 @@ form .label {
 }
 
 
-// Radio Buttons
-
-.radio-container {
+// Radio Buttons and Check Boxes
+%input-choice-container {
   justify-content: flex-start;
+  margin-top: 1em;
 }
 
-.radio-choice {
+%input-choice-item {
   position: relative;
 }
 
-input[type="radio"] + label {
+%input-choice-element {
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border: solid 2px white;
+  box-shadow: 0 0 0 2px $gray-4;
+  &:checked {
+    background: $gold-3;
+    box-shadow: 0 0 0 2px $gold-3;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $gold-1;
+  }
+}
+
+%input-choice-label {
   display: block;
-  font-family: $sans;
-  margin-bottom: .5em;
-  padding-left: 30px;
+  margin-bottom: 1em;
+  padding-left: 26px;
+}
+
+.radio-container,
+.checkbox-container {
+  @extend %input-choice-container;
+}
+.radio-choice,
+.checkbox-choice {
+  @extend %input-choice-item;
+}
+.custom-radio{
+  @extend %input-choice-element;
+  border-radius: 50%;
+}
+.custom-checkbox {
+  @extend %input-choice-element;
+  border-radius: 2px;
+}
+.custom-radio + label,
+.custom-checkbox + label {
+  @extend %input-choice-label;
 }
 
 

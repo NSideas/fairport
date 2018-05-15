@@ -3255,21 +3255,57 @@ form .label {
   content: '*';
 }
 
-.radio-container {
+.radio-container,
+.checkbox-container {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-top: 1em;
 }
 
-.radio-choice {
+.radio-choice,
+.checkbox-choice {
   position: relative;
 }
 
-input[type="radio"] + label {
+.custom-radio, .custom-checkbox {
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border: solid 2px white;
+  -webkit-box-shadow: 0 0 0 2px #C9C9C9;
+          box-shadow: 0 0 0 2px #C9C9C9;
+}
+
+.custom-radio:checked, .custom-checkbox:checked {
+  background: #D4C098;
+  -webkit-box-shadow: 0 0 0 2px #D4C098;
+          box-shadow: 0 0 0 2px #D4C098;
+}
+
+.custom-radio:focus, .custom-checkbox:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #B89654;
+          box-shadow: 0 0 0 2px #B89654;
+}
+
+.custom-radio + label,
+.custom-checkbox + label {
   display: block;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  margin-bottom: .5em;
-  padding-left: 30px;
+  margin-bottom: 1em;
+  padding-left: 26px;
+}
+
+.custom-radio {
+  border-radius: 50%;
+}
+
+.custom-checkbox {
+  border-radius: 2px;
 }
 
 input:invalid + input[type="submit"],
