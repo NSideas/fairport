@@ -2,38 +2,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<link type="text/css" rel="stylesheet" href="css/md.css"/>
 </head>
 <body>
 
-<h1 id="fairportassetmanagement">Fairport Asset Management</h1>
+<!-- CSS: css/md.css -->
+
+<h1 id="modules">Modules</h1>
 
 <p>One Paragraph of project description goes here</p>
 
-<h2 id="modules">Modules</h2>
-
-<h3 id="blocklists">Block Lists</h3>
+<h2 id="blocklists">Block Lists</h2>
 
 <p>Block Lists are styled lists with that contain block-level HTML elements within each <code>li</code>. They consist of the repeatable field, <strong>Block List Item</strong>.</p>
 
-<h4 id="blocklistunordered3070">Block List Unordered 30/70</h4>
+<p>Block List Items have two fields, <strong>Header (plain text)</strong> and <strong>Content (rich text)</strong>.</p>
 
-<pre><code>&lt;ul class=&quot;block-list block-list--unordered split--30-70&quot;&gt;
+<h3 id="unorderedblocklist">Unordered Block List</h3>
 
-  {for each block-list-item}
+<p>Sub Fields: <strong>Header (plain text)</strong>, <strong>Main Content (rich text)</strong></p>
 
+<pre><code class="html">&lt;ul class=&quot;block-list block-list--unordered split--30-70&quot;&gt;
+
+  <!-- for each {Block List Item} -->
   &lt;li class=&quot;block-list-item flex&quot;&gt;
     &lt;div class=&quot;grid-item left-column&quot;&gt;
-      &lt;h3&gt;{BLOCK_LIST_ITEM_TITLE}&lt;/h3&gt;
+      &lt;h3&gt;{Header}&lt;/h3&gt;
     &lt;/div&gt;
     &lt;div class=&quot;grid-item right-column&quot;&gt;
-      {BLOCK_LIST_ITEM_CONTENT}
+      {Content}
     &lt;/div&gt;
   &lt;/li&gt;
-
-  {end for each}
+  <!-- /for each -->
 
 &lt;/ul&gt;
+</code></pre>
+
+<hr />
+
+<h3 id="orderedblocklistsinglecolumn">Ordered Block List Single column</h3>
+
+<p>Sub Fields: <strong>Content (rich text)</strong></p>
+
+<pre><code class="html">&lt;ol class=&quot;block-list block-list--ordered single-column&quot;&gt;
+
+  <!-- for each {Block List Item} -->
+  &lt;li class=&quot;block-list-item&quot;&gt;
+    {Content}
+  &lt;/li&gt;
+  <!-- /for each -->
+
+&lt;/ol&gt;
+
 </code></pre>
 
 <h3 id="installing">Installing</h3>
