@@ -1,36 +1,17 @@
-CSS: css/md.css
-
 # Fairport Asset Management
 
 One Paragraph of project description goes here
 
+## Getting Started
 
-## Modules
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+### Prerequisites
 
-### Block Lists
-
-Block Lists are styled lists with that contain block-level HTML elements within each `li`. They consist of the repeatable field, **Block List Item**.
-
-#### Block List Unordered 30/70
+What things you need to install the software and how to install them
 
 ```
-<ul class="block-list block-list--unordered split--30-70">
-
-  {for each block-list-item}
-
-  <li class="block-list-item flex">
-    <div class="grid-item left-column">
-      <h3>{BLOCK_LIST_ITEM_TITLE}</h3>
-    </div>
-    <div class="grid-item right-column">
-      {BLOCK_LIST_ITEM_CONTENT}
-    </div>
-  </li>
-
-  {end for each}
-
-</ul>
+Give examples
 ```
 
 ### Installing
@@ -51,6 +32,25 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
 
 ## Deployment
 
