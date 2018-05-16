@@ -4,6 +4,9 @@
 
 One Paragraph of project description goes here
 
+
+
+
 ## Block Lists
 
 Block Lists are styled lists with that contain block-level HTML elements within each `li`. They consist of the repeatable field, **Block List Item**.
@@ -59,24 +62,6 @@ Sub Fields: **Content (rich text)**
 
 
 
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 
 ## Deployment

@@ -81,30 +81,12 @@
 		"oAP": "\/executives.html",
 		"oF": 0
 		},
-	"\/favicon.ico": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/favicon.ico",
-		"oF": 0
-		},
 	"\/history.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/history.html",
 		"oF": 0
-		},
-	"\/icon.png": {
-		"ft": 32768,
-		"iS": 4029,
-		"oA": 0,
-		"oAP": "\/icon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/img\/fairport-icon.svg": {
 		"ft": 2097152,
@@ -713,13 +695,6 @@
 		"oAP": "\/team.html",
 		"oF": 0
 		},
-	"\/LICENSE.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/LICENSE.txt",
-		"oF": 0
-		},
 	"\/md\/modules.md": {
 		"cB": 0,
 		"cS": 0,
@@ -790,13 +765,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/robots.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/robots.txt",
-		"oF": 0
 		},
 	"\/scss\/_about-you-template.scss": {
 		"aP": 1,
@@ -1098,28 +1066,6 @@
 		"oA": 0,
 		"oAP": "\/team.html",
 		"oF": 0
-		},
-	"\/tile-wide.png": {
-		"ft": 32768,
-		"iS": 1854,
-		"oA": 0,
-		"oAP": "\/tile-wide.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/tile.png": {
-		"ft": 32768,
-		"iS": 3482,
-		"oA": 0,
-		"oAP": "\/tile.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/uploads\/fairport-asset-management-1.jpg": {
 		"ft": 16384,
