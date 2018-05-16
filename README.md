@@ -32,7 +32,6 @@ Sub Fields: **Header (plain text)**, **Main Content (rich text)**
 </ul>
 ```
 
----
 
 ### Ordered Block List Single column
 
