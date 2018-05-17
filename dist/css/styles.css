@@ -615,6 +615,16 @@ h4, .main-content p,
   }
 }
 
+.section-title, .content-area h2 {
+  margin-bottom: .5em;
+}
+
+@media (min-width: 720px) {
+  .section-title, .content-area h2 {
+    margin-bottom: .75em;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -762,17 +772,7 @@ a:hover {
   margin-bottom: 0;
 }
 
-.section-title {
-  margin-bottom: .5em;
-}
-
-@media (min-width: 720px) {
-  .section-title {
-    margin-bottom: .75em;
-  }
-}
-
-.section-title.underlined {
+.section-title.underlined, .content-area h2.underlined {
   padding-bottom: .1em;
   border-bottom: solid 1px #C9C9C9;
   margin-bottom: 1em;

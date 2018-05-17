@@ -750,6 +750,13 @@
 		"oAP": "\/site\/client-experience.html",
 		"oF": 0
 		},
+	"\/src\/kit\/default-template.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/default-template.html",
+		"oF": 0
+		},
 	"\/src\/kit\/executives.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1274,6 +1281,24 @@
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
+		},
+	"\/TEMPLATES.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/TEMPLATES.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		}
 	},
 "hooks": [

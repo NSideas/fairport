@@ -13,6 +13,13 @@ body {
   }
 }
 
+.section-title {
+  margin-bottom: .5em;
+  @media (min-width: $m) {
+    margin-bottom: .75em;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -105,6 +112,9 @@ a {
   }
 }
 
+.content-area h2 {
+  @extend .section-title;
+}
 .content-area h3 {
   margin-bottom: .25em;
 }
@@ -149,13 +159,6 @@ a {
 .page-subtitle {
   color: $gray-2;
   margin-bottom: 0;
-}
-
-.section-title {
-  margin-bottom: .5em;
-  @media (min-width: $m) {
-    margin-bottom: .75em;
-  }
 }
 
 .section-title.underlined {
