@@ -9,15 +9,13 @@
 
 <h1 id="modules">Modules</h1>
 
-<p>Editable fields are referenced in the code samples inside of curly braces.</p>
-
-<p>Eg. <strong>Field Name</strong> = <code>{Field Name}</code></p>
+<p>Editable fields are referenced in the code samples inside of curly braces. Eg. <strong>Field&nbsp;Name</strong> = <code>{Field_Name}</code></p>
 
 <h2 id="homepageimageslider">Home Page Image Slider</h2>
 
 <p>The <a href="site/index.html">Home Page Slider</a> is a module that consists of the repeatable field, <strong>Slide</strong>.</p>
 
-<h5 id="subfields:">Sub Fields:</h5>
+<h5 id="subfields">Sub Fields</h5>
 
 <ul>
 <li><strong>Image</strong> – <em>image</em></li>
@@ -69,7 +67,69 @@
   &lt;/div&gt;
 
 &lt;/div&gt;
+</code></pre>
 
+<h2 id="teammemberbio">Team Member Bio</h2>
+
+<p>Team Member Bios are overlay or &#8220;pop-up&#8221; modules within the team page. Each one should have its own URL which links to the team page with the overlay module active.</p>
+
+<h4 id="fields">Fields</h4>
+
+<ul>
+<li><strong>Name</strong> – <em>plain text</em></li>
+<li><strong>Title</strong> – <em>plain text</em></li>
+<li><strong>Headshot</strong> – <em>image</em></li>
+<li><strong>Email Address</strong> – <em>plain text (or email)</em></li>
+<li><strong>Phone Number</strong> – <em>plain text</em></li>
+<li><strong>Bio</strong> – <em>rich text</em></li>
+</ul>
+
+<pre><code class="html">&lt;div id=&quot;{Name}&quot; class=&quot;team-bio-container&quot;&gt;
+  &lt;div class=&quot;team-bio-module&quot;&gt;
+    &lt;div class=&quot;close-bio x-button&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;team-bio-inner-wrap&quot;&gt;
+
+      &lt;header&gt;
+        &lt;img class=&quot;team-bio-photo&quot; src=&quot;{Headshot}&quot; alt=&quot;{Name}&quot;&gt;
+        &lt;h5 class=&quot;job-title&quot;&gt;{Title}&lt;/h5&gt;
+        &lt;h3 class=&quot;team-bio-name&quot;&gt;{Name}&lt;/h3&gt;
+        &lt;p class=&quot;team-bio-contact&quot;&gt;
+          {Email_Address} / {Phone Number} / &lt;a href=&quot;#&quot;&gt;Download&amp;nbsp;Contact&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/header&gt;
+
+      &lt;div class=&quot;team-bio-content&quot;&gt;
+        {Bio}
+      &lt;/div&gt;
+
+      &lt;div class=&quot;close-link-container&quot;&gt;
+        &lt;a class=&quot;close-bio&quot;&gt;Close&lt;/a&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2 id="stafflist">Staff List</h2>
+
+<p>The Staff List is used to display all the team members on the <a href="site/team.html">team page</a> using data from the Team Member Bios.</p>
+
+<pre><code class="html">&lt;ul id=&quot;staff-list&quot; class=&quot;staff-list flex&quot;&gt;
+
+  <!-- for each {Team_Member} -->
+  &lt;li class=&quot;team-member&quot;&gt;
+    &lt;a class=&quot;team-member-link flex&quot; href=&quot;#{Team_Member -&gt; Name}&quot;&gt;
+      &lt;img class=&quot;team-member-photo&quot; src=&quot;{Team_Member -&gt; Headshot}&quot; alt=&quot;{Team_Member -&gt; Name}&quot;&gt;
+      &lt;section class=&quot;team-member-info&quot;&gt;
+        &lt;h5 class=&quot;job-title&quot;&gt;{Team_Member -&gt; Title}&lt;/h5&gt;
+        &lt;h3 class=&quot;team-member-name&quot;&gt;{Team_Member -&gt; Name}&lt;/h3&gt;
+      &lt;/section&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  <!-- /for each -->
+
+&lt;/ul&gt;
 </code></pre>
 
 <h2 id="blocklists">Block Lists</h2>
@@ -78,7 +138,7 @@
 
 <h3 id="unorderedblocklist">Unordered Block List</h3>
 
-<h4 id="subfields:">Sub Fields:</h4>
+<h4 id="subfields">Sub Fields</h4>
 
 <ul>
 <li><strong>Header</strong> – <em>plain text</em></li>
@@ -87,7 +147,7 @@
 
 <pre><code class="html">&lt;ul class=&quot;block-list block-list--unordered split--30-70&quot;&gt;
 
-  <!-- for each {Block List Item} -->
+  <!-- for each {Block_List_Item} -->
   &lt;li class=&quot;block-list-item flex&quot;&gt;
     &lt;div class=&quot;grid-item left-column&quot;&gt;
       &lt;h3&gt;{Header}&lt;/h3&gt;
@@ -103,7 +163,7 @@
 
 <h3 id="orderedblocklistsinglecolumn">Ordered Block List Single column</h3>
 
-<p>Sub Fields: <strong>Content (rich text)</strong></p>
+<p>Sub Fields <strong>Content (rich text)</strong></p>
 
 <pre><code class="html">&lt;ol class=&quot;block-list block-list--ordered single-column&quot;&gt;
 

@@ -2,16 +2,17 @@
 
 # Modules
 
-Editable fields are referenced in the code samples inside of curly braces.
+Editable fields are referenced in the code samples inside of curly braces. Eg. **Field&nbsp;Name** = `{Field_Name}`
 
-Eg. **Field Name** = `{Field Name}`
+
+
 
 
 ## Home Page Image Slider
 
 The [Home Page Slider](site/index.html) is a module that consists of the repeatable field, **Slide**.
 
-##### Sub Fields:
+##### Sub Fields
 * **Image** – *image*
 * **Slide Title** – *plain text*
 * **Slide Subtitle** – *plain text*
@@ -61,8 +62,77 @@ The [Home Page Slider](site/index.html) is a module that consists of the repeata
   </div>
 
 </div>
-
 ```
+
+
+
+
+## Team Member Bio
+
+Team Member Bios are overlay or "pop-up" modules within the team page. Each one should  have its own URL which links to the team page with the overlay module active.
+
+#### Fields
+* **Name** – *plain text*
+* **Title** – *plain text*
+* **Headshot** – *image*
+* **Email Address** – *plain text (or email)*
+* **Phone Number** – *plain text*
+* **Bio** – *rich text*
+
+```html
+<div id="{Name}" class="team-bio-container">
+  <div class="team-bio-module">
+    <div class="close-bio x-button"></div>
+    <div class="team-bio-inner-wrap">
+
+      <header>
+        <img class="team-bio-photo" src="{Headshot}" alt="{Name}">
+        <h5 class="job-title">{Title}</h5>
+        <h3 class="team-bio-name">{Name}</h3>
+        <p class="team-bio-contact">
+          {Email_Address} / {Phone Number} / <a href="#">Download&nbsp;Contact</a>
+        </p>
+      </header>
+
+      <div class="team-bio-content">
+        {Bio}
+      </div>
+
+      <div class="close-link-container">
+        <a class="close-bio">Close</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+```
+
+
+
+
+## Staff List
+
+The Staff List is used to display all the team members on the [team page](site/team.html) using data from the Team Member Bios.
+
+```html
+<ul id="staff-list" class="staff-list flex">
+
+  <!-- for each {Team_Member} -->
+  <li class="team-member">
+    <a class="team-member-link flex" href="#{Team_Member -> Name}">
+      <img class="team-member-photo" src="{Team_Member -> Headshot}" alt="{Team_Member -> Name}">
+      <section class="team-member-info">
+        <h5 class="job-title">{Team_Member -> Title}</h5>
+        <h3 class="team-member-name">{Team_Member -> Name}</h3>
+      </section>
+    </a>
+  </li>
+  <!-- /for each -->
+
+</ul>
+```
+
+
 
 
 ## Block Lists
@@ -71,14 +141,14 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ### Unordered Block List
 
-#### Sub Fields:
+#### Sub Fields
 * **Header** – *plain text*
 * **Content** – *rich text*
 
 ```html
 <ul class="block-list block-list--unordered split--30-70">
 
-  <!-- for each {Block List Item} -->
+  <!-- for each {Block_List_Item} -->
   <li class="block-list-item flex">
     <div class="grid-item left-column">
       <h3>{Header}</h3>
@@ -95,8 +165,7 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ### Ordered Block List Single column
 
-Sub Fields: **Content (rich text)**
-
+Sub Fields **Content (rich text)**
 
 ```html
 <ol class="block-list block-list--ordered single-column">
