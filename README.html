@@ -15,7 +15,7 @@
 
 <p>The <a href="site/index.html">Home Page Slider</a> is a module that consists of the repeatable field, <strong>Slide</strong>.</p>
 
-<h5 id="subfields">Sub Fields</h5>
+<h4 id="subfields">Sub Fields</h4>
 
 <ul>
 <li><strong>Image</strong> – <em>image</em></li>
@@ -25,10 +25,9 @@
 </ul>
 
 <pre><code class="html">&lt;div id=&quot;hero-swiper&quot; class=&quot;hero-swiper swiper-container&quot;&gt;
-
   &lt;div class=&quot;swiper-wrapper&quot;&gt;
 
-    <!-- for each {Block List Item} -->
+    <!-- for each {Slide}: -->
     &lt;div class=&quot;swiper-slide slide-1 color-{Color}&quot; style=&quot;background-image: url({Image})&quot;&gt;
       &lt;div class=&quot;container&quot;&gt;
         &lt;section class=&quot;hero-swiper-slide-content&quot;&gt;
@@ -117,13 +116,13 @@
 
 <pre><code class="html">&lt;ul id=&quot;staff-list&quot; class=&quot;staff-list flex&quot;&gt;
 
-  <!-- for each {Team_Member} -->
+  <!-- for each {Team_Member}: -->
   &lt;li class=&quot;team-member&quot;&gt;
-    &lt;a class=&quot;team-member-link flex&quot; href=&quot;#{Team_Member -&gt; Name}&quot;&gt;
-      &lt;img class=&quot;team-member-photo&quot; src=&quot;{Team_Member -&gt; Headshot}&quot; alt=&quot;{Team_Member -&gt; Name}&quot;&gt;
+    &lt;a class=&quot;team-member-link flex&quot; href=&quot;#{Name}&quot;&gt;
+      &lt;img class=&quot;team-member-photo&quot; src=&quot;{Headshot}&quot; alt=&quot;{Name}&quot;&gt;
       &lt;section class=&quot;team-member-info&quot;&gt;
-        &lt;h5 class=&quot;job-title&quot;&gt;{Team_Member -&gt; Title}&lt;/h5&gt;
-        &lt;h3 class=&quot;team-member-name&quot;&gt;{Team_Member -&gt; Name}&lt;/h3&gt;
+        &lt;h5 class=&quot;job-title&quot;&gt;{Title}&lt;/h5&gt;
+        &lt;h3 class=&quot;team-member-name&quot;&gt;{Name}&lt;/h3&gt;
       &lt;/section&gt;
     &lt;/a&gt;
   &lt;/li&gt;
@@ -145,9 +144,9 @@
 <li><strong>Content</strong> – <em>rich text</em></li>
 </ul>
 
-<pre><code class="html">&lt;ul class=&quot;block-list block-list--unordered split--30-70&quot;&gt;
+<pre><code class="html">&lt;ul class=&quot;block-list block-list--unordered two-column&quot;&gt;
 
-  <!-- for each {Block_List_Item} -->
+  <!-- for each {Block_List_Item}: -->
   &lt;li class=&quot;block-list-item flex&quot;&gt;
     &lt;div class=&quot;grid-item left-column&quot;&gt;
       &lt;h3&gt;{Header}&lt;/h3&gt;
@@ -163,18 +162,88 @@
 
 <h3 id="orderedblocklistsinglecolumn">Ordered Block List Single column</h3>
 
-<p>Sub Fields <strong>Content (rich text)</strong></p>
+<h4 id="subfields">Sub Fields</h4>
+
+<p><strong>Content</strong> – <em>rich text</em></p>
 
 <pre><code class="html">&lt;ol class=&quot;block-list block-list--ordered single-column&quot;&gt;
 
-  <!-- for each {Block List Item} -->
+  <!-- for each {Block_List_Item}: -->
   &lt;li class=&quot;block-list-item&quot;&gt;
     {Content}
   &lt;/li&gt;
   <!-- /for each -->
 
 &lt;/ol&gt;
+</code></pre>
 
+<h3 id="orderedblocklisttwocolumn">Ordered Block List Two Column</h3>
+
+<h4 id="subfields">Sub Fields</h4>
+
+<ul>
+<li><strong>Header</strong> – <em>plain text</em></li>
+<li><strong>Sub Header</strong> – <em>plain text</em></li>
+<li><strong>Content</strong> – <em>rich text</em></li>
+</ul>
+
+<pre><code class="html">&lt;ol class=&quot;block-list block-list--ordered two-column&quot;&gt;
+
+  <!-- for each {Block_List_Item}: -->
+  &lt;li class=&quot;block-list-item flex&quot;&gt;
+    &lt;div class=&quot;grid-item left-column&quot;&gt;
+      &lt;h5&gt;{Sub_Header}&lt;/h5&gt;
+      &lt;h3&gt;{Header}&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-item right-column&quot;&gt;
+      {Content}
+    &lt;/div&gt;
+  &lt;/li&gt;
+  <!-- /for each -->
+
+&lt;/ol&gt;
+</code></pre>
+
+<h2 id="quicklinks">Quick Links</h2>
+
+<p>Quick Links refer to a post, page or media attachment. They are located after the main content and before the footer. There should be no more than three Quick Links on a single page. Quick Links are categorized based on the content they link to.</p>
+
+<h4 id="fields">Fields</h4>
+
+<ul>
+<li><strong>Link</strong> – <em>post object</em></li>
+<li><strong>Teaser</strong> – <em>plain text</em></li>
+</ul>
+
+<pre><code class="html">&lt;div class=&quot;quick-links-section secondary-content-area&quot;&gt;
+  &lt;section class=&quot;container&quot;&gt;
+
+    &lt;h5 class=&quot;quick-links-header&quot;&gt;Quick Links&lt;/h5&gt;
+
+    &lt;ul class=&quot;quick-links-list flex&quot;&gt;
+
+    <!-- for each {Quick_Link}:
+
+    if {Quick_Link -&gt; Type} == 'Page' {
+      {Category} = 'page'
+    } else if {Quick_Link -&gt; Type} == 'Attachment' {
+      {Category} = 'attachment'
+    } else if {Quick_Link -&gt; Type} == 'Post' {
+      {Category} = {Post -&gt; Category}
+    } -->
+
+    &lt;li class=&quot;quick-link quick-link--{Category}&quot;&gt;
+      &lt;a class=&quot;quick-link-title&quot; href=&quot;{Link -&gt; URL}&quot;&gt;{Link -&gt; Title}&lt;/a&gt;
+      &lt;p&gt;{Teaser}&lt;/p&gt;
+      &lt;a class=&quot;more-link&quot; href=&quot;{Link -&gt; URL}&quot;&gt;Read More&lt;/a&gt;
+    &lt;/li&gt;
+
+    <!-- /for each -->
+
+    &lt;/ul&gt;
+
+  &lt;/section&gt;
+&lt;/div&gt;
 </code></pre>
 
 <h2 id="deployment">Deployment</h2>

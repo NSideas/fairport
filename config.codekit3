@@ -341,6 +341,13 @@
 		"oAP": "\/dist\/js\/scripts.min.js.map",
 		"oF": 0
 		},
+	"\/LICENSE.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/LICENSE.html",
+		"oF": 0
+		},
 	"\/LICENSE.md": {
 		"cB": 0,
 		"cS": 0,
@@ -358,6 +365,13 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0
 		},
 	"\/README.md": {
 		"cB": 0,
@@ -862,11 +876,25 @@
 		"oAP": "\/site\/_ordered-single-column.html",
 		"oF": 0
 		},
+	"\/src\/kit\/modules\/block-list\/_ordered-two-column.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_ordered-two-column.html",
+		"oF": 0
+		},
 	"\/src\/kit\/modules\/block-list\/_unordered-30_70.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/site\/_unordered-30_70.html",
+		"oF": 0
+		},
+	"\/src\/kit\/modules\/block-list\/_unordered-two-column.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_unordered-two-column.html",
 		"oF": 0
 		},
 	"\/src\/kit\/modules\/news-items\/_news-item-1.kit": {
@@ -3409,7 +3437,8 @@
 			"flagValue": 80
 			}
 		},
-	"uglifyReservedNamesString": "$"
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "3"
 }

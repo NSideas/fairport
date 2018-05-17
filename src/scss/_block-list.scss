@@ -101,7 +101,7 @@ li.block-list-item {
       line-height: 1.25;
     }
   }
-  .block-list.split--30-70 {
+  .block-list--unordered.two-column {
     .left-column {
       width: 34%;
     }
@@ -109,7 +109,7 @@ li.block-list-item {
       width: 66%;
     }
   }
-  .block-list--ordered.split--60-40 {
+  .block-list--ordered.two-column {
     .block-list-item {
       justify-content: space-between;
     }

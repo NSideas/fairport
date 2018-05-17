@@ -733,7 +733,7 @@ a:hover {
 }
 
 .content-area ul li, .block-list-item ul li {
-  padding-left: 1.5em;
+  padding-left: 1.25em;
   position: relative;
 }
 
@@ -745,7 +745,7 @@ a:hover {
   border-radius: 50%;
   background-color: #D4C098;
   position: absolute;
-  left: .65em;
+  left: .25em;
   top: .55em;
 }
 
@@ -1839,21 +1839,21 @@ li.block-list-item:last-child {
     font-size: 2.75em;
     line-height: 1.25;
   }
-  .block-list.split--30-70 .left-column {
+  .block-list--unordered.two-column .left-column {
     width: 34%;
   }
-  .block-list.split--30-70 .right-column {
+  .block-list--unordered.two-column .right-column {
     width: 66%;
   }
-  .block-list--ordered.split--60-40 .block-list-item {
+  .block-list--ordered.two-column .block-list-item {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .block-list--ordered.split--60-40 .left-column {
+  .block-list--ordered.two-column .left-column {
     width: 53%;
   }
-  .block-list--ordered.split--60-40 .right-column {
+  .block-list--ordered.two-column .right-column {
     width: 43%;
   }
 }

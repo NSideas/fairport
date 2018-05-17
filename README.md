@@ -12,7 +12,7 @@ Editable fields are referenced in the code samples inside of curly braces. Eg. *
 
 The [Home Page Slider](site/index.html) is a module that consists of the repeatable field, **Slide**.
 
-##### Sub Fields
+#### Sub Fields
 * **Image** – *image*
 * **Slide Title** – *plain text*
 * **Slide Subtitle** – *plain text*
@@ -20,10 +20,9 @@ The [Home Page Slider](site/index.html) is a module that consists of the repeata
 
 ```html
 <div id="hero-swiper" class="hero-swiper swiper-container">
-
   <div class="swiper-wrapper">
 
-    <!-- for each {Block List Item} -->
+    <!-- for each {Slide}: -->
     <div class="swiper-slide slide-1 color-{Color}" style="background-image: url({Image})">
       <div class="container">
         <section class="hero-swiper-slide-content">
@@ -117,13 +116,13 @@ The Staff List is used to display all the team members on the [team page](site/t
 ```html
 <ul id="staff-list" class="staff-list flex">
 
-  <!-- for each {Team_Member} -->
+  <!-- for each {Team_Member}: -->
   <li class="team-member">
-    <a class="team-member-link flex" href="#{Team_Member -> Name}">
-      <img class="team-member-photo" src="{Team_Member -> Headshot}" alt="{Team_Member -> Name}">
+    <a class="team-member-link flex" href="#{Name}">
+      <img class="team-member-photo" src="{Headshot}" alt="{Name}">
       <section class="team-member-info">
-        <h5 class="job-title">{Team_Member -> Title}</h5>
-        <h3 class="team-member-name">{Team_Member -> Name}</h3>
+        <h5 class="job-title">{Title}</h5>
+        <h3 class="team-member-name">{Name}</h3>
       </section>
     </a>
   </li>
@@ -146,9 +145,9 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 * **Content** – *rich text*
 
 ```html
-<ul class="block-list block-list--unordered split--30-70">
+<ul class="block-list block-list--unordered two-column">
 
-  <!-- for each {Block_List_Item} -->
+  <!-- for each {Block_List_Item}: -->
   <li class="block-list-item flex">
     <div class="grid-item left-column">
       <h3>{Header}</h3>
@@ -165,19 +164,90 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ### Ordered Block List Single column
 
-Sub Fields **Content (rich text)**
+#### Sub Fields
+**Content** – *rich text*
 
 ```html
 <ol class="block-list block-list--ordered single-column">
 
-  <!-- for each {Block List Item} -->
+  <!-- for each {Block_List_Item}: -->
   <li class="block-list-item">
     {Content}
   </li>
   <!-- /for each -->
 
 </ol>
+```
 
+
+### Ordered Block List Two Column
+
+#### Sub Fields
+* **Header** – *plain text*
+* **Sub Header** – *plain text*
+* **Content** – *rich text*
+
+
+```html
+<ol class="block-list block-list--ordered two-column">
+
+  <!-- for each {Block_List_Item}: -->
+  <li class="block-list-item flex">
+    <div class="grid-item left-column">
+      <h5>{Sub_Header}</h5>
+      <h3>{Header}</h3>
+    </div>
+    <div class="grid-item right-column">
+      {Content}
+    </div>
+  </li>
+  <!-- /for each -->
+
+</ol>
+```
+
+
+
+
+## Quick Links
+
+Quick Links refer to a post, page or media attachment. They are located after the main content and before the footer. There should be no more than three Quick Links on a single page. Quick Links are categorized based on the content they link to.
+
+#### Fields
+* **Link** – *post object*
+* **Teaser** – *plain text*
+
+
+```html
+<div class="quick-links-section secondary-content-area">
+  <section class="container">
+
+    <h5 class="quick-links-header">Quick Links</h5>
+
+    <ul class="quick-links-list flex">
+
+    <!-- for each {Quick_Link}:
+
+    if {Quick_Link -> Type} == 'Page' {
+      {Category} = 'page'
+    } else if {Quick_Link -> Type} == 'Attachment' {
+      {Category} = 'attachment'
+    } else if {Quick_Link -> Type} == 'Post' {
+      {Category} = {Post -> Category}
+    } -->
+
+    <li class="quick-link quick-link--{Category}">
+      <a class="quick-link-title" href="{Link -> URL}">{Link -> Title}</a>
+      <p>{Teaser}</p>
+      <a class="more-link" href="{Link -> URL}">Read More</a>
+    </li>
+
+    <!-- /for each -->
+
+    </ul>
+
+  </section>
+</div>
 ```
 
 

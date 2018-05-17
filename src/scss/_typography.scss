@@ -121,7 +121,7 @@ a {
   list-style: none;
   padding: 0;
   li {
-    padding-left: 1.5em;
+    padding-left: 1.25em;
     position: relative;
   }
   li:before {
@@ -132,7 +132,7 @@ a {
     border-radius: 50%;
     background-color: $gold-3;
     position: absolute;
-    left: .65em;
+    left: .25em;
     top: .55em;
   }
 }
