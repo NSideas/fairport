@@ -1,0 +1,59 @@
+
+// About You Template
+.hero-img {
+  height: 60vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-executives .hero-img {
+  background-image: url(../uploads/stock-2.jpg);
+}
+
+.about-you-template .page-intro {
+  @media (min-width: $m) {
+    padding-top: 30px;
+  }
+}
+
+
+@media (min-width: $l) {
+
+  .about-you-template {
+    background-color: $gray-5;
+  }
+
+  .about-you-template .hero-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 834px;
+  }
+
+  .about-you-template {
+    .main-content-wrapper,
+    .quick-links-section,
+    #footer {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .about-you-template .main-content-wrapper {
+    background: white;
+    margin-top: 532px;
+    margin-bottom: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    max-width: 905px;
+    box-shadow: 0 0 4px rgba($gray-1, .2);
+  }
+
+  .about-you-template .content-area {
+    padding-bottom: 3.5em;
+  }
+
+}

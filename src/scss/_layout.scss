@@ -1,0 +1,400 @@
+
+// Page Layout
+
+.container,
+.container-wide {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding-left: 6%;
+  padding-right: 6%;
+  @media (min-width: $s) {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    max-width: 620px;
+  }
+  @media (min-width: $m) {
+    max-width: 700px;
+  }
+  @media (min-width: $l) {
+    max-width: 800px;
+  }
+}
+
+.container-wide {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-content-wrapper {
+  padding-top: 1em;
+}
+
+.main-content {
+  padding-bottom: 1em;
+  @media (min-width: $m) {
+    padding-bottom: 2.5em;
+  }
+}
+
+.main-content img {
+  max-width: 100%;
+}
+
+.main-section {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  @media (min-width: $m) {
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+}
+
+.main-section p,
+.main-section ul,
+.main-section ol,
+.main-section li {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.content-area .grid-item {
+  padding-top: 1em;
+  &:not(:last-child) {
+    padding-bottom: 1.5em;
+  }
+}
+
+.content-area .btn {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.secondary-content-area {
+  background-color: $gray-5;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  h5 {
+    font-size: 14px;
+  }
+  @media (min-width: $m) {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+  }
+}
+
+.page-intro {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  @media (min-width: $m) {
+    padding-top: 46px;
+    padding-bottom: 50px;
+  }
+}
+
+.breadcrumbs {
+  padding-top: .5em;
+  padding-bottom: .75em;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  @include header-5;
+  font-size: .8em;
+  &:not(.current) a {
+    color: $gray-2;
+  }
+}
+
+.breadcrumb-item:before {
+  content: '/ ';
+}
+
+.full-width-img {
+  height: 50vw;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (min-width: $m) {
+    margin-top: 2em;
+  }
+}
+
+%pattern-fill {
+  content: '';
+  display: block;
+  height: inherit;
+  @include pattern();
+  background-size: 80px;
+}
+
+.pattern-separator {
+  height: 75px;
+  background-color: $gray-5;
+  margin-top: 1.75em;
+  margin-bottom: 2em;
+  &:before {
+    @extend %pattern-fill;
+    opacity: .4;
+  }
+  &.gray:before {
+    @include pattern('zig-zag-black');
+    opacity: .15;
+  }
+}
+
+.brick-pattern {
+  &:before {
+    @include pattern('brick-white');
+  }
+  &.gray:before {
+    @include pattern('brick-black');
+  }
+}
+
+.linen-pattern {
+  &:before {
+    @include pattern('linen-white');
+  }
+  &.gray:before {
+    @include pattern('linen-black');
+  }
+}
+
+.brick-pattern,
+.linen-pattern {
+  &:before {
+    background-size: 100px;
+  }
+}
+
+.x-button {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/x-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.related-content-list,
+.related-news-list,
+.recent-news-list {
+  padding-top: 1em;
+  @media (min-width: $m) {
+    padding-top: 2em;
+  }
+}
+
+
+// Grid
+
+$gutter: 10px;
+
+.grid-item {
+  width: 100%;
+}
+
+.grid-container {
+  justify-content: space-between;
+}
+
+@mixin grid-2 {
+  & > .grid-item {
+    width: calc(50% - #{$gutter});
+  }
+}
+
+@mixin grid-3 {
+  & > .grid-item {
+    width: 33%;
+  }
+}
+
+@mixin grid-4 {
+  & > .grid-item {
+    width: calc(25% - #{$gutter}*1.5);
+  }
+}
+
+@media (min-width: $m) {
+  .two-column {
+    @include grid-2;
+  }
+  .three-column {
+    @include grid-3;
+  }
+  .four-column {
+    @include grid-4;
+  }
+}
+
+@media (min-width: 600px) {
+  .two-column--medium {
+    @include grid-2;
+  }
+}
+
+@media (min-width: $l) {
+  .four-column--large {
+    @include grid-4;
+  }
+}
+
+
+
+
+
+// Default Template
+
+.page-intro--default {
+  @extend .page-intro;
+  background-color: $gray-3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  position: relative;
+  @media (min-width: $m) {
+    padding-top: 65px;
+    padding-bottom: 75px;
+  }
+  & > .container {
+    position: relative;
+    z-index: 1;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: .12;
+    @include pattern();
+    background-size: 80px;
+  }
+}
+
+
+
+
+
+// Staff List
+
+.staff-info-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+li.staff-info-item {
+  font-size: 1em;
+}
+
+li.staff-info-item {
+  border-bottom: solid 1px $gray-4;
+  margin-bottom: 1.75em;
+  h3 {
+    margin-bottom: .4em;
+  }
+}
+
+p.staff-info-contact {
+  font-family: $sans;
+  font-size: .9em;
+  color: $gray-2;
+}
+
+
+
+
+
+// Story Page
+
+.story .page-title {
+  margin-bottom: .75em;
+}
+
+.story .featured-image {
+  margin-bottom: 1.5em;
+  @media (min-width: $l) {
+    margin-bottom: 2.5em;
+  }
+}
+
+.story .disclaimer {
+  padding-top: 40px;
+  @media (min-width: $l) {
+    padding-top: 70px;
+  }
+}
+
+
+
+// Story Teaser
+
+.mini-portrait {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  @media (min-width: $m) {
+    margin-bottom: 1.75em;
+  }
+}
+
+.story-teaser-title {
+  font-weight: 500;
+  @media (min-width: $m) {
+    margin-bottom: .25em;
+  }
+}
+
+p.story-teaser-body {
+  color: $gray-2;
+  font-family: $serif;
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+  @media (min-width: $m) {
+    font-size: 1.45em;
+  }
+}
+
+.secondary-content-area {
+  .story-teaser {
+    margin-bottom: 3em;
+    &:last-child {
+      margin-bottom: 2em;
+    }
+    @media (min-width: $m) {
+      margin-bottom: 3.5em;
+    }
+
+  }
+  p.story-teaser-body {
+    margin-bottom: 1em;
+  }
+}
+
+
+
+
+
+// Style Guide
+#style-guide .page-title {
+  margin-top: .5em;
+}
+
+.style-guide-header {
+  padding-bottom: .5em;
+  border-bottom: solid 1px $gray-4;
+  margin-bottom: .5em;
+}
+
+.style-guide-content {
+  padding-top: 1em;
+}
