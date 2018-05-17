@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<!-- CSS: dist/css/md.css -->
+
+<h1 id="modules">Modules</h1>
+
+<p>Editable fields are referenced in the code samples inside of curly braces.</p>
+
+<p>Eg. <strong>Field Name</strong> = <code>{Field Name}</code></p>
+
+<h2 id="homepageimageslider">Home Page Image Slider</h2>
+
+<p>The <a href="site/index.html">Home Page Slider</a> is a module that consists of the repeatable field, <strong>Slide</strong>.</p>
+
+<h5 id="subfields:">Sub Fields:</h5>
+
+<ul>
+<li><strong>Image</strong> – <em>image</em></li>
+<li><strong>Slide Title</strong> – <em>plain text</em></li>
+<li><strong>Slide Subtitle</strong> – <em>plain text</em></li>
+<li><strong>Color</strong> – <em>select</em></li>
+</ul>
+
+<pre><code class="html">&lt;div id=&quot;hero-swiper&quot; class=&quot;hero-swiper swiper-container&quot;&gt;
+
+  &lt;div class=&quot;swiper-wrapper&quot;&gt;
+
+    <!-- for each {Block List Item} -->
+    &lt;div class=&quot;swiper-slide slide-1 color-{Color}&quot; style=&quot;background-image: url({Image})&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;section class=&quot;hero-swiper-slide-content&quot;&gt;
+          &lt;h5&gt;{Subtitle}&lt;/h5&gt;
+          &lt;h1&gt;{Title}&lt;/h1&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    <!-- /for each -->
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+
+  &lt;div id=&quot;active-slide-content&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+
+      &lt;section class=&quot;hero-swiper-slide-content&quot;&gt;
+        &lt;h5&gt;&lt;/h5&gt;
+        &lt;h1&gt;&lt;/h1&gt;
+      &lt;/section&gt;
+
+      &lt;div class=&quot;progress-info flex&quot;&gt;
+
+        &lt;svg class=&quot;progress-circle&quot; viewBox=&quot;0 0 30 30&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+          &lt;circle class=&quot;progress&quot; fill=&quot;none&quot; cx=&quot;15&quot; cy=&quot;15&quot; r=&quot;12&quot;/&gt;
+          &lt;circle class=&quot;total&quot; fill=&quot;none&quot; cx=&quot;15&quot; cy=&quot;15&quot; r=&quot;12&quot;/&gt;
+        &lt;/svg&gt;
+
+        &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+</code></pre>
+
+<h2 id="blocklists">Block Lists</h2>
+
+<p>Block Lists are styled lists with that contain block-level HTML elements within each <code>li</code>. They consist of the repeatable field, <strong>Block List Item</strong> which include various sub fields based on the type of list.</p>
+
+<h3 id="unorderedblocklist">Unordered Block List</h3>
+
+<h4 id="subfields:">Sub Fields:</h4>
+
+<ul>
+<li><strong>Header</strong> – <em>plain text</em></li>
+<li><strong>Content</strong> – <em>rich text</em></li>
+</ul>
+
+<pre><code class="html">&lt;ul class=&quot;block-list block-list--unordered split--30-70&quot;&gt;
+
+  <!-- for each {Block List Item} -->
+  &lt;li class=&quot;block-list-item flex&quot;&gt;
+    &lt;div class=&quot;grid-item left-column&quot;&gt;
+      &lt;h3&gt;{Header}&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-item right-column&quot;&gt;
+      {Content}
+    &lt;/div&gt;
+  &lt;/li&gt;
+  <!-- /for each -->
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="orderedblocklistsinglecolumn">Ordered Block List Single column</h3>
+
+<p>Sub Fields: <strong>Content (rich text)</strong></p>
+
+<pre><code class="html">&lt;ol class=&quot;block-list block-list--ordered single-column&quot;&gt;
+
+  <!-- for each {Block List Item} -->
+  &lt;li class=&quot;block-list-item&quot;&gt;
+    {Content}
+  &lt;/li&gt;
+  <!-- /for each -->
+
+&lt;/ol&gt;
+
+</code></pre>
+
+<h2 id="deployment">Deployment</h2>
+
+<p>Add additional notes about how to deploy this on a live system</p>
+
+<h2 id="builtwith">Built With</h2>
+
+<ul>
+<li><a href="http://www.dropwizard.io/1.0.2/docs/">Dropwizard</a> - The web framework used</li>
+<li><a href="https://maven.apache.org/">Maven</a> - Dependency Management</li>
+<li><a href="https://rometools.github.io/rome/">ROME</a> - Used to generate RSS Feeds</li>
+</ul>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Please read <a href="https://gist.github.com/PurpleBooth/b24679402957c63ec426">CONTRIBUTING.md</a> for details on our code of conduct, and the process for submitting pull requests to us.</p>
+
+<h2 id="versioning">Versioning</h2>
+
+<p>We use <a href="http://semver.org/">SemVer</a> for versioning. For the versions available, see the <a href="https://github.com/your/project/tags">tags on this repository</a>.</p>
+
+<h2 id="authors">Authors</h2>
+
+<ul>
+<li><strong>Billie Thompson</strong> - <em>Initial work</em> - <a href="https://github.com/PurpleBooth">PurpleBooth</a></li>
+</ul>
+
+<p>See also the list of <a href="https://github.com/your/project/contributors">contributors</a> who participated in this project.</p>
+
+<h2 id="license">License</h2>
+
+<p>This project is licensed under the MIT License - see the <a href="LICENSE.md">LICENSE.md</a> file for details</p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<ul>
+<li>Hat tip to anyone who&#8217;s code was used</li>
+<li>Inspiration</li>
+<li>etc</li>
+</ul>
+
+</body>
+</html>
+

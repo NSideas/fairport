@@ -68,7 +68,6 @@ $color-list: purple blue teal green red gold;
 @each $theme in $color-list {
   .color-#{$theme} {
     @include theme-color(#{$theme});
-    &.swiper-slide,
     &#active-slide-content {
       @include hero-swiper-color(#{$theme});
     }

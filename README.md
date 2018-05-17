@@ -1,22 +1,79 @@
-<!-- CSS: css/md.css -->
+<!-- CSS: dist/css/md.css -->
 
 # Modules
 
-One Paragraph of project description goes here
+Editable fields are referenced in the code samples inside of curly braces.
+
+Eg. **Field Name** = `{Field Name}`
 
 
+## Home Page Image Slider
+
+The [Home Page Slider](site/index.html) is a module that consists of the repeatable field, **Slide**.
+
+##### Sub Fields:
+* **Image** – *image*
+* **Slide Title** – *plain text*
+* **Slide Subtitle** – *plain text*
+* **Color** – *select*
+
+```html
+<div id="hero-swiper" class="hero-swiper swiper-container">
+
+  <div class="swiper-wrapper">
+
+    <!-- for each {Block List Item} -->
+    <div class="swiper-slide slide-1 color-{Color}" style="background-image: url({Image})">
+      <div class="container">
+        <section class="hero-swiper-slide-content">
+          <h5>{Subtitle}</h5>
+          <h1>{Title}</h1>
+        </section>
+      </div>
+    </div>
+    <!-- /for each -->
+
+  </div>
+
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <div id="active-slide-content">
+    <div class="container">
+
+      <section class="hero-swiper-slide-content">
+        <h5></h5>
+        <h1></h1>
+      </section>
+
+      <div class="progress-info flex">
+
+        <svg class="progress-circle" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+          <circle class="progress" fill="none" cx="15" cy="15" r="12"/>
+          <circle class="total" fill="none" cx="15" cy="15" r="12"/>
+        </svg>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+```
 
 
 ## Block Lists
 
-Block Lists are styled lists with that contain block-level HTML elements within each `li`. They consist of the repeatable field, **Block List Item**.
-
-Block List Items have two fields, **Header (plain text)** and **Content (rich text)**.
-
+Block Lists are styled lists with that contain block-level HTML elements within each `li`. They consist of the repeatable field, **Block List Item** which include various sub fields based on the type of list.
 
 ### Unordered Block List
 
-Sub Fields: **Header (plain text)**, **Main Content (rich text)**
+#### Sub Fields:
+* **Header** – *plain text*
+* **Content** – *rich text*
 
 ```html
 <ul class="block-list block-list--unordered split--30-70">

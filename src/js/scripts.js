@@ -315,12 +315,6 @@ var margin = 10;
 var t = small_circle/2 + big_circle/2 + margin;
 var swiper_is_active = false;
 
-$(document).ready(function() {
-  if (fam_circles) {
-    slides = fam_circles.querySelectorAll('.swiper-slide');
-  }
-});
-
 function slide_to(slide) {
   var trans_value = slides[slide].getAttribute('data-translate');
   translate_circles(trans_value);
@@ -378,21 +372,22 @@ $('.fam-circle-swiper .swiper-slide').click(function() {
   }
 });
 
-$(window).on('load', function() {
-  if (fam_circles) {
-    fam_circle_swiper.init();
-  }
-});
 
 
 
 // Team Bio
-$('.team-member-link').click(function(e) {
-  e.preventDefault();
-  var team_member = $(this).attr('href');
+var staff_list = document.getElementById('staff-list');
+
+function view_active_team_bio(team_member) {
   $(team_member).addClass('active');
   $('body').addClass('no-scroll');
-});
+}
+
+function check_team_url() {
+  if (window.location.hash) {
+    view_active_team_bio(window.location.hash);
+  }
+}
 
 function close_active_team_bio(active_team_bio) {
   $('body').removeClass('no-scroll');
@@ -402,6 +397,11 @@ function close_active_team_bio(active_team_bio) {
     active_team_bio.removeClass('fade-out');
   }, 250);
 }
+
+$('.team-member-link').click(function(e) {
+  var team_member_link = $(this).attr('href');
+  view_active_team_bio(team_member_link);
+});
 
 $('.close-bio').click(function() {
   close_active_team_bio($(this).closest('.team-bio-container'));
@@ -416,5 +416,21 @@ $(document).keyup(function(e) {
 $('.team-bio-container').click(function(e) {
   if (!$(e.target).parents('.team-bio-container').length) {
     close_active_team_bio($(this));
+  }
+});
+
+
+$(document).ready(function() {
+  if (fam_circles) {
+    slides = fam_circles.querySelectorAll('.swiper-slide');
+  } else if (staff_list) {
+    check_team_url();
+  }
+});
+
+
+$(window).on('load', function() {
+  if (fam_circles) {
+    fam_circle_swiper.init();
   }
 });
