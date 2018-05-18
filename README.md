@@ -23,7 +23,7 @@ The [Home Page Slider](site/index.html) is a module that consists of the repeata
 <div id="hero-swiper" class="hero-swiper swiper-container">
   <div class="swiper-wrapper">
 
-    <!-- for each {Slide}: -->
+    <!-- for each {Slide} : -->
     <div class="swiper-slide slide-1 color-{Color}" style="background-image: url({Image})">
       <div class="container">
         <section class="hero-swiper-slide-content">
@@ -117,7 +117,7 @@ The Staff List is used to display all the team members on the [team page](site/t
 ```html
 <ul id="staff-list" class="staff-list flex">
 
-  <!-- for each {Team_Member}: -->
+  <!-- for each {Team_Member} : -->
   <li class="team-member">
     <a class="team-member-link flex" href="#{Name}">
       <img class="team-member-photo" src="{Headshot}" alt="{Name}">
@@ -148,7 +148,7 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 ```html
 <ul class="block-list block-list--unordered two-column">
 
-  <!-- for each {Block_List_Item}: -->
+  <!-- for each {Block_List_Item} : -->
   <li class="block-list-item flex">
     <div class="grid-item left-column">
       <h3>{Header}</h3>
@@ -171,7 +171,7 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 ```html
 <ol class="block-list block-list--ordered single-column">
 
-  <!-- for each {Block_List_Item}: -->
+  <!-- for each {Block_List_Item} : -->
   <li class="block-list-item">
     {Content}
   </li>
@@ -192,7 +192,7 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 ```html
 <ol class="block-list block-list--ordered two-column">
 
-  <!-- for each {Block_List_Item}: -->
+  <!-- for each {Block_List_Item} : -->
   <li class="block-list-item flex">
     <div class="grid-item left-column">
       <h5>{Sub_Header}</h5>
@@ -227,7 +227,7 @@ Quick Links refer to a post, page or media attachment. They are located after th
 
     <ul class="quick-links-list flex">
 
-    <!-- for each {Quick_Link}:
+    <!-- for each {Quick_Link} :
 
     if {Quick_Link -> Type} == 'Page' {
       {Category} = 'page'

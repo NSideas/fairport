@@ -99,7 +99,7 @@ This template is used for all the *About You* pages.
       </section>
     </div>
 
-    <!--for each {Module} : include {Module} -->
+    <!-- for each {Module} : include {Module} -->
 
   </main>
 

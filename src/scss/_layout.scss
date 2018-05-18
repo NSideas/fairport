@@ -95,24 +95,6 @@
   }
 }
 
-.breadcrumbs {
-  padding-top: .5em;
-  padding-bottom: .75em;
-}
-
-.breadcrumb-item {
-  display: inline-block;
-  @include header-5;
-  font-size: .8em;
-  &:not(.current) a {
-    color: $gray-2;
-  }
-}
-
-.breadcrumb-item:before {
-  content: '/ ';
-}
-
 .full-width-img {
   height: 50vw;
   margin-top: 1em;

@@ -936,28 +936,6 @@ p.small {
   }
 }
 
-.breadcrumbs {
-  padding-top: .5em;
-  padding-bottom: .75em;
-}
-
-.breadcrumb-item {
-  display: inline-block;
-  font-size: 14px;
-  letter-spacing: .075em;
-  text-transform: uppercase;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-size: .8em;
-}
-
-.breadcrumb-item:not(.current) a {
-  color: #929292;
-}
-
-.breadcrumb-item:before {
-  content: '/ ';
-}
-
 .full-width-img {
   height: 50vw;
   margin-top: 1em;
@@ -1611,6 +1589,32 @@ nav a {
     font-size: 1.125em;
     margin-bottom: 5px;
   }
+}
+
+.breadcrumbs {
+  padding-top: .5em;
+  padding-bottom: .75em;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: .8em;
+}
+
+.breadcrumb-item:not(.current) a {
+  color: #929292;
+}
+
+.breadcrumb-item:not(.current) a:hover {
+  color: #666;
+}
+
+.breadcrumb-item:before {
+  content: '/ ';
 }
 
 button,

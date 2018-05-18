@@ -199,3 +199,29 @@ nav {
     margin-bottom: 5px;
   }
 }
+
+
+
+// Breadcrumbs
+
+.breadcrumbs {
+  padding-top: .5em;
+  padding-bottom: .75em;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  @include header-5;
+  font-size: .8em;
+}
+
+.breadcrumb-item:not(.current) a {
+  color: $gray-2;
+  &:hover {
+    color: #666;
+  }
+}
+
+.breadcrumb-item:before {
+  content: '/ ';
+}
