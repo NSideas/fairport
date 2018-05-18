@@ -139,8 +139,12 @@
 
 .news-pagination {
   @include flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
+
+
+// Pagination
 
 .pagination-older,
 .pagination-newer {
@@ -164,4 +168,21 @@
   @include header-5;
   color: inherit;
   padding: .5em 0;
+  &:hover {
+    color: $red-1;
+  }
+}
+
+
+.news-categories {
+  margin-bottom: 30px;
+}
+
+.category-filter {
+  @include flex;
+  justify-content: flex-end;
+}
+
+#category-list {
+  display: none;
 }

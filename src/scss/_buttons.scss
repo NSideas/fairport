@@ -108,3 +108,29 @@ button[type="submit"],
   @include button--large;
   margin-top: .5em;
 }
+
+.btn--dropdown {
+  padding-right: 44px;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    width: 20px;
+    height: 34px;
+    background-image: url(../img/down-arrow.svg);
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .7;
+    transition: inherit;
+  }
+}
+
+.btn--dropdown:hover {
+  &:after {
+    opacity: 1;
+  }
+}

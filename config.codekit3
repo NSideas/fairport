@@ -60,6 +60,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/dist\/img\/down-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/img\/down-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/dist\/img\/fairport-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -445,6 +455,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/site\/modules.html",
+		"oF": 0
+		},
+	"\/site\/news-and-insights-page-2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/news-and-insights-page-2.html",
 		"oF": 0
 		},
 	"\/site\/news-and-insights.html": {
