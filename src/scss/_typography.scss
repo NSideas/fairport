@@ -8,16 +8,10 @@ body {
 %body-copy {
   font-family: $serif;
   font-size: 18px;
-  @media (min-width: $m) {
-    font-size: 21px;
-  }
 }
 
 .section-title {
   margin-bottom: .5em;
-  @media (min-width: $m) {
-    margin-bottom: .75em;
-  }
 }
 
 h1,
@@ -34,20 +28,11 @@ h1 {
   font-family: $serif;
   font-size: 2em;
   font-weight: 400;
-  @media (min-width: $s) {
-    font-size: 2.5em;
-  }
-  @media (min-width: $m) {
-    font-size: 3em;
-  }
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: 400;
-  @media (min-width: $m) {
-    font-size: 1.75em;
-  }
 }
 
 h3 {
@@ -55,9 +40,6 @@ h3 {
   font-size: 1.35em;
   line-height: 1.25;
   font-weight: 400;
-  @media (min-width: $m) {
-    font-size: 1.6em;
-  }
 }
 
 h4 {
@@ -171,12 +153,7 @@ a {
   font-family: $serif;
   font-size: 1.25em;
   line-height: 1.45;
-  @media (min-width: $s) {
-    font-size: 1.33em;
-  }
-  @media (min-width: $m) {
-    font-size: 1.5em;
-  }
+
 }
 
 hr {
@@ -196,7 +173,39 @@ p.small {
   font-family: $sans;
   font-size: .9em;
   color: $gray-2;
-  @media (min-width: $m) {
+}
+
+
+@media (min-width: $s) {
+  h1 {
+    font-size: 2.5em;
+  }
+  .intro-paragraph {
+    font-size: 1.33em;
+  }
+}
+
+@media (min-width: $m) {
+  %body-copy {
+    font-size: 21px;
+  }
+  .section-title {
+    margin-bottom: .75em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  .intro-paragraph {
+    font-size: 1.5em;
+  }
+  p.small {
     color: $gray-3;
+    font-size: .9em;
   }
 }

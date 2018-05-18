@@ -116,9 +116,9 @@ function hide_search_bar(e) {
 $(document).ready(function() {
 
   if (mq_large.matches) {
-    dropdown_menu_tap();
-  } else {
     dropdown_menu_hover();
+  } else {
+    dropdown_menu_tap();
     nav_button.addEventListener('click', handle_nav_button_click);
   }
 

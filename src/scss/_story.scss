@@ -1,0 +1,70 @@
+// Story Page
+
+.story .page-title {
+  margin-bottom: .75em;
+}
+
+.story .featured-image {
+  margin-bottom: 1.5em;
+}
+
+.story .disclaimer {
+  padding-top: 40px;
+}
+
+
+// Story Teaser
+
+.mini-portrait {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.story-teaser-title {
+  font-weight: 500;
+}
+
+p.story-teaser-body {
+  color: $gray-2;
+  font-family: $serif;
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+}
+
+.secondary-content-area {
+  .story-teaser {
+    margin-bottom: 3em;
+    &:last-child {
+      margin-bottom: 2em;
+    }
+  }
+  p.story-teaser-body {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: $m) {
+  .mini-portrait {
+    margin-bottom: 1.75em;
+  }
+  .story-teaser-title {
+    margin-bottom: .25em;
+  }
+  p.story-teaser-body {
+    font-size: 1.45em;
+  }
+  .secondary-content-area .story-teaser {
+    margin-bottom: 3.5em;
+  }
+}
+
+@media (min-width: $l) {
+  .story .featured-image {
+    margin-bottom: 2.5em;
+  }
+  .story .disclaimer {
+    padding-top: 70px;
+  }
+}

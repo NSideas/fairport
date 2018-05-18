@@ -153,9 +153,6 @@ input:invalid + input[type="submit"].btn--solid-white {
 .search-site {
   position: relative;
   margin-bottom: 2em;
-  .search-input {
-
-  }
   .search-submit {
     text-indent: -1000px;
     -webkit-appearance: none;
@@ -170,7 +167,6 @@ input:invalid + input[type="submit"].btn--solid-white {
     position: absolute;
     right: 10px;
     top: 7px;
-    background-color: $gray-5;
     opacity: .4;
     &:focus {
       outline: none;
@@ -203,7 +199,6 @@ input:invalid + input[type="submit"].btn--solid-white {
     }
   }
   .search-site .search-submit {
-    background-color: transparent;
     cursor: pointer;
   }
   .search-site {

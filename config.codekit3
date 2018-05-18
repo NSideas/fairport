@@ -351,23 +351,6 @@
 		"oAP": "\/dist\/js\/scripts.min.js.map",
 		"oF": 0
 		},
-	"\/dist\/js\/staff-list.min.js": {
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/dist\/js\/staff-list.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/dist\/js\/staff-list.min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/dist\/js\/staff-list.min.js.map",
-		"oF": 0
-		},
 	"\/LICENSE.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1352,6 +1335,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/dist\/css\/_quick-links.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/src\/scss\/_story.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/dist\/css\/_story.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
