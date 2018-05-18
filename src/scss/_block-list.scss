@@ -78,6 +78,22 @@ li.block-list-item {
   margin-bottom: .5em;
 }
 
+.block-list--ordered.three-column {
+  padding-top: 0;
+  li.block-list-item {
+    border-top: none;
+  }
+  h5 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: solid 1px $gray-4;
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: .5em;
+  }
+}
+
 @media (min-width: $m) {
   .block-list-item li {
     font-size: 18px;
@@ -118,6 +134,22 @@ li.block-list-item {
     }
     .right-column {
       width: 43%;
+    }
+  }
+  .block-list--ordered.three-column {
+    @include flex;
+    justify-content: space-between;
+    .block-list-item {
+      padding-left: 0;
+      padding-top: 0;
+    }
+    & > li {
+    }
+    & > li:before {
+      position: static;
+      top: auto;
+      display: block;
+      margin-bottom: 16px;
     }
   }
 }

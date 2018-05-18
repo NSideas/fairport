@@ -450,6 +450,13 @@
 		"oAP": "\/site\/index.html",
 		"oF": 0
 		},
+	"\/site\/investment-management.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/investment-management.html",
+		"oF": 0
+		},
 	"\/site\/modules.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -816,6 +823,13 @@
 		"oAP": "\/site\/index.html",
 		"oF": 0
 		},
+	"\/src\/kit\/investment-management.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/investment-management.html",
+		"oF": 0
+		},
 	"\/src\/kit\/modules.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -914,13 +928,6 @@
 		"oAP": "\/site\/_story-teaser.html",
 		"oF": 0
 		},
-	"\/src\/kit\/modules\/block-list\/_ordered-60_40.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_ordered-60_40.html",
-		"oF": 0
-		},
 	"\/src\/kit\/modules\/block-list\/_ordered-single-column.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -928,18 +935,18 @@
 		"oAP": "\/site\/_ordered-single-column.html",
 		"oF": 0
 		},
+	"\/src\/kit\/modules\/block-list\/_ordered-three-column.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_ordered-three-column.html",
+		"oF": 0
+		},
 	"\/src\/kit\/modules\/block-list\/_ordered-two-column.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/site\/_ordered-two-column.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/block-list\/_unordered-30_70.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_unordered-30_70.html",
 		"oF": 0
 		},
 	"\/src\/kit\/modules\/block-list\/_unordered-two-column.kit": {
