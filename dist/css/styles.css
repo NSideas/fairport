@@ -1740,8 +1740,15 @@ button[type="submit"]:focus,
 }
 
 .btn--dropdown {
-  padding-right: 44px;
+  font-size: 15px;
+  height: 28px;
+  border-radius: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.75;
+  padding-right: 40px;
   position: relative;
+  cursor: pointer;
 }
 
 .btn--dropdown:after {
@@ -1751,18 +1758,90 @@ button[type="submit"]:focus,
   top: 0;
   right: 16px;
   width: 20px;
-  height: 34px;
+  height: 26px;
   background-image: url(../img/down-arrow.svg);
   background-size: 13px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: .7;
+  opacity: .55;
   -webkit-transition: inherit;
   transition: inherit;
 }
 
-.btn--dropdown:hover:after {
+.btn--dropdown:hover,
+.btn--dropdown.list-open {
+  border-color: #777777;
+  color: #4A4A4A;
+}
+
+.btn--dropdown:hover:after,
+.btn--dropdown.list-open:after {
+  opacity: .88;
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-list {
+  display: none;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-item {
+  margin: 4px 0;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.dropdown-item:first-child {
+  padding-top: 14px;
+}
+
+.dropdown-list.open .dropdown-item {
   opacity: 1;
+}
+
+.dropdown-item a {
+  display: inline-block;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: .5em 1.5em;
+  height: 36px;
+  border-radius: 18px;
+  border: solid 1px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-size: 15px;
+  height: 28px;
+  border-radius: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.75;
+}
+
+.dropdown-item a.btn--solid-white {
+  border-color: white;
+  background-color: white;
+  color: #4A4A4A;
+  opacity: .8;
+}
+
+.dropdown-item a.btn--solid-white:focus {
+  opacity: .9;
+}
+
+.dropdown-item a:hover {
+  background-color: #B85454;
+  border-color: #B85454;
+  color: white;
 }
 
 .block-list {
@@ -2998,15 +3077,12 @@ li.team-member {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-#category-list {
-  display: none;
+  margin-top: .5em;
 }
 
 .quick-links-list {

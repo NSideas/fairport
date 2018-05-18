@@ -179,10 +179,8 @@
 }
 
 .category-filter {
-  @include flex;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-}
-
-#category-list {
-  display: none;
+  margin-top: .5em;
 }
