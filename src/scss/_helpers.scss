@@ -44,8 +44,8 @@
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
@@ -57,8 +57,7 @@
 }
 
 .flex {
-  display: flex;
-  flex-flow: row wrap;
+  @include flex;
 }
 
 .no-scroll {

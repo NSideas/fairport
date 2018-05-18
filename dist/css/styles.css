@@ -511,9 +511,7 @@ template {
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */
 }
 
 .clearfix:after {
@@ -2909,6 +2907,54 @@ li.team-member {
 
 .recent-news-header {
   font-size: 14px;
+}
+
+.news-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+
+.pagination-older,
+.pagination-newer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.pagination-older {
+  padding-right: 20px;
+}
+
+.pagination-older:not(:last-child) {
+  border-right: solid 1px #ADADAD;
+}
+
+.pagination-newer {
+  padding-left: 20px;
+}
+
+.pagination-older a,
+.pagination-newer a {
+  font-size: 14px;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  color: inherit;
+  padding: .5em 0;
 }
 
 .quick-links-list {
