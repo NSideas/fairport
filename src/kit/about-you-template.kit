@@ -1,0 +1,40 @@
+<!-- $slug = about-you-template -->
+<!-- $template = about-you -->
+<!-- $primaryColor = blue -->
+<!-- @import "header" -->
+
+<div class="hero-img" style="background-image: url({Background_Image})"></div>
+
+<div class="main-content-wrapper">
+
+  <!-- @import "modules/breadcrumbs" -->
+
+  <main class="main-content">
+
+    <div class="page-intro">
+      <section class="container">
+        <h1 class="page-title">{Title}</h1>
+        <p class="intro-paragraph">{Intro_Text}</p>
+        <a class="btn btn--large" href="{Link_Destination}">{Link_Text}</a>
+      </section>
+    </div>
+
+    <div class="main-section content-area">
+      <section class="container">
+        {Body}
+      </section>
+    </div>
+
+    <!--for each {Module} -->
+
+      <!-- {Module} -->
+
+    <!-- /for each -->
+
+  </main>
+
+</div>
+
+<!-- @import "modules/quick-links-section" -->
+
+<!-- @import "footer" -->

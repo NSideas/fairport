@@ -398,11 +398,25 @@
 		"oAP": "\/site\/404.html",
 		"oF": 0
 		},
+	"\/site\/about-you-template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/about-you-template.html",
+		"oF": 0
+		},
 	"\/site\/client-experience.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/site\/client-experience.html",
+		"oF": 0
+		},
+	"\/site\/default-template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/default-template.html",
 		"oF": 0
 		},
 	"\/site\/executives.html": {
@@ -743,6 +757,13 @@
 		"oAP": "\/site\/_header.html",
 		"oF": 0
 		},
+	"\/src\/kit\/about-you-template.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/about-you-template.html",
+		"oF": 0
+		},
 	"\/src\/kit\/client-experience.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -783,6 +804,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/site\/modules.html",
+		"oF": 0
+		},
+	"\/src\/kit\/modules\/_breadcrumbs.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_breadcrumbs.html",
 		"oF": 0
 		},
 	"\/src\/kit\/modules\/_button-test.kit": {
@@ -1281,6 +1309,13 @@
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
+		},
+	"\/TEMPLATES.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/TEMPLATES.html",
+		"oF": 0
 		},
 	"\/TEMPLATES.md": {
 		"cB": 0,

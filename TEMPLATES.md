@@ -16,26 +16,20 @@ This template is used for all the *About Us*, *Services* and *Contact* pages.
 
 
 ```html
-<!-- $slug = default-template -->
-<!-- $template = default -->
-<!-- $primaryColor = purple -->
-<!-- @import "header" -->
+<!-- Default Template -->
+
+<!-- include {Header} -->
 
 <div class="page-intro--default">
-
   <section class="container">
     <h1 class="page-title">{Title}</h1>
     <p class="intro-paragraph">{Intro_Text}</p>
   </section>
-
 </div>
 
 <div class="main-content-wrapper">
 
-  <div class="breadcrumbs container">
-    <span class="breadcrumb-item"><a href="#">Home</a></span>
-    <span class="breadcrumb-item current"><a href="#">{Title}</a></span>
-  </div>
+  <!-- include {Beadcrumbs} -->
 
   <main class="main-content">
 
@@ -45,18 +39,74 @@ This template is used for all the *About Us*, *Services* and *Contact* pages.
       </section>
     </div>
 
-    <!--for each {Module} -->
-
-      <!-- {Module} -->
-
-    <!-- /for each -->
+    <!-- for each {Module} : include {Module} -->
 
   </main>
 
-  <!-- {} -->
+  <!-- include {Quick_Links} -->
 
 </div>
 
-<!-- @import "footer" -->
+<!-- include {Footer} -->
+
+```
+
+
+
+
+
+## About You Template
+
+This template is used for all the *About You* pages.
+
+#### Fields
+* **Title** – *plain text*
+* **Intro Text** – *plain text*
+* **Call to Action Button** – *field group*
+  * **Link Text** – *plain text*
+  * **Link Destination** – *URL*
+* **Body** – *rich text*
+* **Primary Color** – *select*
+  * Options: Purple, Blue, Teal, Green, Red, Gold
+* **Background Photo** – *image*
+* **Modules** – *page sections*
+
+
+```html
+<!-- About You Template -->
+
+<!-- include {Header} -->
+
+<div class="hero-img" style="background-image: url({Background_Image})"></div>
+
+<div class="main-content-wrapper">
+
+  <!-- include {Beadcrumbs} -->
+
+  <main class="main-content">
+
+    <div class="page-intro">
+      <section class="container">
+        <h1 class="page-title">{Title}</h1>
+        <p class="intro-paragraph">{Intro_Text}</p>
+        <a class="btn btn--large" href="{Link_Destination}">{Link_Text}</a>
+      </section>
+    </div>
+
+    <div class="main-section content-area">
+      <section class="container">
+        {Body}
+      </section>
+    </div>
+
+    <!--for each {Module} : include {Module} -->
+
+  </main>
+
+</div>
+
+<!-- include {Quick_Links} -->
+
+<!-- include {Footer} -->
 
 ```
