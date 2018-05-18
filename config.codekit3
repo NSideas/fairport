@@ -351,6 +351,23 @@
 		"oAP": "\/dist\/js\/scripts.min.js.map",
 		"oF": 0
 		},
+	"\/dist\/js\/staff-list.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/js\/staff-list.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/dist\/js\/staff-list.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/js\/staff-list.min.js.map",
+		"oF": 0
+		},
 	"\/LICENSE.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -706,6 +723,56 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/src\/js\/partials\/dropdown.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/dropdown.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/js\/partials\/fam-circles.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/fam-circles.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/js\/partials\/global.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/global.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/js\/partials\/hero-swiper.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/hero-swiper.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/js\/partials\/staff-list.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/staff-list.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/src\/js\/plugins.js": {
 		"ft": 64,
