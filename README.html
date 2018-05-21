@@ -13,7 +13,7 @@
 
 <h2 id="homepageimageslider">Home Page Image Slider</h2>
 
-<p>The <a href="site/index.html">Home Page Slider</a> is a module that consists of the repeatable field, <strong>Slide</strong>.</p>
+<p>The <a href="site/index.html">Home Page Slider</a> is a module that consists of the repeatable item, <strong>Slide</strong>.</p>
 
 <h4 id="subfields">Sub Fields</h4>
 
@@ -22,7 +22,7 @@
 <li><strong>Slide Title</strong> – <em>plain text</em></li>
 <li><strong>Slide Subtitle</strong> – <em>plain text</em></li>
 <li><strong>Color</strong> – <em>select</em></li>
-<li> Options: Purple, Blue, Teal, Green, Red, Gold</li>
+<li> Options: purple, blue, teal, green, red, gold</li>
 </ul>
 
 <pre><code class="html">&lt;div id=&quot;hero-swiper&quot; class=&quot;hero-swiper swiper-container&quot;&gt;
@@ -69,6 +69,40 @@
 &lt;/div&gt;
 </code></pre>
 
+<h2 id="inspiringfamiliescircleslider">Inspiring Families Circle Slider</h2>
+
+<p>The <a href="site/index.html">Inspiring Families Circle Slider</a> is a module that consists of the repeatable field, <strong>Circle</strong>.</p>
+
+<h4 id="subfields">Sub Fields</h4>
+
+<ul>
+<li><strong>Story</strong> – <em>post object</em></li>
+<li><strong>Teaser</strong> – <em>plain text</em></li>
+<li><strong>Link Text</strong> – <em>plain text</em></li>
+<li><strong>Keyword</strong> – <em>plain text</em></li>
+<li><strong>Color</strong> – <em>select</em></li>
+<li> Options: purple, blue, teal, green, red, gold</li>
+</ul>
+
+<pre><code class="html">&lt;div id=&quot;fam-circle-swiper&quot; class=&quot;fam-circle-swiper swiper-container&quot;&gt;
+  &lt;div class=&quot;swiper-wrapper&quot;&gt;
+
+      <!-- for each {Circle} : -->
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;div class=&quot;fam-circle fam-circle--{color}&quot;&gt;
+          &lt;h4 class=&quot;fam-circle-title&quot;&gt;{Keyword}&lt;/h4&gt;
+          &lt;div class=&quot;fam-circle-content&quot;&gt;
+            &lt;p class=&quot;fam-circle-text&quot;&gt;{Teaser}&lt;/p&gt;
+            &lt;a class=&quot;btn btn--white&quot; href=&quot;{Story -&gt; URL}&quot;&gt;{Link_Text}&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      <!-- /for each -->
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
 <h2 id="teammemberbio">Team Member Bio</h2>
 
 <p>Team Member Bios are overlay or &#8220;pop-up&#8221; modules within the team page. Each one should have its own URL which links to the team page with the overlay module active.</p>
@@ -81,6 +115,7 @@
 <li><strong>Headshot</strong> – <em>image</em></li>
 <li><strong>Email Address</strong> – <em>plain text (or email)</em></li>
 <li><strong>Phone Number</strong> – <em>plain text</em></li>
+<li><strong>Contact Card</strong> – <em>URL</em></li>
 <li><strong>Bio</strong> – <em>rich text</em></li>
 </ul>
 
@@ -94,7 +129,7 @@
         &lt;h5 class=&quot;job-title&quot;&gt;{Title}&lt;/h5&gt;
         &lt;h3 class=&quot;team-bio-name&quot;&gt;{Name}&lt;/h3&gt;
         &lt;p class=&quot;team-bio-contact&quot;&gt;
-          {Email_Address} / {Phone Number} / &lt;a href=&quot;#&quot;&gt;Download&amp;nbsp;Contact&lt;/a&gt;
+          {Email_Address} / {Phone_Number} / &lt;a href=&quot;{Contact Card}&quot;&gt;Download_Contact&lt;/a&gt;
         &lt;/p&gt;
       &lt;/header&gt;
 

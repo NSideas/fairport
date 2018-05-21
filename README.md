@@ -10,14 +10,14 @@ Editable fields are referenced in the code samples inside of curly braces. Eg. *
 
 ## Home Page Image Slider
 
-The [Home Page Slider](site/index.html) is a module that consists of the repeatable field, **Slide**.
+The [Home Page Slider](site/index.html) is a module that consists of the repeatable item, **Slide**.
 
 #### Sub Fields
 * **Image** – *image*
 * **Slide Title** – *plain text*
 * **Slide Subtitle** – *plain text*
 * **Color** – *select*
-  * Options: Purple, Blue, Teal, Green, Red, Gold
+  * Options: purple, blue, teal, green, red, gold
 
 ```html
 <div id="hero-swiper" class="hero-swiper swiper-container">
@@ -67,6 +67,41 @@ The [Home Page Slider](site/index.html) is a module that consists of the repeata
 
 
 
+## Inspiring Families Circle Slider
+
+The [Inspiring Families Circle Slider](site/index.html) is a module that consists of the repeatable field, **Circle**.
+
+#### Sub Fields
+* **Story** – *post object*
+* **Teaser** – *plain text*
+* **Link Text** – *plain text*
+* **Keyword** – *plain text*
+* **Color** – *select*
+  * Options: purple, blue, teal, green, red, gold
+
+```html
+<div id="fam-circle-swiper" class="fam-circle-swiper swiper-container">
+  <div class="swiper-wrapper">
+
+      <!-- for each {Circle} : -->
+      <div class="swiper-slide">
+        <div class="fam-circle fam-circle--{color}">
+          <h4 class="fam-circle-title">{Keyword}</h4>
+          <div class="fam-circle-content">
+            <p class="fam-circle-text">{Teaser}</p>
+            <a class="btn btn--white" href="{Story -> URL}">{Link_Text}</a>
+          </div>
+        </div>
+      </div>
+      <!-- /for each -->
+
+  </div>
+</div>
+```
+
+
+
+
 ## Team Member Bio
 
 Team Member Bios are overlay or "pop-up" modules within the team page. Each one should  have its own URL which links to the team page with the overlay module active.
@@ -77,6 +112,7 @@ Team Member Bios are overlay or "pop-up" modules within the team page. Each one 
 * **Headshot** – *image*
 * **Email Address** – *plain text (or email)*
 * **Phone Number** – *plain text*
+* **Contact Card** – *URL*
 * **Bio** – *rich text*
 
 ```html
@@ -90,7 +126,7 @@ Team Member Bios are overlay or "pop-up" modules within the team page. Each one 
         <h5 class="job-title">{Title}</h5>
         <h3 class="team-bio-name">{Name}</h3>
         <p class="team-bio-contact">
-          {Email_Address} / {Phone Number} / <a href="#">Download&nbsp;Contact</a>
+          {Email_Address} / {Phone_Number} / <a href="{Contact Card}">Download_Contact</a>
         </p>
       </header>
 
