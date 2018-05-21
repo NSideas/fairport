@@ -113,7 +113,27 @@ function hide_search_bar(e) {
   }
 }
 
+
+function highlight_current_nav_item() {
+
+  var current_page = window.location.origin + window.location.pathname;
+
+  $('.main-nav-item a').each(function() {
+    if (this.href === current_page) {
+      $(this).addClass('current');
+      $(this).closest('.main-nav-item').addClass('current');
+      if ($(this).closest('ul').hasClass('sub-nav')) {
+        // Break out of loop after finding current sub-nav item
+        return false
+      }
+    }
+  });
+
+}
+
 $(document).ready(function() {
+
+  highlight_current_nav_item();
 
   if (mq_large.matches) {
     dropdown_menu_hover();

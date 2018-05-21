@@ -1142,6 +1142,10 @@ nav a {
   }
 }
 
+.main-nav-item a.current, .main-nav-item.current > a {
+  color: #4A4A4A;
+}
+
 .main-nav-item a {
   color: #777777;
   display: block;
@@ -2203,17 +2207,18 @@ li.block-list-item:last-child {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   }
+  .fam-circle-swiper.active .swiper-slide-active {
+    width: 620px;
+    height: 620px;
+  }
   .fam-circle-swiper.active .swiper-slide-active .fam-circle {
+    cursor: auto;
     width: 540px;
     height: 540px;
   }
   .fam-circle-swiper.active .swiper-slide-active .fam-circle:before {
     -webkit-transform: scale(3.375);
             transform: scale(3.375);
-  }
-  .fam-circle-swiper.active .swiper-slide-active {
-    width: 620px;
-    height: 620px;
   }
   .fam-circle-swiper.active .swiper-slide-active .fam-circle-content {
     display: block;

@@ -394,23 +394,24 @@ $swiper-transition: transform .3s ease;
     }
   }
   .fam-circle-swiper.active {
-    .swiper-slide-active .fam-circle{
+    .swiper-slide-active {
+      width: 620px;
+      height: 620px;
+    }
+    .swiper-slide-active .fam-circle {
+      cursor: auto;
       width: 540px;
       height: 540px;
       &:before {
         transform: scale(3.375);
       }
     }
-    .swiper-slide-active {
-      width: 620px;
-      height: 620px;
-      .fam-circle-content {
-        display: block;
-        animation: fade-in .2s ease .3s forwards;
-      }
-      .fam-circle-title {
-        opacity: 0;
-      }
+    .swiper-slide-active .fam-circle-content {
+      display: block;
+      animation: fade-in .2s ease .3s forwards;
+    }
+    .swiper-slide-active .fam-circle-title {
+      opacity: 0;
     }
   }
 }
