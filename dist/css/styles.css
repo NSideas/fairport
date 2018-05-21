@@ -676,6 +676,13 @@ p.small {
   margin-bottom: 1.5em;
 }
 
+@media (min-width: 840px) {
+  .content-area img {
+    margin-top: .5em;
+    margin-bottom: 2.25em;
+  }
+}
+
 .content-area .btn {
   margin-top: .5em;
   margin-bottom: 1.5em;

@@ -70,6 +70,10 @@
 
 .content-area img {
   margin-bottom: 1.5em;
+  @media (min-width: $l) {
+    margin-top: .5em;
+    margin-bottom: 2.25em;
+  }
 }
 
 .content-area .btn {

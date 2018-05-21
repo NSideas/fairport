@@ -115,11 +115,8 @@ function hide_search_bar(e) {
 
 
 function highlight_current_nav_item() {
-
-  var current_page = window.location.origin + window.location.pathname;
-
   $('.main-nav-item a').each(function() {
-    if (this.href === current_page) {
+    if (this.href === window.location.origin + window.location.pathname) {
       $(this).addClass('current');
       $(this).closest('.main-nav-item').addClass('current');
       if ($(this).closest('ul').hasClass('sub-nav')) {
@@ -128,7 +125,6 @@ function highlight_current_nav_item() {
       }
     }
   });
-
 }
 
 $(document).ready(function() {
