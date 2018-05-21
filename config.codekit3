@@ -930,6 +930,13 @@
 		"oAP": "\/site\/investment-management.html",
 		"oF": 0
 		},
+	"\/src\/kit\/location.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/location.html",
+		"oF": 0
+		},
 	"\/src\/kit\/modules.kit": {
 		"cB": 0,
 		"ft": 2048,

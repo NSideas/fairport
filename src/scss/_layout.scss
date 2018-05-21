@@ -315,3 +315,18 @@ p.staff-info-contact {
 .style-guide-content {
   padding-top: 1em;
 }
+
+
+.map-wrapper {
+  overflow:hidden;
+  padding-bottom:56%;
+  position:relative;
+  height:0;
+  & > iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+}
