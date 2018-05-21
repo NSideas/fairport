@@ -414,3 +414,22 @@ $swiper-transition: transform .3s ease;
     }
   }
 }
+
+
+
+
+// Luma Shout Out
+
+.luma-logo {
+  margin-bottom: 1em;
+}
+
+.luma-shout-out p {
+  font-family: $sans;
+  font-size: 1.125em;
+  color: $default;
+  margin-bottom: .5em;
+  a {
+    color: #A9AE00;
+  }
+}

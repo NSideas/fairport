@@ -2227,6 +2227,21 @@ li.block-list-item:last-child {
   }
 }
 
+.luma-logo {
+  margin-bottom: 1em;
+}
+
+.luma-shout-out p {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 1.125em;
+  color: #4A4A4A;
+  margin-bottom: .5em;
+}
+
+.luma-shout-out p a {
+  color: #A9AE00;
+}
+
 .hero-img {
   height: 60vw;
   background-size: cover;
