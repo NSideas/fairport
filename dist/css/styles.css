@@ -471,16 +471,10 @@ a:hover {
   line-height: 1.55;
 }
 
-.content-area p + h2,
-.content-area p + h3,
-.content-area p + h4,
-.content-area ul + h2,
-.content-area ul + h3,
-.content-area ul + h4,
-.content-area ol + h2,
-.content-area ol + h3,
-.content-area ol + h4 {
-  padding-top: 10px;
+.content-area * + h2,
+.content-area * + h3,
+.content-area * + h4 {
+  padding-top: .5em;
 }
 
 .content-area h3 {
@@ -512,7 +506,7 @@ a:hover {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #D4C098;
+  background-color: #8BA0AF;
   position: absolute;
   left: .25em;
   top: .55em;
@@ -678,9 +672,13 @@ p.small {
   padding-bottom: 1.5em;
 }
 
+.content-area img {
+  margin-bottom: 1.5em;
+}
+
 .content-area .btn {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: .5em;
+  margin-bottom: 1.5em;
 }
 
 .secondary-content-area {

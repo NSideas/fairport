@@ -426,11 +426,25 @@
 		"oAP": "\/site\/about-you-template.html",
 		"oF": 0
 		},
+	"\/site\/careers.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/careers.html",
+		"oF": 0
+		},
 	"\/site\/client-experience.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/site\/client-experience.html",
+		"oF": 0
+		},
+	"\/site\/community-service.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/community-service.html",
 		"oF": 0
 		},
 	"\/site\/default-template.html": {
@@ -718,6 +732,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/site\/uploads\/ywca-logo.png": {
+		"ft": 32768,
+		"iS": 95045,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/ywca-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/src\/js\/partials\/dropdown.js": {
 		"ft": 64,
 		"ma": 1,
@@ -849,11 +874,25 @@
 		"oAP": "\/site\/about-you-template.html",
 		"oF": 0
 		},
+	"\/src\/kit\/careers.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/careers.html",
+		"oF": 0
+		},
 	"\/src\/kit\/client-experience.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/site\/client-experience.html",
+		"oF": 2
+		},
+	"\/src\/kit\/community-service.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/community-service.html",
 		"oF": 0
 		},
 	"\/src\/kit\/default-template.kit": {
