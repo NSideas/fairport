@@ -80,6 +80,9 @@
 .content-area .btn {
   margin-top: .5em;
   margin-bottom: 1.5em;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .secondary-content-area {
@@ -105,11 +108,13 @@
 }
 
 .full-width-img {
-  height: 50vw;
+  height: 60vw;
   margin-top: 1em;
   margin-bottom: 2em;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  max-height: 800px;
   @media (min-width: $m) {
     margin-top: 2em;
   }

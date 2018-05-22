@@ -708,6 +708,10 @@ p.small {
   margin-bottom: 1.5em;
 }
 
+.content-area .btn:last-child {
+  margin-bottom: 0;
+}
+
 .secondary-content-area {
   background-color: #F0F0F0;
   padding-top: 2em;
@@ -738,11 +742,13 @@ p.small {
 }
 
 .full-width-img {
-  height: 50vw;
+  height: 60vw;
   margin-top: 1em;
   margin-bottom: 2em;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  max-height: 800px;
 }
 
 @media (min-width: 720px) {
@@ -1391,6 +1397,12 @@ button.btn--solid-white:focus,
   opacity: .9;
 }
 
+button.btn--solid-white:hover,
+.btn.btn--solid-white:hover,
+.btn-submit.btn--solid-white:hover {
+  opacity: 1;
+}
+
 button:hover, button:focus,
 .btn:hover,
 .btn:focus,
@@ -1400,7 +1412,7 @@ button:hover, button:focus,
   color: #4A4A4A;
 }
 
-button[type="submit"],
+input[type="submit"],
 .btn-submit {
   font-size: 18px;
   line-height: 1.4;
@@ -1414,7 +1426,7 @@ button[type="submit"],
   background: white;
 }
 
-button[type="submit"]:hover, button[type="submit"]:focus,
+input[type="submit"]:hover, input[type="submit"]:focus,
 .btn-submit:hover,
 .btn-submit:focus {
   background: #C6AB76;
@@ -1422,7 +1434,7 @@ button[type="submit"]:hover, button[type="submit"]:focus,
   color: white;
 }
 
-button[type="submit"]:focus,
+input[type="submit"]:focus,
 .btn-submit:focus {
   outline: none;
 }
@@ -1448,8 +1460,13 @@ button[type="submit"]:focus,
   background-color: white;
 }
 
-.btn--solid-white:hover {
+.btn--solid-white:hover, .btn--solid-white:focus,
+input[type="submit"].btn--solid-white:hover,
+input[type="submit"].btn--solid-white:focus,
+button.btn--solid-white:hover,
+button.btn--solid-white:focus {
   border-color: white;
+  background: white;
 }
 
 .btn--gold,
@@ -1580,6 +1597,10 @@ button[type="submit"]:focus,
 
 .dropdown-item a.btn--solid-white:focus {
   opacity: .9;
+}
+
+.dropdown-item a.btn--solid-white:hover {
+  opacity: 1;
 }
 
 .dropdown-item a:hover {
@@ -3419,13 +3440,17 @@ input:invalid + input[type="submit"].btn--solid-white:focus {
   background-color: #A298B5;
 }
 
-.color-purple input[type="submit"].btn--solid-white {
+.color-purple input[type="submit"].btn--solid-white,
+.color-purple button.btn--solid-white,
+.color-purple .btn-submit.btn--solid-white {
   color: #655484;
   -webkit-box-shadow: 0 0 0 2px #655484, 0 0 0 3px #655484;
           box-shadow: 0 0 0 2px #655484, 0 0 0 3px #655484;
 }
 
-.color-purple input[type="submit"].btn--solid-white:focus {
+.color-purple input[type="submit"].btn--solid-white:focus,
+.color-purple button.btn--solid-white:focus,
+.color-purple .btn-submit.btn--solid-white:focus {
   -webkit-box-shadow: 0 0 0 2px #655484, 0 0 0 3px white;
           box-shadow: 0 0 0 2px #655484, 0 0 0 3px white;
 }
@@ -3446,13 +3471,17 @@ input:invalid + input[type="submit"].btn--solid-white:focus {
   background-color: #8BA0AF;
 }
 
-.color-blue input[type="submit"].btn--solid-white {
+.color-blue input[type="submit"].btn--solid-white,
+.color-blue button.btn--solid-white,
+.color-blue .btn-submit.btn--solid-white {
   color: #3F627A;
   -webkit-box-shadow: 0 0 0 2px #3F627A, 0 0 0 3px #3F627A;
           box-shadow: 0 0 0 2px #3F627A, 0 0 0 3px #3F627A;
 }
 
-.color-blue input[type="submit"].btn--solid-white:focus {
+.color-blue input[type="submit"].btn--solid-white:focus,
+.color-blue button.btn--solid-white:focus,
+.color-blue .btn-submit.btn--solid-white:focus {
   -webkit-box-shadow: 0 0 0 2px #3F627A, 0 0 0 3px white;
           box-shadow: 0 0 0 2px #3F627A, 0 0 0 3px white;
 }
@@ -3473,13 +3502,17 @@ input:invalid + input[type="submit"].btn--solid-white:focus {
   background-color: #90C2C9;
 }
 
-.color-teal input[type="submit"].btn--solid-white {
+.color-teal input[type="submit"].btn--solid-white,
+.color-teal button.btn--solid-white,
+.color-teal .btn-submit.btn--solid-white {
   color: #479AA6;
   -webkit-box-shadow: 0 0 0 2px #479AA6, 0 0 0 3px #479AA6;
           box-shadow: 0 0 0 2px #479AA6, 0 0 0 3px #479AA6;
 }
 
-.color-teal input[type="submit"].btn--solid-white:focus {
+.color-teal input[type="submit"].btn--solid-white:focus,
+.color-teal button.btn--solid-white:focus,
+.color-teal .btn-submit.btn--solid-white:focus {
   -webkit-box-shadow: 0 0 0 2px #479AA6, 0 0 0 3px white;
           box-shadow: 0 0 0 2px #479AA6, 0 0 0 3px white;
 }
@@ -3500,13 +3533,17 @@ input:invalid + input[type="submit"].btn--solid-white:focus {
   background-color: #90BAAF;
 }
 
-.color-green input[type="submit"].btn--solid-white {
+.color-green input[type="submit"].btn--solid-white,
+.color-green button.btn--solid-white,
+.color-green .btn-submit.btn--solid-white {
   color: #478D7A;
   -webkit-box-shadow: 0 0 0 2px #478D7A, 0 0 0 3px #478D7A;
           box-shadow: 0 0 0 2px #478D7A, 0 0 0 3px #478D7A;
 }
 
-.color-green input[type="submit"].btn--solid-white:focus {
+.color-green input[type="submit"].btn--solid-white:focus,
+.color-green button.btn--solid-white:focus,
+.color-green .btn-submit.btn--solid-white:focus {
   -webkit-box-shadow: 0 0 0 2px #478D7A, 0 0 0 3px white;
           box-shadow: 0 0 0 2px #478D7A, 0 0 0 3px white;
 }
@@ -3527,13 +3564,17 @@ input:invalid + input[type="submit"].btn--solid-white:focus {
   background-color: #D49898;
 }
 
-.color-red input[type="submit"].btn--solid-white {
+.color-red input[type="submit"].btn--solid-white,
+.color-red button.btn--solid-white,
+.color-red .btn-submit.btn--solid-white {
   color: #B85454;
   -webkit-box-shadow: 0 0 0 2px #B85454, 0 0 0 3px #B85454;
           box-shadow: 0 0 0 2px #B85454, 0 0 0 3px #B85454;
 }
 
-.color-red input[type="submit"].btn--solid-white:focus {
+.color-red input[type="submit"].btn--solid-white:focus,
+.color-red button.btn--solid-white:focus,
+.color-red .btn-submit.btn--solid-white:focus {
   -webkit-box-shadow: 0 0 0 2px #B85454, 0 0 0 3px white;
           box-shadow: 0 0 0 2px #B85454, 0 0 0 3px white;
 }
@@ -3554,13 +3595,17 @@ input:invalid + input[type="submit"].btn--solid-white:focus {
   background-color: #D4C098;
 }
 
-.color-gold input[type="submit"].btn--solid-white {
+.color-gold input[type="submit"].btn--solid-white,
+.color-gold button.btn--solid-white,
+.color-gold .btn-submit.btn--solid-white {
   color: #B89654;
   -webkit-box-shadow: 0 0 0 2px #B89654, 0 0 0 3px #B89654;
           box-shadow: 0 0 0 2px #B89654, 0 0 0 3px #B89654;
 }
 
-.color-gold input[type="submit"].btn--solid-white:focus {
+.color-gold input[type="submit"].btn--solid-white:focus,
+.color-gold button.btn--solid-white:focus,
+.color-gold .btn-submit.btn--solid-white:focus {
   -webkit-box-shadow: 0 0 0 2px #B89654, 0 0 0 3px white;
           box-shadow: 0 0 0 2px #B89654, 0 0 0 3px white;
 }

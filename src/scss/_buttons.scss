@@ -17,6 +17,9 @@
     &:focus {
       opacity: .9;
     }
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -60,7 +63,7 @@ button,
   }
 }
 
-button[type="submit"],
+input[type="submit"],
 .btn-submit {
   @include button--large;
   @include button--gold;
@@ -89,9 +92,13 @@ button[type="submit"],
   }
 }
 
-.btn--solid-white {
-  &:hover {
+.btn--solid-white,
+input[type="submit"].btn--solid-white,
+button.btn--solid-white {
+  &:hover,
+  &:focus {
     border-color: white;
+    background: white;
   }
 }
 
