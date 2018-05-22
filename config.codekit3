@@ -60,6 +60,26 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/dist\/img\/down-arrow-gold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/img\/down-arrow-gold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/dist\/img\/down-arrow-red.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/img\/down-arrow-red.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/dist\/img\/down-arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -424,6 +444,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/site\/about-you-template.html",
+		"oF": 0
+		},
+	"\/site\/business-owners.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/business-owners.html",
 		"oF": 0
 		},
 	"\/site\/careers.html": {

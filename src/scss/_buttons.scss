@@ -44,7 +44,7 @@
   border-color: $gold-1;
   &:hover,
   &:focus {
-    background: $gold-2;
+    background-color: $gold-2;
     border-color: $gold-2;
     color: white;
   }
@@ -55,7 +55,7 @@ button,
 .btn-submit {
   @include button;
   color: $gray-1;
-  border-color: $gray-2;
+  border-color: $gray-3;
   &:hover,
   &:focus {
     border-color: $gray-1;
@@ -98,7 +98,7 @@ button.btn--solid-white {
   &:hover,
   &:focus {
     border-color: white;
-    background: white;
+    background-color: white;
   }
 }
 
@@ -118,7 +118,7 @@ button.btn--solid-white {
 
 .btn--dropdown {
   @include button--small;
-  padding-right: 40px;
+  padding-right: 36px;
   position: relative;
   cursor: pointer;
   &:after {
@@ -126,26 +126,18 @@ button.btn--solid-white {
     display: block;
     position: absolute;
     top: 0;
-    right: 16px;
+    right: 12px;
     width: 20px;
     height: 26px;
     background-image: url(../img/down-arrow.svg);
     background-size: 13px;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: .55;
     transition: inherit;
+    opacity: .6;
   }
 }
 
-.btn--dropdown:hover,
-.btn--dropdown.list-open {
-  border-color: $gray-1;
-  color: $default;
-  &:after {
-    opacity: .88;
-  }
-}
 
 .custom-dropdown {
   position: relative;
@@ -175,7 +167,7 @@ button.btn--solid-white {
   opacity: 1;
 }
 
-.dropdown-item a {
+.dropdown-item a:not(.category-filter-link) {
   @include button;
   @include button--small;
   &:hover {
