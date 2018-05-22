@@ -750,6 +750,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/site\/uploads\/wealth-planning.jpg": {
+		"ft": 16384,
+		"iS": 351219,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/wealth-planning.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/site\/uploads\/ywca-logo.png": {
 		"ft": 32768,
 		"iS": 95045,
@@ -760,6 +771,13 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/site\/wealth-planning.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/wealth-planning.html",
+		"oF": 0
 		},
 	"\/src\/js\/partials\/dropdown.js": {
 		"ft": 64,
@@ -1191,6 +1209,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/site\/team.html",
+		"oF": 0
+		},
+	"\/src\/kit\/wealth-planning.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/wealth-planning.html",
 		"oF": 0
 		},
 	"\/src\/scss\/_about-you-template.scss": {
