@@ -68,7 +68,8 @@
   }
 }
 
-.content-area img {
+.content-area img,
+.content-area .map-wrapper {
   margin-bottom: 1.5em;
   @media (min-width: $l) {
     margin-top: .5em;
