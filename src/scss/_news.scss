@@ -180,29 +180,40 @@
   margin-top: .5em;
 }
 
-a.category-filter-link {
-  @extend .btn;
+%category-icon-button {
   background-size: 28px;
   padding-right: 38px;
   background-repeat: no-repeat;
   background-position: right 2px center;
-  &:hover {
+  &:hover,
+  &.current {
     color: white;
   }
-  &.category-perspectives:hover {
-    background-color: $blue-2;
-    border-color: $blue-2;
+}
+
+@mixin news-category($color) {
+  &:hover,
+  &.current {
+    background-color: $color;
+    border-color: $color;
   }
-  &.category-fairport-in-15:hover {
-    background-color: $teal-2;
-    border-color: $teal-2;
+}
+
+a.category-filter-link {
+  @extend .btn;
+  &:not(.category-all) {
+    @extend %category-icon-button;
   }
-  &.category-compass:hover {
-    background-color: $gold-2;
-    border-color: $gold-2;
+  &.category-perspectives {
+    @include news-category($blue-2);
   }
-  &.category-announcement:hover {
-    background-color: $red-2;
-    border-color: $red-2;
+  &.category-fairport-in-15 {
+    @include news-category($teal-2);
+  }
+  &.category-compass {
+    @include news-category($gold-2);
+  }
+  &.category-announcement {
+    @include news-category($red-2);
   }
 }

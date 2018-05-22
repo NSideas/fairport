@@ -1,3 +1,4 @@
+<!-- $pageTitle = Compass | -->
 <!-- $template = news-feed -->
 <!-- $slug = news-and-insights -->
 <!-- $primaryColor = green -->
@@ -7,7 +8,7 @@
 
 <div class="page-intro--default">
   <section class="container">
-    <h1 class="page-title">News & Insights</h1>
+    <h1 class="page-title">News & Insights: Compass</h1>
     <p class="intro-paragraph">Stay up to date with the latest Fairport News. Will need real copy written for this introductory content area.</p>
   </section>
 </div>
@@ -24,7 +25,28 @@
 
   <main class="main-content">
 
-    <!-- @import "modules/category-filter" -->
+    <div class="category-filter container">
+      <div class="custom-dropdown align-right">
+        <a id="category-filter-btn" class="btn btn--dropdown">Filter by Category</a>
+        <ul id="category-list" class="dropdown-list">
+          <li class="dropdown-item">
+            <a class="category-filter-link category-perspectives" href="news-category.html">Fairport Perspectives</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="category-filter-link category-fairport-in-15" href="news-category.html">Fairport in Fifteen</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="category-filter-link category-compass current" href="news-category.html">Compass</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="category-filter-link category-announcement" href="news-category.html">Announcements</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="category-filter-link category-all" href="news-and-insights.html">All News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div id="news-feed" class="main-section">
       <div class="container">
@@ -40,9 +62,6 @@
     <div class="news-pagination container">
       <span class="pagination-older">
         <a href="news-and-insights-page-2.html">&lt; Older Articles</a>
-      </span>
-      <span class="pagination-newer">
-        <a href="news-and-insights.html">Newer Articles &gt;</a>
       </span>
     </div>
 

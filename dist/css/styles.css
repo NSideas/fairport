@@ -2902,33 +2902,33 @@ li.team-member {
   margin-top: .5em;
 }
 
-a.category-filter-link {
+a.category-filter-link:not(.category-all) {
   background-size: 28px;
   padding-right: 38px;
   background-repeat: no-repeat;
   background-position: right 2px center;
 }
 
-a.category-filter-link:hover {
+a.category-filter-link:hover:not(.category-all), a.current.category-filter-link:not(.category-all) {
   color: white;
 }
 
-a.category-filter-link.category-perspectives:hover {
+a.category-filter-link.category-perspectives:hover, a.category-filter-link.category-perspectives.current {
   background-color: #658194;
   border-color: #658194;
 }
 
-a.category-filter-link.category-fairport-in-15:hover {
+a.category-filter-link.category-fairport-in-15:hover, a.category-filter-link.category-fairport-in-15.current {
   background-color: #6BAEB7;
   border-color: #6BAEB7;
 }
 
-a.category-filter-link.category-compass:hover {
+a.category-filter-link.category-compass:hover, a.category-filter-link.category-compass.current {
   background-color: #C6AB76;
   border-color: #C6AB76;
 }
 
-a.category-filter-link.category-announcement:hover {
+a.category-filter-link.category-announcement:hover, a.category-filter-link.category-announcement.current {
   background-color: #C67676;
   border-color: #C67676;
 }

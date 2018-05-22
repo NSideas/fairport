@@ -1028,6 +1028,13 @@
 		"oAP": "\/site\/_button-test.html",
 		"oF": 0
 		},
+	"\/src\/kit\/modules\/_category-filter.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_category-filter.html",
+		"oF": 0
+		},
 	"\/src\/kit\/modules\/_fam-circle-swiper.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1208,6 +1215,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/site\/news-article.html",
+		"oF": 0
+		},
+	"\/src\/kit\/news-category.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/news-category.html",
 		"oF": 0
 		},
 	"\/src\/kit\/our-approach.kit": {
