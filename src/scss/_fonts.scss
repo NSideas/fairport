@@ -1,49 +1,17 @@
-@font-face {
-  font-family: 'EB Garamond';
-  src: url('../fonts/EBGaramond-Regular.woff2') format('woff2'),
-       url('../fonts/EBGaramond-Regular.woff') format('woff'),
-       url('../fonts/EBGaramond-Regular.otf') format('opentype');
-  font-weight: normal;
+@mixin font($name, $filename, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $name;
+    src: url('../fonts/#{$filename}.woff2') format('woff2'),
+         url('../fonts/#{$filename}.woff') format('woff'),
+         url('../fonts/#{$filename}.otf') format('opentype');
+    font-weight: $weight;
+    font-style: $style;
+  }
 }
 
-@font-face {
-  font-family: 'EB Garamond';
-  src: url('../fonts/EBGaramond-Italic.woff2') format('woff2'),
-       url('../fonts/EBGaramond-Italic.woff') format('woff'),
-       url('../fonts/EBGaramond-Italic.otf') format('opentype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'EB Garamond';
-  src: url('../fonts/EBGaramond-Medium.woff2') format('woff2'),
-       url('../fonts/EBGaramond-Medium.woff') format('woff'),
-       url('../fonts/EBGaramond-Medium.otf') format('opentype');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
-       url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
-       url('../fonts/RobotoCondensed-Regular.otf') format('opentype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  src: url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
-       url('../fonts/RobotoCondensed-Light.woff') format('woff'),
-       url('../fonts/RobotoCondensed-Light.otf') format('opentype');
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  src: url('../fonts/RobotoCondensed-LightItalic.woff2') format('woff2'),
-       url('../fonts/RobotoCondensed-LightItalic.woff') format('woff'),
-       url('../fonts/RobotoCondensed-LightItalic.otf') format('opentype');
-  font-weight: 300;
-  font-style: italic;
-}
+@include font('EB Garamound', 'EBGaramond-Regular');
+@include font('EB Garamound', 'EBGaramond-Italic',  $style: italic);
+@include font('EB Garamound', 'EBGaramond-Medium', 500);
+@include font('Roboto Condensed', 'RobotoCondensed-Regular');
+@include font('Roboto Condensed', 'RobotoCondensed-Light', $weight: 300);
+@include font('Roboto Condensed', 'RobotoCondensed-LightItalic', $weight: 300, $style: italic);
