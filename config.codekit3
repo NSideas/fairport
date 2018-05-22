@@ -60,6 +60,13 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/dist\/fonts\/EBGaramond-Italic.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/fonts\/EBGaramond-Italic.otf",
+		"oF": 0
+		},
 	"\/dist\/fonts\/EBGaramond-Italic.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -79,6 +86,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/dist\/fonts\/EBGaramond-Italic.woff2",
+		"oF": 0
+		},
+	"\/dist\/fonts\/EBGaramond-Medium.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/fonts\/EBGaramond-Medium.otf",
 		"oF": 0
 		},
 	"\/dist\/fonts\/EBGaramond-Medium.ttf": {
@@ -102,6 +116,13 @@
 		"oAP": "\/dist\/fonts\/EBGaramond-Medium.woff2",
 		"oF": 0
 		},
+	"\/dist\/fonts\/EBGaramond-Regular.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/fonts\/EBGaramond-Regular.otf",
+		"oF": 0
+		},
 	"\/dist\/fonts\/EBGaramond-Regular.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -121,6 +142,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/dist\/fonts\/EBGaramond-Regular.woff2",
+		"oF": 0
+		},
+	"\/dist\/fonts\/RobotoCondensed-Light.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/fonts\/RobotoCondensed-Light.otf",
 		"oF": 0
 		},
 	"\/dist\/fonts\/RobotoCondensed-Light.ttf": {
@@ -144,6 +172,13 @@
 		"oAP": "\/dist\/fonts\/RobotoCondensed-Light.woff2",
 		"oF": 0
 		},
+	"\/dist\/fonts\/RobotoCondensed-LightItalic.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/fonts\/RobotoCondensed-LightItalic.otf",
+		"oF": 0
+		},
 	"\/dist\/fonts\/RobotoCondensed-LightItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -163,6 +198,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/dist\/fonts\/RobotoCondensed-LightItalic.woff2",
+		"oF": 0
+		},
+	"\/dist\/fonts\/RobotoCondensed-Regular.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/fonts\/RobotoCondensed-Regular.otf",
 		"oF": 0
 		},
 	"\/dist\/fonts\/RobotoCondensed-Regular.ttf": {
@@ -1447,6 +1489,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/dist\/css\/_colors.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/src\/scss\/_fonts.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/dist\/css\/_fonts.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
