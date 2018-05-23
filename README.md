@@ -12,12 +12,13 @@ Editable fields are referenced in the code samples inside of curly braces. Eg. *
 
 The [Home Page Slider](site/index.html) is a module that consists of the repeatable item, **Slide**.
 
-#### Sub Fields
-* **Image** – *image*
-* **Slide Title** – *plain text*
-* **Slide Subtitle** – *plain text*
-* **Color** – *select*
-  * Options: purple, blue, teal, green, red, gold
+#### Fields
+* **Slides** – *repeater*
+  * **Image** – *image*
+  * **Slide Title** – *plain text*
+  * **Slide Subtitle** – *plain text*
+  * **Color** – *select*
+    * Options: purple, blue, teal, green, red, gold
 
 ```html
 <div id="hero-swiper" class="hero-swiper swiper-container">
@@ -71,13 +72,14 @@ The [Home Page Slider](site/index.html) is a module that consists of the repeata
 
 The [Inspiring Families Circle Slider](site/index.html) is a module that consists of the repeatable field, **Circle**.
 
-#### Sub Fields
-* **Story** – *post object*
-* **Teaser** – *plain text*
-* **Link Text** – *plain text*
-* **Keyword** – *plain text*
-* **Color** – *select*
-  * Options: purple, blue, teal, green, red, gold
+#### Fields
+* **Circles** – *repeater*
+  * **Story** – *post object*
+  * **Teaser** – *plain text*
+  * **Link Text** – *plain text*
+  * **Keyword** – *plain text*
+  * **Color** – *select*
+    * Options: purple, blue, teal, green, red, gold
 
 ```html
 <div id="fam-circle-swiper" class="fam-circle-swiper swiper-container">
@@ -177,9 +179,10 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ### Unordered Block List
 
-#### Sub Fields
-* **Header** – *plain text*
-* **Content** – *rich text*
+#### Fields
+* **Block List Item** – *repeater*
+  * **Header** – *plain text*
+  * **Content** – *rich text*
 
 ```html
 <ul class="block-list block-list--unordered two-column">
@@ -201,8 +204,9 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ### Ordered Block List Single column
 
-#### Sub Fields
-**Content** – *rich text*
+#### Fields
+* **Block List Item** – *repeater*
+  * **Content** – *rich text*
 
 ```html
 <ol class="block-list block-list--ordered single-column">
@@ -219,10 +223,10 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ### Ordered Block List Two Column
 
-#### Sub Fields
-* **Header** – *plain text*
-* **Sub Header** – *plain text*
-* **Content** – *rich text*
+* **Block List Item** – *repeater*
+  * **Header** – *plain text*
+  * **Sub Header** – *plain text*
+  * **Content** – *rich text*
 
 
 ```html

@@ -15,14 +15,18 @@
 
 <p>The <a href="site/index.html">Home Page Slider</a> is a module that consists of the repeatable item, <strong>Slide</strong>.</p>
 
-<h4 id="subfields">Sub Fields</h4>
+<h4 id="fields">Fields</h4>
 
 <ul>
-<li><strong>Image</strong> – <em>image</em></li>
-<li><strong>Slide Title</strong> – <em>plain text</em></li>
-<li><strong>Slide Subtitle</strong> – <em>plain text</em></li>
-<li><strong>Color</strong> – <em>select</em></li>
-<li> Options: purple, blue, teal, green, red, gold</li>
+<li><strong>Slides</strong> – <em>repeater</em></li>
+<li> <strong>Image</strong> – <em>image</em></li>
+<li> <strong>Slide Title</strong> – <em>plain text</em></li>
+<li> <strong>Slide Subtitle</strong> – <em>plain text</em></li>
+<li> <strong>Color</strong> – <em>select</em>
+
+<ul>
+<li>Options: purple, blue, teal, green, red, gold</li>
+</ul></li>
 </ul>
 
 <pre><code class="html">&lt;div id=&quot;hero-swiper&quot; class=&quot;hero-swiper swiper-container&quot;&gt;
@@ -73,15 +77,19 @@
 
 <p>The <a href="site/index.html">Inspiring Families Circle Slider</a> is a module that consists of the repeatable field, <strong>Circle</strong>.</p>
 
-<h4 id="subfields">Sub Fields</h4>
+<h4 id="fields">Fields</h4>
 
 <ul>
-<li><strong>Story</strong> – <em>post object</em></li>
-<li><strong>Teaser</strong> – <em>plain text</em></li>
-<li><strong>Link Text</strong> – <em>plain text</em></li>
-<li><strong>Keyword</strong> – <em>plain text</em></li>
-<li><strong>Color</strong> – <em>select</em></li>
-<li> Options: purple, blue, teal, green, red, gold</li>
+<li><strong>Circles</strong> – <em>repeater</em></li>
+<li> <strong>Story</strong> – <em>post object</em></li>
+<li> <strong>Teaser</strong> – <em>plain text</em></li>
+<li> <strong>Link Text</strong> – <em>plain text</em></li>
+<li> <strong>Keyword</strong> – <em>plain text</em></li>
+<li> <strong>Color</strong> – <em>select</em>
+
+<ul>
+<li>Options: purple, blue, teal, green, red, gold</li>
+</ul></li>
 </ul>
 
 <pre><code class="html">&lt;div id=&quot;fam-circle-swiper&quot; class=&quot;fam-circle-swiper swiper-container&quot;&gt;
@@ -173,11 +181,12 @@
 
 <h3 id="unorderedblocklist">Unordered Block List</h3>
 
-<h4 id="subfields">Sub Fields</h4>
+<h4 id="fields">Fields</h4>
 
 <ul>
-<li><strong>Header</strong> – <em>plain text</em></li>
-<li><strong>Content</strong> – <em>rich text</em></li>
+<li><strong>Block List Item</strong> – <em>repeater</em></li>
+<li> <strong>Header</strong> – <em>plain text</em></li>
+<li> <strong>Content</strong> – <em>rich text</em></li>
 </ul>
 
 <pre><code class="html">&lt;ul class=&quot;block-list block-list--unordered two-column&quot;&gt;
@@ -198,9 +207,12 @@
 
 <h3 id="orderedblocklistsinglecolumn">Ordered Block List Single column</h3>
 
-<h4 id="subfields">Sub Fields</h4>
+<h4 id="fields">Fields</h4>
 
-<p><strong>Content</strong> – <em>rich text</em></p>
+<ul>
+<li><strong>Block List Item</strong> – <em>repeater</em></li>
+<li> <strong>Content</strong> – <em>rich text</em></li>
+</ul>
 
 <pre><code class="html">&lt;ol class=&quot;block-list block-list--ordered single-column&quot;&gt;
 
@@ -215,12 +227,11 @@
 
 <h3 id="orderedblocklisttwocolumn">Ordered Block List Two Column</h3>
 
-<h4 id="subfields">Sub Fields</h4>
-
 <ul>
-<li><strong>Header</strong> – <em>plain text</em></li>
-<li><strong>Sub Header</strong> – <em>plain text</em></li>
-<li><strong>Content</strong> – <em>rich text</em></li>
+<li><strong>Block List Item</strong> – <em>repeater</em></li>
+<li> <strong>Header</strong> – <em>plain text</em></li>
+<li> <strong>Sub Header</strong> – <em>plain text</em></li>
+<li> <strong>Content</strong> – <em>rich text</em></li>
 </ul>
 
 <pre><code class="html">&lt;ol class=&quot;block-list block-list--ordered two-column&quot;&gt;

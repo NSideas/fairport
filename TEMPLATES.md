@@ -1,6 +1,6 @@
 # Templates
 
-There are two page templates being used in this site.
+There are two page templates being used in this site. Each template has a main content area and the ability to include any number of additional modules.
 
 ## Default Template
 
