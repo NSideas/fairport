@@ -23,6 +23,13 @@
 		"oAP": "\/demos\/home-page-hero-slider.html",
 		"oF": 0
 		},
+	"\/demos\/inspiring-families.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/demos\/inspiring-families.html",
+		"oF": 0
+		},
 	"\/dist\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1709,6 +1716,24 @@
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
+		},
+	"\/STRUCTURE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/STRUCTURE.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/TEMPLATES.md": {
 		"cB": 0,

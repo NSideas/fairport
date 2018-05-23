@@ -10,7 +10,7 @@
   background-image: url(../uploads/stock-2.jpg);
 }
 
-.about-you-template .page-intro {
+.template-about-you .page-intro {
   @media (min-width: $m) {
     padding-top: 30px;
   }
@@ -19,11 +19,11 @@
 
 @media (min-width: $l) {
 
-  .about-you-template {
+  .template-about-you {
     background-color: $gray-5;
   }
 
-  .about-you-template .hero-img {
+  .template-about-you .hero-img {
     position: fixed;
     top: 0;
     left: 0;
@@ -32,7 +32,7 @@
     height: 834px;
   }
 
-  .about-you-template {
+  .template-about-you {
     .main-content-wrapper,
     .quick-links-section,
     #footer {
@@ -41,7 +41,7 @@
     }
   }
 
-  .about-you-template .main-content-wrapper {
+  .template-about-you .main-content-wrapper {
     background: white;
     margin-top: 532px;
     margin-bottom: 300px;
@@ -52,7 +52,7 @@
     box-shadow: 0 0 4px rgba($gray-1, .2);
   }
 
-  .about-you-template .content-area {
+  .template-about-you .content-area {
     padding-bottom: 3.5em;
   }
 

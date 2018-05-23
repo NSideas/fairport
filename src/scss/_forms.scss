@@ -175,8 +175,10 @@ input:invalid + input[type="submit"].btn--solid-white {
     &:hover {
       background-color: transparent;
     }
-    &:focus {
+    &:focus,
+    &:active {
       outline: none;
+      background-color: transparent;
     }
   }
 }

@@ -2,7 +2,7 @@
 
 # Modules
 
-Editable fields are referenced in the code samples inside of curly braces. Eg. **Field&nbsp;Name** = `{Field_Name}`
+Editable fields are referenced in the code samples inside of curly braces. Eg. **Field&nbsp;Name** = `{Field_Name}`. This is not an actual syntax, it is just a way to demonstrate the logic.
 
 
 
@@ -104,6 +104,22 @@ The [Inspiring Families Circle Slider](site/index.html) appears on the home page
 
 
 
+## News Article Teaser
+
+News Article Teasers appear in the news feed and link to their full articles. For featured news items, the `news-item--default` class would be replaced with `news-item--featured`.
+
+```html
+<article class="news-item news-item--default category-{News_Article -> Category}">
+  <h2 class="article-title">
+    <a href="{News_Article -> URL}">{News_Article -> Title}</a>
+  </h2>
+  <p>{News_Article -> Intro}</p>
+  <a class="read-more btn btn--default" href="{News_Article -> URL}">Read More</a>
+</article>
+```
+
+
+
 ## Recent News List
 
 The Recent News List should consist of the three most recent news articles.
@@ -117,18 +133,58 @@ The Recent News List should consist of the three most recent news articles.
     </div>
 
     <div class="recent-news-list">
-
-      <!-- for each {News_Article} : -->
-      <article class="news-item news-item--default category-{News_Article -> Category}">
-        <h2 class="article-title"><a href="{News_Article -> Link}">{News_Article -> Title}</a></h2>
-        <p>{News_Article -> Intro}</p>
-        <a class="read-more btn btn--default" href="{News_Article -> Link}">Read More</a>
-      </article>
-      <!-- /for each -->
-
+      <!-- for each {News_Article} : {News_Article} -->
     </div>
 
   </section>
+</div>
+```
+
+
+
+## Related News List
+
+The Related News List displays articles related to the current article.
+
+```html
+<div class="related-news-section secondary-content-area">
+  <section class="container">
+
+    <h5 class="related-news-header">You Might Also Be Interested In:</h5>
+
+    <div class="related-news-list">
+      <!-- for each {News_Article} : {News_Article} -->
+    </div>
+
+  </section>
+</div>
+```
+
+
+
+
+## Category Filters
+
+This module should be dynamically populated with each news category.
+
+```html
+<div class="category-filter container">
+  <div class="custom-dropdown align-right">
+    <a id="category-filter-btn" class="btn btn--dropdown">Filter by Category</a>
+    <ul id="category-list" class="dropdown-list">
+
+      <!-- for each {Category} : -->
+      <li class="dropdown-item">
+        <a class="category-filter-link category-{Category -> Slug}" href="{Category -> URL}">{Category -> Name}</a>
+      </li>
+      <!-- / for each -->
+
+      <li class="dropdown-item">
+        <a class="category-filter-link category-all" href="{News_and_Insights -> URL}">All News</a>
+      </li>
+
+    </ul>
+  </div>
 </div>
 ```
 
@@ -308,7 +364,7 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ## Quick Links
 
-Quick Links refer to site content related to the current page. There are three types of Quick Links: **Page**, **News Article** and **Media Attachment**. They are located after the main content and before the footer. There should be no more than three Quick Links on a single page. Quick Links are categorized based on the content they link to. The category affects the class name, which dictates the icon above the text. For example, if you are linking to a page, the **Category** would be "Page" and the class name would be `quick-link--page`. If you are linking to a news article, the **Category** would be the category of the article and the class name would be `quick-link--perspectives`.
+Quick Links refer to site content related to the current page. There are three types of Quick Links: **Page**, **News Article** and **Media Attachment**. They are located after the main content and before the footer. Quick Links are categorized based on the content they link to. The category affects the class name, which dictates the icon above the text. For example, if you are linking to a page, the **Category** would be "Page" and the class name would be `quick-link--page`. If you are linking to a news article, the **Category** would be the category of the article and the class name would be `quick-link--perspectives`.
 
 #### Fields
 * **Type** – *select*
@@ -326,12 +382,12 @@ Quick Links refer to site content related to the current page. There are three t
 
     <ul class="quick-links-list flex">
 
+    <!-- for each {Quick_Link} : -->
     <li class="quick-link quick-link--{Category}">
       <a class="quick-link-title" href="{Link -> URL}">{Link -> Title}</a>
       <p>{Teaser}</p>
       <a class="more-link" href="{Link -> URL}">Read More</a>
     </li>
-
     <!-- /for each -->
 
     </ul>

@@ -117,16 +117,17 @@ This template is used for all the *About You* pages.
 
 ## News Feed Template
 
-This template is used for the *News & Insights* page.
+This template is used for the *News & Insights* page. All news articles and category pages will inherit the **Primary Color** selected in this page.
 
 #### Fields
 * **Title** – *plain text*
 * **Intro Text** – *plain text*
+* * **Primary Color** – *select*
+  * Options: Purple, Blue, Teal, Green, Red, Gold
 
 #### Included Modules
 * [Category Filters]()
 * [Fetured News Article]()
-
 
 
 ```html
@@ -162,10 +163,11 @@ This template is used for the *News & Insights* page.
     </div>
 
     <div class="news-pagination container">
-      
+      <!-- if (not last page) : -->
       <span class="pagination-older">
         <a href="news-and-insights-page-2.html">&lt; Older Articles</a>
       </span>
+      <!-- if (not first page) : -->
       <span class="pagination-newer">
         <a href="news-and-insights.html">Newer Articles &gt;</a>
       </span>
@@ -173,6 +175,51 @@ This template is used for the *News & Insights* page.
 
   </main>
 
+  <!-- include {Quick_Links} -->
+
+</div>
+
+<!-- include {Footer} -->
+
+```
+
+
+## News Article Template
+
+This template is used for all News Articles.
+
+#### Fields
+* **Title** – *plain text*
+* **Category** – *plain text*
+* **Body** – *rich text*
+
+
+```html
+<!-- include {Header} -->
+
+<div class="page-intro--default">
+  <section class="container">
+    <h1 class="page-title">{News_and_Insights -> Title}</h1>
+    <p class="intro-paragraph">{News_and_Insights -> Intro_Text}</p>
+  </section>
+</div>
+
+<div class="main-content-wrapper">
+
+  <!-- include {Beadcrumbs} -->
+
+  <main class="main-content">
+
+    <div class="main-section content-area">
+      <article class="news-article-content container">
+        <h2>{Title}</h2>
+        {Body}
+      </article>
+    </div>
+
+  </main>
+
+  <!-- include {Related_News} -->
   <!-- include {Quick_Links} -->
 
 </div>

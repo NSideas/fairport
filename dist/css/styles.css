@@ -2365,16 +2365,16 @@ li.block-list-item:last-child {
 }
 
 @media (min-width: 720px) {
-  .about-you-template .page-intro, .about-you-template .page-intro--default {
+  .template-about-you .page-intro, .template-about-you .page-intro--default {
     padding-top: 30px;
   }
 }
 
 @media (min-width: 840px) {
-  .about-you-template {
+  .template-about-you {
     background-color: #F0F0F0;
   }
-  .about-you-template .hero-img {
+  .template-about-you .hero-img {
     position: fixed;
     top: 0;
     left: 0;
@@ -2382,13 +2382,13 @@ li.block-list-item:last-child {
     width: 100%;
     height: 834px;
   }
-  .about-you-template .main-content-wrapper,
-  .about-you-template .quick-links-section,
-  .about-you-template #footer {
+  .template-about-you .main-content-wrapper,
+  .template-about-you .quick-links-section,
+  .template-about-you #footer {
     position: relative;
     z-index: 1;
   }
-  .about-you-template .main-content-wrapper {
+  .template-about-you .main-content-wrapper {
     background: white;
     margin-top: 532px;
     margin-bottom: 300px;
@@ -2399,7 +2399,7 @@ li.block-list-item:last-child {
     -webkit-box-shadow: 0 0 4px rgba(119, 119, 119, 0.2);
             box-shadow: 0 0 4px rgba(119, 119, 119, 0.2);
   }
-  .about-you-template .content-area {
+  .template-about-you .content-area {
     padding-bottom: 3.5em;
   }
 }
@@ -3471,8 +3471,9 @@ input:invalid + input[type="submit"].btn--solid-white:focus {
   background-color: transparent;
 }
 
-.search-site .search-submit:focus {
+.search-site .search-submit:focus, .search-site .search-submit:active {
   outline: none;
+  background-color: transparent;
 }
 
 @media (min-width: 840px) {
