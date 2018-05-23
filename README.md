@@ -70,7 +70,7 @@ The [Home Page Slider](site/index.html) is a module that consists of the repeata
 
 ## Inspiring Families Circle Slider
 
-The [Inspiring Families Circle Slider](site/index.html) is a module that consists of the repeatable field, **Circle**.
+The [Inspiring Families Circle Slider](site/index.html) appears on the home page and contains story teasers.
 
 #### Fields
 * **Circles** – *repeater*
@@ -248,6 +248,31 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 ```
 
 
+### Ordered Block List Three Column
+
+* **Block List Item** – *repeater*
+  * **Header** – *plain text*
+  * **Content** – *rich text*
+
+
+```html
+
+<ol class="block-list block-list--ordered three-column">
+
+  <!-- for each {Block_List_Item} : -->
+  <li class="block-list-item grid-item">
+    <h5>{Header}</h5>
+    <div class="content-area">
+      <p>{Content}</p>
+    </div>
+  </li>
+  <!-- /for each -->
+
+</ol>
+
+```
+
+
 
 
 ## Quick Links
@@ -290,15 +315,3 @@ Quick Links refer to a post, page or media attachment. They are located after th
   </section>
 </div>
 ```
-
-
-
-
-
-
----
----
----
----
----
----

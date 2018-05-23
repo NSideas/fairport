@@ -16,21 +16,11 @@
 		"oAP": "\/.htaccess",
 		"oF": 0
 		},
-	"\/dist\/css\/md.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/css\/md.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/dist\/css\/md.css.map": {
+	"\/demos\/home-page-hero-slider.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/css\/md.css.map",
+		"oAP": "\/demos\/home-page-hero-slider.html",
 		"oF": 0
 		},
 	"\/dist\/css\/styles.css": {
@@ -550,13 +540,6 @@
 		"oAP": "\/dist\/js\/scripts.min.js.map",
 		"oF": 0
 		},
-	"\/LICENSE.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/LICENSE.html",
-		"oF": 0
-		},
 	"\/LICENSE.md": {
 		"cB": 0,
 		"cS": 0,
@@ -565,7 +548,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/LICENSE.html",
 		"oF": 0,
 		"oFM": 0,
@@ -575,13 +558,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/README.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/README.html",
-		"oF": 0
-		},
 	"\/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -590,9 +566,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/README.html",
-		"oF": 1,
+		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -1119,6 +1095,20 @@
 		"oAP": "\/site\/community-service.html",
 		"oF": 0
 		},
+	"\/src\/kit\/demos\/home-page-hero-slider.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/demos\/home-page-hero-slider.html",
+		"oF": 3
+		},
+	"\/src\/kit\/demos\/inspiring-families.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/demos\/inspiring-families.html",
+		"oF": 2
+		},
 	"\/src\/kit\/executives.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1166,13 +1156,6 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/site\/_breadcrumbs.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_button-test.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_button-test.html",
 		"oF": 0
 		},
 	"\/src\/kit\/modules\/_category-filter.kit": {
@@ -1714,19 +1697,6 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/md.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/dist\/css\/md.css",
-		"oF": 0,
-		"oS": 1,
-		"uL": 1
-		},
 	"\/src\/scss\/styles.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1740,13 +1710,6 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"\/TEMPLATES.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/TEMPLATES.html",
-		"oF": 0
-		},
 	"\/TEMPLATES.md": {
 		"cB": 0,
 		"cS": 0,
@@ -1755,7 +1718,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/TEMPLATES.html",
 		"oF": 0,
 		"oFM": 0,
@@ -3632,7 +3595,7 @@
 		"strictUnits": 0
 		},
 	"languageDefaultsMARKDOWN": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
