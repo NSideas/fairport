@@ -1091,27 +1091,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/kit\/_footer.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_footer.html",
-		"oF": 0
-		},
-	"\/src\/kit\/_header.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_header.html",
-		"oF": 0
-		},
-	"\/src\/kit\/about-you-template.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/site\/about-you-template.html",
-		"oF": 0
-		},
 	"\/src\/kit\/business-owners.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1138,13 +1117,6 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/site\/community-service.html",
-		"oF": 0
-		},
-	"\/src\/kit\/default-template.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/site\/default-template.html",
 		"oF": 0
 		},
 	"\/src\/kit\/executives.kit": {
@@ -1406,6 +1378,20 @@
 		"oAP": "\/site\/our-approach.html",
 		"oF": 0
 		},
+	"\/src\/kit\/partials\/_footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_footer.html",
+		"oF": 0
+		},
+	"\/src\/kit\/partials\/_header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_header.html",
+		"oF": 0
+		},
 	"\/src\/kit\/staff-info.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1432,6 +1418,20 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/site\/team.html",
+		"oF": 0
+		},
+	"\/src\/kit\/templates\/about-you-template.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/about-you-template.html",
+		"oF": 0
+		},
+	"\/src\/kit\/templates\/default-template.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/default-template.html",
 		"oF": 0
 		},
 	"\/src\/kit\/wealth-planning.kit": {

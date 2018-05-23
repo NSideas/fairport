@@ -129,7 +129,7 @@ function highlight_current_nav_item() {
 
 $(document).ready(function() {
 
-  highlight_current_nav_item();
+  // highlight_current_nav_item();
 
   if (mq_large.matches) {
     dropdown_menu_hover();
