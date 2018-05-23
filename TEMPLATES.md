@@ -110,3 +110,87 @@ This template is used for all the *About You* pages.
 <!-- include {Footer} -->
 
 ```
+
+
+
+
+
+## News Feed Template
+
+This template is used for the *News & Insights* page.
+
+#### Fields
+* **Title** – *plain text*
+* **Intro Text** – *plain text*
+
+#### Included Modules
+* [Category Filters]()
+* [Fetured News Article]()
+
+
+
+```html
+<!-- include {Header} -->
+
+<div class="page-intro--default">
+  <section class="container">
+    <h1 class="page-title">{Title}</h1>
+    <p class="intro-paragraph">{Intro_Text}</p>
+  </section>
+</div>
+
+<div class="main-content-wrapper">
+
+  <!-- include {Beadcrumbs} -->
+
+  <main class="main-content">
+
+    <!-- include {Category_Filters} -->
+
+    <div id="featured-article" class="main-section">
+      <div class="container">
+        <!-- include {Featured_News_Article} -->
+      </div>
+    </div>
+
+    <div class="pattern-separator"></div>
+
+    <div id="news-feed" class="main-section">
+      <div class="container">
+        <!-- for each {News_Article} : include {News_Article} -->
+      </div>
+    </div>
+
+    <div class="news-pagination container">
+      
+      <span class="pagination-older">
+        <a href="news-and-insights-page-2.html">&lt; Older Articles</a>
+      </span>
+      <span class="pagination-newer">
+        <a href="news-and-insights.html">Newer Articles &gt;</a>
+      </span>
+    </div>
+
+  </main>
+
+  <!-- include {Quick_Links} -->
+
+</div>
+
+<!-- include {Footer} -->
+
+```
+
+---
+```
+```
+---
+```
+```
+---
+```
+```
+---
+```
+```
+---

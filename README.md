@@ -104,6 +104,37 @@ The [Inspiring Families Circle Slider](site/index.html) appears on the home page
 
 
 
+## Recent News List
+
+The Recent News List should consist of the three most recent news articles.
+
+```html
+<div class="recent-news-section secondary-content-area">
+  <section class="container">
+
+    <div class="recent-news-header">
+      <h5>Recent News</h5> <a href="news-and-insights.html">View all</a>
+    </div>
+
+    <div class="recent-news-list">
+
+      <!-- for each {News_Article} : -->
+      <article class="news-item news-item--default category-{News_Article -> Category}">
+        <h2 class="article-title"><a href="{News_Article -> Link}">{News_Article -> Title}</a></h2>
+        <p>{News_Article -> Intro}</p>
+        <a class="read-more btn btn--default" href="{News_Article -> Link}">Read More</a>
+      </article>
+      <!-- /for each -->
+
+    </div>
+
+  </section>
+</div>
+```
+
+
+
+
 ## Team Member Bio
 
 Team Member Bios are overlay or "pop-up" modules within the team page. Each one should  have its own URL which links to the team page with the overlay module active.
@@ -277,9 +308,12 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ## Quick Links
 
-Quick Links refer to a post, page or media attachment. They are located after the main content and before the footer. There should be no more than three Quick Links on a single page. Quick Links are categorized based on the content they link to.
+Quick Links refer to site content related to the current page. There are three types of Quick Links: **Page**, **News Article** and **Media Attachment**. They are located after the main content and before the footer. There should be no more than three Quick Links on a single page. Quick Links are categorized based on the content they link to. The category affects the class name, which dictates the icon above the text. For example, if you are linking to a page, the **Category** would be "Page" and the class name would be `quick-link--page`. If you are linking to a news article, the **Category** would be the category of the article and the class name would be `quick-link--perspectives`.
 
 #### Fields
+* **Type** – *select*
+  * Options: Page, News Article, Attachment
+* **Category** – *plain text*
 * **Link** – *post object*
 * **Teaser** – *plain text*
 
@@ -291,16 +325,6 @@ Quick Links refer to a post, page or media attachment. They are located after th
     <h5 class="quick-links-header">Quick Links</h5>
 
     <ul class="quick-links-list flex">
-
-    <!-- for each {Quick_Link} :
-
-    if {Quick_Link -> Type} == 'Page' {
-      {Category} = 'page'
-    } else if {Quick_Link -> Type} == 'Attachment' {
-      {Category} = 'attachment'
-    } else if {Quick_Link -> Type} == 'Post' {
-      {Category} = {Post -> Category}
-    } -->
 
     <li class="quick-link quick-link--{Category}">
       <a class="quick-link-title" href="{Link -> URL}">{Link -> Title}</a>
