@@ -21,6 +21,7 @@
   background: white;
   box-shadow: none;
   border-color: $gray-3;
+  -webkit-appearance: none;
   &:focus {
     border-color: $gray-2;
     box-shadow: 0 0 3px rgba($gray-2, .65);

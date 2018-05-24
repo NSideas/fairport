@@ -1,4 +1,11 @@
 
+body.user-is-touching {
+  color: red;
+  &.green {
+    color: green;
+  }
+}
+
 // Global nav styles
 nav {
   ul {
