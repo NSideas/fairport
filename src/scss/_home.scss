@@ -1,6 +1,6 @@
 
 // Home Page
-.home-template {
+.template-home {
   .main-content-wrapper {
     background-color: $gray-5;
     padding-top: 0;
@@ -18,7 +18,6 @@
 .hero-swiper {
   background: $gray-2;
   color: white;
-  // opacity: 0;
   transition: opacity .2s;
   &.initiated {
     opacity: 1;
@@ -84,11 +83,6 @@
       opacity: .4;
     }
   }
-}
-
-
-.hero-swiper .swiper-slide:before {
-  // @extend %big-circle;
 }
 
 #active-slide-content:before {

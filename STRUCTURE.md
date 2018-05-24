@@ -63,13 +63,11 @@ Each top level nav item should link to the first item in its sub-nav list. Eg. "
       <!-- for each {Main_Nav_Item} : -->
       <li class="main-nav-item">
         <a href="{Main_Nav_Item -> URL}">{Main_Nav_Item -> Title}</a>
-        <!-- if {Sub_Nav_Item} : -->
         <ul class="sub-nav">
           <!-- for each {Sub_Nav_Item} : -->
           <li><a href="{Sub_Nav_Item -> URL}">{Sub_Nav_Item -> Title}</a></li>
           <!-- /for each -->
         </ul>
-        <!-- /if -->
       </li>
       <!-- /for each -->
 

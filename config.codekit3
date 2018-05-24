@@ -30,6 +30,23 @@
 		"oAP": "\/demos\/inspiring-families.html",
 		"oF": 0
 		},
+	"\/dist\/css\/fairport.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/css\/fairport.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/dist\/css\/fairport.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/css\/fairport.css.map",
+		"oF": 0
+		},
 	"\/dist\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -46,16 +63,6 @@
 		"oA": 0,
 		"oAP": "\/dist\/css\/styles.css.map",
 		"oF": 0
-		},
-	"\/dist\/css\/swiper.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/css\/swiper.min.css",
-		"oF": 0,
-		"oS": 0
 		},
 	"\/dist\/fonts\/EBGaramond-Italic.otf": {
 		"cB": 0,
@@ -547,7 +554,7 @@
 		"oAP": "\/dist\/js\/scripts.min.js.map",
 		"oF": 0
 		},
-	"\/LICENSE.md": {
+	"\/MODULES.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -556,7 +563,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 1,
-		"oAP": "\/LICENSE.html",
+		"oAP": "\/MODULES.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -1678,6 +1685,19 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"\/src\/scss\/_swiper.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/dist\/css\/_swiper.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
 	"\/src\/scss\/_typography.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1712,8 +1732,8 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/dist\/css\/styles.css",
-		"oF": 0,
+		"oAP": "\/dist\/css\/fairport.css",
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
