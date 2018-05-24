@@ -309,6 +309,8 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ### Ordered Block List Two Column
 
+#### Fields
+
 * **Block List Item** – *repeater*
   * **Header** – *plain text*
   * **Sub Header** – *plain text*
@@ -335,6 +337,8 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 
 ### Ordered Block List Three Column
+
+#### Fields
 
 * **Block List Item** – *repeater*
   * **Header** – *plain text*
@@ -393,4 +397,70 @@ Quick Links refer to site content related to the current page. There are three t
 
   </section>
 </div>
+```
+
+
+
+
+
+## Footer Contact Info
+
+#### Fields
+
+* **Content** – *rich text*
+
+```html
+<div class="contact-info content-area grid-item">
+  {Content}
+</div>
+```
+
+
+
+
+## Newsletter Signup
+
+#### Fields
+
+* **Title** – *plain text*
+* **Subtitle** – *plain text*
+
+```html
+<div class="newsletter-signup grid-item">
+
+  <h5 class="form-title">{Title}</h5>
+  <p>{Subtitle}</p>
+
+  <form>
+    <input id="newsletter-signup-footer" class="email-address input-white" type="email" placeholder="Enter your email address" required>
+    <input class="btn-submit btn--solid-white" type="submit" value="Submit">
+  </form>
+
+</div>
+```
+
+
+
+
+
+## Social Media Link List
+
+#### Fields
+* **Social Media Links** – *repeater*
+  * **Platform** – *plain text*
+  * **Icon** – *image*
+  * **URL** – *plain text*
+
+```html
+<ul class="sm-link-list">
+
+  <!-- for each {Social_Media_Link} : -->
+  <li>
+    <a class="sm-link" href="{URL}">
+      <img src="{Image}" alt="{Platform}" />
+    </a>
+  </li>
+  <!-- /for each -->
+
+</ul>
 ```
