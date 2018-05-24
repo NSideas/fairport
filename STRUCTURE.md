@@ -1,6 +1,8 @@
 # Structure
 
-The page title should start with the name of the current page followed by " | Fairport Asset Management". Eg. "Wealth Planning | Fairport Asset Management".
+The page title should start with the name of the current page followed by " | Fairport Asset Management".
+
+Eg. "Wealth Planning | Fairport Asset Management".
 
 The body must have the following class names to identify the page, template and primary color:
 

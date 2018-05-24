@@ -47,23 +47,6 @@
 		"oAP": "\/dist\/css\/fairport.css.map",
 		"oF": 0
 		},
-	"\/dist\/css\/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/css\/styles.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/dist\/css\/styles.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/dist\/css\/styles.css.map",
-		"oF": 0
-		},
 	"\/dist\/fonts\/EBGaramond-Italic.otf": {
 		"cB": 0,
 		"ft": 8192,
