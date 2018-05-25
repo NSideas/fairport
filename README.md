@@ -38,4 +38,4 @@ Download core JS and CSS files from `dist/` and add them to the website:
 
 ## Example code
 
-Take a look at [modules](), [templates]() and [structure]() for implementation instructions and module definitions.
+Take a look at [modules](MODULES.md), [templates](TEMPLATES.md) and [structure](STRUCTURE.md) for implementation instructions and module definitions.
