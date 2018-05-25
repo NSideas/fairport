@@ -461,6 +461,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/dist\/img\/patterns\/zig-zag-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/img\/patterns\/zig-zag-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/dist\/img\/patterns\/zig-zag-white.png": {
 		"ft": 32768,
 		"iS": 3328,
@@ -472,6 +482,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/dist\/img\/patterns\/zig-zag-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/img\/patterns\/zig-zag-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/dist\/img\/patterns\/zig-zag.png": {
 		"ft": 32768,
 		"iS": 21012,
@@ -482,6 +502,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/dist\/img\/patterns\/zig-zag.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/img\/patterns\/zig-zag.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/dist\/img\/search-icon.svg": {
 		"ft": 2097152,
@@ -953,6 +983,41 @@
 		"oA": 0,
 		"oAP": "\/site\/wealth-planning.html",
 		"oF": 0
+		},
+	"\/site\/zig-zag-white.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/zig-zag-white.html",
+		"oF": 0
+		},
+	"\/src\/img\/_zig-zag.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_zig-zag.html",
+		"oF": 0
+		},
+	"\/src\/img\/path\/_zig-zag.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_zig-zag.html",
+		"oF": 0
+		},
+	"\/src\/img\/zig-zag-black.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/zig-zag-black.html",
+		"oF": 0
+		},
+	"\/src\/img\/zig-zag-white.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/dist\/img\/patterns\/zig-zag-white.svg",
+		"oF": 2
 		},
 	"\/src\/js\/partials\/dropdown.js": {
 		"ft": 64,

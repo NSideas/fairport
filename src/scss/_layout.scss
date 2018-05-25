@@ -135,29 +135,29 @@
   margin-bottom: 2em;
   &:before {
     @extend %pattern-fill;
-    opacity: .4;
+    opacity: .25;
   }
   &.gray:before {
-    @include pattern('zig-zag-black');
+    @include pattern('zig-zag-black.svg');
     opacity: .15;
   }
 }
 
 .brick-pattern {
   &:before {
-    @include pattern('brick-white');
+    @include pattern('brick-white.png');
   }
   &.gray:before {
-    @include pattern('brick-black');
+    @include pattern('brick-black.png');
   }
 }
 
 .linen-pattern {
   &:before {
-    @include pattern('linen-white');
+    @include pattern('linen-white.png');
   }
   &.gray:before {
-    @include pattern('linen-black');
+    @include pattern('linen-black.png');
   }
 }
 

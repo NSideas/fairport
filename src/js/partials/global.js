@@ -91,7 +91,6 @@ function dropdown_menu_hover() {
     close_dropdown();
   });
   $('.main-nav-item').hover(function(e) {
-    console.log('hovering');
     handle_mouse_enter(this);
   }, function(e) {
     handle_mouse_leave(this);
@@ -127,7 +126,6 @@ $(document).ready(function() {
 
     window.addEventListener('mousemove', function first_mouse_move() {
       if (!touch) {
-        console.log('Mouse moving');
         handle_drop_down();
       }
       window.removeEventListener('mousemove', first_mouse_move, false);

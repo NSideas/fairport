@@ -1242,7 +1242,7 @@ p.small {
   content: '';
   display: block;
   height: inherit;
-  background-image: url(../img/patterns/zig-zag-white.png);
+  background-image: url(../img/patterns/zig-zag-white.svg);
   background-size: 80px;
 }
 
@@ -1254,11 +1254,11 @@ p.small {
 }
 
 .pattern-separator:before {
-  opacity: .4;
+  opacity: .25;
 }
 
 .pattern-separator.gray:before {
-  background-image: url(../img/patterns/zig-zag-black.png);
+  background-image: url(../img/patterns/zig-zag-black.svg);
   opacity: .15;
 }
 
@@ -1369,7 +1369,7 @@ p.small {
   left: 0;
   z-index: 0;
   opacity: .12;
-  background-image: url(../img/patterns/zig-zag-white.png);
+  background-image: url(../img/patterns/zig-zag-white.svg);
   background-size: 80px;
 }
 
