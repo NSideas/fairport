@@ -14,7 +14,6 @@
   padding-right: 0;
   padding-top: 38px;
   margin-bottom: 2em;
-  @include icon('star');
   background-repeat: no-repeat;
   background-size: 32px;
   background-position: 0 0;
@@ -44,14 +43,11 @@
   @include header-5;
 }
 
-.quick-link--announcement {
-  @include icon('bell');
+
+.category-download {
+  @include icon('star');
 }
 
-.quick-link--compass {
-  @include icon('compass');
-}
-
-.quick-link--download {
-  @include icon('fifteen');
+.category-page {
+  @include icon('star');
 }

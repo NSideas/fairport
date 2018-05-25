@@ -10,7 +10,7 @@
 }
 
 .news-item {
-  @include icon('compass');
+  @include icon('star');
   background-repeat: no-repeat;
   background-size: 50px;
   padding-top: 58px;
@@ -104,9 +104,6 @@
 }
 .category-fairport-in-15 {
   @include icon('fifteen');
-}
-.category-announcement {
-  @include icon('bell');
 }
 .category-perspectives {
   @include icon('perspectives');
@@ -217,7 +214,7 @@ a.category-filter-link {
   &.category-compass {
     @include news-category($gold-2);
   }
-  &.category-announcement {
-    @include news-category($red-2);
+  &.category-other {
+    @include news-category($purple-2);
   }
 }

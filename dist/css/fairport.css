@@ -3168,7 +3168,7 @@ li.team-member {
 }
 
 .news-item {
-  background-image: url(../img/icons/icn-compass.svg);
+  background-image: url(../img/icons/icn-star.svg);
   background-repeat: no-repeat;
   background-size: 50px;
   padding-top: 58px;
@@ -3288,10 +3288,6 @@ li.team-member {
 
 .category-fairport-in-15 {
   background-image: url(../img/icons/icn-fifteen.svg);
-}
-
-.category-announcement {
-  background-image: url(../img/icons/icn-bell.svg);
 }
 
 .category-perspectives {
@@ -3418,9 +3414,9 @@ a.category-filter-link.category-compass:hover, a.category-filter-link.category-c
   border-color: #C6AB76;
 }
 
-a.category-filter-link.category-announcement:hover, a.category-filter-link.category-announcement.current {
-  background-color: #C67676;
-  border-color: #C67676;
+a.category-filter-link.category-other:hover, a.category-filter-link.category-other.current {
+  background-color: #83769C;
+  border-color: #83769C;
 }
 
 .story .page-title {
@@ -3505,7 +3501,6 @@ p.story-teaser-body {
   padding-right: 0;
   padding-top: 38px;
   margin-bottom: 2em;
-  background-image: url(../img/icons/icn-star.svg);
   background-repeat: no-repeat;
   background-size: 32px;
   background-position: 0 0;
@@ -3547,16 +3542,12 @@ p.story-teaser-body {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
 }
 
-.quick-link--announcement {
-  background-image: url(../img/icons/icn-bell.svg);
+.category-download {
+  background-image: url(../img/icons/icn-star.svg);
 }
 
-.quick-link--compass {
-  background-image: url(../img/icons/icn-compass.svg);
-}
-
-.quick-link--download {
-  background-image: url(../img/icons/icn-fifteen.svg);
+.category-page {
+  background-image: url(../img/icons/icn-star.svg);
 }
 
 #footer {
