@@ -1587,14 +1587,6 @@ body {
   }
 }
 
-body.user-is-touching {
-  color: red;
-}
-
-body.user-is-touching.green {
-  color: green;
-}
-
 nav ul {
   margin: 0;
   list-style-type: none;
