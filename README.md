@@ -31,7 +31,7 @@ Download core JS and CSS files from `dist/` and add them to the website:
     ...
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="path/to/plugins.min.js"></script>
-    <script src="path/to/scripts.min.js"></script>
+    <script src="path/to/fairport.min.js"></script>
 </body>
 </html>
 ```

@@ -503,16 +503,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/patterns\/zig-zag.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/dist\/img\/patterns\/zig-zag.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/dist\/img\/search-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -533,6 +523,23 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/dist\/js\/fairport.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/js\/fairport.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/dist\/js\/fairport.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/js\/fairport.min.js.map",
+		"oF": 0
+		},
 	"\/dist\/js\/plugins.min.js": {
 		"ft": 64,
 		"ma": 1,
@@ -548,23 +555,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/dist\/js\/plugins.min.js.map",
-		"oF": 0
-		},
-	"\/dist\/js\/scripts.min.js": {
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/dist\/js\/scripts.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/dist\/js\/scripts.min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/dist\/js\/scripts.min.js.map",
 		"oF": 0
 		},
 	"\/MODULES.md": {
@@ -984,13 +974,6 @@
 		"oAP": "\/site\/wealth-planning.html",
 		"oF": 0
 		},
-	"\/site\/zig-zag-white.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/site\/zig-zag-white.html",
-		"oF": 0
-		},
 	"\/src\/img\/_zig-zag.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1018,6 +1001,16 @@
 		"oA": 0,
 		"oAP": "\/dist\/img\/patterns\/zig-zag-white.svg",
 		"oF": 2
+		},
+	"\/src\/js\/fairport.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/js\/fairport.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/src\/js\/partials\/dropdown.js": {
 		"ft": 64,
@@ -1075,16 +1068,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/js\/plugins.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/js\/scripts.js": {
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/dist\/js\/scripts.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
