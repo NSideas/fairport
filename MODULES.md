@@ -192,7 +192,7 @@ This module should be dynamically populated with each news category.
 
 ## Team Member Bio
 
-Team Member Bios are overlay or "pop-up" modules within the team page. Each one should  have its own URL which links to the team page with the overlay module active.
+Team Member Bios are overlay or "pop-up" modules within the team page. Each one should have its own URL which links to the team page with the overlay module active.
 
 #### Fields
 * **Name** – *plain text*
@@ -214,7 +214,7 @@ Team Member Bios are overlay or "pop-up" modules within the team page. Each one 
         <h5 class="job-title">{Title}</h5>
         <h3 class="team-bio-name">{Name}</h3>
         <p class="team-bio-contact">
-          {Email_Address} / {Phone_Number} / <a href="{Contact Card}">Download_Contact</a>
+          {Email_Address} / {Phone_Number} / <a href="{Contact_Card}">Download Contact</a>
         </p>
       </header>
 
@@ -234,20 +234,20 @@ Team Member Bios are overlay or "pop-up" modules within the team page. Each one 
 
 
 
-## Staff List
+## Team Member List
 
-The Staff List is used to display all the team members on the [team page](site/team.html) using data from the Team Member Bios.
+The Team Member List is used to display all the team members on the [team page](http://dev.bigfatideas.com/Fairport/site/team.html) using data from the Team Member Bios.
 
 ```html
-<ul id="staff-list" class="staff-list flex">
+<ul id="team-member" class="team-member flex">
 
   <!-- for each {Team_Member} : -->
   <li class="team-member">
-    <a class="team-member-link flex" href="#{Name}">
-      <img class="team-member-photo" src="{Headshot}" alt="{Name}">
+    <a class="team-member-link flex" href="#{Team_Member -> Name}">
+      <img class="team-member-photo" src="{Team_Member -> Headshot}" alt="{Team_Member -> Name}">
       <section class="team-member-info">
-        <h5 class="job-title">{Title}</h5>
-        <h3 class="team-member-name">{Name}</h3>
+        <h5 class="job-title">{Team_Member -> Title}</h5>
+        <h3 class="team-member-name">{Team_Member -> Name}</h3>
       </section>
     </a>
   </li>
@@ -255,6 +255,31 @@ The Staff List is used to display all the team members on the [team page](site/t
 
 </ul>
 ```
+
+
+
+
+
+## Staff Info List
+
+The Staff Info List displays contact information for all the team members on the [staff info page](http://dev.bigfatideas.com/Fairport/site/staff-info.html) using data from the Team Member Bios.
+
+```html
+<ul class="staff-info-list">
+
+  <!-- for each {Team_Member} : -->
+  <li class="staff-info-item">
+    <h5 class="job-title">{Team_Member -> Title}</h5>
+    <h3>{Team_Member -> Name}</h3>
+    <p class="staff-info-contact">
+      <a href="#">{Team_Member -> Email_Address}</a> / {Team_Member -> Phone_Number} / <a href="{Team_Member -> Contact_Card}">Download&nbsp;Contact</a>
+    </p>
+  </li>
+  <!-- /for each -->
+
+</ul>
+```
+
 
 
 

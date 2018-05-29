@@ -80,6 +80,8 @@ The header should be the first element after the opening body tag. Each top leve
 
 The footer should be the last element on the page, just before the script tags.
 
+Modules referenced here: [Social Media Link List](MODULES.md#social-media-link-list), [Footer Contact Info](MODULES.md#footer-contact-info), [Newsletter Signup](MODULES.md#newsletter-signup)
+
 ```html
 <footer id="footer">
   <div class="container">

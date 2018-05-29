@@ -16,8 +16,6 @@ This template is used for all the *About Us*, *Services* and *Contact* pages.
 
 
 ```html
-<!-- Default Template -->
-
 <!-- include {Header} -->
 
 <div class="page-intro--default">
@@ -48,7 +46,6 @@ This template is used for all the *About Us*, *Services* and *Contact* pages.
 </div>
 
 <!-- include {Footer} -->
-
 ```
 
 
@@ -73,11 +70,9 @@ This template is used for all the *About You* pages.
 
 
 ```html
-<!-- About You Template -->
-
 <!-- include {Header} -->
 
-<div class="hero-img" style="background-image: url({Background_Image})"></div>
+<div class="hero-img" style="background-image: url({Background_Photo})"></div>
 
 <div class="main-content-wrapper">
 
@@ -108,8 +103,55 @@ This template is used for all the *About You* pages.
 <!-- include {Quick_Links} -->
 
 <!-- include {Footer} -->
-
 ```
+
+
+
+
+
+## News Article Template
+
+This template is used for all News Articles.
+
+#### Fields
+* **Title** – *plain text*
+* **Category** – *plain text*
+* **Body** – *rich text*
+
+
+```html
+<!-- include {Header} -->
+
+<div class="page-intro--default">
+  <section class="container">
+    <h1 class="page-title">{News_and_Insights -> Title}</h1>
+    <p class="intro-paragraph">{News_and_Insights -> Intro_Text}</p>
+  </section>
+</div>
+
+<div class="main-content-wrapper">
+
+  <!-- include {Beadcrumbs} -->
+
+  <main class="main-content">
+
+    <div class="main-section content-area">
+      <article class="news-article-content container">
+        <h2>{Title}</h2>
+        {Body}
+      </article>
+    </div>
+
+  </main>
+
+  <!-- include {Related_News} -->
+  <!-- include {Quick_Links} -->
+
+</div>
+
+<!-- include {Footer} -->
+```
+
 
 
 
@@ -117,17 +159,16 @@ This template is used for all the *About You* pages.
 
 ## News Feed Template
 
-This template is used for the *News & Insights* page. All news articles and category pages will inherit the **Primary Color** selected in this page.
+This template is used for the *News & Insights* page. All news articles and category pages will inherit the **Primary Color** selected in this page. The most recent "Featured" news article will display first, followed by all other news articles in chronological order.
 
 #### Fields
 * **Title** – *plain text*
 * **Intro Text** – *plain text*
-* * **Primary Color** – *select*
+* **Primary Color** – *select*
   * Options: Purple, Blue, Teal, Green, Red, Gold
 
-#### Included Modules
-* [Category Filters]()
-* [Fetured News Article]()
+
+Modules referenced here: [Category Filters](MODULES.md#category-filters), [News Article Teaser](MODULES.md#news-article-teaser)
 
 
 ```html
@@ -180,53 +221,13 @@ This template is used for the *News & Insights* page. All news articles and cate
 </div>
 
 <!-- include {Footer} -->
-
 ```
 
 
-## News Article Template
-
-This template is used for all News Articles.
-
-#### Fields
-* **Title** – *plain text*
-* **Category** – *plain text*
-* **Body** – *rich text*
 
 
-```html
-<!-- include {Header} -->
 
-<div class="page-intro--default">
-  <section class="container">
-    <h1 class="page-title">{News_and_Insights -> Title}</h1>
-    <p class="intro-paragraph">{News_and_Insights -> Intro_Text}</p>
-  </section>
-</div>
 
-<div class="main-content-wrapper">
-
-  <!-- include {Beadcrumbs} -->
-
-  <main class="main-content">
-
-    <div class="main-section content-area">
-      <article class="news-article-content container">
-        <h2>{Title}</h2>
-        {Body}
-      </article>
-    </div>
-
-  </main>
-
-  <!-- include {Related_News} -->
-  <!-- include {Quick_Links} -->
-
-</div>
-
-<!-- include {Footer} -->
-
-```
 
 ---
 ```
