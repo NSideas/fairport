@@ -1,34 +1,4 @@
 
-var fam_circle_swiper = new Swiper('.fam-circle-swiper', {
-  slidesPerView: 'auto',
-  roundLengths: true,
-  centeredSlides: true,
-  initialSlide: 2,
-  virtualTranslate: true,
-  init: false,
-  slideToClickedSlide: true,
-  allowTouchMove: false,
-  on: {
-    slideChangeTransitionStart: function() {
-      fam_circle_slide_change(this)
-    }
-  },
-  breakpoints: {
-    // when window width is <= 720px
-    720: {
-      freeMode: true,
-      allowTouchMove: true,
-      centeredSlides: false,
-      initialSlide: 0,
-      virtualTranslate: false,
-      init: true,
-      slideToClickedSlide: false,
-      on: {
-        slideChangeTransitionStart: function() {}
-      }
-    }
-  }
-});
 
 var fam_circles = document.getElementById('fam-circle-swiper');
 var slides;
@@ -39,6 +9,37 @@ var big_circle = 620;
 var margin = 10;
 var t = small_circle/2 + big_circle/2 + margin;
 var swiper_is_active = false;
+
+var fam_circle_swiper = new Swiper('.fam-circle-swiper', {
+  slidesPerView: 'auto',
+  roundLengths: true,
+  centeredSlides: true,
+  initialSlide: 2,
+  virtualTranslate: true,
+  init: false,
+  allowTouchMove: false,
+  on: {
+    slideChangeTransitionStart: function() {
+      fam_circle_slide_change(this)
+    }
+  },
+  breakpoints: {
+    // when window width is <= 719px
+    719: {
+      freeMode: true,
+      allowTouchMove: true,
+      centeredSlides: false,
+      initialSlide: 0,
+      virtualTranslate: false,
+      init: true,
+      on: {
+        slideChangeTransitionStart: function() {}
+      }
+    }
+  }
+});
+
+
 
 function slide_to(slide) {
   var trans_value = slides[slide].getAttribute('data-translate');
@@ -99,7 +100,11 @@ $('.fam-circle-swiper .swiper-slide').click(function() {
 
 $(document).ready(function() {
   if (fam_circles) {
+
     slides = fam_circles.querySelectorAll('.swiper-slide');
     fam_circle_swiper.init();
+
+
+
   }
 });

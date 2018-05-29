@@ -27,11 +27,7 @@ function close_nav() {
 
 function handle_nav_button_click() {
   document.body.classList.toggle('no-scroll');
-  if (!nav_is_open) {
-    open_nav();
-  } else {
-    close_nav();
-  }
+  nav_is_open ? close_nav() : open_nav()
 }
 
 
@@ -40,13 +36,13 @@ var mouse_over_nav_item = false;
 var mouse_over_backdrop = false;
 var menu_open = false;
 
-function close_dropdown() {
+function close_nav_dropdown() {
   setTimeout(function(){
     if (!mouse_over_nav_item) {
       $('#backdrop').css('transform', 'translateY(0)');
       $('#header').removeClass('dropdown-engaged');
       $('.main-nav-item.hover').removeClass('hover');
-      menu_open = false;
+      menu_open = false
     }
   }, 100);
 }
@@ -78,7 +74,7 @@ function handle_mouse_leave(nav_item) {
   setTimeout(function() {
     if (!mouse_over_backdrop) {
       $(nav_item).removeClass('hover');
-      close_dropdown();
+      close_nav_dropdown();
     }
   }, 10);
 }
@@ -88,7 +84,7 @@ function dropdown_menu_hover() {
     mouse_over_backdrop = true;
   }, function() {
     mouse_over_backdrop = false;
-    close_dropdown();
+    close_nav_dropdown();
   });
   $('.main-nav-item').hover(function(e) {
     handle_mouse_enter(this);
@@ -101,7 +97,7 @@ function dropdown_menu_tap() {
   $('.main-nav-item > a').click(function(e) {
     e.preventDefault();
     if (menu_open && $(this).parent().hasClass('hover')) {
-      close_dropdown();
+      close_nav_dropdown();
     } else {
       nav_item_dropdown($(this).parent());
       menu_open = true;
@@ -110,13 +106,7 @@ function dropdown_menu_tap() {
 }
 
 function handle_drop_down() {
-  if (!touch) {
-    console.log('Not touchscreen');
-    dropdown_menu_hover();
-  } else {
-    console.log('Touchscreen');
-    dropdown_menu_tap();
-  }
+  touch ? dropdown_menu_tap() : dropdown_menu_hover()
 }
 
 
