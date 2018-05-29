@@ -147,7 +147,7 @@ The Recent News List should consist of the three most recent news articles.
     </div>
 
     <div class="recent-news-list">
-      <!-- for each {News_Article} : {News_Article} -->
+      <!-- for each {News_Article} : {News_Article_Teaser} -->
     </div>
 
   </section>
@@ -169,7 +169,7 @@ The Related News List displays articles related to the current article.
     <h5 class="related-news-header">You Might Also Be Interested In:</h5>
 
     <div class="related-news-list">
-      <!-- for each {News_Article} : {News_Article} -->
+      <!-- for each {News_Article} : {News_Article_Teaser} -->
     </div>
 
   </section>

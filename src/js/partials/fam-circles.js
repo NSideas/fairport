@@ -1,4 +1,4 @@
-
+// Inspiring Families Circle Slider
 
 var fam_circles = document.getElementById('fam-circle-swiper');
 var slides;
@@ -13,22 +13,16 @@ if (fam_circles) {
   slides = fam_circles.querySelectorAll('.swiper-slide');
 }
 
-
-
 function get_middle_slide() {
-  if (slides.length % 2 > 0) {
-    return Math.floor(slides.length / 2)
-  } else {
-    return (Math.floor(slides.length / 2) - 1)
-  }
+  return !fam_circles ? 0
+         : slides.length % 2 > 0 ? Math.floor(slides.length / 2)
+         : Math.floor(slides.length / 2) - 1
 }
 
 function get_slide_offset() {
-  if (slides.length % 2 > 0) {
-    return 0
-  } else {
-    return -small_circle/2
-  }
+  return !fam_circles ? 0
+         : slides.length % 2 > 0 ? 0
+         : -small_circle/2
 }
 
 var fam_circle_swiper = new Swiper('.fam-circle-swiper', {
@@ -124,15 +118,14 @@ function fam_circle_slide_change(swiper) {
 $(document).ready(function() {
   if (fam_circles) {
 
-    slides = fam_circles.querySelectorAll('.swiper-slide');
     fam_circle_swiper.init();
 
-    $('.fam-circle-swiper .swiper-slide').click(function() {
-      if (mq_medium.matches) {
+    if (mq_medium.matches) {
+      $('.fam-circle-swiper .swiper-slide').click(function() {
         var clicked_index = $(this).index();
         fam_circle_swiper.slideTo(clicked_index, 300);
-      }
-    });
+      });
+    }
 
   }
 });

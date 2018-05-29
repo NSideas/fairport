@@ -223,23 +223,3 @@ Modules referenced here: [Category Filters](MODULES.md#category-filters), [News 
 
 <!-- include {Footer} -->
 ```
-
-
-
-
-
-
-
----
-```
-```
----
-```
-```
----
-```
-```
----
-```
-```
----

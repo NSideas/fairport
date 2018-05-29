@@ -122,7 +122,3 @@ Modules referenced here: [Social Media Link List](MODULES.md#social-media-link-l
   </div>
 </footer>
 ```
-
----
----
----
