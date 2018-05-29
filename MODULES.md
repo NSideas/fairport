@@ -9,7 +9,7 @@ Editable fields are referenced in the code samples inside of curly braces. Eg. *
 
 ## Home Page Image Slider
 
-The [Home Page Slider](site/index.html) is a module that consists of the repeatable item, **Slide**.
+The Home Page Slider is a module that consists of the repeatable item, **Slide**.
 
 #### Fields
 * **Slides** – *repeater*
@@ -69,7 +69,7 @@ The [Home Page Slider](site/index.html) is a module that consists of the repeata
 
 ## Inspiring Families Circle Slider
 
-The [Inspiring Families Circle Slider](site/index.html) appears on the home page and contains story teasers.
+The Inspiring Families Circle Slider appears on the home page and contains story teasers.
 
 #### Fields
 * **Circles** – *repeater*
@@ -99,6 +99,21 @@ The [Inspiring Families Circle Slider](site/index.html) appears on the home page
   </div>
 </div>
 ```
+
+
+
+
+
+## Breadcrumbs
+
+```html
+<div class="breadcrumbs container">
+  <span class="breadcrumb-item"><a href="#">Home</a></span>
+  <span class="breadcrumb-item"><a href="#">{Parent_Page}</a></span>
+  <span class="breadcrumb-item current"><a href="#">{Current_Page}</a></span>
+</div>
+```
+
 
 
 
@@ -138,6 +153,8 @@ The Recent News List should consist of the three most recent news articles.
   </section>
 </div>
 ```
+
+
 
 
 
@@ -190,9 +207,12 @@ This module should be dynamically populated with each news category.
 
 
 
+
 ## Team Member Bio
 
 Team Member Bios are overlay or "pop-up" modules within the team page. Each one should have its own URL which links to the team page with the overlay module active.
+
+On the demo site, I added a [Team Member Bio](http://dev.bigfatideas.com/Fairport/site/team.html#brant-d-appel) to the team page manually in order to quickly demonstrate this interaction. In production, the content for each team member should be loaded upon request with AJAX or something similar.
 
 #### Fields
 * **Name** – *plain text*
@@ -230,6 +250,7 @@ Team Member Bios are overlay or "pop-up" modules within the team page. Each one 
   </div>
 </div>
 ```
+
 
 
 

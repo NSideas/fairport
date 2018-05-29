@@ -27,7 +27,7 @@ This template is used for all the *About Us*, *Services* and *Contact* pages.
 
 <div class="main-content-wrapper">
 
-  <!-- include {Beadcrumbs} -->
+  <!-- include {Breadcrumbs} -->
 
   <main class="main-content">
 
@@ -76,7 +76,7 @@ This template is used for all the *About You* pages.
 
 <div class="main-content-wrapper">
 
-  <!-- include {Beadcrumbs} -->
+  <!-- include {Breadcrumbs} -->
 
   <main class="main-content">
 
@@ -116,6 +116,7 @@ This template is used for all News Articles.
 #### Fields
 * **Title** – *plain text*
 * **Category** – *plain text*
+* **Featured** – *true/false*
 * **Body** – *rich text*
 
 
@@ -131,7 +132,7 @@ This template is used for all News Articles.
 
 <div class="main-content-wrapper">
 
-  <!-- include {Beadcrumbs} -->
+  <!-- include {Breadcrumbs} -->
 
   <main class="main-content">
 
@@ -183,7 +184,7 @@ Modules referenced here: [Category Filters](MODULES.md#category-filters), [News 
 
 <div class="main-content-wrapper">
 
-  <!-- include {Beadcrumbs} -->
+  <!-- include {Breadcrumbs} -->
 
   <main class="main-content">
 
@@ -191,7 +192,7 @@ Modules referenced here: [Category Filters](MODULES.md#category-filters), [News 
 
     <div id="featured-article" class="main-section">
       <div class="container">
-        <!-- include {Featured_News_Article} -->
+        <!-- include {Featured_News_Article_Teaser} -->
       </div>
     </div>
 
@@ -199,7 +200,7 @@ Modules referenced here: [Category Filters](MODULES.md#category-filters), [News 
 
     <div id="news-feed" class="main-section">
       <div class="container">
-        <!-- for each {News_Article} : include {News_Article} -->
+        <!-- for each {News_Article} : include {News_Article_Teaser} -->
       </div>
     </div>
 
