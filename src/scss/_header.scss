@@ -3,14 +3,18 @@ $hh: 138px; // Header height
 
 // Header
 #header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 58px;
   z-index: 10;
+  transform: none;
+  // transition: transform .2s;
   &.fixed {
     position: fixed;
+    transform: translateY(-42px);
+
   }
   @media (min-width: $l) {
     height: $hh;
@@ -71,6 +75,7 @@ body {
   background-image: url(../img/fairport-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  transform-origin: bottom left;
   @media (min-width: $l) {
     background-image: url(../img/fairport-logo.svg);
     width: 215px;
