@@ -33,9 +33,6 @@ nav {
 .nav-container {
   padding-top: 2em;
   @media (min-width: $l) {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
     padding: 0;
     overflow: hidden;
   }
@@ -47,6 +44,7 @@ nav {
     padding: 0;
     display: flex;
     flex-flow: row wrap;
+    float: left;
   }
 }
 

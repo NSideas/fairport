@@ -160,7 +160,7 @@ $(document).ready(function() {
       $(this).addClass('active');
       setTimeout(function(){
         $('#search-site').focus();
-      }, 200);
+      }, 250);
       document.addEventListener('click', hide_search_bar);
     }
   });

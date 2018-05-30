@@ -159,6 +159,7 @@ input:invalid + input[type="submit"].btn--solid-white {
   }
   .search-submit {
     text-indent: -1000px;
+    overflow: hidden;
     -webkit-appearance: none;
     border: none;
     padding: 0;
@@ -188,24 +189,26 @@ input:invalid + input[type="submit"].btn--solid-white {
   .search-site {
     margin-bottom: 0;
     width: 52px;
-    position: relative;
+    float: right;
   }
   .search-site .search-input {
     position: absolute;
+    margin-bottom: 0;
     right: 0;
     margin-bottom: 0;
     width: 200px;
+    height: 46px;
     background: $gray-5;
     border: none;
     border-radius: 0;
     opacity: 0;
-    transform: translateX(200px);
+    pointer-events: none;
     transition: all .3s ease;
   }
   .search-site.active {
     .search-input {
+      pointer-events: all;
       opacity: 1;
-      transform: translateX(0);
     }
   }
   .search-site .search-submit {
