@@ -1,7 +1,6 @@
 
 // Hero Swiper
 .hero-swiper {
-  background: $gray-2;
   color: white;
   transition: opacity .2s;
   &.initiated {
@@ -58,6 +57,7 @@
     opacity: .7;
   }
   @media (min-width: $l) {
+    opacity: 0;
     width: 100vw;
     height: 76vw;
     border-radius: 38vw;
