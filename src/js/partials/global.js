@@ -6,6 +6,10 @@ var mq_large = window.matchMedia('(min-width: 840px)');
 
 var touch = false;
 
+if (bowser.msie) {
+  document.body.classList.add('ie');
+}
+
 // Main Nav
 var main_nav = document.getElementById('main-nav');
 var nav_button = document.getElementById('menu-toggle');

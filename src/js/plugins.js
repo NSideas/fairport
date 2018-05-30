@@ -23,5 +23,6 @@
 
 // Place any jQuery/helper plugins in here.
 
+// @codekit-append quiet 'vendor/bowser.js';
 // @codekit-append quiet 'vendor/modernizr-3.5.0.min.js';
 // @codekit-append quiet 'vendor/swiper.js';

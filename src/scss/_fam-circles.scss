@@ -1,0 +1,191 @@
+
+
+// Fam Circles
+
+.inspiring-families {
+  background-color: white;
+  padding-top: 2em;
+}
+
+.fam-circle-swiper {
+  .swiper-slide {
+    width: 90%;
+    padding: 0 1em;
+  }
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.fam-circle {
+  background: $gray-2;
+  color: white;
+  padding-top: 1.5em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  text-align: center;
+  border-radius: 5px;
+  @media (min-width: $s) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+// $shadow-width: 40px;
+$shadow-width: 10px;
+$swiper-transition: transform .3s ease;
+
+@mixin fam-circle-color($color, $tint: .8) {
+  background-color: rgba($color, $tint);
+  &:before {
+    background-color: rgba($color, $tint);
+  }
+  .btn:hover,
+  .btn:focus {
+    color: $color;
+  }
+  @media (min-width: $m) {
+    .active .swiper-slide-active &:before {
+      box-shadow: 0 0 0 $shadow-width rgba($color, .25);
+    }
+  }
+}
+
+.fam-circle--blue {
+  @include fam-circle-color($blue-2);
+}
+.fam-circle--gold {
+  @include fam-circle-color($gold-1);
+}
+.fam-circle--purple {
+  @include fam-circle-color($purple-2);
+}
+.fam-circle--red {
+  @include fam-circle-color($red-2);
+}
+.fam-circle--green {
+  @include fam-circle-color($green-2, .9);
+}
+
+.fam-circle-title {
+  font-family: $sans;
+  font-size: 1.25em;
+  @media (min-width: $s) {
+    font-size: 1.5em;
+  }
+}
+
+.fam-circle-text {
+  height: 175px;
+  margin-top: .75em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (min-width: $m) {
+  .fam-circle-swiper {
+    opacity: 0;
+    transition: opacity .2s .25s;
+    width: 100%;
+    &.initialized {
+      opacity: 1;
+    }
+    .swiper-slide {
+      width: 180px;
+      height: 180px;
+      padding: 0;
+      margin: 0 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translate3d(0,0,0);
+      transition: all .3s ease;
+    }
+    .swiper-wrapper {
+      height: 624px;
+      transform: translate3d(0,0,0);
+      transition: $swiper-transition;
+    }
+  }
+  .fam-circle-title {
+    width: 100%;
+    font-size: 1.5em;
+    position: absolute;
+    margin: 0;
+  }
+  .fam-circle-content {
+    width: 100%;
+    display: none;
+    opacity: 0;
+    position: relative;
+    backface-visibility: visible;
+  }
+  .main-content .fam-circle-text {
+    height: auto;
+    font-size: 1.4em;
+    padding-left: 1.75em;
+    padding-right: 1.75em;
+    margin-top: 1.5em;
+  }
+  .fam-circle {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 $shadow-width transparent;
+      transform: scale(1);
+      transition: $swiper-transition;
+    }
+  }
+
+  .fam-circle-swiper.active {
+    .swiper-slide-active {
+      width: 620px;
+      height: 620px;
+    }
+    .swiper-slide-active .fam-circle {
+      cursor: auto;
+      width: 540px;
+      height: 540px;
+      &:before {
+        transform: scale(3.375);
+      }
+    }
+    .swiper-slide-active .fam-circle-content {
+      display: block;
+      animation: fade-in .2s ease .3s forwards;
+    }
+    .swiper-slide-active .fam-circle-title {
+      opacity: 0;
+    }
+  }
+
+  .ie {
+    .fam-circle:before {
+      left: 0;
+      top: 0;
+      transform-origin: top left;
+    }
+    .fam-circle-title {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+}

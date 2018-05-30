@@ -86,7 +86,8 @@ input[type="submit"],
 .btn--white {
   color: white;
   border-color: white;
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: white;
     background-color: white;
   }

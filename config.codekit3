@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -1072,6 +1079,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/src\/js\/vendor\/bowser.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/bowser.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/src\/js\/vendor\/jquery-3.2.1.min.js": {
 		"ft": 64,
 		"ma": 1,
@@ -1549,6 +1566,19 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"\/src\/scss\/_fam-circles.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/dist\/css\/_fam-circles.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
 	"\/src\/scss\/_fonts.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1610,6 +1640,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/dist\/css\/_helpers.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/src\/scss\/_hero-swiper.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/dist\/css\/_hero-swiper.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
@@ -3240,7 +3283,7 @@
 	"externalServerAddress": "http:\/\/localhost:8888\/fairport",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "console:write, $, Swiper",
+	"jsCheckerReservedNamesString": "console:write, $, Swiper, bowser",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
