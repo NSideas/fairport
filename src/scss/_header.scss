@@ -3,24 +3,22 @@ $hh: 138px; // Header height
 
 // Header
 #header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 58px;
   z-index: 10;
-  transform: none;
-  // transition: transform .2s;
   &.fixed {
     position: fixed;
     transform: translateY(-42px);
-
   }
   @media (min-width: $l) {
     height: $hh;
     padding-top: 10px;
-    // box-shadow: $header-shadow;
-
+    @media (max-height: 960px) {
+      position: absolute;
+    }
     &:before {
       content: '';
       display: block;

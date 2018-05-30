@@ -179,6 +179,8 @@ function handle_scroll(scroll_pos) {
   if (scroll_pos > 42) {
     $('#header').addClass('fixed');
     logo.style.transform = 'scale(.6)';
+  } else if (scroll_pos <= 1) {
+    logo.style.transform = 'scale(1)';
   } else {
     $('#header').removeClass('fixed');
     logo.style.transform = 'scale('+ (1 - scroll_pos/100) +')';
@@ -200,5 +202,5 @@ function watch_for_scroll() {
 }
 
 if (mq_large.matches) {
-  watch_for_scroll();
+  // watch_for_scroll();
 }
