@@ -170,37 +170,3 @@ $(document).ready(function() {
   });
 
 });
-
-var last_known_scroll_position = window.pageYOffset;
-var ticking = false;
-var logo = document.querySelectorAll('a.logo')[0];
-
-function handle_scroll(scroll_pos) {
-  if (scroll_pos > 42) {
-    $('#header').addClass('fixed');
-    logo.style.transform = 'scale(.6)';
-  } else if (scroll_pos <= 1) {
-    logo.style.transform = 'scale(1)';
-  } else {
-    $('#header').removeClass('fixed');
-    logo.style.transform = 'scale('+ (1 - scroll_pos/100) +')';
-  }
-}
-
-
-function watch_for_scroll() {
-  window.addEventListener('scroll', function() {
-    if (!ticking) {
-      last_known_scroll_position = window.pageYOffset;
-      window.requestAnimationFrame(function() {
-        handle_scroll(last_known_scroll_position);
-        ticking = false;
-      });
-      ticking = true;
-    }
-  });
-}
-
-if (mq_large.matches) {
-  // watch_for_scroll();
-}
