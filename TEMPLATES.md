@@ -143,6 +143,10 @@ This template is used for all News Articles.
       </article>
     </div>
 
+    <div class="category-label container">
+      <p class="sans">Category:  <a href="{Category -> Link}">{Category -> Name}</a></p>
+    </div>
+
   </main>
 
   <!-- include {Related_News} -->

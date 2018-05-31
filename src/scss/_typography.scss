@@ -170,6 +170,12 @@ hr {
   text-align: center;
 }
 
+p.sans {
+  font-family: $sans;
+  font-size: 14px;
+  color: $gray-2;
+}
+
 p.small {
   font-family: $sans;
   font-size: .9em;
@@ -207,6 +213,9 @@ p.small {
   }
   p.small {
     color: $gray-3;
+    font-size: .9em;
+  }
+  p.sans {
     font-size: .9em;
   }
   .content-area li {

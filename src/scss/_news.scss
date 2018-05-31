@@ -206,7 +206,7 @@ a.category-filter-link {
     @extend %category-icon-button;
   }
   &.category-perspectives {
-    @include news-category($blue-2);
+    @include news-category($red-2);
   }
   &.category-fairport-in-15 {
     @include news-category($teal-2);
@@ -217,4 +217,10 @@ a.category-filter-link {
   &.category-other {
     @include news-category($purple-2);
   }
+}
+
+// News Single
+
+.category-label {
+  padding-bottom: 1em;
 }

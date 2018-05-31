@@ -432,7 +432,7 @@ Quick Links refer to site content related to the current page. There are three t
     <ul class="quick-links-list flex">
 
     <!-- for each {Quick_Link} : -->
-    <li class="quick-link quick-link--{Category}">
+    <li class="quick-link quick-link--{Category -> Slug}">
       <a class="quick-link-title" href="{Link -> URL}">{Link -> Title}</a>
       <p>{Teaser}</p>
       <a class="more-link" href="{Link -> URL}">Read More</a>
