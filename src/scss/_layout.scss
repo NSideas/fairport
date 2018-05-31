@@ -69,7 +69,7 @@
 }
 
 .content-area img,
-.content-area .map-wrapper {
+.content-area .iframe-container {
   margin-bottom: 1.5em;
   @media (min-width: $l) {
     margin-top: .5em;
@@ -323,16 +323,21 @@ p.staff-info-contact {
 }
 
 
-.map-wrapper {
-  overflow:hidden;
-  padding-bottom:56%;
-  position:relative;
-  height:0;
+
+// Responsive iframe
+.iframe-container {
+  padding-bottom: 56%;
+  position: relative;
+  height: 0;
   & > iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
+}
+
+.map-wrapper {
+  @extend .iframe-container;
 }
