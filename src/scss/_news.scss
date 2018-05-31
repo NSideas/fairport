@@ -214,7 +214,7 @@ a.category-filter-link {
   &.category-compass {
     @include news-category($gold-2);
   }
-  &.category-other {
+  &.category-miscellaneous {
     @include news-category($purple-2);
   }
 }

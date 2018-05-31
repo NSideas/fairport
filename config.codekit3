@@ -653,11 +653,25 @@
 		"oAP": "\/site\/default-template.html",
 		"oF": 0
 		},
+	"\/site\/equifax-breach.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/equifax-breach.html",
+		"oF": 0
+		},
 	"\/site\/executives.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/site\/executives.html",
+		"oF": 0
+		},
+	"\/site\/fairport-in-fifteen.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/fairport-in-fifteen.html",
 		"oF": 0
 		},
 	"\/site\/history.html": {
@@ -1161,11 +1175,25 @@
 		"oAP": "\/site\/community-service.html",
 		"oF": 0
 		},
+	"\/src\/kit\/equifax-breach.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/equifax-breach.html",
+		"oF": 0
+		},
 	"\/src\/kit\/executives.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/site\/executives.html",
+		"oF": 0
+		},
+	"\/src\/kit\/fairport-in-fifteen.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/fairport-in-fifteen.html",
 		"oF": 0
 		},
 	"\/src\/kit\/history.kit": {
@@ -1392,6 +1420,13 @@
 		"oAP": "\/site\/_news-item-4.html",
 		"oF": 0
 		},
+	"\/src\/kit\/modules\/news-items\/_news-item-5.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_news-item-5.html",
+		"oF": 0
+		},
 	"\/src\/kit\/modules\/quick-links\/_quick-link-1.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1432,13 +1467,6 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/site\/news-and-insights.html",
-		"oF": 0
-		},
-	"\/src\/kit\/news-article.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/site\/news-article.html",
 		"oF": 0
 		},
 	"\/src\/kit\/news-category.kit": {
