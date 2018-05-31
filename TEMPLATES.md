@@ -1,6 +1,7 @@
 # Templates
 
-There are two page templates being used in this site. Each template has a main content area and the ability to include any number of additional modules.
+
+Each template has a main content area and the ability to include any number of additional modules.
 
 ## Default Template
 
@@ -111,10 +112,11 @@ This template is used for all the *About You* pages.
 
 ## News Article Template
 
-This template is used for all News Articles.
+This template is used for all News Articles. The **Intro** field is not referenced in this template—it is used for the [News Article Teaser](MODULES.md#news-article-teaser).
 
 #### Fields
 * **Title** – *plain text*
+* **Intro** – *plain text*
 * **Category** – *plain text*
 * **Featured** – *true/false*
 * **Body** – *rich text*
@@ -149,7 +151,7 @@ This template is used for all News Articles.
 
   </main>
 
-  <!-- include {Related_News} -->
+  <!-- include {Related_News_List} -->
   <!-- include {Quick_Links} -->
 
 </div>
@@ -222,6 +224,54 @@ Modules referenced here: [Category Filters](MODULES.md#category-filters), [News 
   </main>
 
   <!-- include {Quick_Links} -->
+
+</div>
+
+<!-- include {Footer} -->
+```
+
+
+
+
+
+## Story Template
+
+This template is used for all *Story* pages. The **Intro**, **Link Text** and **Mini Portrait** fields are not referenced in this template—they are used for the [Story Teaser](MODULES.md#story-teaser).
+
+#### Fields
+* **Title** – *plain text*
+* **Intro** – *plain text*
+* **Link Text** – *plain text*
+* **Mini Portrait** – *image*
+* **Featured Image** – *image*
+* **Body** – *rich text*
+* **Disclaimer** – *plain text*
+* **Primary Color** – *select*
+  * Options: Purple, Blue, Teal, Green, Red, Gold
+
+```html
+<!-- include {Header} -->
+
+<div class="main-content-wrapper">
+
+  <!-- include {Breadcrumbs} -->
+
+  <main class="main-content">
+    <div class="container">
+
+      <article class="story main-section">
+        <h1 class="page-title">{Title}</h1>
+        <img class="featured-image" src="{Featured_Image}" alt="{Featured_Image(alt)}">
+        <div class="content-area">
+          {Body}
+        </div>
+        <p class="disclaimer small">{Disclaimer}</p>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- include {Recent_Story_List} -->
 
 </div>
 

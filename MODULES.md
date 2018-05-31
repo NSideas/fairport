@@ -69,7 +69,7 @@ The Home Page Slider is a module that consists of the repeatable item, **Slide**
 
 ## Inspiring Families Circle Slider
 
-The Inspiring Families Circle Slider appears on the home page and contains story teasers.
+The Inspiring Families Circle Slider appears on the home page and contains links and teasers to specific stories.
 
 #### Fields
 * **Circles** – *repeater*
@@ -124,19 +124,23 @@ News Article Teasers appear in the news feed and link to their full articles. Fo
 
 ```html
 <article class="news-item news-item--default category-{News_Article -> Category}">
+
   <h2 class="article-title">
     <a href="{News_Article -> URL}">{News_Article -> Title}</a>
   </h2>
+
   <p>{News_Article -> Intro}</p>
   <a class="read-more btn btn--default" href="{News_Article -> URL}">Read More</a>
+
 </article>
 ```
 
 
 
+
 ## Recent News List
 
-The Recent News List should consist of the three most recent news articles.
+The Related News List displays the three most recent articles related to the current article by category.
 
 ```html
 <div class="recent-news-section secondary-content-area">
@@ -160,7 +164,7 @@ The Recent News List should consist of the three most recent news articles.
 
 ## Related News List
 
-The Related News List displays articles related to the current article.
+The Related News List displays the three most recent articles related to the current article by category.
 
 ```html
 <div class="related-news-section secondary-content-area">
@@ -200,6 +204,47 @@ This module should be dynamically populated with each news category.
       </li>
 
     </ul>
+  </div>
+</div>
+```
+
+
+
+
+## Story Teaser
+
+Story Teasers provide a brief introduction and link to a specific story.
+
+```html
+<div class="story-teaser">
+
+  <img class="mini-portrait" src="{Story -> Mini_Portrait}" alt="{Story -> Mini_Portrait(alt)}">
+
+  <section class="story-teaser-text">
+    <h3 class="story-teaser-title">{Story -> Title}</h3>
+    <p class="story-teaser-body">{Story -> Intro}</p>
+    <a class="btn btn--default" href="{Story -> URL}">{Story -> Link_Text}</a>
+  </section>
+
+</div>
+```
+
+
+
+
+## Related Story List
+
+The Related Story List displays the three most recent stories related to the current story by tag.
+
+```html
+<div class="secondary-content-area related-stories">
+  <div class="container">
+
+    <h5 class="related-content-header">You Might Also Be Interested In:</h5>
+    <div class="related-content-list">
+      <!-- for each {Story} : {Story_Teaser} -->
+    </div>
+
   </div>
 </div>
 ```
@@ -293,7 +338,9 @@ The Staff Info List displays contact information for all the team members on the
     <h5 class="job-title">{Team_Member -> Title}</h5>
     <h3>{Team_Member -> Name}</h3>
     <p class="staff-info-contact">
-      <a href="#">{Team_Member -> Email_Address}</a> / {Team_Member -> Phone_Number} / <a href="{Team_Member -> Contact_Card}">Download&nbsp;Contact</a>
+      <a href="#">{Team_Member -> Email_Address}</a> /
+      {Team_Member -> Phone_Number} /
+      <a href="{Team_Member -> Contact_Card}">Download&nbsp;Contact</a>
     </p>
   </li>
   <!-- /for each -->
