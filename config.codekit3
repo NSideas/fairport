@@ -208,6 +208,24 @@
 		"oAP": "\/dist\/fonts\/RobotoCondensed-Regular.woff2",
 		"oF": 0
 		},
+	"\/dist\/img\/browser-icons\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/img\/browser-icons\/favicon.ico",
+		"oF": 0
+		},
+	"\/dist\/img\/browser-icons\/icon.png": {
+		"ft": 32768,
+		"iS": 7255,
+		"oA": 0,
+		"oAP": "\/dist\/img\/browser-icons\/icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/dist\/img\/down-arrow-gold.svg": {
 		"ft": 2097152,
 		"miP": 0,
