@@ -413,7 +413,7 @@ Block Lists are styled lists with that contain block-level HTML elements within 
 
 ## Quick Links
 
-Quick Links refer to site content related to the current page. There are three types of Quick Links: **Page**, **News Article** and **Media Attachment**. They are located after the main content and before the footer. Quick Links are categorized based on the content they link to. The category affects the class name, which dictates the icon above the text. For example, if you are linking to a page, the **Category** would be "Page" and the class name would be `quick-link--page`. If you are linking to a news article, the **Category** would be the category of the article and the class name would be `quick-link--perspectives`.
+Quick Links refer to site content related to the current page. There are three types of Quick Links: **Page**, **News Article** and **Media Attachment**. They are located after the main content and before the footer. Quick Links are categorized based on the content to which they link. The category affects the class name, which dictates the icon above the text. For example, if you are linking to a page, the category would be "Page" and the class name would be `quick-link--page`. If you are linking to a news article, the category would be the category of the article and the class name would be `quick-link--{News_Article -> Category}`.
 
 #### Fields
 * **Type** – *select*
