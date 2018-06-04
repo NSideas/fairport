@@ -37,6 +37,40 @@ function handle_nav_button_click() {
 }
 
 
+var header = document.getElementById('header');
+var header_is_visible = true;
+var header_is_fixed = false;
+var last_known_scroll_pos = window.scrollY;
+
+function hide_show_header() {
+
+  if (nav_is_open) {
+    return false;
+  }
+
+  setTimeout(function() {
+
+    if (window.scrollY >= 58) {
+      header.classList.add('fixed');
+    } else if (window.scrollY < 1) {
+      header.classList.remove('fixed');
+    }
+
+    if (last_known_scroll_pos < window.scrollY && header_is_visible) {
+      header.classList.remove('header-visible');
+      header_is_visible = false;
+    } else if (last_known_scroll_pos >= window.scrollY && !header_is_visible) {
+      header.classList.add('header-visible');
+      header_is_visible = true;
+    }
+    last_known_scroll_pos = window.scrollY;
+
+  }, 60);
+
+}
+
+
+
 
 // Sub Nav
 var mouse_over_nav_item = false;
@@ -145,6 +179,8 @@ function wrap_iframe() {
 
 
 
+
+
 $(document).ready(function() {
 
   if (mq_large.matches) {
@@ -163,9 +199,8 @@ $(document).ready(function() {
     }, false);
 
   } else {
-
     nav_button.addEventListener('click', handle_nav_button_click);
-
+    window.addEventListener('scroll', throttle(hide_show_header, 60));
   }
 
   $('#header-search').click(function() {

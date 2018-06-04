@@ -3,21 +3,28 @@ $hh: 140px; // Header height
 
 // Header
 #header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 58px;
   z-index: 10;
+  transform: translateY(0);
+
   &.fixed {
     position: fixed;
-    transform: translateY(-42px);
+    transition: transform .2s ease;
+    top: -58px;
+    &.header-visible {
+      transform: translateY(58px);
+    }
   }
+
   @media (min-width: $l) {
     height: $hh;
     padding-top: 10px;
-    @media (max-height: 960px) {
-      position: absolute;
+    @media (min-height: 960px) {
+      position: fixed;
     }
     &:before {
       content: '';
