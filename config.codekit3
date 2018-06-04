@@ -660,6 +660,13 @@
 		"oAP": "\/site\/executives.html",
 		"oF": 0
 		},
+	"\/site\/extras.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site\/extras.html",
+		"oF": 0
+		},
 	"\/site\/fairport-in-fifteen.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -742,13 +749,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/site\/story-1.html",
-		"oF": 0
-		},
-	"\/site\/style-guide.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/site\/style-guide.html",
 		"oF": 0
 		},
 	"\/site\/team.html": {
@@ -1168,6 +1168,13 @@
 		"oAP": "\/site\/executives.html",
 		"oF": 0
 		},
+	"\/src\/kit\/extras.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/site\/extras.html",
+		"oF": 0
+		},
 	"\/src\/kit\/fairport-in-fifteen.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1481,13 +1488,6 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/site\/story-1.html",
-		"oF": 0
-		},
-	"\/src\/kit\/style-guide.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/site\/style-guide.html",
 		"oF": 0
 		},
 	"\/src\/kit\/team.kit": {
