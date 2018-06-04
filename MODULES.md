@@ -4,7 +4,11 @@
 Editable fields are referenced in the code samples inside of curly braces. Eg. **Field&nbsp;Name** = `{Field_Name}`. This is not an actual syntax, it is just a way to demonstrate the logic.
 
 
+### Contents
 
+* [Home Page Image Slider](#home-page-image-slider)
+* [Inspiring Families Circle Slider](#inspiring-families-circle-slider)
+* 
 
 
 
