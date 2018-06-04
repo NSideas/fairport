@@ -1,7 +1,7 @@
 # Templates
 
+These templates represent the different types of pages throughout the site.
 
-Each template has a main content area and the ability to include any number of additional modules.
 
 ## Default Template
 

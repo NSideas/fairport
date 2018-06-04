@@ -532,7 +532,7 @@ The Staff Info List displays contact information for all the team members on the
   <p>{Subtitle}</p>
 
   <form>
-    <input id="newsletter-signup-footer" class="email-address input-white" type="email" placeholder="Enter your email address" required>
+    <input class="email-address input-white" type="email" placeholder="Enter your email address" required>
     <input class="btn-submit btn--solid-white" type="submit" value="Submit">
   </form>
 
