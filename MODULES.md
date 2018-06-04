@@ -8,7 +8,21 @@ Editable fields are referenced in the code samples inside of curly braces. Eg. *
 
 * [Home Page Image Slider](#home-page-image-slider)
 * [Inspiring Families Circle Slider](#inspiring-families-circle-slider)
-* 
+* [Breadcrumbs](#breadcrumbs)
+* [Quick Links](#quick-links)
+* [Block Lists](#block-lists)
+* [News Article Teaser](#news-article-teaser)
+* [Recent News List](#recent-news-list)
+* [Category Filters](#category-filters)
+* [Story Teaser](#story-teaser)
+* [Team Member Bio](#team-member-bio)
+* [Team Member List](#team-member-list)
+* [Staff Info List](#staff-info-list)
+* [Footer Contact Info](#footer-contact-info)
+* [Newsletter Signup](#newsletter-signup)
+* [Social Media Link List](#social-media-link-list)
+
+
 
 
 
