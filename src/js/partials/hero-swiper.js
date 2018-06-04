@@ -32,7 +32,6 @@ var hero_swiper = new Swiper('.hero-swiper', {
   breakpoints: {
     // when window width is <= 720px
     720: {
-      autoplay: false,
       speed: 300,
       longSwipesRatio: .5
     }

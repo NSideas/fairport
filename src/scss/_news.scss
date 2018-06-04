@@ -108,7 +108,7 @@
 .category-perspectives {
   @include icon('perspectives');
 }
-.category-other {
+.category-miscellaneous {
   @include icon('star');
 }
 
@@ -128,7 +128,6 @@
 .recent-news-header {
   font-size: 14px;
 }
-
 
 .news-pagination {
   @include flex;

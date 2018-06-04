@@ -39,7 +39,7 @@ nav {
 }
 
 .main-nav-list {
-  padding: 2em 0;
+  padding: 1em 0;
   @media (min-width: $l) {
     padding: 0;
     display: flex;
@@ -49,6 +49,7 @@ nav {
 }
 
 .main-nav-item {
+  padding-bottom: 1em;
   @media (min-width: $l) {
     display: inline-block;
     margin-bottom: 0;
@@ -100,7 +101,7 @@ nav {
 
 .sub-nav {
   border-top: solid 2px $gray-4;
-  max-height: 0;
+  // max-height: 0;
   overflow: hidden;
   padding: 0;
   li{
@@ -108,11 +109,6 @@ nav {
   }
 }
 
-.main-nav-item.expanded {
-  .sub-nav {
-    max-height: none;
-  }
-}
 
 // Dropdown menu
 #backdrop {
@@ -204,6 +200,9 @@ nav {
 
 .footer-sub-nav a {
   font-weight: 300;
+  &:hover {
+    opacity: 1;
+  }
   @media (min-width: $l) {
     font-size: 1.125em;
     margin-bottom: 5px;

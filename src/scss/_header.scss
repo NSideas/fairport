@@ -110,6 +110,7 @@ body {
   top: 0;
   left: 0;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   opacity: 0;
   &.open {
     display: block;

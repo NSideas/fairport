@@ -1371,6 +1371,13 @@
 		"oAP": "\/site\/_circle-6.html",
 		"oF": 0
 		},
+	"\/src\/kit\/modules\/news-items\/_featured-article.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/site\/_featured-article.html",
+		"oF": 0
+		},
 	"\/src\/kit\/modules\/news-items\/_news-item-1.kit": {
 		"cB": 0,
 		"ft": 2048,

@@ -164,11 +164,6 @@ $(document).ready(function() {
 
   } else {
 
-    $('.main-nav-item > a').click(function(e) {
-      e.preventDefault();
-      $(this).parent().toggleClass('expanded');
-    });
-
     nav_button.addEventListener('click', handle_nav_button_click);
 
   }
