@@ -7,6 +7,7 @@ Editable fields are referenced in the code samples inside of curly braces. Eg. *
 
 
 
+
 ## Home Page Image Slider
 
 The Home Page Slider is a module that consists of the repeatable item, **Slide**.
@@ -67,6 +68,7 @@ The Home Page Slider is a module that consists of the repeatable item, **Slide**
 
 
 
+
 ## Inspiring Families Circle Slider
 
 The Inspiring Families Circle Slider appears on the home page and contains links and teasers to specific stories.
@@ -118,6 +120,149 @@ The Inspiring Families Circle Slider appears on the home page and contains links
 
 
 
+## Quick Links
+
+Quick Links refer to site content related to the current page. There are three types of Quick Links: **Page**, **News Article** and **Media Attachment**. They are located after the main content and before the footer. Quick Links are categorized based on the content to which they link. The category affects the class name, which dictates the icon above the text. For example, if you are linking to a page, the category would be "Page" and the class name would be `quick-link--page`. If you are linking to a news article, the category would be the category of the article and the class name would be `quick-link--{News_Article -> Category}`.
+
+#### Fields
+* **Type** – *select*
+  * Options: Page, News Article, Attachment
+* **Category** – *plain text*
+* **Link** – *post object*
+* **Teaser** – *plain text*
+
+```html
+<div class="quick-links-section secondary-content-area">
+  <section class="container">
+
+    <h5 class="quick-links-header">Quick Links</h5>
+
+    <ul class="quick-links-list flex">
+
+    <!-- for each {Quick_Link} : -->
+    <li class="quick-link quick-link--{Category -> Slug}">
+      <a class="quick-link-title" href="{Link -> URL}">{Link -> Title}</a>
+      <p>{Teaser}</p>
+      <a class="more-link" href="{Link -> URL}">Read More</a>
+    </li>
+    <!-- /for each -->
+
+    </ul>
+
+  </section>
+</div>
+```
+
+
+
+
+
+
+## Block Lists
+
+Block Lists are styled lists with that contain block-level HTML elements within each `li`. They consist of the repeatable field, **Block List Item** which include various sub fields based on the type of list.
+
+### Unordered Block List
+
+#### Fields
+* **Block List Item** – *repeater*
+  * **Header** – *plain text*
+  * **Content** – *rich text*
+
+```html
+<ul class="block-list block-list--unordered two-column">
+
+  <!-- for each {Block_List_Item} : -->
+  <li class="block-list-item flex">
+    <div class="grid-item left-column">
+      <h3>{Header}</h3>
+    </div>
+    <div class="grid-item right-column">
+      {Content}
+    </div>
+  </li>
+  <!-- /for each -->
+
+</ul>
+```
+
+
+### Ordered Block List Single column
+
+#### Fields
+* **Block List Item** – *repeater*
+  * **Content** – *rich text*
+
+```html
+<ol class="block-list block-list--ordered single-column">
+
+  <!-- for each {Block_List_Item} : -->
+  <li class="block-list-item">
+    {Content}
+  </li>
+  <!-- /for each -->
+
+</ol>
+```
+
+
+### Ordered Block List Two Column
+
+#### Fields
+
+* **Block List Item** – *repeater*
+  * **Header** – *plain text*
+  * **Sub Header** – *plain text*
+  * **Content** – *rich text*
+
+
+```html
+<ol class="block-list block-list--ordered two-column">
+
+  <!-- for each {Block_List_Item} : -->
+  <li class="block-list-item flex">
+    <div class="grid-item left-column">
+      <h5>{Sub_Header}</h5>
+      <h3>{Header}</h3>
+    </div>
+    <div class="grid-item right-column">
+      {Content}
+    </div>
+  </li>
+  <!-- /for each -->
+
+</ol>
+```
+
+
+### Ordered Block List Three Column
+
+#### Fields
+
+* **Block List Item** – *repeater*
+  * **Header** – *plain text*
+  * **Content** – *rich text*
+
+
+```html
+<ol class="block-list block-list--ordered three-column">
+
+  <!-- for each {Block_List_Item} : -->
+  <li class="block-list-item grid-item">
+    <h5>{Header}</h5>
+    <div class="content-area">
+      <p>{Content}</p>
+    </div>
+  </li>
+  <!-- /for each -->
+
+</ol>
+```
+
+
+
+
+
 ## News Article Teaser
 
 News Article Teasers appear in the news feed and link to their full articles. For featured news items, the `news-item--default` class would be replaced with `news-item--featured`.
@@ -134,6 +279,7 @@ News Article Teasers appear in the news feed and link to their full articles. Fo
 
 </article>
 ```
+
 
 
 
@@ -183,6 +329,7 @@ The Related News List displays the three most recent articles related to the cur
 
 
 
+
 ## Category Filters
 
 This module should be dynamically populated with each news category.
@@ -211,6 +358,7 @@ This module should be dynamically populated with each news category.
 
 
 
+
 ## Story Teaser
 
 Story Teasers provide a brief introduction and link to a specific story.
@@ -228,6 +376,7 @@ Story Teasers provide a brief introduction and link to a specific story.
 
 </div>
 ```
+
 
 
 
@@ -326,6 +475,7 @@ The Team Member List is used to display all the team members on the [team page](
 
 
 
+
 ## Staff Info List
 
 The Staff Info List displays contact information for all the team members on the [staff info page](http://dev.bigfatideas.com/Fairport/site/staff-info.html) using data from the Team Member Bios.
@@ -352,150 +502,6 @@ The Staff Info List displays contact information for all the team members on the
 
 
 
-## Block Lists
-
-Block Lists are styled lists with that contain block-level HTML elements within each `li`. They consist of the repeatable field, **Block List Item** which include various sub fields based on the type of list.
-
-### Unordered Block List
-
-#### Fields
-* **Block List Item** – *repeater*
-  * **Header** – *plain text*
-  * **Content** – *rich text*
-
-```html
-<ul class="block-list block-list--unordered two-column">
-
-  <!-- for each {Block_List_Item} : -->
-  <li class="block-list-item flex">
-    <div class="grid-item left-column">
-      <h3>{Header}</h3>
-    </div>
-    <div class="grid-item right-column">
-      {Content}
-    </div>
-  </li>
-  <!-- /for each -->
-
-</ul>
-```
-
-
-### Ordered Block List Single column
-
-#### Fields
-* **Block List Item** – *repeater*
-  * **Content** – *rich text*
-
-```html
-<ol class="block-list block-list--ordered single-column">
-
-  <!-- for each {Block_List_Item} : -->
-  <li class="block-list-item">
-    {Content}
-  </li>
-  <!-- /for each -->
-
-</ol>
-```
-
-
-### Ordered Block List Two Column
-
-#### Fields
-
-* **Block List Item** – *repeater*
-  * **Header** – *plain text*
-  * **Sub Header** – *plain text*
-  * **Content** – *rich text*
-
-
-```html
-<ol class="block-list block-list--ordered two-column">
-
-  <!-- for each {Block_List_Item} : -->
-  <li class="block-list-item flex">
-    <div class="grid-item left-column">
-      <h5>{Sub_Header}</h5>
-      <h3>{Header}</h3>
-    </div>
-    <div class="grid-item right-column">
-      {Content}
-    </div>
-  </li>
-  <!-- /for each -->
-
-</ol>
-```
-
-
-### Ordered Block List Three Column
-
-#### Fields
-
-* **Block List Item** – *repeater*
-  * **Header** – *plain text*
-  * **Content** – *rich text*
-
-
-```html
-
-<ol class="block-list block-list--ordered three-column">
-
-  <!-- for each {Block_List_Item} : -->
-  <li class="block-list-item grid-item">
-    <h5>{Header}</h5>
-    <div class="content-area">
-      <p>{Content}</p>
-    </div>
-  </li>
-  <!-- /for each -->
-
-</ol>
-
-```
-
-
-
-
-## Quick Links
-
-Quick Links refer to site content related to the current page. There are three types of Quick Links: **Page**, **News Article** and **Media Attachment**. They are located after the main content and before the footer. Quick Links are categorized based on the content to which they link. The category affects the class name, which dictates the icon above the text. For example, if you are linking to a page, the category would be "Page" and the class name would be `quick-link--page`. If you are linking to a news article, the category would be the category of the article and the class name would be `quick-link--{News_Article -> Category}`.
-
-#### Fields
-* **Type** – *select*
-  * Options: Page, News Article, Attachment
-* **Category** – *plain text*
-* **Link** – *post object*
-* **Teaser** – *plain text*
-
-
-```html
-<div class="quick-links-section secondary-content-area">
-  <section class="container">
-
-    <h5 class="quick-links-header">Quick Links</h5>
-
-    <ul class="quick-links-list flex">
-
-    <!-- for each {Quick_Link} : -->
-    <li class="quick-link quick-link--{Category -> Slug}">
-      <a class="quick-link-title" href="{Link -> URL}">{Link -> Title}</a>
-      <p>{Teaser}</p>
-      <a class="more-link" href="{Link -> URL}">Read More</a>
-    </li>
-    <!-- /for each -->
-
-    </ul>
-
-  </section>
-</div>
-```
-
-
-
-
-
 ## Footer Contact Info
 
 #### Fields
@@ -507,6 +513,7 @@ Quick Links refer to site content related to the current page. There are three t
   {Content}
 </div>
 ```
+
 
 
 
