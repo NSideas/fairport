@@ -97,6 +97,7 @@ body {
 }
 
 #menu-toggle {
+  @include flex;
   width: 32px;
   height: 32px;
   padding: 8px 4px;

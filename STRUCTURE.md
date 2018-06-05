@@ -31,7 +31,7 @@ The header should be the first element after the opening body tag. Each top leve
     <div class="header-container-top container-wide">
       <div class="relative">
         <a class="logo" href="{Home_Page_URL}"></a>
-        <div id="menu-toggle" class="flex">
+        <div id="menu-toggle">
           <div></div>
           <div></div>
           <div></div>
