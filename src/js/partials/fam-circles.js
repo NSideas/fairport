@@ -33,24 +33,20 @@ var fam_circle_swiper = new Swiper('.fam-circle-swiper', {
   slidesOffsetBefore: get_slide_offset(),
   virtualTranslate: true,
   init: false,
-  allowTouchMove: false,
-  on: {
-    slideChangeTransitionStart: function() {
-      fam_circle_slide_change(this)
-    }
-  },
+  longSwipes: false,
   breakpoints: {
     // when window width is <= 719px
     719: {
       freeMode: true,
+      freeModeMomentumRatio: 0.5,
+      freeModeMomentumVelocityRatio: 0.75,
+      slidesOffsetBefore: 5,
+      slidesOffsetAfter: 20,
       allowTouchMove: true,
       centeredSlides: false,
       initialSlide: 0,
       virtualTranslate: false,
-      init: true,
-      on: {
-        slideChangeTransitionStart: function() {}
-      }
+      init: true
     }
   }
 });
@@ -102,11 +98,36 @@ function initialize_swiper_manually() {
 
 }
 
-fam_circle_swiper.on('init', function() {
-  if (mq_medium.matches) {
+
+
+var touch_start_position;
+var touched_index;
+
+if (mq_medium.matches) {
+
+  fam_circle_swiper.on('init', function() {
     initialize_swiper_manually();
-  }
-});
+  });
+
+  fam_circle_swiper.on('slideChangeTransitionStart', function() {
+    fam_circle_slide_change(this);
+  });
+
+  fam_circle_swiper.on('touchStart', function(e) {
+    touch_start_position = e.x;
+    touched_index = this.activeIndex;
+  });
+
+  fam_circle_swiper.on('touchEnd', function(e) {
+    if (e.x < touch_start_position && !this.isEnd) {
+      this.slideTo(touched_index + 1, 300);
+    } else if (e.x > touch_start_position && !this.isBeginning) {
+      this.slideTo(touched_index - 1, 300);
+    }
+  });
+
+}
+
 
 function fam_circle_slide_change(swiper) {
   if (swiper_is_active) {
@@ -123,7 +144,9 @@ $(document).ready(function() {
     if (mq_medium.matches) {
       $('.fam-circle-swiper .swiper-slide').click(function() {
         var clicked_index = $(this).index();
-        fam_circle_swiper.slideTo(clicked_index, 300);
+        if (clicked_index !== fam_circle_swiper.activeIndex) {
+          fam_circle_swiper.slideTo(clicked_index, 300);
+        }
       });
     }
 
