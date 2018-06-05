@@ -751,6 +751,50 @@
 		"oAP": "\/site\/team.html",
 		"oF": 0
 		},
+	"\/site\/uploads\/business-owners.jpg": {
+		"ft": 16384,
+		"iS": 151740,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/business-owners.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/uploads\/client-experience.jpg": {
+		"ft": 16384,
+		"iS": 178596,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/client-experience.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/uploads\/divorced-women.jpg": {
+		"ft": 16384,
+		"iS": 261937,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/divorced-women.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/uploads\/executives.jpg": {
+		"ft": 16384,
+		"iS": 193778,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/executives.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/site\/uploads\/fairport-asset-management-1.jpg": {
 		"ft": 16384,
 		"iS": 235983,
@@ -916,28 +960,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/stock-1.jpg": {
-		"ft": 16384,
-		"iS": 102421,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/site\/uploads\/stock-1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/site\/uploads\/stock-2.jpg": {
-		"ft": 16384,
-		"iS": 86170,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/site\/uploads\/stock-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"\/site\/uploads\/story-photo-1.jpg": {
 		"ft": 16384,
 		"iS": 144084,
@@ -955,6 +977,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/site\/uploads\/wealth-planning.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/uploads\/widowed-women.jpg": {
+		"ft": 16384,
+		"iS": 179181,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/widowed-women.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/uploads\/women-with-inherited-wealth.jpg": {
+		"ft": 16384,
+		"iS": 132591,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/women-with-inherited-wealth.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
