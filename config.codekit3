@@ -744,6 +744,17 @@
 		"oAP": "\/site\/team.html",
 		"oF": 0
 		},
+	"\/site\/uploads\/brant-appel.jpg": {
+		"ft": 16384,
+		"iS": 21023,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/brant-appel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/site\/uploads\/business-owners.jpg": {
 		"ft": 16384,
 		"iS": 151740,
@@ -755,12 +766,34 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/site\/uploads\/callie-cornett.jpg": {
+		"ft": 16384,
+		"iS": 22890,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/callie-cornett.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/site\/uploads\/client-experience.jpg": {
 		"ft": 16384,
 		"iS": 178596,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/site\/uploads\/client-experience.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/uploads\/dave-bosak.jpg": {
+		"ft": 16384,
+		"iS": 25751,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/dave-bosak.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -799,67 +832,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/headshot-1.jpg": {
+	"\/site\/uploads\/heather-ettinger.jpg": {
 		"ft": 16384,
-		"iS": 14002,
+		"iS": 19629,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/headshot-1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/site\/uploads\/headshot-2.jpg": {
-		"ft": 16384,
-		"iS": 14103,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/site\/uploads\/headshot-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/site\/uploads\/headshot-3.jpg": {
-		"ft": 16384,
-		"iS": 12411,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/site\/uploads\/headshot-3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/site\/uploads\/headshot-4.jpg": {
-		"ft": 16384,
-		"iS": 16192,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/site\/uploads\/headshot-4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/site\/uploads\/headshot-5.jpg": {
-		"ft": 16384,
-		"iS": 15351,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/site\/uploads\/headshot-5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/site\/uploads\/headshot-6.jpg": {
-		"ft": 16384,
-		"iS": 13871,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/site\/uploads\/headshot-6.jpg",
+		"oAP": "\/site\/uploads\/heather-ettinger.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -931,6 +909,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/site\/uploads\/ken-coleman.jpg": {
+		"ft": 16384,
+		"iS": 19599,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/ken-coleman.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/site\/uploads\/mini-portrait-1.jpg": {
 		"ft": 16384,
 		"iS": 2933,
@@ -959,6 +948,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/site\/uploads\/story-photo-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/uploads\/tricia-cindric.jpg": {
+		"ft": 16384,
+		"iS": 24935,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/site\/uploads\/tricia-cindric.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
