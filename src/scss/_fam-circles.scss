@@ -10,6 +10,7 @@
 .fam-circle-swiper {
   .swiper-slide {
     width: 90%;
+    max-width: 400px;
     padding: 0 1em;
   }
 }
@@ -93,6 +94,7 @@ $swiper-transition: transform .3s ease;
       opacity: 1;
     }
     .swiper-slide {
+      max-width: none;
       width: 180px;
       height: 180px;
       padding: 0;

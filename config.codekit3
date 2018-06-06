@@ -3324,7 +3324,7 @@
 	"externalServerAddress": "http:\/\/localhost:8888\/fairport",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "console:write, $, Swiper, bowser, throttle",
+	"jsCheckerReservedNamesString": "console:write, $, Swiper, bowser, throttle, debounce",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
