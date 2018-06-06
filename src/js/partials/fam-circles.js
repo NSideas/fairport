@@ -137,9 +137,9 @@ function fam_circle_start() {
     });
 
     fam_circle_swiper.on('touchEnd', function(e) {
-      if (e.x < touch_start_position && !this.isEnd) {
+      if (e.x < touch_start_position - 10 && !this.isEnd) {
         this.slideTo(touched_index + 1, 300);
-      } else if (e.x > touch_start_position && !this.isBeginning) {
+      } else if (e.x > touch_start_position + 10 && !this.isBeginning) {
         this.slideTo(touched_index - 1, 300);
       }
     });
