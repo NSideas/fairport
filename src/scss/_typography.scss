@@ -88,7 +88,7 @@ a {
   & + h2,
   & + h3,
   & + h4 {
-    padding-top: .5em;
+    padding-top: 1em;
   }
 }
 
@@ -105,6 +105,17 @@ a {
 .content-area h5 {
   color: $gray-2;
   margin-bottom: .5em;
+}
+
+.content-area {
+  h2,
+  h3,
+  h4,
+  h5 {
+    & > a {
+      color: inherit;
+    }
+  }
 }
 
 %bullet-list {

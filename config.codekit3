@@ -1,5 +1,5 @@
 {
-"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https://codekitapp.com/",
 "buildSteps": [
 	{
 		"name": "Process All Remaining Files and Folders",
@@ -7,561 +7,561 @@
 		"uuidString": "9ABF8454-BCC6-4AF2-BE24-C0F5CF6C3FC1"
 		}
 	],
-"creatorBuild": "26680",
+"creatorBuild": "28905",
 "files": {
-	"\/.gitignore": {
+	"/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/.gitignore",
+		"oAP": "/.gitignore",
 		"oF": 0
 		},
-	"\/dist\/css\/fairport.css": {
+	"/dist/css/fairport.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/css\/fairport.css",
+		"oAP": "/css/fairport.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/dist\/css\/fairport.css.map": {
+	"/dist/css/fairport.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/css\/fairport.css.map",
+		"oAP": "/dist/css/fairport.css.map",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Italic.otf": {
+	"/dist/fonts/EBGaramond-Italic.otf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Italic.otf",
+		"oAP": "/dist/fonts/EBGaramond-Italic.otf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Italic.ttf": {
+	"/dist/fonts/EBGaramond-Italic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Italic.ttf",
+		"oAP": "/dist/fonts/EBGaramond-Italic.ttf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Italic.woff": {
+	"/dist/fonts/EBGaramond-Italic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Italic.woff",
+		"oAP": "/dist/fonts/EBGaramond-Italic.woff",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Italic.woff2": {
+	"/dist/fonts/EBGaramond-Italic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Italic.woff2",
+		"oAP": "/dist/fonts/EBGaramond-Italic.woff2",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Medium.otf": {
+	"/dist/fonts/EBGaramond-Medium.otf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Medium.otf",
+		"oAP": "/dist/fonts/EBGaramond-Medium.otf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Medium.ttf": {
+	"/dist/fonts/EBGaramond-Medium.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Medium.ttf",
+		"oAP": "/dist/fonts/EBGaramond-Medium.ttf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Medium.woff": {
+	"/dist/fonts/EBGaramond-Medium.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Medium.woff",
+		"oAP": "/dist/fonts/EBGaramond-Medium.woff",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Medium.woff2": {
+	"/dist/fonts/EBGaramond-Medium.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Medium.woff2",
+		"oAP": "/dist/fonts/EBGaramond-Medium.woff2",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Regular.otf": {
+	"/dist/fonts/EBGaramond-Regular.otf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Regular.otf",
+		"oAP": "/dist/fonts/EBGaramond-Regular.otf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Regular.ttf": {
+	"/dist/fonts/EBGaramond-Regular.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Regular.ttf",
+		"oAP": "/dist/fonts/EBGaramond-Regular.ttf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Regular.woff": {
+	"/dist/fonts/EBGaramond-Regular.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Regular.woff",
+		"oAP": "/dist/fonts/EBGaramond-Regular.woff",
 		"oF": 0
 		},
-	"\/dist\/fonts\/EBGaramond-Regular.woff2": {
+	"/dist/fonts/EBGaramond-Regular.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/EBGaramond-Regular.woff2",
+		"oAP": "/dist/fonts/EBGaramond-Regular.woff2",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-Light.otf": {
+	"/dist/fonts/RobotoCondensed-Light.otf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-Light.otf",
+		"oAP": "/dist/fonts/RobotoCondensed-Light.otf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-Light.ttf": {
+	"/dist/fonts/RobotoCondensed-Light.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-Light.ttf",
+		"oAP": "/dist/fonts/RobotoCondensed-Light.ttf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-Light.woff": {
+	"/dist/fonts/RobotoCondensed-Light.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-Light.woff",
+		"oAP": "/dist/fonts/RobotoCondensed-Light.woff",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-Light.woff2": {
+	"/dist/fonts/RobotoCondensed-Light.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-Light.woff2",
+		"oAP": "/dist/fonts/RobotoCondensed-Light.woff2",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-LightItalic.otf": {
+	"/dist/fonts/RobotoCondensed-LightItalic.otf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-LightItalic.otf",
+		"oAP": "/dist/fonts/RobotoCondensed-LightItalic.otf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-LightItalic.ttf": {
+	"/dist/fonts/RobotoCondensed-LightItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-LightItalic.ttf",
+		"oAP": "/dist/fonts/RobotoCondensed-LightItalic.ttf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-LightItalic.woff": {
+	"/dist/fonts/RobotoCondensed-LightItalic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-LightItalic.woff",
+		"oAP": "/dist/fonts/RobotoCondensed-LightItalic.woff",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-LightItalic.woff2": {
+	"/dist/fonts/RobotoCondensed-LightItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-LightItalic.woff2",
+		"oAP": "/dist/fonts/RobotoCondensed-LightItalic.woff2",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-Regular.otf": {
+	"/dist/fonts/RobotoCondensed-Regular.otf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-Regular.otf",
+		"oAP": "/dist/fonts/RobotoCondensed-Regular.otf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-Regular.ttf": {
+	"/dist/fonts/RobotoCondensed-Regular.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-Regular.ttf",
+		"oAP": "/dist/fonts/RobotoCondensed-Regular.ttf",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-Regular.woff": {
+	"/dist/fonts/RobotoCondensed-Regular.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-Regular.woff",
+		"oAP": "/dist/fonts/RobotoCondensed-Regular.woff",
 		"oF": 0
 		},
-	"\/dist\/fonts\/RobotoCondensed-Regular.woff2": {
+	"/dist/fonts/RobotoCondensed-Regular.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/fonts\/RobotoCondensed-Regular.woff2",
+		"oAP": "/dist/fonts/RobotoCondensed-Regular.woff2",
 		"oF": 0
 		},
-	"\/dist\/img\/browser-icons\/favicon.ico": {
+	"/dist/img/browser-icons/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/img\/browser-icons\/favicon.ico",
+		"oAP": "/dist/img/browser-icons/favicon.ico",
 		"oF": 0
 		},
-	"\/dist\/img\/browser-icons\/icon.png": {
+	"/dist/img/browser-icons/icon.png": {
 		"ft": 32768,
 		"iS": 7255,
 		"oA": 0,
-		"oAP": "\/dist\/img\/browser-icons\/icon.png",
+		"oAP": "/dist/img/browser-icons/icon.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/down-arrow-gold.svg": {
+	"/dist/img/down-arrow-gold.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/down-arrow-gold.svg",
+		"oAP": "/dist/img/down-arrow-gold.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/down-arrow-red.svg": {
+	"/dist/img/down-arrow-red.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/down-arrow-red.svg",
+		"oAP": "/dist/img/down-arrow-red.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/down-arrow.svg": {
+	"/dist/img/down-arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/down-arrow.svg",
+		"oAP": "/dist/img/down-arrow.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/fairport-icon.svg": {
+	"/dist/img/fairport-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/fairport-icon.svg",
+		"oAP": "/dist/img/fairport-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/fairport-logo-white.svg": {
+	"/dist/img/fairport-logo-white.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/fairport-logo-white.svg",
+		"oAP": "/dist/img/fairport-logo-white.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/fairport-logo.svg": {
+	"/dist/img/fairport-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/fairport-logo.svg",
+		"oAP": "/dist/img/fairport-logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/fairport-logotype.svg": {
+	"/dist/img/fairport-logotype.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/fairport-logotype.svg",
+		"oAP": "/dist/img/fairport-logotype.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icn-facebook.svg": {
+	"/dist/img/icn-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icn-facebook.svg",
+		"oAP": "/dist/img/icn-facebook.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icn-linkedin.svg": {
+	"/dist/img/icn-linkedin.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icn-linkedin.svg",
+		"oAP": "/dist/img/icn-linkedin.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icn-twitter.svg": {
+	"/dist/img/icn-twitter.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icn-twitter.svg",
+		"oAP": "/dist/img/icn-twitter.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icn-youtube.svg": {
+	"/dist/img/icn-youtube.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icn-youtube.svg",
+		"oAP": "/dist/img/icn-youtube.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icons\/icn-bell.svg": {
+	"/dist/img/icons/icn-bell.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icons\/icn-bell.svg",
+		"oAP": "/dist/img/icons/icn-bell.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icons\/icn-calendar.svg": {
+	"/dist/img/icons/icn-calendar.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icons\/icn-calendar.svg",
+		"oAP": "/dist/img/icons/icn-calendar.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icons\/icn-compass.svg": {
+	"/dist/img/icons/icn-compass.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icons\/icn-compass.svg",
+		"oAP": "/dist/img/icons/icn-compass.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icons\/icn-fifteen.svg": {
+	"/dist/img/icons/icn-fifteen.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icons\/icn-fifteen.svg",
+		"oAP": "/dist/img/icons/icn-fifteen.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icons\/icn-perspectives.svg": {
+	"/dist/img/icons/icn-perspectives.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icons\/icn-perspectives.svg",
+		"oAP": "/dist/img/icons/icn-perspectives.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/icons\/icn-star.svg": {
+	"/dist/img/icons/icn-star.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/icons\/icn-star.svg",
+		"oAP": "/dist/img/icons/icn-star.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/luma-logo.png": {
+	"/dist/img/luma-logo.png": {
 		"ft": 32768,
 		"iS": 5061,
 		"oA": 0,
-		"oAP": "\/dist\/img\/luma-logo.png",
+		"oAP": "/dist/img/luma-logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/pagination-arrow.svg": {
+	"/dist/img/pagination-arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/pagination-arrow.svg",
+		"oAP": "/dist/img/pagination-arrow.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/patterns\/brick-black.png": {
+	"/dist/img/patterns/brick-black.png": {
 		"ft": 32768,
 		"iS": 2838,
 		"oA": 0,
-		"oAP": "\/dist\/img\/patterns\/brick-black.png",
+		"oAP": "/dist/img/patterns/brick-black.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/patterns\/brick-white.png": {
+	"/dist/img/patterns/brick-white.png": {
 		"ft": 32768,
 		"iS": 2836,
 		"oA": 0,
-		"oAP": "\/dist\/img\/patterns\/brick-white.png",
+		"oAP": "/dist/img/patterns/brick-white.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/patterns\/linen-black.png": {
+	"/dist/img/patterns/linen-black.png": {
 		"ft": 32768,
 		"iS": 3269,
 		"oA": 0,
-		"oAP": "\/dist\/img\/patterns\/linen-black.png",
+		"oAP": "/dist/img/patterns/linen-black.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/patterns\/linen-white.png": {
+	"/dist/img/patterns/linen-white.png": {
 		"ft": 32768,
 		"iS": 3284,
 		"oA": 0,
-		"oAP": "\/dist\/img\/patterns\/linen-white.png",
+		"oAP": "/dist/img/patterns/linen-white.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/patterns\/zig-zag-black.png": {
+	"/dist/img/patterns/zig-zag-black.png": {
 		"ft": 32768,
 		"iS": 3291,
 		"oA": 0,
-		"oAP": "\/dist\/img\/patterns\/zig-zag-black.png",
+		"oAP": "/dist/img/patterns/zig-zag-black.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/patterns\/zig-zag-black.svg": {
+	"/dist/img/patterns/zig-zag-black.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/patterns\/zig-zag-black.svg",
+		"oAP": "/dist/img/patterns/zig-zag-black.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/patterns\/zig-zag-white.png": {
+	"/dist/img/patterns/zig-zag-white.png": {
 		"ft": 32768,
 		"iS": 3328,
 		"oA": 0,
-		"oAP": "\/dist\/img\/patterns\/zig-zag-white.png",
+		"oAP": "/dist/img/patterns/zig-zag-white.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/patterns\/zig-zag-white.svg": {
+	"/dist/img/patterns/zig-zag-white.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/patterns\/zig-zag-white.svg",
+		"oAP": "/dist/img/patterns/zig-zag-white.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/patterns\/zig-zag.png": {
+	"/dist/img/patterns/zig-zag.png": {
 		"ft": 32768,
 		"iS": 21012,
 		"oA": 0,
-		"oAP": "\/dist\/img\/patterns\/zig-zag.png",
+		"oAP": "/dist/img/patterns/zig-zag.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/dist\/img\/search-icon.svg": {
+	"/dist/img/search-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/search-icon.svg",
+		"oAP": "/dist/img/search-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/img\/x-icon.svg": {
+	"/dist/img/x-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/img\/x-icon.svg",
+		"oAP": "/dist/img/x-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/dist\/js\/fairport.min.js": {
+	"/dist/js/fairport.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/dist\/js\/fairport.min.min.js",
+		"oAP": "/dist/js/fairport.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/dist\/js\/fairport.min.js.map": {
+	"/dist/js/fairport.min.js.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/js\/fairport.min.js.map",
+		"oAP": "/dist/js/fairport.min.js.map",
 		"oF": 0
 		},
-	"\/dist\/js\/plugins.min.js": {
+	"/dist/js/plugins.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/dist\/js\/plugins.min.min.js",
+		"oAP": "/dist/js/plugins.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/dist\/js\/plugins.min.js.map": {
+	"/dist/js/plugins.min.js.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/js\/plugins.min.js.map",
+		"oAP": "/dist/js/plugins.min.js.map",
 		"oF": 0
 		},
-	"\/MODULES.md": {
+	"/MODULES.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -570,7 +570,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 1,
-		"oAP": "\/MODULES.html",
+		"oAP": "/MODULES.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -579,7 +579,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/README.md": {
+	"/README.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -588,7 +588,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 1,
-		"oAP": "\/README.html",
+		"oAP": "/README.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -597,965 +597,972 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/site\/404.html": {
+	"/site/404.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/404.html",
+		"oAP": "/site/404.html",
 		"oF": 0
 		},
-	"\/site\/about-you-template.html": {
+	"/site/about-you-template.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/about-you-template.html",
+		"oAP": "/site/about-you-template.html",
 		"oF": 0
 		},
-	"\/site\/careers.html": {
+	"/site/careers.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/careers.html",
+		"oAP": "/site/careers.html",
 		"oF": 0
 		},
-	"\/site\/client-experience.html": {
+	"/site/client-experience.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/client-experience.html",
+		"oAP": "/site/client-experience.html",
 		"oF": 0
 		},
-	"\/site\/community-service.html": {
+	"/site/community-service.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/community-service.html",
+		"oAP": "/site/community-service.html",
 		"oF": 0
 		},
-	"\/site\/default-template.html": {
+	"/site/default-template.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/default-template.html",
+		"oAP": "/site/default-template.html",
 		"oF": 0
 		},
-	"\/site\/equifax-breach.html": {
+	"/site/equifax-breach.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/equifax-breach.html",
+		"oAP": "/site/equifax-breach.html",
 		"oF": 0
 		},
-	"\/site\/executives.html": {
+	"/site/executives.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/executives.html",
+		"oAP": "/site/executives.html",
 		"oF": 0
 		},
-	"\/site\/extras.html": {
+	"/site/extras.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/extras.html",
+		"oAP": "/site/extras.html",
 		"oF": 0
 		},
-	"\/site\/fairport-in-fifteen.html": {
+	"/site/fairport-in-fifteen.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/fairport-in-fifteen.html",
+		"oAP": "/site/fairport-in-fifteen.html",
 		"oF": 0
 		},
-	"\/site\/history.html": {
+	"/site/history.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/history.html",
+		"oAP": "/site/history.html",
 		"oF": 0
 		},
-	"\/site\/index.html": {
+	"/site/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/index.html",
+		"oAP": "/site/index.html",
 		"oF": 0
 		},
-	"\/site\/investment-management.html": {
+	"/site/investment-management.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/investment-management.html",
+		"oAP": "/site/investment-management.html",
 		"oF": 0
 		},
-	"\/site\/location.html": {
+	"/site/location.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/location.html",
+		"oAP": "/site/location.html",
 		"oF": 0
 		},
-	"\/site\/news-and-insights-page-2.html": {
+	"/site/news-and-insights-page-2.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/news-and-insights-page-2.html",
+		"oAP": "/site/news-and-insights-page-2.html",
 		"oF": 0
 		},
-	"\/site\/news-and-insights.html": {
+	"/site/news-and-insights.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/news-and-insights.html",
+		"oAP": "/site/news-and-insights.html",
 		"oF": 0
 		},
-	"\/site\/news-category.html": {
+	"/site/news-category.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/news-category.html",
+		"oAP": "/site/news-category.html",
 		"oF": 0
 		},
-	"\/site\/our-approach.html": {
+	"/site/our-approach.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/our-approach.html",
+		"oAP": "/site/our-approach.html",
 		"oF": 0
 		},
-	"\/site\/staff-info.html": {
+	"/site/staff-info.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/staff-info.html",
+		"oAP": "/site/staff-info.html",
 		"oF": 0
 		},
-	"\/site\/story-1.html": {
+	"/site/story-1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/story-1.html",
+		"oAP": "/site/story-1.html",
 		"oF": 0
 		},
-	"\/site\/team.html": {
+	"/site/team.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/team.html",
+		"oAP": "/site/team.html",
 		"oF": 0
 		},
-	"\/site\/uploads\/brant-appel.jpg": {
+	"/site/uploads/brant-appel.jpg": {
 		"ft": 16384,
 		"iS": 21023,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/brant-appel.jpg",
+		"oAP": "/site/uploads/brant-appel.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/business-owners.jpg": {
+	"/site/uploads/business-owners.jpg": {
 		"ft": 16384,
 		"iS": 151740,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/business-owners.jpg",
+		"oAP": "/site/uploads/business-owners.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/callie-cornett.jpg": {
+	"/site/uploads/callie-cornett.jpg": {
 		"ft": 16384,
 		"iS": 22890,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/callie-cornett.jpg",
+		"oAP": "/site/uploads/callie-cornett.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/client-experience.jpg": {
+	"/site/uploads/client-experience.jpg": {
 		"ft": 16384,
 		"iS": 178596,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/client-experience.jpg",
+		"oAP": "/site/uploads/client-experience.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/dave-bosak.jpg": {
+	"/site/uploads/dave-bosak.jpg": {
 		"ft": 16384,
 		"iS": 25751,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/dave-bosak.jpg",
+		"oAP": "/site/uploads/dave-bosak.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/divorced-women.jpg": {
+	"/site/uploads/divorced-women.jpg": {
 		"ft": 16384,
 		"iS": 261937,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/divorced-women.jpg",
+		"oAP": "/site/uploads/divorced-women.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/executives.jpg": {
+	"/site/uploads/executives.jpg": {
 		"ft": 16384,
 		"iS": 193778,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/executives.jpg",
+		"oAP": "/site/uploads/executives.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/fairport-asset-management-1.jpg": {
+	"/site/uploads/fairport-asset-management-1.jpg": {
 		"ft": 16384,
 		"iS": 235983,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/fairport-asset-management-1.jpg",
+		"oAP": "/site/uploads/fairport-asset-management-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/heather-ettinger.jpg": {
+	"/site/uploads/heather-ettinger.jpg": {
 		"ft": 16384,
 		"iS": 19629,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/heather-ettinger.jpg",
+		"oAP": "/site/uploads/heather-ettinger.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/hero-swiper-1.jpg": {
+	"/site/uploads/hero-swiper-1.jpg": {
 		"ft": 16384,
 		"iS": 126224,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/hero-swiper-1.jpg",
+		"oAP": "/site/uploads/hero-swiper-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/hero-swiper-2.jpg": {
+	"/site/uploads/hero-swiper-2.jpg": {
 		"ft": 16384,
 		"iS": 204558,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/hero-swiper-2.jpg",
+		"oAP": "/site/uploads/hero-swiper-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/hero-swiper-3.jpg": {
+	"/site/uploads/hero-swiper-3.jpg": {
 		"ft": 16384,
 		"iS": 157336,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/hero-swiper-3.jpg",
+		"oAP": "/site/uploads/hero-swiper-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/hero-swiper-4.jpg": {
+	"/site/uploads/hero-swiper-4.jpg": {
 		"ft": 16384,
 		"iS": 164435,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/hero-swiper-4.jpg",
+		"oAP": "/site/uploads/hero-swiper-4.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/hero-swiper-5.jpg": {
+	"/site/uploads/hero-swiper-5.jpg": {
 		"ft": 16384,
 		"iS": 207281,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/hero-swiper-5.jpg",
+		"oAP": "/site/uploads/hero-swiper-5.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/investment-management.jpg": {
+	"/site/uploads/investment-management.jpg": {
 		"ft": 16384,
 		"iS": 522058,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/investment-management.jpg",
+		"oAP": "/site/uploads/investment-management.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/ken-coleman.jpg": {
+	"/site/uploads/ken-coleman.jpg": {
 		"ft": 16384,
 		"iS": 19599,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/ken-coleman.jpg",
+		"oAP": "/site/uploads/ken-coleman.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/site\/uploads\/mini-portrait-1.jpg": {
+	"/site/uploads/mini-portrait-1.jpg": {
 		"ft": 16384,
 		"iS": 2933,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/mini-portrait-1.jpg",
+		"oAP": "/site/uploads/mini-portrait-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/mini-portrait-2.jpg": {
+	"/site/uploads/mini-portrait-2.jpg": {
 		"ft": 16384,
 		"iS": 2988,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/mini-portrait-2.jpg",
+		"oAP": "/site/uploads/mini-portrait-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/story-photo-1.jpg": {
+	"/site/uploads/story-photo-1.jpg": {
 		"ft": 16384,
 		"iS": 144084,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/story-photo-1.jpg",
+		"oAP": "/site/uploads/story-photo-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/tricia-cindric.jpg": {
+	"/site/uploads/tricia-cindric.jpg": {
 		"ft": 16384,
 		"iS": 24935,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/tricia-cindric.jpg",
+		"oAP": "/site/uploads/tricia-cindric.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/wealth-planning.jpg": {
+	"/site/uploads/wealth-planning.jpg": {
 		"ft": 16384,
 		"iS": 351219,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/wealth-planning.jpg",
+		"oAP": "/site/uploads/wealth-planning.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/widowed-women.jpg": {
+	"/site/uploads/widowed-women.jpg": {
 		"ft": 16384,
 		"iS": 179181,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/widowed-women.jpg",
+		"oAP": "/site/uploads/widowed-women.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/women-with-inherited-wealth.jpg": {
+	"/site/uploads/women-with-inherited-wealth.jpg": {
 		"ft": 16384,
 		"iS": 132591,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/women-with-inherited-wealth.jpg",
+		"oAP": "/site/uploads/women-with-inherited-wealth.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/site\/uploads\/ywca-logo.png": {
+	"/site/uploads/ywca-logo.png": {
 		"ft": 32768,
 		"iS": 95045,
 		"oA": 0,
-		"oAP": "\/site\/uploads\/ywca-logo.png",
+		"oAP": "/site/uploads/ywca-logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/site\/wealth-planning.html": {
+	"/site/wealth-planning.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/site\/wealth-planning.html",
+		"oAP": "/site/wealth-planning.html",
 		"oF": 0
 		},
-	"\/src\/img\/_zig-zag.kit": {
+	"/src/img/_zig-zag.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
-		"oAP": "\/site\/_zig-zag.html",
+		"oAP": "/site/_zig-zag.html",
 		"oF": 0
 		},
-	"\/src\/img\/path\/_zig-zag.kit": {
+	"/src/img/path/_zig-zag.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
-		"oAP": "\/site\/_zig-zag.html",
+		"oAP": "/site/_zig-zag.html",
 		"oF": 0
 		},
-	"\/src\/img\/zig-zag-black.kit": {
+	"/src/img/zig-zag-black.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/zig-zag-black.html",
+		"oAP": "/site/zig-zag-black.html",
 		"oF": 0
 		},
-	"\/src\/img\/zig-zag-white.kit": {
+	"/src/img/zig-zag-white.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/dist\/img\/patterns\/zig-zag-white.svg",
+		"oAP": "/dist/img/patterns/zig-zag-white.svg",
 		"oF": 2
 		},
-	"\/src\/js\/fairport.js": {
+	"/src/js/fairport.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/dist\/js\/fairport.min.js",
+		"oAP": "/dist/js/fairport.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/partials\/dropdown.js": {
+	"/src/js/partials/dropdown.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/dropdown.min.js",
+		"oAP": "/dist/js/dropdown.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/partials\/fam-circles.js": {
+	"/src/js/partials/fam-circles.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/fam-circles.min.js",
+		"oAP": "/dist/js/fam-circles.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/partials\/global.js": {
+	"/src/js/partials/global.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/global.min.js",
+		"oAP": "/dist/js/global.min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/partials\/hero-swiper.js": {
+	"/src/js/partials/hero-swiper.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/hero-swiper.min.js",
+		"oAP": "/dist/js/hero-swiper.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/partials\/staff-list.js": {
+	"/src/js/partials/staff-list.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/staff-list.min.js",
+		"oAP": "/dist/js/staff-list.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/plugins.js": {
+	"/src/js/plugins.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/dist\/js\/plugins.min.js",
+		"oAP": "/dist/js/plugins.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/vendor\/bowser.js": {
+	"/src/js/vendor/bowser.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/bowser.min.js",
+		"oAP": "/dist/js/bowser.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/vendor\/jquery-3.2.1.min.js": {
+	"/src/js/vendor/jquery-3.2.1.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/jquery-3.2.1.min.min.js",
+		"oAP": "/dist/js/jquery-3.2.1.min.min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/vendor\/modernizr-3.5.0.min.js": {
+	"/src/js/vendor/modernizr-3.5.0.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/modernizr-3.5.0.min.min.js",
+		"oAP": "/dist/js/modernizr-3.5.0.min.min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/vendor\/swiper.js": {
+	"/src/js/vendor/swiper.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/swiper.min.js",
+		"oAP": "/dist/js/swiper.min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/js\/vendor\/swiper.min.js": {
+	"/src/js/vendor/swiper.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/dist\/js\/swiper.min.min.js",
+		"oAP": "/dist/js/swiper.min.min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/kit\/careers.kit": {
+	"/src/kit/careers.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/careers.html",
+		"oAP": "/site/careers.html",
 		"oF": 0
 		},
-	"\/src\/kit\/client-experience.kit": {
+	"/src/kit/client-experience.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/client-experience.html",
+		"oAP": "/site/client-experience.html",
 		"oF": 2
 		},
-	"\/src\/kit\/community-service.kit": {
+	"/src/kit/client-logins.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/community-service.html",
+		"oAP": "/site/client-logins.html",
 		"oF": 0
 		},
-	"\/src\/kit\/equifax-breach.kit": {
+	"/src/kit/community-service.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/equifax-breach.html",
+		"oAP": "/site/community-service.html",
 		"oF": 0
 		},
-	"\/src\/kit\/executives.kit": {
+	"/src/kit/equifax-breach.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/executives.html",
+		"oAP": "/site/equifax-breach.html",
 		"oF": 0
 		},
-	"\/src\/kit\/extras.kit": {
+	"/src/kit/executives.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/extras.html",
+		"oAP": "/site/executives.html",
 		"oF": 0
 		},
-	"\/src\/kit\/fairport-in-fifteen.kit": {
+	"/src/kit/extras.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/fairport-in-fifteen.html",
+		"oAP": "/site/extras.html",
 		"oF": 0
 		},
-	"\/src\/kit\/history.kit": {
+	"/src/kit/fairport-in-fifteen.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/history.html",
+		"oAP": "/site/fairport-in-fifteen.html",
 		"oF": 0
 		},
-	"\/src\/kit\/index.kit": {
+	"/src/kit/history.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/index.html",
+		"oAP": "/site/history.html",
 		"oF": 0
 		},
-	"\/src\/kit\/investment-management.kit": {
+	"/src/kit/index.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/investment-management.html",
+		"oAP": "/site/index.html",
 		"oF": 0
 		},
-	"\/src\/kit\/location.kit": {
+	"/src/kit/investment-management.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/location.html",
+		"oAP": "/site/investment-management.html",
 		"oF": 0
 		},
-	"\/src\/kit\/modules\/_breadcrumbs.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_breadcrumbs.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_category-filter.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_category-filter.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_fam-circle-swiper.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_fam-circle-swiper.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_footer.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_footer.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_hero-swiper.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_hero-swiper.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_inspiring-families.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_inspiring-families.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_main-nav.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_main-nav.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_quick-links-section.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_quick-links-section.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_recent-news.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_recent-news.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_related-news.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_related-news.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_story-teaser-1.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_story-teaser-1.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_story-teaser-2.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_story-teaser-2.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/_story-teaser.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_story-teaser.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/block-list\/_ordered-single-column.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_ordered-single-column.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/block-list\/_ordered-three-column.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_ordered-three-column.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/block-list\/_ordered-two-column.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_ordered-two-column.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/block-list\/_unordered-two-column.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_unordered-two-column.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/fam-circles\/_circle-1.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_circle-1.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/fam-circles\/_circle-2.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_circle-2.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/fam-circles\/_circle-3.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_circle-3.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/fam-circles\/_circle-4.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_circle-4.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/fam-circles\/_circle-5.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_circle-5.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/fam-circles\/_circle-6.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_circle-6.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/news-items\/_featured-article.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_featured-article.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/news-items\/_news-item-1.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_news-item-1.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/news-items\/_news-item-2.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_news-item-2.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/news-items\/_news-item-3.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_news-item-3.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/news-items\/_news-item-4.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_news-item-4.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/news-items\/_news-item-5.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_news-item-5.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/quick-links\/_quick-link-1.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_quick-link-1.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/quick-links\/_quick-link-2.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_quick-link-2.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/quick-links\/_quick-link-3.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_quick-link-3.html",
-		"oF": 0
-		},
-	"\/src\/kit\/modules\/team-members\/_brant-d-appel.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_brant-d-appel.html",
-		"oF": 0
-		},
-	"\/src\/kit\/news-and-insights-page-2.kit": {
+	"/src/kit/location.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/news-and-insights-page-2.html",
+		"oAP": "/site/location.html",
 		"oF": 0
 		},
-	"\/src\/kit\/news-and-insights.kit": {
+	"/src/kit/modules/_breadcrumbs.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_breadcrumbs.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_category-filter.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_category-filter.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_fam-circle-swiper.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_fam-circle-swiper.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_footer.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_hero-swiper.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_hero-swiper.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_inspiring-families.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_inspiring-families.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_main-nav.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_main-nav.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_quick-links-section.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_quick-links-section.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_recent-news.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_recent-news.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_related-news.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_related-news.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_story-teaser-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_story-teaser-1.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_story-teaser-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_story-teaser-2.html",
+		"oF": 0
+		},
+	"/src/kit/modules/_story-teaser.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_story-teaser.html",
+		"oF": 0
+		},
+	"/src/kit/modules/block-list/_ordered-single-column.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_ordered-single-column.html",
+		"oF": 0
+		},
+	"/src/kit/modules/block-list/_ordered-three-column.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_ordered-three-column.html",
+		"oF": 0
+		},
+	"/src/kit/modules/block-list/_ordered-two-column.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_ordered-two-column.html",
+		"oF": 0
+		},
+	"/src/kit/modules/block-list/_unordered-two-column.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_unordered-two-column.html",
+		"oF": 0
+		},
+	"/src/kit/modules/fam-circles/_circle-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_circle-1.html",
+		"oF": 0
+		},
+	"/src/kit/modules/fam-circles/_circle-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_circle-2.html",
+		"oF": 0
+		},
+	"/src/kit/modules/fam-circles/_circle-3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_circle-3.html",
+		"oF": 0
+		},
+	"/src/kit/modules/fam-circles/_circle-4.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_circle-4.html",
+		"oF": 0
+		},
+	"/src/kit/modules/fam-circles/_circle-5.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_circle-5.html",
+		"oF": 0
+		},
+	"/src/kit/modules/fam-circles/_circle-6.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_circle-6.html",
+		"oF": 0
+		},
+	"/src/kit/modules/news-items/_featured-article.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_featured-article.html",
+		"oF": 0
+		},
+	"/src/kit/modules/news-items/_news-item-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_news-item-1.html",
+		"oF": 0
+		},
+	"/src/kit/modules/news-items/_news-item-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_news-item-2.html",
+		"oF": 0
+		},
+	"/src/kit/modules/news-items/_news-item-3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_news-item-3.html",
+		"oF": 0
+		},
+	"/src/kit/modules/news-items/_news-item-4.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_news-item-4.html",
+		"oF": 0
+		},
+	"/src/kit/modules/news-items/_news-item-5.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_news-item-5.html",
+		"oF": 0
+		},
+	"/src/kit/modules/quick-links/_quick-link-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_quick-link-1.html",
+		"oF": 0
+		},
+	"/src/kit/modules/quick-links/_quick-link-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_quick-link-2.html",
+		"oF": 0
+		},
+	"/src/kit/modules/quick-links/_quick-link-3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_quick-link-3.html",
+		"oF": 0
+		},
+	"/src/kit/modules/team-members/_brant-d-appel.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_brant-d-appel.html",
+		"oF": 0
+		},
+	"/src/kit/news-and-insights-page-2.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/news-and-insights.html",
+		"oAP": "/site/news-and-insights-page-2.html",
 		"oF": 0
 		},
-	"\/src\/kit\/news-category.kit": {
+	"/src/kit/news-and-insights.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/news-category.html",
+		"oAP": "/site/news-and-insights.html",
 		"oF": 0
 		},
-	"\/src\/kit\/our-approach.kit": {
+	"/src/kit/news-category.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/our-approach.html",
+		"oAP": "/site/news-category.html",
 		"oF": 0
 		},
-	"\/src\/kit\/partials\/_footer.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_footer.html",
-		"oF": 0
-		},
-	"\/src\/kit\/partials\/_header.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/site\/_header.html",
-		"oF": 0
-		},
-	"\/src\/kit\/staff-info.kit": {
+	"/src/kit/our-approach.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/staff-info.html",
+		"oAP": "/site/our-approach.html",
 		"oF": 0
 		},
-	"\/src\/kit\/story-1.kit": {
+	"/src/kit/partials/_footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_footer.html",
+		"oF": 0
+		},
+	"/src/kit/partials/_header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "/site/_header.html",
+		"oF": 0
+		},
+	"/src/kit/staff-info.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/story-1.html",
+		"oAP": "/site/staff-info.html",
 		"oF": 0
 		},
-	"\/src\/kit\/team.kit": {
+	"/src/kit/story-1.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/team.html",
+		"oAP": "/site/story-1.html",
 		"oF": 0
 		},
-	"\/src\/kit\/templates\/about-you-template.kit": {
+	"/src/kit/team.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/about-you-template.html",
+		"oAP": "/site/team.html",
 		"oF": 0
 		},
-	"\/src\/kit\/templates\/default-template.kit": {
+	"/src/kit/templates/about-you-template.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/default-template.html",
+		"oAP": "/site/about-you-template.html",
 		"oF": 0
 		},
-	"\/src\/kit\/wealth-planning.kit": {
+	"/src/kit/templates/default-template.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/site\/wealth-planning.html",
+		"oAP": "/site/default-template.html",
 		"oF": 0
 		},
-	"\/src\/scss\/_about-you-template.scss": {
+	"/src/kit/wealth-planning.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "/site/wealth-planning.html",
+		"oF": 0
+		},
+	"/src/scss/_about-you-template.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1563,12 +1570,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_about-you-template.css",
+		"oAP": "/dist/css/_about-you-template.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_block-list.scss": {
+	"/src/scss/_block-list.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1576,12 +1583,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_block-list.css",
+		"oAP": "/dist/css/_block-list.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_buttons.scss": {
+	"/src/scss/_buttons.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1589,12 +1596,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_buttons.css",
+		"oAP": "/dist/css/_buttons.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_colors.scss": {
+	"/src/scss/_colors.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1602,12 +1609,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_colors.css",
+		"oAP": "/dist/css/_colors.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_fam-circles.scss": {
+	"/src/scss/_fam-circles.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1615,12 +1622,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_fam-circles.css",
+		"oAP": "/dist/css/_fam-circles.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_fonts.scss": {
+	"/src/scss/_fonts.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1628,12 +1635,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_fonts.css",
+		"oAP": "/dist/css/_fonts.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_footer.scss": {
+	"/src/scss/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1641,12 +1648,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_footer.css",
+		"oAP": "/dist/css/_footer.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_forms.scss": {
+	"/src/scss/_forms.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1654,12 +1661,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_forms.css",
+		"oAP": "/dist/css/_forms.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_header.scss": {
+	"/src/scss/_header.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1667,12 +1674,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_header.css",
+		"oAP": "/dist/css/_header.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_helpers.scss": {
+	"/src/scss/_helpers.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1680,12 +1687,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_helpers.css",
+		"oAP": "/dist/css/_helpers.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_hero-swiper.scss": {
+	"/src/scss/_hero-swiper.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1693,12 +1700,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_hero-swiper.css",
+		"oAP": "/dist/css/_hero-swiper.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_home.scss": {
+	"/src/scss/_home.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1706,12 +1713,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_home.css",
+		"oAP": "/dist/css/_home.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_layout.scss": {
+	"/src/scss/_layout.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1719,12 +1726,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_layout.css",
+		"oAP": "/dist/css/_layout.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_main.scss": {
+	"/src/scss/_main.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1732,12 +1739,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_main.css",
+		"oAP": "/dist/css/_main.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_nav.scss": {
+	"/src/scss/_nav.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1745,12 +1752,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_nav.css",
+		"oAP": "/dist/css/_nav.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_news.scss": {
+	"/src/scss/_news.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1758,12 +1765,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_news.css",
+		"oAP": "/dist/css/_news.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_normalize.scss": {
+	"/src/scss/_normalize.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1771,12 +1778,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_normalize.css",
+		"oAP": "/dist/css/_normalize.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_our-team.scss": {
+	"/src/scss/_our-team.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1784,12 +1791,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_our-team.css",
+		"oAP": "/dist/css/_our-team.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_print.scss": {
+	"/src/scss/_print.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1797,12 +1804,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_print.css",
+		"oAP": "/dist/css/_print.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_quick-links.scss": {
+	"/src/scss/_quick-links.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1810,12 +1817,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_quick-links.css",
+		"oAP": "/dist/css/_quick-links.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_story.scss": {
+	"/src/scss/_story.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1823,12 +1830,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_story.css",
+		"oAP": "/dist/css/_story.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_swiper.scss": {
+	"/src/scss/_swiper.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1836,12 +1843,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_swiper.css",
+		"oAP": "/dist/css/_swiper.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_typography.scss": {
+	"/src/scss/_typography.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1849,12 +1856,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_typography.css",
+		"oAP": "/dist/css/_typography.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/_variables.scss": {
+	"/src/scss/_variables.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1862,12 +1869,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/dist\/css\/_variables.css",
+		"oAP": "/dist/css/_variables.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"\/src\/scss\/styles.scss": {
+	"/src/scss/styles.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1875,12 +1882,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/dist\/css\/fairport.css",
+		"oAP": "/dist/css/fairport.css",
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
-	"\/STRUCTURE.md": {
+	"/STRUCTURE.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -1889,7 +1896,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 1,
-		"oAP": "\/STRUCTURE.html",
+		"oAP": "/STRUCTURE.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -1898,7 +1905,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/TEMPLATES.md": {
+	"/TEMPLATES.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -1907,7 +1914,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 1,
-		"oAP": "\/TEMPLATES.html",
+		"oAP": "/TEMPLATES.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -1933,141 +1940,94 @@
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
-	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
 	"autoprefixerEnableIEGrid": 0,
+	"babel7PresetType": 1,
+	"babelAllowRCFiles": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
-	"babelConfigFileHandlingType": 0,
+	"babelConfigType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 0,
 	"babelPlugins": {
+		"arrow-functions": {
+			"active": 0
+			},
 		"async-generator-functions": {
 			"active": 0
 			},
 		"async-to-generator": {
 			"active": 0
 			},
-		"async-to-module-method": {
+		"block-scoped-functions": {
+			"active": 0
+			},
+		"block-scoping": {
 			"active": 0
 			},
 		"class-properties": {
 			"active": 0
 			},
+		"classes": {
+			"active": 0
+			},
+		"computed-properties": {
+			"active": 0
+			},
 		"decorators": {
 			"active": 0
 			},
-		"decorators-legacy": {
+		"destructuring": {
 			"active": 0
 			},
 		"do-expressions": {
 			"active": 0
 			},
-		"es2015-arrow-functions": {
+		"dotall-regex": {
 			"active": 0
 			},
-		"es2015-block-scoped-functions": {
-			"active": 0
-			},
-		"es2015-block-scoping": {
-			"active": 0
-			},
-		"es2015-classes": {
-			"active": 0
-			},
-		"es2015-computed-properties": {
-			"active": 0
-			},
-		"es2015-constants": {
-			"active": 0
-			},
-		"es2015-destructuring": {
-			"active": 0
-			},
-		"es2015-duplicate-keys": {
-			"active": 0
-			},
-		"es2015-for-of": {
-			"active": 0
-			},
-		"es2015-function-name": {
-			"active": 0
-			},
-		"es2015-literals": {
-			"active": 0
-			},
-		"es2015-modules-amd": {
-			"active": 0
-			},
-		"es2015-modules-commonjs": {
-			"active": 0
-			},
-		"es2015-modules-systemjs": {
-			"active": 0
-			},
-		"es2015-modules-umd": {
-			"active": 0
-			},
-		"es2015-object-super": {
-			"active": 0
-			},
-		"es2015-parameters": {
-			"active": 0
-			},
-		"es2015-shorthand-properties": {
-			"active": 0
-			},
-		"es2015-spread": {
-			"active": 0
-			},
-		"es2015-sticky-regex": {
-			"active": 0
-			},
-		"es2015-template-literals": {
-			"active": 0
-			},
-		"es2015-typeof-symbol": {
-			"active": 0
-			},
-		"es2015-unicode-regex": {
-			"active": 0
-			},
-		"es3-member-expression-literals": {
-			"active": 0
-			},
-		"es3-property-literals": {
-			"active": 0
-			},
-		"es5-property-mutators": {
-			"active": 0
-			},
-		"eval": {
+		"duplicate-keys": {
 			"active": 0
 			},
 		"exponentiation-operator": {
 			"active": 0
 			},
-		"export-extensions": {
+		"export-default-from": {
+			"active": 0
+			},
+		"export-namespace-from": {
 			"active": 0
 			},
 		"external-helpers": {
 			"active": 0
 			},
-		"flow-comments": {
+		"flow-strip-types": {
 			"active": 0
 			},
-		"flow-strip-types": {
+		"for-of": {
 			"active": 0
 			},
 		"function-bind": {
 			"active": 0
 			},
-		"inline-environment-variables": {
+		"function-name": {
+			"active": 0
+			},
+		"function-sent": {
+			"active": 0
+			},
+		"instanceof": {
 			"active": 0
 			},
 		"jscript": {
+			"active": 0
+			},
+		"literals": {
+			"active": 0
+			},
+		"logical-assignment-operators": {
 			"active": 0
 			},
 		"member-expression-literals": {
@@ -2079,7 +2039,28 @@
 		"minify-booleans": {
 			"active": 0
 			},
+		"modules-amd": {
+			"active": 0
+			},
+		"modules-commonjs": {
+			"active": 0
+			},
+		"modules-systemjs": {
+			"active": 0
+			},
+		"modules-umd": {
+			"active": 0
+			},
+		"new-target": {
+			"active": 0
+			},
 		"node-env-inline": {
+			"active": 0
+			},
+		"nullish-coalescing-operator": {
+			"active": 0
+			},
+		"numeric-separator": {
 			"active": 0
 			},
 		"object-assign": {
@@ -2091,7 +2072,25 @@
 		"object-set-prototype-of-to-assign": {
 			"active": 0
 			},
+		"object-super": {
+			"active": 0
+			},
+		"optional-catch-binding": {
+			"active": 0
+			},
+		"optional-chaining": {
+			"active": 0
+			},
+		"parameters": {
+			"active": 0
+			},
+		"pipeline-operator": {
+			"active": 0
+			},
 		"property-literals": {
+			"active": 0
+			},
+		"property-mutators": {
 			"active": 0
 			},
 		"proto-to-assign": {
@@ -2127,53 +2126,46 @@
 		"remove-debugger": {
 			"active": 0
 			},
+		"reserved-words": {
+			"active": 0
+			},
 		"runtime": {
+			"active": 0
+			},
+		"shorthand-properties": {
 			"active": 0
 			},
 		"simplify-comparison-operators": {
 			"active": 0
 			},
+		"spread": {
+			"active": 0
+			},
+		"sticky-regex": {
+			"active": 0
+			},
 		"strict-mode": {
 			"active": 0
 			},
-		"syntax-async-generators": {
+		"template-literals": {
 			"active": 0
 			},
-		"syntax-class-properties": {
+		"throw-expressions": {
 			"active": 0
 			},
-		"syntax-decorators": {
-			"active": 0
-			},
-		"syntax-do-expressions": {
-			"active": 0
-			},
-		"syntax-export-extensions": {
-			"active": 0
-			},
-		"syntax-flow": {
-			"active": 0
-			},
-		"syntax-function-bind": {
-			"active": 0
-			},
-		"syntax-function-sent": {
-			"active": 0
-			},
-		"syntax-jsx": {
-			"active": 0
-			},
-		"syntax-object-rest-spread": {
-			"active": 0
-			},
-		"undeclared-variables-check": {
+		"typeof-symbol": {
 			"active": 0
 			},
 		"undefined-to-void": {
 			"active": 0
+			},
+		"unicode-property-regex": {
+			"active": 0
+			},
+		"unicode-regex": {
+			"active": 0
 			}
 		},
-	"babelPresetType": 193,
 	"babelRetainLines": 0,
 	"bowerAbbreviatedPath": "bower_components",
 	"bowerAutoCreateInfoFile": 1,
@@ -2182,6 +2174,7 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
+	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 0,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
@@ -2539,6 +2532,10 @@
 			"active": 0,
 			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
+		"max-classes-per-file": {
+			"active": 0,
+			"optionString": "1"
+			},
 		"max-depth": {
 			"active": 0,
 			"optionString": "{'max': 4}"
@@ -2550,6 +2547,10 @@
 		"max-lines": {
 			"active": 0,
 			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
+		"max-lines-per-function": {
+			"active": 0,
+			"optionString": "{'max': 50, 'skipBlankLines': true, 'skipComments': true, 'IIFEs': false}"
 			},
 		"max-nested-callbacks": {
 			"active": 0,
@@ -2595,6 +2596,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-async-promise-executor": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-await-in-loop": {
 			"active": 0,
 			"optionString": ""
@@ -2613,10 +2618,6 @@
 			},
 		"no-case-declarations": {
 			"active": 1,
-			"optionString": ""
-			},
-		"no-catch-shadow": {
-			"active": 0,
 			"optionString": ""
 			},
 		"no-class-assign": {
@@ -2815,9 +2816,13 @@
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
 			},
+		"no-misleading-character-class": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-mixed-operators": {
 			"active": 0,
-			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			"optionString": "{'groups': [['+', '-', '*', '/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
 			},
 		"no-mixed-requires": {
 			"active": 0,
@@ -3171,6 +3176,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-object-spread": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
@@ -3199,6 +3208,10 @@
 			"active": 0,
 			"optionString": "'always'"
 			},
+		"require-atomic-updates": {
+			"active": 0,
+			"optionString": ""
+			},
 		"require-await": {
 			"active": 0,
 			"optionString": ""
@@ -3206,6 +3219,10 @@
 		"require-jsdoc": {
 			"active": 0,
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
+			},
+		"require-unicode-regexp": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-yield": {
 			"active": 1,
@@ -3261,7 +3278,7 @@
 			},
 		"spaced-comment": {
 			"active": 0,
-			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			"optionString": "'always', {'line': {'markers': ['/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
 			},
 		"strict": {
 			"active": 0,
@@ -3321,7 +3338,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888\/fairport",
+	"externalServerAddress": "http://localhost:8888/fairport",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "console:write, $, Swiper, bowser, throttle, debounce",
@@ -3716,7 +3733,6 @@
 		"escapeHTMLCharacters": 0,
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
-		"outputStyle": 0,
 		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
@@ -3735,7 +3751,7 @@
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.min.js",
-		"autoOutputPathRelativePath": "dist\/js",
+		"autoOutputPathRelativePath": "dist/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 1,
@@ -3767,19 +3783,19 @@
 		"allowInsecureImports": 0,
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "less",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
-		"disableJavascript": 0,
+		"enableJavascript": 0,
 		"ieCompatibility": 1,
+		"mathStyle": 0,
 		"outputStyle": 0,
-		"relativeURLS": 0,
+		"rewriteURLStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"strictImports": 0,
-		"strictMath": 0,
 		"strictUnits": 0
 		},
 	"languageDefaultsMARKDOWN": {
@@ -3835,7 +3851,7 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "dist\/css",
+		"autoOutputPathRelativePath": "dist/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 1,
@@ -3864,7 +3880,7 @@
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "stylus",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
@@ -3888,36 +3904,70 @@
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "\/js",
+		"autoOutputPathRelativePath": "/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"createDeclarationFile": 0,
 		"createSourceMap": 0,
-		"jsxMode": 0,
 		"minifyOutput": 0,
 		"moduleResolutionType": 0,
 		"moduleType": 2,
-		"noImplicitAny": 0,
-		"preserveConstEnums": 0,
 		"removeComments": 0,
-		"suppressImplicitAnyIndexErrors": 0,
 		"targetECMAVersion": 0
 		},
 	"languageDefaultsUserDefined": [
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "site",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
+	"tsAllowSyntheticDefaultImports": 0,
+	"tsAllowUnreachableCode": 0,
+	"tsAllowUnusedLabels": 0,
+	"tsAlwaysStrict": 0,
+	"tsDownlevelIteration": 0,
+	"tsEmitBOM": 0,
+	"tsEmitDecoratorMetadata": 0,
+	"tsESModuleInterop": 0,
+	"tsForceConsistentCasingInFileNames": 0,
+	"tsImportHelpers": 0,
+	"tsIsolatedModules": 0,
+	"tsJSXFactory": "React.createElement",
+	"tsKeyofStringsOnly": 0,
+	"tsNoEmitHelpers": 0,
+	"tsNoFallthroughCasesInSwitch": 0,
+	"tsNoImplicitAny": 0,
+	"tsNoImplicitReturns": 0,
+	"tsNoImplicitThis": 0,
+	"tsNoImplicitUseStrict": 0,
+	"tsNoLib": 0,
+	"tsNoResolve": 0,
+	"tsNoStrictGenericChecks": 0,
+	"tsNoUnusedLocals": 0,
+	"tsNoUnusedParameters": 0,
+	"tsPreserveConstEnums": 0,
+	"tsPreserveSymlinks": 0,
+	"tsResolveJsonModule": 0,
+	"tsSkipLibCheck": 0,
+	"tsStrictFunctionTypes": 0,
+	"tsStrictNullChecks": 0,
+	"tsStrictPropertyInitialization": 0,
+	"tsStripInternal": 0,
+	"tsSuppressExcessPropertyErrors": 0,
+	"tsSuppressImplicitAnyIndexErrors": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
-		"ascii-only": {
+		"arguments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"ascii_only": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"bare-returns": {
+		"bare_returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -3925,11 +3975,11 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"bracketize": {
+		"braces": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"cascade": {
+		"collapse_vars": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -3953,6 +4003,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"directives": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"drop_console": {
 			"active": 0,
 			"flagValue": -1
@@ -3969,7 +4023,15 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"expression": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_props": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -3977,20 +4039,32 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"if_return": {
+		"html5_comments": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"indent-level": {
+		"ie8": {
 			"active": 0,
-			"flagValue": 4
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
 			},
 		"indent-start": {
 			"active": 0,
 			"flagValue": 0
 			},
-		"inline-script": {
+		"indent_level": {
 			"active": 0,
+			"flagValue": 4
+			},
+		"inline": {
+			"active": 1,
+			"flagValue": 3
+			},
+		"inline_script": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"join_vars": {
@@ -4005,6 +4079,14 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"keep_infinity": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_quoted_props": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -4013,12 +4095,20 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"max-line-len": {
+		"max_line_len": {
 			"active": 1,
 			"flagValue": 32000
 			},
 		"negate_iife": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"passes": {
+			"active": 1,
+			"flagValue": 1
+			},
+		"preserve_line": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"properties": {
@@ -4029,11 +4119,19 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"quote-keys": {
+		"quote_keys": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"screw-ie8": {
+		"quote_style": {
+			"active": 1,
+			"flagValue": 0
+			},
+		"reduce_funcs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"reduce_vars": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -4045,23 +4143,51 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"sort": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"space-colon": {
+		"shebang": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"support-ie8": {
-			"active": 0,
+		"side_effects": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"switches": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"toplevel": {
 			"active": 0,
 			"flagValue": -1
 			},
+		"typeofs": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_comps": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_Function": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_math": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_regexp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_undefined": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -4073,9 +4199,17 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"webkit": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"width": {
 			"active": 1,
 			"flagValue": 80
+			},
+		"wrap_iife": {
+			"active": 0,
+			"flagValue": -1
 			}
 		},
 	"uglifyReservedNamesString": "$",
