@@ -9,7 +9,7 @@ A development guide for the Fairport Asset Management website.
 
 Production-ready assets (JS, CSS, fonts and images) can be found in the `dist/` folder. The `src/` folder is for development purposes only.
 
-The `site/` folder is the root of the [demo website](http://dev.bigfatideas.com/Fairport/site/).
+The `site/` folder is the root of the [demo website](https://nsideas.github.io/fairport/site/).
 
 ### Images
 
